@@ -33,7 +33,7 @@
 
 ### 1.5 Подбор типов и источников данных
 
-Опираемся на `_data_ideas.md`:
+Опираемся на `_data_ideas.md`; детальные описания собранных датасетов и их источников хранятся в каталоге `datasets` (см. файлы `datasets_list.md`).
 
 - C-BARQ supplementary datasets (open subsets из публикаций).
 - Dog Aging Project (доступ через заявку).

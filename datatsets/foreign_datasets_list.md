@@ -38,6 +38,9 @@
 - **Размер (основной файл `manydogs_etal_2024_data.csv`):** 898 185 байт (~0.86 MB)
 - **Размер папки `md1_data/` целиком:** 3 910 781 байт (~3.73 MB)
 
+## 5) file - pone.0299973.s001.csv [source](https://pmc.ncbi.nlm.nih.gov/articles/PMC11008875/)
+
+
 ## Кандидаты на источники данных
 
 - [Dog Aging Project — Data Access](https://dogagingproject.org/data-access)  
