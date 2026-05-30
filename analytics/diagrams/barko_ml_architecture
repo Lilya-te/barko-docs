@@ -1,0 +1,85 @@
+digraph barko_ml_architecture {
+	bgcolor=transparent fontname=Helvetica layout=dot nodesep=0.70 outputorder=edgesfirst pad=0.25 rankdir=LR ranksep=1.15 ratio=fill size="25,15!" splines=ortho viewport="1800,1120"
+	node [color="#94A3B8" fillcolor="#F8FAFC" fontname=Helvetica fontsize=20 margin="0.24,0.15" penwidth=1.8 shape=box style="rounded,filled"]
+	edge [arrowsize=0.7 color="#64748B" fontcolor="#475569" fontname=Helvetica fontsize=13 penwidth=1.5]
+	mobile [label=<Мобильное приложение<BR/><FONT POINT-SIZE='15'><BR ALIGN='LEFT'/>• анкета
+<BR ALIGN='LEFT'/>• план
+<BR ALIGN='LEFT'/>• чат
+<BR ALIGN='LEFT'/>• push-уведомления<BR/></FONT> color="#60A5FA" fillcolor="#DBEAFE"]
+	web [label=<Веб-приложение<BR/><FONT POINT-SIZE='15'><BR ALIGN='LEFT'/>• админка
+<BR ALIGN='LEFT'/>• отчеты
+<BR ALIGN='LEFT'/>• экспертный контур<BR/></FONT> color="#38BDF8" fillcolor="#E0F2FE"]
+	mobile_server [label=<Сервер мобильного приложения<BR/><FONT POINT-SIZE='15'><BR ALIGN='LEFT'/>• mobile API
+<BR ALIGN='LEFT'/>• сессия
+<BR ALIGN='LEFT'/>• контекст запроса<BR/></FONT> color="#34D399" fillcolor="#D1FAE5"]
+	web_server [label=<Сервер веб-приложения<BR/><FONT POINT-SIZE='15'><BR ALIGN='LEFT'/>• web API
+<BR ALIGN='LEFT'/>• auth
+<BR ALIGN='LEFT'/>• business logic<BR/></FONT> color="#22C55E" fillcolor="#DCFCE7"]
+	api [label=<Backend API<BR/><FONT POINT-SIZE='15'><BR ALIGN='LEFT'/>• маршрутизация
+<BR ALIGN='LEFT'/>• контекст собаки
+<BR ALIGN='LEFT'/>• логирование<BR/></FONT> color="#4ADE80" fillcolor="#DCFCE7"]
+	adaptation_plan [label=<План адаптации<BR/><FONT POINT-SIZE='15'><BR ALIGN='LEFT'/>• LogisticRegression baseline
+<BR ALIGN='LEFT'/>• risk score
+<BR ALIGN='LEFT'/>• 1 / 7 / 30 / 90 дней
+<BR ALIGN='LEFT'/>• следующий шаг<BR/></FONT> color="#F59E0B" fillcolor="#FEF3C7"]
+	chatbot [label=<Модель 2: чат-бот<BR/><FONT POINT-SIZE='15'><BR ALIGN='LEFT'/>• LLM + RAG
+<BR ALIGN='LEFT'/>• MongoDB knowledge base
+<BR ALIGN='LEFT'/>• safety guardrails<BR/></FONT> color="#EC4899" fillcolor="#FCE7F3"]
+	db [label=<Сервер БД<BR/><FONT POINT-SIZE='15'><BR ALIGN='LEFT'/>• PostgreSQL
+<BR ALIGN='LEFT'/>• профили собак
+<BR ALIGN='LEFT'/>• планы и прогресс<BR/></FONT> color="#64748B" fillcolor="#F1F5F9"]
+	model_store [label=<Хранение параметров<BR/><FONT POINT-SIZE='15'><BR ALIGN='LEFT'/>• model.pkl
+<BR ALIGN='LEFT'/>• feature schema
+<BR ALIGN='LEFT'/>• calibration<BR/></FONT> color="#A78BFA" fillcolor="#EDE9FE"]
+	data [label=<Данные для обучения<BR/><FONT POINT-SIZE='15'><BR ALIGN='LEFT'/>• C-BARQ subsets
+<BR ALIGN='LEFT'/>• custdev
+<BR ALIGN='LEFT'/>• динамика ответов<BR/></FONT> color="#94A3B8" fillcolor="#F8FAFC"]
+	metrics [label=<Метрики и дашборд<BR/><FONT POINT-SIZE='15'><BR ALIGN='LEFT'/>• ROC-AUC / PR-AUC
+<BR ALIGN='LEFT'/>• Recall@k / CSAT
+<BR ALIGN='LEFT'/>• latency / safety<BR/></FONT> color="#6366F1" fillcolor="#E0E7FF"]
+	incidents [label=<Оповещения и багтрекер<BR/><FONT POINT-SIZE='15'><BR ALIGN='LEFT'/>• ошибки модели
+<BR ALIGN='LEFT'/>• data drift
+<BR ALIGN='LEFT'/>• prompt incidents<BR/></FONT> color="#EF4444" fillcolor="#FEE2E2"]
+	{
+		rank=same
+		mobile
+		web
+	}
+	{
+		rank=same
+		mobile_server
+		web_server
+		api
+	}
+	{
+		rank=same
+		adaptation_plan
+		chatbot
+	}
+	{
+		rank=same
+		db
+		model_store
+		data
+		metrics
+		incidents
+	}
+	mobile -> mobile_server [xlabel="анкета / чат"]
+	web -> web_server [xlabel="админка"]
+	mobile_server -> api [xlabel=API]
+	web_server -> api [xlabel=API]
+	api -> adaptation_plan [xlabel="профиль"]
+	adaptation_plan -> db [xlabel="план + прогресс"]
+	db -> mobile [xlabel="план / push"]
+	api -> chatbot [xlabel="вопрос + контекст"]
+	chatbot -> api [xlabel="ответ"]
+	chatbot -> db [xlabel="история"]
+	data -> model_store [style=dashed xlabel="train / export"]
+	model_store -> adaptation_plan [style=dashed xlabel=params]
+	db -> api [style=dashed xlabel="контекст"]
+	adaptation_plan -> metrics [xlabel="ML logs"]
+	chatbot -> metrics [xlabel="LLM/RAG logs"]
+	metrics -> incidents [xlabel=alerts]
+	incidents -> api [style=dashed xlabel="fix backlog"]
+	fontcolor="#0F172A" fontname="Helvetica-Bold" fontsize=30 label="ML-архитектура BARKO: персональный план + LLM/RAG чат" labelloc=t
+}
