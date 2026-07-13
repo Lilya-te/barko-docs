@@ -1,0 +1,92 @@
+{
+  "trainability": [
+    "question_001",
+    "question_002",
+    "question_003",
+    "question_004",
+    "question_005",
+    "question_006",
+    "question_007",
+    "question_008"
+  ],
+  "stranger_directed_aggression": [
+    "question_010",
+    "question_011",
+    "question_015",
+    "question_016",
+    "question_021",
+    "question_028"
+  ],
+  "owner_directed_aggression": [
+    "question_009",
+    "question_013",
+    "question_017",
+    "question_019",
+    "question_030",
+    "question_031"
+  ],
+  "dog_directed_aggression": [
+    "question_023",
+    "question_024",
+    "question_029"
+  ],
+  "stranger_directed_fear": [
+    "question_036",
+    "question_037",
+    "question_039",
+    "question_040"
+  ],
+  "nonsocial_fear": [
+    "question_038",
+    "question_041",
+    "question_042",
+    "question_044",
+    "question_047",
+    "question_048"
+  ],
+  "dog_directed_fear": [
+    "question_045",
+    "question_046"
+  ],
+  "touch_sensitivity": [
+    "question_049",
+    "question_050",
+    "question_051"
+  ],
+  "separation_related": [
+    "question_054",
+    "question_055",
+    "question_056",
+    "question_057",
+    "question_058",
+    "question_059",
+    "question_060",
+    "question_061"
+  ],
+  "excitability": [
+    "question_062",
+    "question_063",
+    "question_064",
+    "question_065",
+    "question_066",
+    "question_067"
+  ],
+  "attachment": [
+    "question_068",
+    "question_069",
+    "question_070",
+    "question_071",
+    "question_072",
+    "question_073"
+  ],
+  "chasing": [
+    "question_074",
+    "question_075",
+    "question_076"
+  ],
+  "energy": [
+    "question_090",
+    "question_091",
+    "question_092"
+  ]
+}

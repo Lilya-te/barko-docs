@@ -6,6 +6,7 @@
 - **Частично C-BARQ:** `md1_data/` (содержит блок C-BARQ + отдельные экспериментальные данные ManyDogs 1)
 
 ## 1) `2017_wolfram.csv`
+ТОЛЬКО СРЕДНИЕ ПОКАЗАТЕЛИ, НЕ ОТВЕТЫ НА ВОПРОСЫ
 - **Источник загрузки (Firefox):** `https://www.wolframcloud.com/objects/342da588-d5f2-461e-9255-77a3e69a5fee`
 - **Страница ресурса:** [Wolfram Data Repository — C-BARQ Survey](https://datarepository.wolframcloud.com/resources/C-BARQ-Survey)
 - **Краткое описание ресурса:** датасет C-BARQ (Canine Behavioral Assessment and Research Questionnaire) с поведенческими метриками собак (агрессия, страх, обучаемость, энергичность и др.); в репозитории Wolfram указан табличный формат и возможность выгрузки в CSV.
@@ -22,6 +23,7 @@
 - **Размер файла:** 392 384 байт (~0.37 MB)
 
 ## 3) `CBARQ.dat`
+ТОЛЬКО СРЕДНИЕ ПОКАЗАТЕЛИ, НЕ ОТВЕТЫ НА ВОПРОСЫ
 - **Источник загрузки (Firefox):** временная подписанная ссылка S3 вида `https://s3-eu-west-1.amazonaws.com/pfigshare-u-files/.../CBARQ.dat?...`
 - **Страница ресурса:** [Figshare — C-BARQ survey on dog behavior and temperament](https://figshare.com/articles/dataset/C_BARQ_survey_on_dog_behavior_and_temperament/715896)
 - **Краткое описание ресурса:** данные опросника C-BARQ о поведении и темпераменте собак (в т.ч. показатели агрессии, страха, обучаемости и др.), опубликованные на Figshare.

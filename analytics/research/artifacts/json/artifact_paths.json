@@ -1,0 +1,16 @@
+{
+  "base": "artifacts",
+  "root_note": "Пути относительно analytics/research/; в ноутбуках: ROOT = Path('..'), ART = ROOT / paths.base",
+  "paths": {
+    "df_cbarq_clean": "artifacts/csv/clean/df_cbarq_clean.csv",
+    "df_domains": "artifacts/csv/clean/df_domains.csv",
+    "df_domains_scaled": "artifacts/csv/scaled/df_domains_scaled.csv",
+    "scaler_stats": "artifacts/csv/scaled/scaler_stats.csv",
+    "domain_items": "artifacts/json/domain_items.json",
+    "domain_scaler": "artifacts/models/domain_scaler.joblib",
+    "df_domains_kmeans": "artifacts/csv/clusters/df_domains_kmeans.csv",
+    "df_domains_gmm": "artifacts/csv/clusters/df_domains_gmm.csv",
+    "cluster_comparison": "artifacts/json/cluster_comparison.json",
+    "original_data": "raw/padova-cbarq/Dataset_22022022_alt.csv"
+  }
+}

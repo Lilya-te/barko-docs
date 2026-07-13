@@ -38,6 +38,7 @@
 | [2017-wolfram](datasets/2017-wolfram.md) | Wolfram C-BARQ Survey — 12 060 строк, доменные шкалы |
 | [figshare-cbarq-dat](datasets/figshare-cbarq-dat.md) | Figshare C-BARQ — 12 061 строк, доменные шкалы |
 | [padova-cbarq-italian](datasets/padova-cbarq-italian.md) | Padova — 807 строк, item-level (итальянский) |
+| [padova-cbarq-column-dictionary](datasets/padova-cbarq-column-dictionary.md) | Словарь колонок Padova: перевод IT→EN и `@nn`→`question_nnn` |
 | [manydogs-md1](datasets/manydogs-md1.md) | ManyDogs 1 — 705 строк, частичный C-BARQ |
 | [plos-one-2024-short-cbarq](datasets/plos-one-2024-short-cbarq.md) | PLOS ONE 2024 — ~435 собак, short/full C-BARQ |
 | [helpdog-forum-adoptions](datasets/helpdog-forum-adoptions.md) | HelpDog — 90 собак, история пристройств и возвратов |
@@ -48,6 +49,7 @@
 |----------|----------|
 | [model-selection](ml/model-selection.md) | Сравнение кандидатов моделей и критерии выбора |
 | [benchmarks-and-metrics](ml/benchmarks-and-metrics.md) | Бенчмарки и метрики для K3 и K5 |
+| [mvp-verifiable-metrics](ml/mvp-verifiable-metrics.md) | Измеримые метрики MVP вместо возврата как основной рабочей гипотезы |
 | [experiment-plan](ml/experiment-plan.md) | План baseline-эксперимента и критерии готовности для Паспорта |
 | [helpdog-adoption-eda](ml/helpdog-adoption-eda.md) | EDA возвратов в приют (57% среди пристроенных) |
 
