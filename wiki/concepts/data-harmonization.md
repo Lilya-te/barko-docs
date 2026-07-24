@@ -1,8 +1,8 @@
 ---
 type: concept
 tags: [c-barq, data, harmonization, k3]
-sources: [ml-ideas-notes, data-ideas-notes, foreign-datasets-list-notes]
-updated: 2026-06-09
+sources: [ml-ideas-notes, data-ideas-notes, foreign-datasets-list-notes, cbarq-clustering-notebooks]
+updated: 2026-07-18
 status: draft
 ---
 
@@ -25,6 +25,13 @@ status: draft
 2. Определить общий feature schema (доменные шкалы C-BARQ).
 3. Маппинг полей между датасетами.
 4. Cross-source benchmark: train на одном источнике, test на другом.
+
+## Первый рабочий срез Padova
+
+В исследовательских ноутбуках Padova уже преобразован в **13 доменных шкал**:
+после очистки доступно 775 собак из исходных 807. Это подтверждает реализуемость
+пути `item-level → domain-level`, но ещё не доказывает корректность общего маппинга
+для других источников. Подробнее: [cbarq-clustering](../ml/cbarq-clustering.md).
 
 ## Источники для harmonization
 
@@ -64,6 +71,7 @@ status: draft
 ## Открытые вопросы
 
 - [ ] Дедупликация Wolfram ↔ Figshare (12 060 vs 12 061 строк).
-- [ ] Агрегация Padova/PLOS item-level → доменные шкалы.
+- [~] Агрегация Padova item-level → 13 доменных шкал выполнена на рабочем срезе из 775 собак; нужно зафиксировать воспроизводимый mapping и обработку пропусков.
+- [ ] Агрегация PLOS item-level → доменные шкалы.
 - [ ] Стратегия обработки пропусков и разных шкал.
 - [ ] Формула таргета для K3 на harmonized данных.

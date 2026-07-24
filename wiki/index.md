@@ -1,6 +1,6 @@
 # Barko Wiki — Index
 
-Каталог страниц knowledge base. Обновлён: 2026-06-09 (ingest статьи/).
+Каталог страниц knowledge base. Обновлён: 2026-07-18 (ingest ML-заметки и C-BARQ clustering).
 
 ## Overview
 
@@ -52,6 +52,7 @@
 | [mvp-verifiable-metrics](ml/mvp-verifiable-metrics.md) | Измеримые метрики MVP вместо возврата как основной рабочей гипотезы |
 | [experiment-plan](ml/experiment-plan.md) | План baseline-эксперимента и критерии готовности для Паспорта |
 | [helpdog-adoption-eda](ml/helpdog-adoption-eda.md) | EDA возвратов в приют (57% среди пристроенных) |
+| [cbarq-clustering](ml/cbarq-clustering.md) | Exploratory KMeans/GMM-кластеризация Padova; ограничения интерпретации |
 
 ## Sources
 
@@ -61,6 +62,7 @@
 | [data-ideas-notes](sources/data-ideas-notes.md) | `datatsets/_data_ideas.md` | Исследование открытых C-BARQ датасетов |
 | [foreign-datasets-list-notes](sources/foreign-datasets-list-notes.md) | `datatsets/foreign_datasets_list.md` | Каталог собранных датасетов |
 | [helpdog-notebook-notes](sources/helpdog-notebook-notes.md) | `analytics/helpdog.ipynb` | EDA пристройств HelpDog |
+| [cbarq-clustering-notebooks](sources/cbarq-clustering-notebooks.md) | `analytics/research/notebooks/11,12,21_*.ipynb` | KMeans/GMM кластеризация доменных шкал Padova |
 | [plos-one-2024-short-cbarq-validation](sources/plos-one-2024-short-cbarq-validation.md) | `статьи/journal.pone.0299973.pdf` | Валидация C-BARQ(S), 435 собак |
 | [fomina-2024-problem-behavior-review](sources/fomina-2024-problem-behavior-review.md) | `статьи/4+RPJ+21(4)+РУ+Фомина.pdf` | Обзор 132 статей |
 | [fomina-2025-ai-pilot-study](sources/fomina-2025-ai-pilot-study.md) | `статьи/11+РПЖ+22(4)+Фомина.pdf` | CBARQ + AI, n=35 |

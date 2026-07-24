@@ -2,7 +2,7 @@
 type: component
 tags: [k3, ml, mvp, adaptation]
 sources: [ml-ideas-notes, helpdog-notebook-notes, plos-one-2024-short-cbarq-validation, fomina-2024-problem-behavior-review, fomina-2025-ai-pilot-study, gritsenko-2023-owner-frustration]
-updated: 2026-06-09
+updated: 2026-07-18
 status: draft
 ---
 
@@ -15,6 +15,8 @@ status: draft
 По профилю собаки и ответам анкеты оценить:
 - риск сложной адаптации;
 - приоритетные зоны внимания.
+
+K5 может передавать в анкету сведения, явно сообщённые пользователем, а K3-профиль — быть контекстом ответа K5. До реализации нужны согласие пользователя, provenance полей и валидация качества извлечения: текст чата нельзя автоматически считать надёжным C-BARQ-ответом.
 
 ## Класс моделей
 
@@ -81,3 +83,4 @@ status: draft
 - [ ] Дедупликация Wolfram ↔ Figshare перед объединением train-set.
 - [ ] Запустить baseline K3 (ROC-AUC) на C-BARQ — таблица в [benchmarks-and-metrics](../ml/benchmarks-and-metrics.md) пустая.
 - [ ] Связать HelpDog-собак с C-BARQ-признаками.
+- [ ] Оценить, помогают ли поведенческие кластеры как вспомогательные профили; они не являются label риска — см. [cbarq-clustering](../ml/cbarq-clustering.md).

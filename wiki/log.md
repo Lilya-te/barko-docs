@@ -4,6 +4,37 @@
 
 ---
 
+## [2026-07-18] ingest | ML-заметки и C-BARQ clustering
+
+**Источники:**
+- `_ml_ideas.md` — уточнена роль K3 как основного ML-артефакта и связь контекста K3 ↔ K5.
+- `analytics/research/notebooks/11_kmeans_cluster.ipynb` — KMeans на 775 очищенных Padova-анкетах и 13 доменных шкалах.
+- `analytics/research/notebooks/12_gmm_cluster.ipynb` — GMM на том же срезе.
+- `analytics/research/notebooks/21_clusters_compare.ipynb` — план сравнения моделей, без рассчитанных результатов.
+
+**Созданные страницы:**
+- `sources/cbarq-clustering-notebooks.md`
+- `ml/cbarq-clustering.md`
+
+**Обновлены:**
+- `sources/ml-ideas-notes.md`
+- `components/k3-risk-prediction.md`
+- `concepts/data-harmonization.md`
+- `index.md`
+
+**Ключевые выводы:**
+- Padova успешно сведён в рабочий срез из 775 собак и 13 доменных шкал; это частично продвигает harmonization, но mapping и обработку пропусков ещё нужно зафиксировать воспроизводимо.
+- KMeans выбирает 2 кластера по silhouette (`0.190`): это слабое разделение, пригодное только для exploratory-профилей.
+- GMM выбирает 6 компонентов по BIC (`15 463.26`), однако silhouette `−0.02` не подтверждает устойчиво отделённые классы.
+- Кластеры не являются K3-target и не заменяют supervised baseline.
+
+**Открытые вопросы:**
+- Рассчитать совпадение KMeans/GMM при `k=2` и `k=6` (`ARI`, `NMI`, contingency table).
+- Проверить устойчивость кластеров и только затем их связь с внешним target K3.
+- Спроектировать K3 ↔ K5 data flow с согласием пользователя и provenance признаков.
+
+---
+
 ## [2026-07-08] ingest | Словарь колонок Padova C-BARQ (IT→EN)
 
 **Созданная страница:**
