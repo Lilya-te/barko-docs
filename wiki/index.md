@@ -1,6 +1,6 @@
 # Barko Wiki — Index
 
-Каталог страниц knowledge base. Обновлён: 2026-07-28 (схема БД research-data-app).
+Каталог страниц knowledge base. Обновлён: 2026-07-28 (реорганизация путей к источникам).
 
 ## Overview
 
@@ -61,9 +61,9 @@
 |----------|---------------|----------|
 | [ml-ideas-notes](sources/ml-ideas-notes.md) | `_ml_ideas.md` | Подбор модели для ML-решений BARKO |
 | [app-ideas-notes](sources/app-ideas-notes.md) | `_app_ideas/_database_architecture.md` | Схема БД и scope research-ops |
-| [data-ideas-notes](sources/data-ideas-notes.md) | `datatsets/_data_ideas.md` | Исследование открытых C-BARQ датасетов |
-| [foreign-datasets-list-notes](sources/foreign-datasets-list-notes.md) | `datatsets/foreign_datasets_list.md` | Каталог собранных датасетов |
-| [helpdog-notebook-notes](sources/helpdog-notebook-notes.md) | `analytics/helpdog.ipynb` | EDA пристройств HelpDog |
+| [data-ideas-notes](sources/data-ideas-notes.md) | `analytics/research/datatsets/_data_ideas.md` | Исследование открытых C-BARQ датасетов |
+| [foreign-datasets-list-notes](sources/foreign-datasets-list-notes.md) | `analytics/research/datatsets/foreign_datasets_list.md` | Каталог собранных датасетов |
+| [helpdog-notebook-notes](sources/helpdog-notebook-notes.md) | `analytics/helpdog_forum/helpdog.ipynb` | EDA пристройств HelpDog |
 | [cbarq-clustering-notebooks](sources/cbarq-clustering-notebooks.md) | `analytics/research/notebooks/11,12,21_*.ipynb` | KMeans/GMM кластеризация доменных шкал Padova |
 | [plos-one-2024-short-cbarq-validation](sources/plos-one-2024-short-cbarq-validation.md) | `статьи/journal.pone.0299973.pdf` | Валидация C-BARQ(S), 435 собак |
 | [fomina-2024-problem-behavior-review](sources/fomina-2024-problem-behavior-review.md) | `статьи/4+RPJ+21(4)+РУ+Фомина.pdf` | Обзор 132 статей |

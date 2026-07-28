@@ -2,13 +2,13 @@
 type: ml
 tags: [eda, helpdog, adoption, k3]
 sources: [helpdog-notebook-notes]
-updated: 2026-06-09
+updated: 2026-07-28
 status: stable
 ---
 
 # HelpDog Adoption EDA
 
-Результаты exploratory analysis из `analytics/helpdog.ipynb`.
+Результаты exploratory analysis из `analytics/helpdog_forum/helpdog.ipynb`.
 
 ## Цель анализа
 
@@ -59,5 +59,5 @@ status: stable
 
 ## Артефакты
 
-- Ноутбук: `analytics/helpdog.ipynb`
+- Ноутбук: `analytics/helpdog_forum/helpdog.ipynb`
 - Слайд: `analytics/helpdog_return_summary_slide.png` (если есть)

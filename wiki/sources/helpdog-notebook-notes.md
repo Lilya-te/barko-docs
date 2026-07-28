@@ -2,16 +2,16 @@
 type: source
 tags: [helpdog, eda, source, adoption]
 sources: []
-raw_path: analytics/helpdog.ipynb
-updated: 2026-06-09
+raw_path: analytics/helpdog_forum/helpdog.ipynb
+updated: 2026-07-28
 status: ingested
 ---
 
 # Source: HelpDog Adoption EDA
 
-**Исходный файл:** [`analytics/helpdog.ipynb`](../../analytics/helpdog.ipynb)
+**Исходный файл:** [`analytics/helpdog_forum/helpdog.ipynb`](../../analytics/helpdog_forum/helpdog.ipynb)
 
-**Связанные данные:** `analytics/dogs.csv`, `analytics/adoptions.csv`
+**Связанные данные:** `analytics/helpdog_forum/dogs.csv`, `analytics/helpdog_forum/adoptions.csv`
 
 ## Что делает ноутбук
 

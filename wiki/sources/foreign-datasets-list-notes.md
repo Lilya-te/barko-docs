@@ -2,14 +2,14 @@
 type: source
 tags: [datasets, c-barq, source]
 sources: []
-raw_path: datatsets/foreign_datasets_list.md
-updated: 2026-06-09
+raw_path: analytics/research/datatsets/foreign_datasets_list.md
+updated: 2026-07-28
 status: ingested
 ---
 
 # Source: Foreign Datasets List
 
-**Исходный файл:** [`datatsets/foreign_datasets_list.md`](../../datatsets/foreign_datasets_list.md)
+**Исходный файл:** [`analytics/research/datatsets/foreign_datasets_list.md`](../../analytics/research/datatsets/foreign_datasets_list.md)
 
 ## Ключевые выводы
 
@@ -40,4 +40,4 @@ status: ingested
 
 - [ ] Дедупликация Wolfram vs Figshare
 - [ ] Полная схема столбцов `pone.0299973.s001.csv` (в источнике описание минимальное)
-- [ ] Фактическое расположение файлов в репозитории (`datatsets/` vs `datasets/`)
+- [x] Расположение файлов зафиксировано: `analytics/research/datatsets/`

@@ -2,7 +2,7 @@
 type: overview
 tags: [barko, mvp, ml]
 sources: [ml-ideas-notes, data-ideas-notes, helpdog-notebook-notes, app-ideas-notes]
-updated: 2026-07-24
+updated: 2026-07-28
 status: draft
 ---
 
@@ -49,7 +49,7 @@ status: draft
 
 - `_ml_ideas.md` — исходная заметка по ML (ingested → [ml-ideas-notes](sources/ml-ideas-notes.md))
 - `_app_ideas/_database_architecture.md` — схема БД research-ops (ingested → [app-ideas-notes](sources/app-ideas-notes.md))
-- `datatsets/_data_ideas.md` — исходная заметка по датасетам (ingested → [data-ideas-notes](sources/data-ideas-notes.md))
-- `datatsets/foreign_datasets_list.md` — каталог собранных датасетов (ingested → [collected-datasets-catalog](datasets/collected-datasets-catalog.md))
-- `analytics/helpdog.ipynb` — EDA пристройств HelpDog (ingested → [helpdog-adoption-eda](ml/helpdog-adoption-eda.md); ~57% возвратов)
+- `analytics/research/datatsets/_data_ideas.md` — исходная заметка по датасетам (ingested → [data-ideas-notes](sources/data-ideas-notes.md))
+- `analytics/research/datatsets/foreign_datasets_list.md` — каталог собранных датасетов (ingested → [collected-datasets-catalog](datasets/collected-datasets-catalog.md))
+- `analytics/helpdog_forum/helpdog.ipynb` — EDA пристройств HelpDog (ingested → [helpdog-adoption-eda](ml/helpdog-adoption-eda.md); ~57% возвратов)
 - `статьи/*.pdf` — 4 статьи ingested → [sources/](sources/plos-one-2024-short-cbarq-validation.md), [k3-feature-candidates](concepts/k3-feature-candidates.md)

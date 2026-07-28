@@ -4,6 +4,24 @@
 
 ---
 
+## [2026-07-28] ingest | Реорганизация путей к источникам
+
+**Источники:**
+- `analytics/research/datatsets/` — новое расположение заметок и collected C-BARQ datasets.
+- `analytics/helpdog_forum/` — новое расположение ноутбука и CSV HelpDog.
+- `analytics/research/raw/padova-cbarq/` — новое расположение подготовленных CSV Padova.
+
+**Обновлены:**
+- `sources/data-ideas-notes.md`, `sources/foreign-datasets-list-notes.md`, `sources/helpdog-notebook-notes.md` — `raw_path` и ссылки на исходники.
+- `datasets/` — полные пути в `raw_file` / `raw_files`, каталог collected datasets и словарь Padova.
+- `ml/helpdog-adoption-eda.md`, `ml/benchmarks-and-metrics.md`, `overview.md`, `index.md` — ссылки на реорганизованные артефакты.
+
+**Ключевые выводы:**
+- Канонический каталог collected C-BARQ raw: `analytics/research/datatsets/foreign/`.
+- Исторические записи журнала сохраняют пути, актуальные на момент соответствующего ingest.
+
+---
+
 ## [2026-07-28] ingest | Схема БД research-ops (`_database_architecture`)
 
 **Источники:**

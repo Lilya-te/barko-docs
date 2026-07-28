@@ -2,7 +2,7 @@
 type: ml
 tags: [metrics, benchmarks, k3, k5]
 sources: [ml-ideas-notes, helpdog-notebook-notes]
-updated: 2026-06-09
+updated: 2026-07-28
 status: stable
 ---
 
@@ -58,7 +58,7 @@ status: stable
 
 ### HelpDog EDA (продуктовые данные)
 
-Из `analytics/helpdog.ipynb` — exploratory analysis, **не ML benchmark**:
+Из `analytics/helpdog_forum/helpdog.ipynb` — exploratory analysis, **не ML benchmark**:
 
 | Метрика | Значение |
 |---------|----------|

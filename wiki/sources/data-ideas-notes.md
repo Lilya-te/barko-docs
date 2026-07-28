@@ -2,14 +2,14 @@
 type: source
 tags: [c-barq, datasets, source]
 sources: []
-raw_path: datatsets/_data_ideas.md
-updated: 2026-06-09
+raw_path: analytics/research/datatsets/_data_ideas.md
+updated: 2026-07-28
 status: ingested
 ---
 
 # Source: Открытые датасеты по C-BARQ
 
-**Исходный файл:** [`datatsets/_data_ideas.md`](../../datatsets/_data_ideas.md)
+**Исходный файл:** [`analytics/research/datatsets/_data_ideas.md`](../../analytics/research/datatsets/_data_ideas.md)
 
 ## Ключевые выводы
 

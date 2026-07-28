@@ -2,8 +2,8 @@
 type: dataset
 tags: [c-barq, collected, k3, padova, raw-responses]
 sources: [foreign-datasets-list-notes]
-raw_file: Dataset_CBARQ.xlsx
-updated: 2026-06-09
+raw_file: analytics/research/datatsets/foreign/Dataset_CBARQ.xlsx
+updated: 2026-07-28
 status: stable
 cbarq_coverage: full
 rows: 807

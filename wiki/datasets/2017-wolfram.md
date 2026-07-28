@@ -2,8 +2,8 @@
 type: dataset
 tags: [c-barq, collected, k3, wolfram]
 sources: [foreign-datasets-list-notes]
-raw_file: 2017_wolfram.csv
-updated: 2026-06-09
+raw_file: analytics/research/datatsets/foreign/2017_wolfram.csv
+updated: 2026-07-28
 status: stable
 cbarq_coverage: full
 rows: 12060

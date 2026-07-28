@@ -2,13 +2,13 @@
 type: dataset
 tags: [c-barq, collected, catalog, k3]
 sources: [foreign-datasets-list-notes]
-updated: 2026-06-09
+updated: 2026-07-28
 status: stable
 ---
 
 # Collected Datasets Catalog
 
-Сводка **собранных** датасетов для baseline K3. Источник: `datatsets/foreign_datasets_list.md`.
+Сводка **собранных** датасетов для baseline K3. Источник: `analytics/research/datatsets/foreign_datasets_list.md`.
 
 ## Быстрый статус
 

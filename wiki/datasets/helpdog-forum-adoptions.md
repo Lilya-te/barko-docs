@@ -2,8 +2,8 @@
 type: dataset
 tags: [helpdog, internal, adoption, k3, product-data]
 sources: [helpdog-notebook-notes]
-raw_files: [dogs.csv, adoptions.csv]
-updated: 2026-06-09
+raw_files: [analytics/helpdog_forum/dogs.csv, analytics/helpdog_forum/adoptions.csv]
+updated: 2026-07-28
 status: stable
 cbarq_coverage: none
 rows_dogs: 90
@@ -19,8 +19,8 @@ format: csv
 
 | Файл | Строк | Описание |
 |------|------:|----------|
-| `analytics/dogs.csv` | 90 | Список собак на форуме |
-| `analytics/adoptions.csv` | 125 | События пристройства и возврата |
+| `analytics/helpdog_forum/dogs.csv` | 90 | Список собак на форуме |
+| `analytics/helpdog_forum/adoptions.csv` | 125 | События пристройства и возврата |
 
 ## Схема `dogs.csv`
 

@@ -2,8 +2,8 @@
 type: dataset
 tags: [c-barq, padova, data-dictionary, column-mapping, k3]
 sources: [padova-cbarq-italian]
-raw_file: analytics/research/Dataset_22022022.csv
-updated: 2026-07-08
+raw_file: analytics/research/raw/padova-cbarq/Dataset_22022022.csv
+updated: 2026-07-28
 status: stable
 ---
 
@@ -18,8 +18,8 @@ status: stable
 
 Всего **123 колонки**: 16 демографических + 100 вопросов + 7 свободного текста.
 
-Источник данных: `analytics/research/Dataset_22022022.csv` (и идентичный по колонкам
-`analytics/research/Dataset_CBARQ/Dataset_22022022.csv`). Файлы raw не изменяются —
+Источник данных: `analytics/research/raw/padova-cbarq/Dataset_22022022.csv` (альтернативная
+выгрузка: `analytics/research/raw/padova-cbarq/Dataset_22022022_alt.csv`). Файлы raw не изменяются —
 см. [padova-cbarq-italian](padova-cbarq-italian.md).
 
 ## Известные особенности источника

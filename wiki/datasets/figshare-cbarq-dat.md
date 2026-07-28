@@ -2,8 +2,8 @@
 type: dataset
 tags: [c-barq, collected, k3, figshare]
 sources: [foreign-datasets-list-notes]
-raw_file: CBARQ.dat
-updated: 2026-06-09
+raw_file: analytics/research/datatsets/foreign/CBARQ.dat
+updated: 2026-07-28
 status: stable
 cbarq_coverage: full
 rows: 12061

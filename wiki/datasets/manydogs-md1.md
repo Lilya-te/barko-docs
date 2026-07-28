@@ -2,8 +2,8 @@
 type: dataset
 tags: [c-barq, collected, k3, manydogs, partial]
 sources: [foreign-datasets-list-notes]
-raw_file: md1_data/manydogs_etal_2024_data.csv
-updated: 2026-06-09
+raw_file: analytics/research/datatsets/foreign/md1_data/manydogs_etal_2024_data.csv
+updated: 2026-07-28
 status: stable
 cbarq_coverage: partial
 rows: 705

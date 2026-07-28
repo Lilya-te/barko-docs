@@ -2,8 +2,8 @@
 type: dataset
 tags: [c-barq, collected, k3, plos-one, raw-responses]
 sources: [foreign-datasets-list-notes, data-ideas-notes, plos-one-2024-short-cbarq-validation]
-raw_file: pone.0299973.s001.csv
-updated: 2026-06-09
+raw_file: analytics/research/datatsets/foreign/pone.0299973.s001.csv
+updated: 2026-07-28
 status: stable
 cbarq_coverage: full
 rows: 435
