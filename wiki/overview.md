@@ -1,8 +1,8 @@
 ---
 type: overview
 tags: [barko, mvp, ml]
-sources: [ml-ideas-notes, data-ideas-notes, helpdog-notebook-notes]
-updated: 2026-06-09
+sources: [ml-ideas-notes, data-ideas-notes, helpdog-notebook-notes, app-ideas-notes]
+updated: 2026-07-24
 status: draft
 ---
 
@@ -35,6 +35,10 @@ status: draft
 
 Основной инструмент поведенческой оценки — [C-BARQ](concepts/c-barq.md). Полного открытого датасета нет; см. [ландшафт данных](datasets/cbarq-open-data-landscape.md) и [harmonization](concepts/data-harmonization.md).
 
+## Research-ops приложение
+
+Внутренний контур сбора данных (волонтёр / админ; эксперт позже) — [research-data-app](concepts/research-data-app.md): modular monolith, один docker-compose, PostgreSQL, cookiecutter-django. Схема БД — [app-ideas-notes](sources/app-ideas-notes.md).
+
 ## Текущие решения (из первого ingest)
 
 - **K3 baseline:** `RandomForest` + интерпретация через `LogisticRegression`; цель `ROC-AUC >= 0.75`.
@@ -44,6 +48,7 @@ status: draft
 ## Связанные артефакты в репозитории
 
 - `_ml_ideas.md` — исходная заметка по ML (ingested → [ml-ideas-notes](sources/ml-ideas-notes.md))
+- `_app_ideas/_database_architecture.md` — схема БД research-ops (ingested → [app-ideas-notes](sources/app-ideas-notes.md))
 - `datatsets/_data_ideas.md` — исходная заметка по датасетам (ingested → [data-ideas-notes](sources/data-ideas-notes.md))
 - `datatsets/foreign_datasets_list.md` — каталог собранных датасетов (ingested → [collected-datasets-catalog](datasets/collected-datasets-catalog.md))
 - `analytics/helpdog.ipynb` — EDA пристройств HelpDog (ingested → [helpdog-adoption-eda](ml/helpdog-adoption-eda.md); ~57% возвратов)

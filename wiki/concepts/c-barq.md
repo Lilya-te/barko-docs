@@ -1,8 +1,8 @@
 ---
 type: concept
 tags: [c-barq, behavior, questionnaire]
-sources: [data-ideas-notes, ml-ideas-notes, plos-one-2024-short-cbarq-validation]
-updated: 2026-06-09
+sources: [data-ideas-notes, ml-ideas-notes, plos-one-2024-short-cbarq-validation, gilchrist-2025-shelter-cbarq]
+updated: 2026-07-24
 status: stable
 ---
 
@@ -25,12 +25,17 @@ status: stable
 
 ## Версии опросника
 
-| Версия | Пунктов | Доменов | Примечание |
-|--------|--------:|---------|------------|
+| Версия | Пунктов | Доменов / факторов | Примечание |
+|--------|--------:|--------------------|------------|
 | Long C-BARQ | 100 | 14 + misc | Стандарт Serpell/Hsu |
-| **C-BARQ(S)** | 42 | 14 + misc | Short, <10 мин; валидирован PLOS ONE 2024 |
+| **C-BARQ(S)** | 42 | 14 + misc | Short для владельцев; валидирован PLOS ONE 2024 |
+| **Shelter C-BARQ** | 24 | **5 факторов** | Для staff в приюте; Gilchrist et al. 2025 |
 
-См. [plos-one-2024-short-cbarq-validation](../sources/plos-one-2024-short-cbarq-validation.md).
+См. [plos-one-2024-short-cbarq-validation](../sources/plos-one-2024-short-cbarq-validation.md) и [gilchrist-2025-shelter-cbarq](../sources/gilchrist-2025-shelter-cbarq.md).
+
+### Shelter C-BARQ (5 факторов)
+
+Fear, **Arousal** (конструкт без прямого аналога в long C-BARQ), Human Excitability, Dog Aggression, Human Aggression. Средняя α ≈ 0.78; N=445, 11 приютов.
 
 ## 14 доменов (long / short)
 
@@ -38,7 +43,8 @@ Stranger-directed aggression/fear, owner-directed aggression, dog-directed aggre
 
 ## Релевантность для Barko
 
-- MVP-анкета: кандидат **C-BARQ(S)** (42 пункта).
+- MVP-анкета **владельца:** кандидат **C-BARQ(S)** (42 пункта).
+- MVP-анкета **приюта / research-ops:** кандидат **Shelter C-BARQ** (24 пункта).
 - Признаки K3: см. [k3-feature-candidates](k3-feature-candidates.md).
 - Данные: [cbarq-open-data-landscape](../datasets/cbarq-open-data-landscape.md).
 

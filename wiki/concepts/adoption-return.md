@@ -1,8 +1,8 @@
 ---
 type: concept
 tags: [adaptation, k3, target, helpdog]
-sources: [helpdog-notebook-notes]
-updated: 2026-06-09
+sources: [helpdog-notebook-notes, gilchrist-2025-shelter-cbarq]
+updated: 2026-07-24
 status: draft
 ---
 
@@ -39,6 +39,10 @@ target = 0  if пристроена и не вернулась
 
 - **HelpDog:** label source для валидации гипотез (продуктовые данные).
 - **C-BARQ датасеты:** train baseline без прямого label «возврат» — нужен proxy (поведенческие риски) или external label engineering.
+
+## Литература: поведение в приюте и возвраты
+
+Gilchrist et al. (2025) связывают крайние уровни Fear / Aggression / Excitability (Shelter C-BARQ) с рисками возврата и mismatch ожиданий адоптера; шкала валидирована **в приюте**, не на post-adoption outcome. См. [gilchrist-2025-shelter-cbarq](../sources/gilchrist-2025-shelter-cbarq.md).
 
 См. [k3-risk-prediction](../components/k3-risk-prediction.md).
 

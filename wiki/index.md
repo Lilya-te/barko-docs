@@ -1,6 +1,6 @@
 # Barko Wiki — Index
 
-Каталог страниц knowledge base. Обновлён: 2026-07-18 (ingest ML-заметки и C-BARQ clustering).
+Каталог страниц knowledge base. Обновлён: 2026-07-28 (схема БД research-data-app).
 
 ## Overview
 
@@ -28,6 +28,7 @@
 | [problem-behavior-taxonomy](concepts/problem-behavior-taxonomy.md) | Таксономия проблемного поведения |
 | [owner-dog-attachment](concepts/owner-dog-attachment.md) | Тип привязанности владелец–собака |
 | [owner-frustration](concepts/owner-frustration.md) | Разочарованность владельца (~14%) |
+| [research-data-app](concepts/research-data-app.md) | Внутреннее приложение сбора данных: монолит, compose, схема Postgres |
 
 ## Datasets
 
@@ -59,6 +60,7 @@
 | Страница | Исходный файл | Описание |
 |----------|---------------|----------|
 | [ml-ideas-notes](sources/ml-ideas-notes.md) | `_ml_ideas.md` | Подбор модели для ML-решений BARKO |
+| [app-ideas-notes](sources/app-ideas-notes.md) | `_app_ideas/_database_architecture.md` | Схема БД и scope research-ops |
 | [data-ideas-notes](sources/data-ideas-notes.md) | `datatsets/_data_ideas.md` | Исследование открытых C-BARQ датасетов |
 | [foreign-datasets-list-notes](sources/foreign-datasets-list-notes.md) | `datatsets/foreign_datasets_list.md` | Каталог собранных датасетов |
 | [helpdog-notebook-notes](sources/helpdog-notebook-notes.md) | `analytics/helpdog.ipynb` | EDA пристройств HelpDog |
@@ -67,3 +69,4 @@
 | [fomina-2024-problem-behavior-review](sources/fomina-2024-problem-behavior-review.md) | `статьи/4+RPJ+21(4)+РУ+Фомина.pdf` | Обзор 132 статей |
 | [fomina-2025-ai-pilot-study](sources/fomina-2025-ai-pilot-study.md) | `статьи/11+РПЖ+22(4)+Фомина.pdf` | CBARQ + AI, n=35 |
 | [gritsenko-2023-owner-frustration](sources/gritsenko-2023-owner-frustration.md) | `статьи/Gritsenko.pdf` | Опрос 5820 владельцев |
+| [gilchrist-2025-shelter-cbarq](sources/gilchrist-2025-shelter-cbarq.md) | `статьи/4 Gilchrist_et_al_ABC_12(1).pdf` | Shelter C-BARQ: 24 пункта, 5 факторов |

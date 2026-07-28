@@ -4,6 +4,81 @@
 
 ---
 
+## [2026-07-28] ingest | Схема БД research-ops (`_database_architecture`)
+
+**Источники:**
+- `_app_ideas/_database_architecture.md` — таблицы shelters, memberships, dogs, placement_events, consents, questionnaires, answer_events.
+- Архитектурный разбор схемы (Groups вместо custom roles; author_id; wave; provenance; domain).
+
+**Обновлены:**
+- `sources/app-ideas-notes.md` — raw_path → `_database_architecture.md` (`_main_ideas.md` удалён)
+- `concepts/research-data-app.md` — каноническая ER-схема и поля таблиц
+- `index.md`
+
+**Ключевые выводы:**
+- Placement — отдельная `placement_events`, не одно поле `adopted_at`.
+- Доступ к приюту — `shelter_memberships`; app-роли — Django Groups.
+- Анкеты: slug + global_number/domain + typed scales; answer_events append-only с value_num/text/date.
+- MVP без эксперта и без отдельного audit_log; consents обязательны (152-ФЗ).
+
+**Открытые вопросы:**
+- Нужен ли `wave` на первой поставке или хватит повторных sessions без метки дня.
+- Добавлять ли Shelter C-BARQ как отдельный questionnaire slug сразу.
+
+---
+
+## [2026-07-24] ingest | Shelter C-BARQ (Gilchrist et al. 2025)
+
+**Источники:**
+- `статьи/4 Gilchrist_et_al_ABC_12(1).pdf` — валидация адаптированного C-BARQ для собак в приюте.
+
+**Созданные страницы:**
+- `sources/gilchrist-2025-shelter-cbarq.md`
+
+**Обновлены:**
+- `concepts/c-barq.md` — добавлена версия Shelter C-BARQ (24 / 5 факторов)
+- `concepts/k3-feature-candidates.md` — приоритеты Fear / Aggression / Arousal / Excitability
+- `concepts/adoption-return.md` — связь крайних уровней черт с риском возврата
+- `index.md`
+
+**Ключевые выводы:**
+- Shelter C-BARQ: 24 пункта, 5 факторов (Fear, Arousal, Human Excitability, Dog Aggression, Human Aggression); N=445, 11 приютов; α≈0.78.
+- Не то же самое, что C-BARQ(S): другая популяция (staff в приюте vs владелец) и сценарии.
+- Фактор **Arousal** без прямого аналога в long C-BARQ; авторы связывают с overstimulation / cortisol в приюте.
+- Fear ↔ Human Aggression r=0.71 — сильная коморбидность.
+
+**Открытые вопросы:**
+- Нужна ли Shelter C-BARQ в схеме анкет research-data-app наряду с C-BARQ(S) для владельца.
+- Данные по запросу у авторов — open dataset нет.
+
+---
+
+## [2026-07-24] ingest | Идеи внутреннего research-ops приложения
+
+**Источники:**
+- `_app_ideas/_main_ideas.md` — интерфейс ввода данных для исследования; роли волонтёр/эксперт/админ; PostgreSQL; открытый вопрос по хранилищу training-данных.
+
+**Созданные страницы:**
+- `sources/app-ideas-notes.md`
+- `concepts/research-data-app.md`
+
+**Обновлены:**
+- `index.md`
+- `overview.md`
+
+**Ключевые выводы:**
+- Цель контура — наполнение БД (не owner UX / K5).
+- MVP = modular monolith: один репозиторий, один `docker compose` (`web` + `postgres` + опционально `jupyter`), пакет `ml/` без микросервисов.
+- Стек: cookiecutter-django, allauth, Groups, Django Ninja, HTMX, Admin.
+- Ops и training — логические слои в одном Postgres + файлы `data/`; ClickHouse/Mongo на MVP не нужны.
+- Анкеты: `questionnaires` + append-only `answer_events` (частичное заполнение и динамика).
+
+**Открытые вопросы:**
+- Object-level доступ «свой приют» (Groups vs django-guardian) — уточнить при первой пилотной организации.
+- Нужен ли сервис `jupyter` в compose с первого дня или достаточно локальных ноутбуков.
+
+---
+
 ## [2026-07-18] ingest | ML-заметки и C-BARQ clustering
 
 **Источники:**
