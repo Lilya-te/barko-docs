@@ -16,7 +16,6 @@ created_at
 updated_at
 
 ### dogs
-(профиль, приют; даты размещения как в HelpDog)
 id
 name
 sex
