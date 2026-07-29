@@ -2,15 +2,15 @@
 type: source
 tags: [owner-satisfaction, source, survey, ru-literature]
 sources: []
-raw_path: статьи/Gritsenko.pdf
-updated: 2026-06-09
+raw_path: статьи/russian/гриценко_2023_разочарованность_домашней_собакой.pdf
+updated: 2026-07-29
 status: ingested
 doi: 10.32743/UniChem.2023.108.6.15468
 ---
 
 # Source: Факторы разочарованности домашней собакой (Гриценко 2023)
 
-**Исходный файл:** [`статьи/Gritsenko.pdf`](../../статьи/Gritsenko.pdf)
+**Исходный файл:** [`статьи/russian/гриценко_2023_разочарованность_домашней_собакой.pdf`](../../статьи/russian/гриценко_2023_разочарованность_домашней_собакой.pdf)
 
 Гриценко В.В., Карапетьянц К.Г. (2023). Universum: химия и биология, 6(108).
 

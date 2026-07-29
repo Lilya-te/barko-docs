@@ -1,24 +1,26 @@
 ---
 type: source
-tags: [c-barq, source, plos-one, short-cbarq]
+tags: [c-barq, source, plos-one, short-cbarq, translation-available]
 sources: []
-raw_path: статьи/journal.pone.0299973.pdf
-updated: 2026-06-09
+raw_path: статьи/foreign/wilkins_2024_shortened_cbarq_validation.pdf
+updated: 2026-07-29
 status: ingested
 doi: 10.1371/journal.pone.0299973
 ---
 
 # Source: Validation of shortened C-BARQ (PLOS ONE 2024)
 
-**Исходный файл:** [`статьи/journal.pone.0299973.pdf`](../../статьи/journal.pone.0299973.pdf)
+**Исходный файл:** [`статьи/foreign/wilkins_2024_shortened_cbarq_validation.pdf`](../../статьи/foreign/wilkins_2024_shortened_cbarq_validation.pdf)
 
 Wilkins V. et al. (2024). PLOS ONE 19(4): e0299973. Dog Aging Project cohort.
 
-## Суть
+## Саммари
+
+### Суть
 
 Валидация **C-BARQ(S)** — сокращённой версии (42 пункта из 100) — через сравнение с полной C-BARQ у одних и тех же 435 пар владелец–собака (DAP, 2020).
 
-## Ключевые цифры
+### Ключевые цифры
 
 | Параметр | Значение |
 |----------|----------|
@@ -27,7 +29,7 @@ Wilkins V. et al. (2024). PLOS ONE 19(4): e0299973. Dog Aging Project cohort.
 | Kappa (item-level) | fair–moderate (0.23–0.58) |
 | Pearson r (domain means) | **>0.60 для 12 из 14 доменов** + miscellaneous |
 
-## Домены с сильной корреляцией (r)
+### Домены с сильной корреляцией (r)
 
 | Домен | Pearson r |
 |-------|----------:|
@@ -44,15 +46,19 @@ Wilkins V. et al. (2024). PLOS ONE 19(4): e0299973. Dog Aging Project cohort.
 | Excitability | 0.57 |
 | Owner-directed aggression | 0.52 |
 
-## Выводы для Barko
+### Выводы для Barko
 
 - **C-BARQ(S) валиден** как замена полной версии для скрининга — релевантно для MVP-анкеты Barko.
 - **Separation-related behavior** — подтверждённый домен для short/full mapping; кандидат признака K3.
 - Supplementary CSV (`pone.0299973.s001.csv`) — open dataset, см. [plos-one-2024-short-cbarq](../datasets/plos-one-2024-short-cbarq.md).
 - Ограничение: выборка DAP (self-selected), лето 2020 (COVID lockdowns).
 
-## Интегрировано в вики
+### Интегрировано в вики
 
 - [c-barq](../concepts/c-barq.md)
 - [plos-one-2024-short-cbarq](../datasets/plos-one-2024-short-cbarq.md)
 - [k3-feature-candidates](../concepts/k3-feature-candidates.md)
+
+## Полный перевод
+
+[Открыть полный русский перевод](../../статьи/foreign/translations/wilkins_2024_shortened_cbarq_validation_ru.md). Перевод вынесен из wiki, чтобы curated-слой оставался компактным.

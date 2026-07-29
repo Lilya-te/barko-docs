@@ -13,6 +13,11 @@ description:
 alwaysApply: true
 ---
 
+---
+description: 
+alwaysApply: true
+---
+
 # Barko LLM Wiki — Schema
 
 Этот репозиторий — персональная knowledge base проекта **Barko** (адаптация собак, C-BARQ, ML-компоненты K3/K5/K6). Агент поддерживает слой `wiki/`; сырые источники не изменяет.

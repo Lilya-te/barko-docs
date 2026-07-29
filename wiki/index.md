@@ -65,9 +65,12 @@
 | [foreign-datasets-list-notes](sources/foreign-datasets-list-notes.md) | `analytics/research/datatsets/foreign_datasets_list.md` | Каталог собранных датасетов |
 | [helpdog-notebook-notes](sources/helpdog-notebook-notes.md) | `analytics/helpdog_forum/helpdog.ipynb` | EDA пристройств HelpDog |
 | [cbarq-clustering-notebooks](sources/cbarq-clustering-notebooks.md) | `analytics/research/notebooks/11,12,21_*.ipynb` | KMeans/GMM кластеризация доменных шкал Padova |
-| [plos-one-2024-short-cbarq-validation](sources/plos-one-2024-short-cbarq-validation.md) | `статьи/journal.pone.0299973.pdf` | Валидация C-BARQ(S), 435 собак |
-| [fomina-2024-problem-behavior-review](sources/fomina-2024-problem-behavior-review.md) | `статьи/4+RPJ+21(4)+РУ+Фомина.pdf` | Обзор 132 статей |
-| [fomina-2025-ai-pilot-study](sources/fomina-2025-ai-pilot-study.md) | `статьи/11+РПЖ+22(4)+Фомина.pdf` | CBARQ + AI, n=35 |
-| [gritsenko-2023-owner-frustration](sources/gritsenko-2023-owner-frustration.md) | `статьи/Gritsenko.pdf` | Опрос 5820 владельцев |
-| [gilchrist-2025-shelter-cbarq](sources/gilchrist-2025-shelter-cbarq.md) | `статьи/4 Gilchrist_et_al_ABC_12(1).pdf` | Shelter C-BARQ: 24 пункта, 5 факторов |
-| [bohland-2023-shelter-dog-behavior-ru](sources/bohland-2023-shelter-dog-behavior-ru.md) | `статьи/Shelter dog behavior after adoption_…pdf` | Полный русский перевод: динамика C-BARQ за 180 дней после пристройства |
+| [plos-one-2024-short-cbarq-validation](sources/plos-one-2024-short-cbarq-validation.md) | `статьи/foreign/wilkins_2024_shortened_cbarq_validation.pdf` | Саммари: валидация C-BARQ(S), 435 собак; [перевод](../статьи/foreign/translations/wilkins_2024_shortened_cbarq_validation_ru.md) |
+| [fomina-2024-problem-behavior-review](sources/fomina-2024-problem-behavior-review.md) | `статьи/russian/фомина_2024_проблемное_поведение_собак.pdf` | Обзор 132 статей |
+| [fomina-2025-ai-pilot-study](sources/fomina-2025-ai-pilot-study.md) | `статьи/russian/фомина_2025_ии_анализ_поведения.pdf` | CBARQ + AI, n=35 |
+| [gritsenko-2023-owner-frustration](sources/gritsenko-2023-owner-frustration.md) | `статьи/russian/гриценко_2023_разочарованность_домашней_собакой.pdf` | Опрос 5820 владельцев |
+| [gilchrist-2025-shelter-cbarq](sources/gilchrist-2025-shelter-cbarq.md) | `статьи/foreign/gilchrist_2025_cbarq_for_shelter_dogs.pdf` | Саммари: Shelter C-BARQ, 24 пункта, 5 факторов; [перевод](../статьи/foreign/translations/gilchrist_2025_cbarq_for_shelter_dogs_ru.md) |
+| [bohland-2023-shelter-dog-behavior-ru](sources/bohland-2023-shelter-dog-behavior-ru.md) | `статьи/foreign/bohland_2023_shelter_behavior_after_adoption.pdf` | Саммари: динамика C-BARQ за 180 дней; [перевод](../статьи/foreign/translations/bohland_2023_shelter_behavior_after_adoption_ru.md) |
+| [powell-2021-deception-or-knowledge](sources/powell-2021-deception-or-knowledge.md) | `статьи/foreign/powell_2021_deception_or_knowledge.pdf` | Саммари: восприятие поведения при передаче собаки; [перевод](../статьи/foreign/translations/powell_2021_deception_or_knowledge_ru.md) |
+| [powell-2022-shelter-dog-returns-ru](sources/powell-2022-shelter-dog-returns-ru.md) | `статьи/foreign/powell_2022_returning_a_shelter_dog.pdf` | Саммари: ожидания владельца и возврат собаки; [перевод](../статьи/foreign/translations/powell_2022_returning_a_shelter_dog_ru.md) |
+| [shabelansky-2016-excitable-dog-behavior-ru](sources/shabelansky-2016-excitable-dog-behavior-ru.md) | `статьи/foreign/shabelansky_2016_excitable_dog_behavior.pdf` | Саммари: возбудимое поведение собак; [перевод](../статьи/foreign/translations/shabelansky_2016_excitable_dog_behavior_ru.md) |
