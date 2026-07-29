@@ -70,3 +70,4 @@
 | [fomina-2025-ai-pilot-study](sources/fomina-2025-ai-pilot-study.md) | `статьи/11+РПЖ+22(4)+Фомина.pdf` | CBARQ + AI, n=35 |
 | [gritsenko-2023-owner-frustration](sources/gritsenko-2023-owner-frustration.md) | `статьи/Gritsenko.pdf` | Опрос 5820 владельцев |
 | [gilchrist-2025-shelter-cbarq](sources/gilchrist-2025-shelter-cbarq.md) | `статьи/4 Gilchrist_et_al_ABC_12(1).pdf` | Shelter C-BARQ: 24 пункта, 5 факторов |
+| [bohland-2023-shelter-dog-behavior-ru](sources/bohland-2023-shelter-dog-behavior-ru.md) | `статьи/Shelter dog behavior after adoption_…pdf` | Полный русский перевод: динамика C-BARQ за 180 дней после пристройства |

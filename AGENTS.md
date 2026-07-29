@@ -1,3 +1,18 @@
+---
+description: 
+alwaysApply: true
+---
+
+---
+description: 
+alwaysApply: true
+---
+
+---
+description: 
+alwaysApply: true
+---
+
 # Barko LLM Wiki — Schema
 
 Этот репозиторий — персональная knowledge base проекта **Barko** (адаптация собак, C-BARQ, ML-компоненты K3/K5/K6). Агент поддерживает слой `wiki/`; сырые источники не изменяет.
@@ -6,7 +21,7 @@
 
 | Слой | Путь | Правило |
 |------|------|---------|
-| Raw sources | `raw/`, `статьи/`, `datatsets/`, `analytics/` | Только чтение. Не редактировать PDF, CSV, ноутбуки. |
+| Raw sources | `raw/`, `статьи/`, `datatsets/` | Только чтение. Не редактировать PDF, CSV, ноутбуки. |
 | Wiki | `wiki/` | Агент создаёт и обновляет markdown-страницы. |
 | Schema | `AGENTS.md` | Этот файл — конвенции и workflow. |
 
@@ -72,10 +87,10 @@ status: draft | stable | superseded
 
 - **В scope:** Barko MVP, C-BARQ, датасеты, ML baseline, K5 RAG, гуманная кинология.
 - **Вне scope (по умолчанию):** `ds_managment/` — учебные материалы; не смешивать с продуктовой вики без явного запроса.
-- **analytics/:** артефакты экспериментов; выводы из ноутбуков переносить в `wiki/ml/`, файлы не трогать.
+- **analytics/:** артефакты экспериментов; выводы из ноутбуков переносить в `wiki/ml/`, файлы .ipynb изменять по запросу после построения плана действий
 
 ## Связь с продуктом
 
 - **K3:** признаки, таргет, модели → `wiki/components/k3-risk-prediction.md`, `wiki/ml/`.
 - **K5:** экспертная база для RAG строится из `wiki/` (curated), не напрямую из PDF.
-- **K6:** roadmap; страница есть, но MVP не реализуется.
+- **K6:** roadmap; страница есть, но в MVP не реализуется.
