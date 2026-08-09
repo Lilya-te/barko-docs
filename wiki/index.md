@@ -65,6 +65,7 @@
 | [foreign-datasets-list-notes](sources/foreign-datasets-list-notes.md) | `analytics/research/datatsets/foreign_datasets_list.md` | Каталог собранных датасетов |
 | [helpdog-notebook-notes](sources/helpdog-notebook-notes.md) | `analytics/helpdog_forum/helpdog.ipynb` | EDA пристройств HelpDog |
 | [cbarq-clustering-notebooks](sources/cbarq-clustering-notebooks.md) | `analytics/research/notebooks/11,12,21_*.ipynb` | KMeans/GMM кластеризация доменных шкал Padova |
+| [duffy-2014-shelter-relinquishment-cbarq](sources/duffy-2014-shelter-relinquishment-cbarq.md) | `статьи/foreign/duffy_2014_behavioral_assessment_relinquished_dogs.pdf` | Саммари: C-BARQ(S) при передаче собаки в приют; [перевод](../статьи/foreign/translations/duffy_2014_behavioral_assessment_relinquished_dogs_ru.md) |
 | [plos-one-2024-short-cbarq-validation](sources/plos-one-2024-short-cbarq-validation.md) | `статьи/foreign/wilkins_2024_shortened_cbarq_validation.pdf` | Саммари: валидация C-BARQ(S), 435 собак; [перевод](../статьи/foreign/translations/wilkins_2024_shortened_cbarq_validation_ru.md) |
 | [fomina-2024-problem-behavior-review](sources/fomina-2024-problem-behavior-review.md) | `статьи/russian/фомина_2024_проблемное_поведение_собак.pdf` | Обзор 132 статей |
 | [fomina-2025-ai-pilot-study](sources/fomina-2025-ai-pilot-study.md) | `статьи/russian/фомина_2025_ии_анализ_поведения.pdf` | CBARQ + AI, n=35 |

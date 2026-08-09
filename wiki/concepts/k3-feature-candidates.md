@@ -1,8 +1,8 @@
 ---
 type: concept
 tags: [k3, features, c-barq, synthesis]
-sources: [plos-one-2024-short-cbarq-validation, fomina-2024-problem-behavior-review, fomina-2025-ai-pilot-study, gritsenko-2023-owner-frustration, gilchrist-2025-shelter-cbarq]
-updated: 2026-07-24
+sources: [duffy-2014-shelter-relinquishment-cbarq, plos-one-2024-short-cbarq-validation, fomina-2024-problem-behavior-review, fomina-2025-ai-pilot-study, gritsenko-2023-owner-frustration, gilchrist-2025-shelter-cbarq]
+updated: 2026-08-09
 status: draft
 ---
 
@@ -52,8 +52,10 @@ status: draft
 
 ## MVP-анкета
 
-- **Владелец:** **C-BARQ(S)** — 42 пункта, валидирован (PLOS ONE 2024); [plos-one-2024-short-cbarq](../datasets/plos-one-2024-short-cbarq.md).
+- **Владелец:** **C-BARQ(S)** — 42 пункта; shelter-intake evidence в [Duffy 2014](../sources/duffy-2014-shelter-relinquishment-cbarq.md), short/full validation в [PLOS ONE 2024](../datasets/plos-one-2024-short-cbarq.md).
 - **Приют / research-ops:** **Shelter C-BARQ** — 24 пункта, 5 факторов (Gilchrist 2025).
+
+Для intake C-BARQ(S) наиболее устойчивый cross-context сигнал — **stranger-directed aggression**: он согласовывался со staff assessment, исходом в приюте и оценкой нового владельца. Исход `euthanasia` нельзя использовать как чистый поведенческий target, поскольку он зависит от политики и ресурсов приюта.
 
 ## Следующий шаг
 

@@ -370,3 +370,25 @@
 - 69,3% отдающих владельцев при прямом вопросе не признавали проблем поведения, хотя mini C-BARQ показывал менее благоприятный профиль большинства шкал.
 - Конфиденциальность ответов не объясняла расхождение, что не поддерживает гипотезу намеренного обмана.
 - Для K3 и K5 конкретные контекстные вопросы надёжнее общего вопроса о наличии «проблемного поведения».
+
+---
+
+## [2026-08-09] ingest | Duffy et al. 2014 — C-BARQ(S) при передаче собаки
+
+**Источник:**
+- `статьи/foreign/duffy_2014_behavioral_assessment_relinquished_dogs.pdf`
+- DOI: `10.1016/j.prevetmed.2014.10.003`
+
+**Создано:**
+- `sources/duffy-2014-shelter-relinquishment-cbarq.md` — компактное саммари.
+- `статьи/foreign/translations/duffy_2014_behavioral_assessment_relinquished_dogs_ru.md` — полный русский перевод.
+
+**Обновлено:**
+- `concepts/c-barq.md`
+- `concepts/k3-feature-candidates.md`
+- `index.md`
+
+**Ключевые выводы:**
+- 42-пунктовый C-BARQ(S) согласовывался со staff assessment агрессии и различал outcomes adoption/euthanasia.
+- После множественной поправки наиболее устойчивым признаком была stranger-directed aggression.
+- Большинство intake-оценок слабо переносилось на post-adoption контекст; профиль следует обновлять повторными измерениями.

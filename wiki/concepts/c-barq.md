@@ -1,8 +1,8 @@
 ---
 type: concept
 tags: [c-barq, behavior, questionnaire]
-sources: [data-ideas-notes, ml-ideas-notes, plos-one-2024-short-cbarq-validation, gilchrist-2025-shelter-cbarq]
-updated: 2026-07-24
+sources: [data-ideas-notes, ml-ideas-notes, duffy-2014-shelter-relinquishment-cbarq, plos-one-2024-short-cbarq-validation, gilchrist-2025-shelter-cbarq]
+updated: 2026-08-09
 status: stable
 ---
 
@@ -28,10 +28,14 @@ status: stable
 | Версия | Пунктов | Доменов / факторов | Примечание |
 |--------|--------:|--------------------|------------|
 | Long C-BARQ | 100 | 14 + misc | Стандарт Serpell/Hsu |
-| **C-BARQ(S)** | 42 | 14 + misc | Short для владельцев; валидирован PLOS ONE 2024 |
+| **C-BARQ(S)** | 42 | 14 + misc | Short для владельцев; shelter-intake Duffy 2014, short/full validation PLOS ONE 2024 |
 | **Shelter C-BARQ** | 24 | **5 факторов** | Для staff в приюте; Gilchrist et al. 2025 |
 
-См. [plos-one-2024-short-cbarq-validation](../sources/plos-one-2024-short-cbarq-validation.md) и [gilchrist-2025-shelter-cbarq](../sources/gilchrist-2025-shelter-cbarq.md).
+См. [duffy-2014-shelter-relinquishment-cbarq](../sources/duffy-2014-shelter-relinquishment-cbarq.md), [plos-one-2024-short-cbarq-validation](../sources/plos-one-2024-short-cbarq-validation.md) и [gilchrist-2025-shelter-cbarq](../sources/gilchrist-2025-shelter-cbarq.md).
+
+### C-BARQ(S) при передаче собаки в приют
+
+Duffy et al. (2014) показали, что owner-report C-BARQ(S) согласуется с независимой staff assessment агрессии и различает исходы adoption/euthanasia. После множественной поправки наиболее устойчивым признаком была stranger-directed aggression. Согласованность с оценкой нового владельца через два месяца сохранилась только для stranger-directed aggression, inappropriate chewing и urination when left alone, поэтому intake-профиль нельзя считать неизменной характеристикой собаки.
 
 ### Shelter C-BARQ (5 факторов)
 
