@@ -392,3 +392,95 @@
 - 42-пунктовый C-BARQ(S) согласовывался со staff assessment агрессии и различал outcomes adoption/euthanasia.
 - После множественной поправки наиболее устойчивым признаком была stranger-directed aggression.
 - Большинство intake-оценок слабо переносилось на post-adoption контекст; профиль следует обновлять повторными измерениями.
+
+---
+
+## [2026-08-12] ingest | Переименование и каталогизация зарубежных датасетов
+
+**Переименовано:**
+- `2017_wolfram.csv` → `ghirlanda_2013_cbarq_survey_domain_scales_wolfram.csv`.
+- `CBARQ.dat` → `ghirlanda_2013_cbarq_survey_domain_scales_figshare.dat`.
+- `Dataset_CBARQ.xlsx` → `broseghini_2023_cbarq_italian_validation_responses.xlsx`.
+- `journal.pone.0289356.s004.csv` → `bohland_2023_shelter_behavior_after_adoption_supplement_s4.csv`.
+- `pone.0299973.s001.csv` → `wilkins_2024_shortened_cbarq_validation_supplement_s1.csv`.
+- `260206 Shared open access - Doodle - Behaviour data_.xlsx` →
+  `bryson_2026_doodle_crossbreed_behaviour_responses.xlsx`.
+- Служебная заметка `Untitled` получила описательное имя и актуальную ссылку.
+
+**Без переименования:**
+- `md1_data/manydogs_etal_2024_data.csv` и codebook уже названы по публикации;
+  upstream-имена сохранены для воспроизводимости вложенного репозитория.
+
+**Создано:**
+- `datasets/bohland-2023-shelter-adoption-cbarq.md`.
+- `datasets/bryson-2026-doodle-crossbreed-behaviour.md`.
+
+**Обновлено:**
+- Пути в dataset/source pages, сводном каталоге, data harmonization и `index.md`.
+- Notebook `03_shelter_dogs_cbarq_data.ipynb` переведён на новое имя Bohland S4.
+
+**Ключевые уточнения:**
+- Wolfram и Figshare — два представления одного Ghirlanda 2013 data deposit,
+  а не самостоятельные статьи; суффиксы сохраняют происхождение выгрузки.
+- Bohland S4 содержит 505 строк export, но только 99 собак и повторные волны.
+- Bryson 2026 добавлен как крупный item-level источник; до ML-использования
+  нужны проверка codebook и лицензии.
+
+---
+
+## [2026-08-12] ingest | Gates et al. 2018 — проблемное поведение после пристройства
+
+**Источник:**
+- `статьи/foreign/gates_2018_post_adoption_problem_behaviours.pdf`
+- прежнее имя: `animals-08-00093.pdf`
+- DOI: `10.3390/ani8060093`
+
+**Создано:**
+- `sources/gates-2018-post-adoption-problem-behaviours.md` — компактное саммари.
+- `статьи/foreign/translations/gates_2018_post_adoption_problem_behaviours_ru.md`
+  — полный русский перевод основного текста, пяти таблиц и списка литературы.
+
+**Обновлено:**
+- `concepts/adoption-return.md`
+- `components/k3-risk-prediction.md`
+- `components/k5-ai-chat.md`
+- `index.md`
+
+**Ключевые выводы:**
+- У 70% из 57 собак отмечалось хотя бы одно проблемное поведение, но 87%
+  владельцев были не обеспокоены или обеспокоены лишь немного.
+- Агрессия была связана с более высокой обеспокоенностью владельцев (`p = 0,012`).
+- Возврат в исходный приют — неполный label: альтернативное перепристройство и
+  исходы среди неответивших могут не фиксироваться.
+- Цифровая поддержка после пристройства соответствует рекомендациям авторов
+  и может снижать ресурсную стоимость сопровождения.
+
+---
+
+## [2026-08-12] ingest | Vitulová et al. 2018 — поведение собак после пристройства
+
+**Источник:**
+- `статьи/foreign/vitulova_2018_adopted_shelter_dog_behaviour.pdf`
+- прежнее имя: `Behaviour_of_dogs_adopted_from_an_animal_shelter.pdf`
+- DOI: `10.2754/avb201887020155`
+
+**Создано:**
+- `sources/vitulova-2018-adopted-shelter-dog-behaviour.md` — компактное саммари.
+- `статьи/foreign/translations/vitulova_2018_adopted_shelter_dog_behaviour_ru.md`
+  — полный русский перевод с тремя таблицами, расшифровкой рисунка и литературой.
+
+**Обновлено:**
+- `concepts/k3-feature-candidates.md`
+- `concepts/adoption-return.md`
+- `components/k3-risk-prediction.md`
+- `components/k5-ai-chat.md`
+- `index.md`
+
+**Ключевые выводы:**
+- В первую неделю поведенческие проблемы отмечались у 71,9% из 192 собак.
+- Через шесть месяцев пугливость снизилась с 61% до 20%, а общительность
+  выросла с 56% до 93%; агрессивность значимо не изменилась.
+- Документированная история жестокого обращения была связана с более частым
+  проблемным поведением, но исследование наблюдательное и owner-reported.
+- Для Barko нужны повторные измерения: ранний страх не следует считать устойчивым
+  профилем, тогда как агрессия требует ранней safety-маршрутизации.

@@ -1,6 +1,6 @@
 # Barko Wiki — Index
 
-Каталог страниц knowledge base. Обновлён: 2026-07-28 (реорганизация путей к источникам).
+Каталог страниц knowledge base. Обновлён: 2026-08-12 (переименование и каталогизация датасетов).
 
 ## Overview
 
@@ -42,6 +42,8 @@
 | [padova-cbarq-column-dictionary](datasets/padova-cbarq-column-dictionary.md) | Словарь колонок Padova: перевод IT→EN и `@nn`→`question_nnn` |
 | [manydogs-md1](datasets/manydogs-md1.md) | ManyDogs 1 — 705 строк, частичный C-BARQ |
 | [plos-one-2024-short-cbarq](datasets/plos-one-2024-short-cbarq.md) | PLOS ONE 2024 — ~435 собак, short/full C-BARQ |
+| [bohland-2023-shelter-adoption-cbarq](datasets/bohland-2023-shelter-adoption-cbarq.md) | Bohland 2023 — 505 строк, 99 собак, четыре post-adoption волны |
+| [bryson-2026-doodle-crossbreed-behaviour](datasets/bryson-2026-doodle-crossbreed-behaviour.md) | Bryson 2026 — ~9 456 item-level C-BARQ записей |
 | [helpdog-forum-adoptions](datasets/helpdog-forum-adoptions.md) | HelpDog — 90 собак, история пристройств и возвратов |
 
 ## ML
@@ -72,6 +74,8 @@
 | [gritsenko-2023-owner-frustration](sources/gritsenko-2023-owner-frustration.md) | `статьи/russian/гриценко_2023_разочарованность_домашней_собакой.pdf` | Опрос 5820 владельцев |
 | [gilchrist-2025-shelter-cbarq](sources/gilchrist-2025-shelter-cbarq.md) | `статьи/foreign/gilchrist_2025_cbarq_for_shelter_dogs.pdf` | Саммари: Shelter C-BARQ, 24 пункта, 5 факторов; [перевод](../статьи/foreign/translations/gilchrist_2025_cbarq_for_shelter_dogs_ru.md) |
 | [bohland-2023-shelter-dog-behavior-ru](sources/bohland-2023-shelter-dog-behavior-ru.md) | `статьи/foreign/bohland_2023_shelter_behavior_after_adoption.pdf` | Саммари: динамика C-BARQ за 180 дней; [перевод](../статьи/foreign/translations/bohland_2023_shelter_behavior_after_adoption_ru.md) |
+| [gates-2018-post-adoption-problem-behaviours](sources/gates-2018-post-adoption-problem-behaviours.md) | `статьи/foreign/gates_2018_post_adoption_problem_behaviours.pdf` | Саммари: проблемное поведение и обеспокоенность владельцев после пристройства; [перевод](../статьи/foreign/translations/gates_2018_post_adoption_problem_behaviours_ru.md) |
+| [vitulova-2018-adopted-shelter-dog-behaviour](sources/vitulova-2018-adopted-shelter-dog-behaviour.md) | `статьи/foreign/vitulova_2018_adopted_shelter_dog_behaviour.pdf` | Саммари: страх, общительность и агрессия в первую неделю и через шесть месяцев; [перевод](../статьи/foreign/translations/vitulova_2018_adopted_shelter_dog_behaviour_ru.md) |
 | [powell-2021-deception-or-knowledge](sources/powell-2021-deception-or-knowledge.md) | `статьи/foreign/powell_2021_deception_or_knowledge.pdf` | Саммари: восприятие поведения при передаче собаки; [перевод](../статьи/foreign/translations/powell_2021_deception_or_knowledge_ru.md) |
 | [powell-2022-shelter-dog-returns-ru](sources/powell-2022-shelter-dog-returns-ru.md) | `статьи/foreign/powell_2022_returning_a_shelter_dog.pdf` | Саммари: ожидания владельца и возврат собаки; [перевод](../статьи/foreign/translations/powell_2022_returning_a_shelter_dog_ru.md) |
 | [shabelansky-2016-excitable-dog-behavior-ru](sources/shabelansky-2016-excitable-dog-behavior-ru.md) | `статьи/foreign/shabelansky_2016_excitable_dog_behavior.pdf` | Саммари: возбудимое поведение собак; [перевод](../статьи/foreign/translations/shabelansky_2016_excitable_dog_behavior_ru.md) |

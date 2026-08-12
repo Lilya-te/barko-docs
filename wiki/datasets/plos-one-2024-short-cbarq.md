@@ -2,8 +2,8 @@
 type: dataset
 tags: [c-barq, collected, k3, plos-one, raw-responses]
 sources: [foreign-datasets-list-notes, data-ideas-notes, plos-one-2024-short-cbarq-validation]
-raw_file: analytics/research/datatsets/foreign/pone.0299973.s001.csv
-updated: 2026-07-28
+raw_file: analytics/research/datatsets/foreign/wilkins_2024_shortened_cbarq_validation_supplement_s1.csv
+updated: 2026-08-12
 status: stable
 cbarq_coverage: full
 rows: 435
@@ -18,7 +18,7 @@ Supplementary data к статье о валидации сокращённой 
 
 | Параметр | Значение |
 |----------|----------|
-| Файл | `pone.0299973.s001.csv` |
+| Файл | `wilkins_2024_shortened_cbarq_validation_supplement_s1.csv` |
 | Строк | ~435 (из [data-ideas-notes](../sources/data-ideas-notes.md)) |
 | Формат | CSV (supplementary data) |
 | C-BARQ | Полностью (полная + сокращённая версия) |
@@ -40,7 +40,8 @@ Supplementary data к статье о валидации сокращённой 
 ## Валидация (PLOS ONE 2024)
 
 - DOI: [10.1371/journal.pone.0299973](https://doi.org/10.1371/journal.pone.0299973)
-- Supplementary: `pone.0299973.s001.csv`
+- Локальный файл: `wilkins_2024_shortened_cbarq_validation_supplement_s1.csv`
+- Официальное имя supplementary S1: `pone.0299973.s001.csv`
 - Ключевые домены для K3: separation-related (r=0.68), stranger-directed fear (0.81), aggression (0.77)
 
 ## Заметки для harmonization

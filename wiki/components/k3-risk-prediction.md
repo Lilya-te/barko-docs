@@ -1,8 +1,8 @@
 ---
 type: component
 tags: [k3, ml, mvp, adaptation]
-sources: [ml-ideas-notes, helpdog-notebook-notes, plos-one-2024-short-cbarq-validation, fomina-2024-problem-behavior-review, fomina-2025-ai-pilot-study, gritsenko-2023-owner-frustration]
-updated: 2026-07-18
+sources: [ml-ideas-notes, helpdog-notebook-notes, plos-one-2024-short-cbarq-validation, fomina-2024-problem-behavior-review, fomina-2025-ai-pilot-study, gritsenko-2023-owner-frustration, gates-2018-post-adoption-problem-behaviours, vitulova-2018-adopted-shelter-dog-behaviour]
+updated: 2026-08-12
 status: draft
 ---
 
@@ -29,7 +29,8 @@ K5 может передавать в анкету сведения, явно с
 ### Признаки (features)
 
 - Профиль собаки + ответы анкеты (C-BARQ и производные).
-- C-BARQ источники: 5 собранных датасетов — [collected-datasets-catalog](../datasets/collected-datasets-catalog.md).
+- C-BARQ источники: собранные датасеты перечислены в
+  [collected-datasets-catalog](../datasets/collected-datasets-catalog.md).
 
 ### Таргет (label) — кандидат
 
@@ -39,6 +40,7 @@ K5 может передавать в анкету сведения, явно с
 |----------------|------:|--------|
 | HelpDog (`back_shelter_at`) | 46 пристроенных, 26 возвратов | Кандидат, `draft` |
 | C-BARQ proxy (поведенческие риски) | TBD | Для train baseline |
+| Устойчивые проблемы + обеспокоенность владельца | TBD | Дополнительный outcome; обоснование у [Gates 2018](../sources/gates-2018-post-adoption-problem-behaviours.md) |
 
 ### Ограничения
 

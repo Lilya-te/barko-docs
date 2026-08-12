@@ -2,7 +2,7 @@
 type: concept
 tags: [c-barq, data, harmonization, k3]
 sources: [ml-ideas-notes, data-ideas-notes, foreign-datasets-list-notes, cbarq-clustering-notebooks]
-updated: 2026-07-18
+updated: 2026-08-12
 status: draft
 ---
 
@@ -44,6 +44,8 @@ status: draft
 | Padova | 807 | Item-level (IT) | [padova-cbarq-italian](../datasets/padova-cbarq-italian.md) |
 | ManyDogs | 705 | Частичный cbarq_* | [manydogs-md1](../datasets/manydogs-md1.md) |
 | PLOS ONE 2024 | ~435 | Item-level (short+full) | [plos-one-2024-short-cbarq](../datasets/plos-one-2024-short-cbarq.md) |
+| Bohland 2023 | 505 строк / 99 собак | Longitudinal C-BARQ(S) | [bohland-2023-shelter-adoption-cbarq](../datasets/bohland-2023-shelter-adoption-cbarq.md) |
+| Bryson 2026 | ~9 456 | Item-level | [bryson-2026-doodle-crossbreed-behaviour](../datasets/bryson-2026-doodle-crossbreed-behaviour.md) |
 
 Сводка: [collected-datasets-catalog](../datasets/collected-datasets-catalog.md).
 
@@ -73,5 +75,7 @@ status: draft
 - [ ] Дедупликация Wolfram ↔ Figshare (12 060 vs 12 061 строк).
 - [~] Агрегация Padova item-level → 13 доменных шкал выполнена на рабочем срезе из 775 собак; нужно зафиксировать воспроизводимый mapping и обработку пропусков.
 - [ ] Агрегация PLOS item-level → доменные шкалы.
+- [ ] Нормализация Bohland в `dog × wave` и group split по собаке.
+- [ ] Проверка codebook и лицензии Bryson.
 - [ ] Стратегия обработки пропусков и разных шкал.
 - [ ] Формула таргета для K3 на harmonized данных.

@@ -2,8 +2,8 @@
 type: dataset
 tags: [c-barq, collected, k3, padova, raw-responses]
 sources: [foreign-datasets-list-notes]
-raw_file: analytics/research/datatsets/foreign/Dataset_CBARQ.xlsx
-updated: 2026-07-28
+raw_file: analytics/research/datatsets/foreign/broseghini_2023_cbarq_italian_validation_responses.xlsx
+updated: 2026-08-12
 status: stable
 cbarq_coverage: full
 rows: 807
@@ -18,13 +18,13 @@ format: xlsx
 
 | Параметр | Значение |
 |----------|----------|
-| Файл | `Dataset_CBARQ.xlsx` |
+| Файл | `broseghini_2023_cbarq_italian_validation_responses.xlsx` |
 | Строк | 807 |
 | Размер | ~0.37 MB |
 | Формат | Excel |
 | C-BARQ | Полностью (item-level, итальянская версия) |
 | Источник | [University of Padova CAB Research Data](https://researchdata.cab.unipd.it/808/) |
-| Публикация | Validation of the Italian translation of C-BARQ |
+| Публикация | Broseghini et al. (2023), Validation of the Italian translation of C-BARQ |
 
 ## Ключевые поля
 

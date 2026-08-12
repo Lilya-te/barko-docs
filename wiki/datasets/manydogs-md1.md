@@ -3,7 +3,7 @@ type: dataset
 tags: [c-barq, collected, k3, manydogs, partial]
 sources: [foreign-datasets-list-notes]
 raw_file: analytics/research/datatsets/foreign/md1_data/manydogs_etal_2024_data.csv
-updated: 2026-07-28
+updated: 2026-08-12
 status: stable
 cbarq_coverage: partial
 rows: 705
@@ -25,6 +25,10 @@ format: csv
 | Размер папки | ~3.73 MB |
 | C-BARQ | Частично |
 | DOI | [10.5334/jopd.109](https://doi.org/10.5334/jopd.109) |
+
+Имена файлов `manydogs_etal_2024_data.csv` и `manydogs_etal_2024_codebook.csv`
+уже соответствуют публикации и сохранены без изменений, чтобы не ломать
+воспроизводимые материалы вложенного upstream-репозитория.
 
 ## Структура данных
 

@@ -1,8 +1,8 @@
 ---
 type: component
 tags: [k5, llm, rag, mvp, safety]
-sources: [ml-ideas-notes, fomina-2024-problem-behavior-review, gritsenko-2023-owner-frustration]
-updated: 2026-06-09
+sources: [ml-ideas-notes, fomina-2024-problem-behavior-review, gritsenko-2023-owner-frustration, gates-2018-post-adoption-problem-behaviours, vitulova-2018-adopted-shelter-dog-behaviour]
+updated: 2026-08-12
 status: draft
 ---
 
@@ -48,6 +48,8 @@ status: draft
 | Типы привязанности | [owner-dog-attachment](../concepts/owner-dog-attachment.md) |
 | Разочарованность владельца, агрессия, возбудимость | [gritsenko-2023](../sources/gritsenko-2023-owner-frustration.md) |
 | Проблемное vs нежелательное поведение | [problem-behavior-taxonomy](../concepts/problem-behavior-taxonomy.md) |
+| Цифровая post-adoption поддержка, обучение и red flags | [gates-2018](../sources/gates-2018-post-adoption-problem-behaviours.md) |
+| Ранняя адаптация: страх может снижаться, агрессия требует эскалации | [vitulova-2018](../sources/vitulova-2018-adopted-shelter-dog-behaviour.md) |
 
 ## Идея multi-model pipeline
 

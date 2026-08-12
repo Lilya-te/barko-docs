@@ -3,7 +3,7 @@ type: source
 tags: [c-barq, shelter-dogs, adoption, behavior, longitudinal-study, translation-available]
 sources: []
 raw_path: статьи/foreign/bohland_2023_shelter_behavior_after_adoption.pdf
-updated: 2026-07-29
+updated: 2026-08-12
 status: ingested
 doi: 10.1371/journal.pone.0289356
 ---
@@ -29,3 +29,7 @@ doi: 10.1371/journal.pone.0289356
 ## Полный перевод
 
 [Открыть полный русский перевод](../../статьи/foreign/translations/bohland_2023_shelter_behavior_after_adoption_ru.md). Перевод вынесен из wiki, чтобы curated-слой оставался компактным.
+
+## Данные
+
+[Supplementary S4: лонгитюдные ответы C-BARQ](../datasets/bohland-2023-shelter-adoption-cbarq.md).

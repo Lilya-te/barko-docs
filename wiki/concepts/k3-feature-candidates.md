@@ -1,8 +1,8 @@
 ---
 type: concept
 tags: [k3, features, c-barq, synthesis]
-sources: [duffy-2014-shelter-relinquishment-cbarq, plos-one-2024-short-cbarq-validation, fomina-2024-problem-behavior-review, fomina-2025-ai-pilot-study, gritsenko-2023-owner-frustration, gilchrist-2025-shelter-cbarq]
-updated: 2026-08-09
+sources: [duffy-2014-shelter-relinquishment-cbarq, plos-one-2024-short-cbarq-validation, fomina-2024-problem-behavior-review, fomina-2025-ai-pilot-study, gritsenko-2023-owner-frustration, gilchrist-2025-shelter-cbarq, vitulova-2018-adopted-shelter-dog-behaviour]
+updated: 2026-08-12
 status: draft
 ---
 
@@ -48,6 +48,8 @@ status: draft
 | Тип привязанности владелец–собака | [fomina-2024](sources/fomina-2024-problem-behavior-review.md) | Контекст, возможно не в MVP |
 | Ранняя социализация | fomina-2024 | Анкета Barko / будущие features |
 | Нейротизм владельца | fomina-2024 | K5 / рекомендации, не K3 baseline |
+| Время после пристройства | [Vitulová 2018](../sources/vitulova-2018-adopted-shelter-dog-behaviour.md) | Обязательный контекст: страх 61% → 20%, общительность 56% → 93% за 6 месяцев |
+| Документированная история жестокого обращения | [Vitulová 2018](../sources/vitulova-2018-adopted-shelter-dog-behaviour.md) | Контекстный risk factor; не использовать детерминированно |
 | Возврат в приют | [adoption-return](adoption-return.md) | Таргет, не признак |
 
 ## MVP-анкета
@@ -56,6 +58,11 @@ status: draft
 - **Приют / research-ops:** **Shelter C-BARQ** — 24 пункта, 5 факторов (Gilchrist 2025).
 
 Для intake C-BARQ(S) наиболее устойчивый cross-context сигнал — **stranger-directed aggression**: он согласовывался со staff assessment, исходом в приюте и оценкой нового владельца. Исход `euthanasia` нельзя использовать как чистый поведенческий target, поскольку он зависит от политики и ресурсов приюта.
+
+Vitulová et al. (2018) дополнительно показывают различную временную устойчивость
+широких owner-reported черт: пугливость и общительность существенно менялись,
+а агрессивность — нет. Это поддерживает повторные измерения и более раннюю
+safety-маршрутизацию агрессии, но исследование не использовало C-BARQ.
 
 ## Следующий шаг
 

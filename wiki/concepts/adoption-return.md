@@ -1,8 +1,8 @@
 ---
 type: concept
 tags: [adaptation, k3, target, helpdog]
-sources: [helpdog-notebook-notes, gilchrist-2025-shelter-cbarq]
-updated: 2026-07-24
+sources: [helpdog-notebook-notes, gilchrist-2025-shelter-cbarq, gates-2018-post-adoption-problem-behaviours, vitulova-2018-adopted-shelter-dog-behaviour]
+updated: 2026-08-12
 status: draft
 ---
 
@@ -33,6 +33,7 @@ target = 0  if пристроена и не вернулась
 | Нет C-BARQ | HelpDog-данные не содержат поведенческих шкал |
 | Неполная история | Не все возвраты могут быть зафиксированы на форуме |
 | Причины возврата | В тексте `возврат` часто «причина неизвестна» |
+| Возврат вне исходного приюта | Передача знакомым, другой организации или частное перепристройство могут не попасть в label |
 | Альтернативные таргеты | Сложная адаптация без возврата; оценка эксперта; C-BARQ-пороги |
 
 ## Связь с K3
@@ -43,6 +44,20 @@ target = 0  if пристроена и не вернулась
 ## Литература: поведение в приюте и возвраты
 
 Gilchrist et al. (2025) связывают крайние уровни Fear / Aggression / Excitability (Shelter C-BARQ) с рисками возврата и mismatch ожиданий адоптера; шкала валидирована **в приюте**, не на post-adoption outcome. См. [gilchrist-2025-shelter-cbarq](../sources/gilchrist-2025-shelter-cbarq.md).
+
+Gates et al. (2018) зафиксировали только один неудачный исход среди 61 собаки,
+хотя у 70% собак отмечалось проблемное поведение. Авторы предупреждают, что
+неответившие владельцы и перепристройство через другие каналы могли скрыть часть
+исходов. Поэтому `returned_to_shelter` — измеримый, но неполный label; его полезно
+дополнять устойчивостью проблем и обеспокоенностью владельца. См.
+[gates-2018-post-adoption-problem-behaviours](../sources/gates-2018-post-adoption-problem-behaviours.md).
+
+Vitulová et al. (2018) показывают, почему раннее поведение нельзя напрямую
+приравнивать к неудачной адаптации: пугливость снизилась с 61% до 20%, а
+общительность выросла с 56% до 93% за шесть месяцев. При этом агрессивность
+значимо не изменилась. Следовательно, риск нужно оценивать с учётом времени,
+типа поведения и повторных наблюдений. См.
+[vitulova-2018-adopted-shelter-dog-behaviour](../sources/vitulova-2018-adopted-shelter-dog-behaviour.md).
 
 См. [k3-risk-prediction](../components/k3-risk-prediction.md).
 

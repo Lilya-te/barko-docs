@@ -2,8 +2,8 @@
 type: dataset
 tags: [c-barq, collected, k3, wolfram]
 sources: [foreign-datasets-list-notes]
-raw_file: analytics/research/datatsets/foreign/2017_wolfram.csv
-updated: 2026-07-28
+raw_file: analytics/research/datatsets/foreign/ghirlanda_2013_cbarq_survey_domain_scales_wolfram.csv
+updated: 2026-08-12
 status: stable
 cbarq_coverage: full
 rows: 12060
@@ -18,7 +18,7 @@ format: csv
 
 | Параметр | Значение |
 |----------|----------|
-| Файл | `2017_wolfram.csv` |
+| Файл | `ghirlanda_2013_cbarq_survey_domain_scales_wolfram.csv` |
 | Строк | 12 060 |
 | Размер | ~1.60 MB |
 | Формат | CSV (доменные шкалы) |

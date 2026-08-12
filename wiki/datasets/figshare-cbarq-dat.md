@@ -2,8 +2,8 @@
 type: dataset
 tags: [c-barq, collected, k3, figshare]
 sources: [foreign-datasets-list-notes]
-raw_file: analytics/research/datatsets/foreign/CBARQ.dat
-updated: 2026-07-28
+raw_file: analytics/research/datatsets/foreign/ghirlanda_2013_cbarq_survey_domain_scales_figshare.dat
+updated: 2026-08-12
 status: stable
 cbarq_coverage: full
 rows: 12061
@@ -18,7 +18,7 @@ format: dat
 
 | Параметр | Значение |
 |----------|----------|
-| Файл | `CBARQ.dat` |
+| Файл | `ghirlanda_2013_cbarq_survey_domain_scales_figshare.dat` |
 | Строк | 12 061 |
 | Размер | ~0.97 MB |
 | Формат | `.dat` (табличный) |

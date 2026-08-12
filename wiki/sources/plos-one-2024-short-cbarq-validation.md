@@ -3,7 +3,7 @@ type: source
 tags: [c-barq, source, plos-one, short-cbarq, translation-available]
 sources: []
 raw_path: статьи/foreign/wilkins_2024_shortened_cbarq_validation.pdf
-updated: 2026-07-29
+updated: 2026-08-12
 status: ingested
 doi: 10.1371/journal.pone.0299973
 ---
@@ -50,7 +50,9 @@ Wilkins V. et al. (2024). PLOS ONE 19(4): e0299973. Dog Aging Project cohort.
 
 - **C-BARQ(S) валиден** как замена полной версии для скрининга — релевантно для MVP-анкеты Barko.
 - **Separation-related behavior** — подтверждённый домен для short/full mapping; кандидат признака K3.
-- Supplementary CSV (`pone.0299973.s001.csv`) — open dataset, см. [plos-one-2024-short-cbarq](../datasets/plos-one-2024-short-cbarq.md).
+- Supplementary S1 (официальное имя `pone.0299973.s001.csv`, локально
+  `wilkins_2024_shortened_cbarq_validation_supplement_s1.csv`) — open dataset,
+  см. [plos-one-2024-short-cbarq](../datasets/plos-one-2024-short-cbarq.md).
 - Ограничение: выборка DAP (self-selected), лето 2020 (COVID lockdowns).
 
 ### Интегрировано в вики

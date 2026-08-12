@@ -2,7 +2,7 @@
 type: dataset
 tags: [c-barq, datasets, open-data]
 sources: [data-ideas-notes, foreign-datasets-list-notes]
-updated: 2026-06-09
+updated: 2026-08-12
 status: stable
 ---
 
@@ -71,6 +71,8 @@ status: stable
 | Padova (Italian) | 807 | Полный (item-level) | [padova-cbarq-italian](padova-cbarq-italian.md) |
 | ManyDogs 1 | 705 | Частичный | [manydogs-md1](manydogs-md1.md) |
 | PLOS ONE 2024 (short C-BARQ) | ~435 | Полный (item-level) | [plos-one-2024-short-cbarq](plos-one-2024-short-cbarq.md) |
+| Bohland 2023 (после пристройства) | 505 строк / 99 собак | Short, longitudinal | [bohland-2023-shelter-adoption-cbarq](bohland-2023-shelter-adoption-cbarq.md) |
+| Bryson 2026 (Doodle) | ~9 456 | Полный (item-level) | [bryson-2026-doodle-crossbreed-behaviour](bryson-2026-doodle-crossbreed-behaviour.md) |
 
 ## Следующий шаг
 

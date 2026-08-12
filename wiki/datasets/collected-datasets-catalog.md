@@ -2,7 +2,7 @@
 type: dataset
 tags: [c-barq, collected, catalog, k3]
 sources: [foreign-datasets-list-notes]
-updated: 2026-07-28
+updated: 2026-08-12
 status: stable
 ---
 
@@ -14,10 +14,13 @@ status: stable
 
 | C-BARQ покрытие | Датасеты |
 |-----------------|----------|
-| **Полностью** | [2017-wolfram](2017-wolfram.md), [padova-cbarq-italian](padova-cbarq-italian.md), [figshare-cbarq-dat](figshare-cbarq-dat.md), [plos-one-2024-short-cbarq](plos-one-2024-short-cbarq.md) |
+| **Полностью / item-level** | [2017-wolfram](2017-wolfram.md), [padova-cbarq-italian](padova-cbarq-italian.md), [figshare-cbarq-dat](figshare-cbarq-dat.md), [plos-one-2024-short-cbarq](plos-one-2024-short-cbarq.md), [bryson-2026-doodle-crossbreed-behaviour](bryson-2026-doodle-crossbreed-behaviour.md) |
+| **Лонгитюдный C-BARQ(S)** | [bohland-2023-shelter-adoption-cbarq](bohland-2023-shelter-adoption-cbarq.md) |
 | **Частично** | [manydogs-md1](manydogs-md1.md) |
 
-**Суммарно уникальных записей (без дедупликации):** ~26 000+ строк; реальный объём после дедупа Wolfram/Figshare — TBD.
+**Суммарно строк (без дедупликации и без учёта повторных волн):** ~36 000;
+это не число уникальных собак. Реальный объём после дедупа Wolfram/Figshare
+и нормализации Bohland — TBD.
 
 ## Сравнительная таблица
 
@@ -28,6 +31,8 @@ status: stable
 | [padova-cbarq-italian](padova-cbarq-italian.md) | 807 | XLSX | Полный | Item-level (IT) | Feature engineering, validation |
 | [manydogs-md1](manydogs-md1.md) | 705 | CSV | Частичный | cbarq_* + эксперимент | Cross-source test |
 | [plos-one-2024-short-cbarq](plos-one-2024-short-cbarq.md) | ~435 | CSV | Полный | Item-level (short+full) | Анкета MVP, validation |
+| [bohland-2023-shelter-adoption-cbarq](bohland-2023-shelter-adoption-cbarq.md) | 505 | CSV | Short | Longitudinal export, 99 собак | Post-adoption dynamics |
+| [bryson-2026-doodle-crossbreed-behaviour](bryson-2026-doodle-crossbreed-behaviour.md) | ~9 456 | XLSX | Полный | Item-level | Feature engineering, external validation |
 
 ## Кандидаты (ещё не собраны)
 
@@ -43,5 +48,7 @@ status: stable
 2. **Определить общую schema** доменных шкал (PascalCase vs lowercase).
 3. **Агрегировать** Padova и PLOS item-level → доменные шкалы.
 4. **Извлечь** `cbarq_*` из ManyDogs, отбросить экспериментальные поля.
+5. **Нормализовать** Bohland в `dog × wave`, сохраняя group split по собаке.
+6. **Проверить** codebook и лицензию Bryson до включения в baseline.
 
 См. [data-harmonization](../concepts/data-harmonization.md).
