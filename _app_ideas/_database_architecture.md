@@ -8,22 +8,15 @@ contact_info
 created_at
 updated_at
 
-### shelter_memberships
-user_id
-shelter_id
-member_role (employee, volonteer, director)
-created_at
-updated_at
-
 ### dogs
 id
 name
 sex
 neutered
-status (shelter / home / back_shelter / overexposure)
+status (shelter / home / overexposure / unknown)
 description
 shelter_id
-assigned_volunteer_id
+assigned_volunteer
 owner_id
 birthday
 adopted_at
@@ -33,10 +26,17 @@ created_by_id
 created_at
 updated_at
 
+### dog_chips
+id
+dog_id
+system
+code
+created_at
+
 ### placement_events
 id
 dog_id
-code (shelter_started / home_started / back_shelter / overexposure_started)
+code (shelter_started / home_started / overexposure_started / unknown)
 created_at
 
 ### users

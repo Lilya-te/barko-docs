@@ -1,6 +1,6 @@
 # Barko Wiki — Index
 
-Каталог страниц knowledge base. Обновлён: 2026-08-12 (переименование и каталогизация датасетов).
+Каталог страниц knowledge base. Обновлён: 2026-08-14 (ingest 152-ФЗ для Barko).
 
 ## Overview
 
@@ -29,6 +29,7 @@
 | [owner-dog-attachment](concepts/owner-dog-attachment.md) | Тип привязанности владелец–собака |
 | [owner-frustration](concepts/owner-frustration.md) | Разочарованность владельца (~14%) |
 | [research-data-app](concepts/research-data-app.md) | Внутреннее приложение сбора данных: монолит, compose, схема Postgres |
+| [personal-data-152-fz](concepts/personal-data-152-fz.md) | Чеклист 152-ФЗ для контуров Barko с ПДн |
 
 ## Datasets
 
@@ -61,6 +62,7 @@
 
 | Страница | Исходный файл | Описание |
 |----------|---------------|----------|
+| [fz-152-personal-data](sources/fz-152-personal-data.md) | `152 ФЗ.md` | Саммари 152-ФЗ: только нормы, полезные Barko (согласие, локализация, ops/ML) |
 | [ml-ideas-notes](sources/ml-ideas-notes.md) | `_ml_ideas.md` | Подбор модели для ML-решений BARKO |
 | [app-ideas-notes](sources/app-ideas-notes.md) | `_app_ideas/_database_architecture.md` | Схема БД и scope research-ops |
 | [data-ideas-notes](sources/data-ideas-notes.md) | `analytics/research/datatsets/_data_ideas.md` | Исследование открытых C-BARQ датасетов |

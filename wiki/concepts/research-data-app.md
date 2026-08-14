@@ -2,17 +2,18 @@
 type: concept
 tags: [app, research-ops, django, postgres, mvp, monolith, schema]
 sources: [app-ideas-notes]
-updated: 2026-07-28
+updated: 2026-08-14
 status: draft
 ---
 
 # Research data app — внутреннее приложение сбора данных
 
-Концепция внутреннего (expert/volunteer) контура.
+Концепция внутреннего (expert/admin) контура.
 
 ## Для чего
 
-Наполнение БД для обучения моделей и разметки **до** owner-facing продукта. Волонтёры заводят собак приюта и заполняют анкеты; админ управляет доступом. Это не K5-чат и не приложение для усыновителя.
+Наполнение БД для обучения моделей и разметки **до** owner-facing продукта.
+На этапе исследования данные в базу будем заносить через бот в ТГ. Новый владелец заполняет анкету; админ управляет данными и рассылками. Это не K5-чат и не приложение для усыновителя.
 
 Источник схемы: [app-ideas-notes](../sources/app-ideas-notes.md) (`_app_ideas/_database_architecture.md`).
 
@@ -129,6 +130,8 @@ erDiagram
 |--------|------|
 | `consents` | user_id, type, accepted_at, version |
 
+Нормы и чеклист: [personal-data-152-fz](personal-data-152-fz.md), саммари закона — [fz-152-personal-data](../sources/fz-152-personal-data.md). PII только в ops; training — обезличенный export.
+
 ### Анкеты
 
 | Таблица | Поля (суть) | Заметки |
@@ -182,6 +185,8 @@ erDiagram
 
 - [app-ideas-notes](../sources/app-ideas-notes.md)
 - [c-barq](c-barq.md)
+- [personal-data-152-fz](personal-data-152-fz.md)
+- [fz-152-personal-data](../sources/fz-152-personal-data.md)
 - [data-harmonization](data-harmonization.md)
 - [k3-risk-prediction](../components/k3-risk-prediction.md)
 - [mvp-verifiable-metrics](../ml/mvp-verifiable-metrics.md)
