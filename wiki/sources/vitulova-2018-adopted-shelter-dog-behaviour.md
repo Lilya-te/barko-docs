@@ -2,7 +2,7 @@
 type: source
 tags: [shelter-dogs, adoption, post-adoption, behavior, longitudinal-study, translation-available]
 sources: []
-raw_path: статьи/foreign/vitulova_2018_adopted_shelter_dog_behaviour.pdf
+raw_path: статьи/foreign/czech-republic/Vitulova_2018_SURVEY_adopted_shelter_dog_behaviour.pdf
 updated: 2026-08-12
 status: ingested
 doi: 10.2754/avb201887020155
@@ -10,7 +10,7 @@ doi: 10.2754/avb201887020155
 
 # Поведение собак, пристроенных из приютов для животных
 
-**Оригинал:** [Vitulová et al. (2018), Behaviour of dogs adopted from an animal shelter](../../статьи/foreign/vitulova_2018_adopted_shelter_dog_behaviour.pdf)  
+**Оригинал:** [Vitulová et al. (2018), Behaviour of dogs adopted from an animal shelter](../../статьи/foreign/czech-republic/Vitulova_2018_SURVEY_adopted_shelter_dog_behaviour.pdf)  
 **DOI:** [10.2754/avb201887020155](https://doi.org/10.2754/avb201887020155)
 
 ## Саммари

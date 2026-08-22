@@ -1,6 +1,6 @@
 ---
 type: translation
-source_pdf: ../shabelansky_2016_excitable_dog_behavior.pdf
+source_pdf: ../usa/Shabelansky_2016_SURVEY_excitable_dog_behavior.pdf
 source_summary: ../../../wiki/sources/shabelansky-2016-excitable-dog-behavior-ru.md
 language: ru
 updated: 2026-07-29
@@ -9,7 +9,7 @@ status: complete
 
 # Характеристики возбудимого поведения собак по сообщениям владельцев в исследовании с самоотбором участников — полный перевод
 
-[Оригинал статьи (PDF)](../shabelansky_2016_excitable_dog_behavior.pdf) · [Саммари в wiki](../../../wiki/sources/shabelansky-2016-excitable-dog-behavior-ru.md)
+[Оригинал статьи (PDF)](../usa/Shabelansky_2016_SURVEY_excitable_dog_behavior.pdf) · [Саммари в wiki](../../../wiki/sources/shabelansky-2016-excitable-dog-behavior-ru.md)
 
 <!-- translation-body-sha256: d63552e11e137d556ddab4f27216d29d93df5e662e83db274bedf09e433a9c6b -->
 

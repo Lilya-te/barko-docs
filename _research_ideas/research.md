@@ -68,7 +68,7 @@
 
 - В форме ровно **42** пункта short-формы.
 - Русские тексты — по соответствию пунктам полной C-BARQ (`global_number`).
-- Перед сборкой формы: таблица `global_number → RU text → domain → тип шкалы` (артефакт в `_research_ideas/` или wiki).
+- Перед сборкой формы: таблица `global_number → RU text → domain → тип шкалы` — [wiki/concepts/pilot-questionnaire.md](../wiki/concepts/pilot-questionnaire.md).
 - В Яндекс Формах: один выбор (radio) для шкал частоты / 0–4 / N/A.
 - Разделы по доменам — для удобства заполнения.
 - Reverse-coded trainability учитывать при ingest/скоринге, не в UI формы.

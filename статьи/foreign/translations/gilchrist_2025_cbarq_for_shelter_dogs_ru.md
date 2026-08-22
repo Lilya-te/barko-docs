@@ -1,6 +1,6 @@
 ---
 type: translation
-source_pdf: ../gilchrist_2025_cbarq_for_shelter_dogs.pdf
+source_pdf: ../usa/Gilchrist_2025_CBARQ_cbarq_for_shelter_dogs.pdf
 source_summary: ../../../wiki/sources/gilchrist-2025-shelter-cbarq.md
 language: ru
 updated: 2026-07-29
@@ -9,7 +9,7 @@ status: complete
 
 # Source: Shelter C-BARQ — пять факторов (Gilchrist et al. 2025) — полный перевод
 
-[Оригинал статьи (PDF)](../gilchrist_2025_cbarq_for_shelter_dogs.pdf) · [Саммари в wiki](../../../wiki/sources/gilchrist-2025-shelter-cbarq.md)
+[Оригинал статьи (PDF)](../usa/Gilchrist_2025_CBARQ_cbarq_for_shelter_dogs.pdf) · [Саммари в wiki](../../../wiki/sources/gilchrist-2025-shelter-cbarq.md)
 
 <!-- translation-body-sha256: 2eadc6e981648dc53d628f33ff0e3d70c2c0a15c392da750ab224e33337d0acd -->
 

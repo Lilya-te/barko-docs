@@ -2,7 +2,7 @@
 type: source
 tags: [c-barq, shelter-dogs, relinquishment, owner-perception, behavior-screening, k3, k5, translation-available]
 sources: []
-raw_path: статьи/foreign/powell_2021_deception_or_knowledge.pdf
+raw_path: статьи/foreign/usa/Powell_2021_SURVEY_deception_or_knowledge.pdf
 updated: 2026-07-29
 status: ingested
 doi: 10.3389/fvets.2021.734973
@@ -10,7 +10,7 @@ doi: 10.3389/fvets.2021.734973
 
 # Владельцы, отдающие собак в приют, недооценивают их поведенческие проблемы: обман или недостаток знаний?
 
-[PDF](../../статьи/foreign/powell_2021_deception_or_knowledge.pdf) · DOI: [10.3389/fvets.2021.734973](https://doi.org/10.3389/fvets.2021.734973)
+[PDF](../../статьи/foreign/usa/Powell_2021_SURVEY_deception_or_knowledge.pdf) · DOI: [10.3389/fvets.2021.734973](https://doi.org/10.3389/fvets.2021.734973)
 
 ## Саммари
 

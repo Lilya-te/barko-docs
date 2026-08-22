@@ -1,6 +1,6 @@
 ---
 type: translation
-source_pdf: ../powell_2021_deception_or_knowledge.pdf
+source_pdf: ../usa/Powell_2021_SURVEY_deception_or_knowledge.pdf
 source_summary: ../../../wiki/sources/powell-2021-deception-or-knowledge.md
 language: ru
 updated: 2026-07-29
@@ -9,7 +9,7 @@ status: complete
 
 # Владельцы, отдающие собак в приют, недооценивают их поведенческие проблемы: обман или недостаток знаний?
 
-[Оригинал PDF](../powell_2021_deception_or_knowledge.pdf) · [Саммари в wiki](../../../wiki/sources/powell-2021-deception-or-knowledge.md)
+[Оригинал PDF](../usa/Powell_2021_SURVEY_deception_or_knowledge.pdf) · [Саммари в wiki](../../../wiki/sources/powell-2021-deception-or-knowledge.md)
 
 ## Полный перевод
 

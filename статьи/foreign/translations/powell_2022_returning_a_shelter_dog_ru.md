@@ -1,6 +1,6 @@
 ---
 type: translation
-source_pdf: ../powell_2022_returning_a_shelter_dog.pdf
+source_pdf: ../usa/Powell_2022_CBARQ_returning_a_shelter_dog.pdf
 source_summary: ../../../wiki/sources/powell-2022-shelter-dog-returns-ru.md
 language: ru
 updated: 2026-07-29
@@ -9,7 +9,7 @@ status: complete
 
 # Возврат собаки в приют: роль ожиданий владельца и поведения собаки — полный перевод
 
-[Оригинал статьи (PDF)](../powell_2022_returning_a_shelter_dog.pdf) · [Саммари в wiki](../../../wiki/sources/powell-2022-shelter-dog-returns-ru.md)
+[Оригинал статьи (PDF)](../usa/Powell_2022_CBARQ_returning_a_shelter_dog.pdf) · [Саммари в wiki](../../../wiki/sources/powell-2022-shelter-dog-returns-ru.md)
 
 <!-- translation-body-sha256: 444d9918cca34580ecdad1920b481e9618e4cc920b24b4beb2e267613f0694e6 -->
 

@@ -2,7 +2,7 @@
 type: source
 tags: [c-barq, shelter, source, psychometric, factor-analysis, translation-available]
 sources: []
-raw_path: статьи/foreign/gilchrist_2025_cbarq_for_shelter_dogs.pdf
+raw_path: статьи/foreign/usa/Gilchrist_2025_CBARQ_cbarq_for_shelter_dogs.pdf
 updated: 2026-07-29
 status: ingested
 doi: 10.26451/abc.12.01.04.2025
@@ -10,7 +10,7 @@ doi: 10.26451/abc.12.01.04.2025
 
 # Source: Shelter C-BARQ — пять факторов (Gilchrist et al. 2025)
 
-**Исходный файл:** [`статьи/foreign/gilchrist_2025_cbarq_for_shelter_dogs.pdf`](../../статьи/foreign/gilchrist_2025_cbarq_for_shelter_dogs.pdf)
+**Исходный файл:** [`статьи/foreign/usa/Gilchrist_2025_CBARQ_cbarq_for_shelter_dogs.pdf`](../../статьи/foreign/usa/Gilchrist_2025_CBARQ_cbarq_for_shelter_dogs.pdf)
 
 Gilchrist, R. J., Gardner, M. J., Manapat, P. D., Gunter, L. M., Feuerbacher, E. N., Edwards, M. C., & Wynne, C. D. L. (2025). Tailoring the C-BARQ to shelter dogs: Identification of five reliable factors. *Animal Behavior and Cognition, 12*(1), 69–107. https://doi.org/10.26451/abc.12.01.04.2025. CC BY 3.0.
 

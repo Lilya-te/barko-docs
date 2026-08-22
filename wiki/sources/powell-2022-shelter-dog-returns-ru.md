@@ -2,7 +2,7 @@
 type: source
 tags: [shelter-dogs, returns, adopter-expectations, dog-behavior, c-barq, translation-available]
 sources: []
-raw_path: статьи/foreign/powell_2022_returning_a_shelter_dog.pdf
+raw_path: статьи/foreign/usa/Powell_2022_CBARQ_returning_a_shelter_dog.pdf
 updated: 2026-07-29
 status: ingested
 doi: 10.3390/ani12091053
@@ -10,7 +10,7 @@ doi: 10.3390/ani12091053
 
 # Возврат собаки в приют: роль ожиданий владельца и поведения собаки
 
-[Оригинал статьи (PDF)](../../статьи/foreign/powell_2022_returning_a_shelter_dog.pdf)
+[Оригинал статьи (PDF)](../../статьи/foreign/usa/Powell_2022_CBARQ_returning_a_shelter_dog.pdf)
 
 **DOI:** [10.3390/ani12091053](https://doi.org/10.3390/ani12091053)
 

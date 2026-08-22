@@ -1,6 +1,6 @@
 ---
 type: translation
-source_pdf: ../wilkins_2024_shortened_cbarq_validation.pdf
+source_pdf: ../unknown/Wilkins_2024_CBARQ_shortened_cbarq_validation.pdf
 source_summary: ../../../wiki/sources/plos-one-2024-short-cbarq-validation.md
 language: ru
 updated: 2026-07-29
@@ -9,7 +9,7 @@ status: complete
 
 # Source: Validation of shortened C-BARQ (PLOS ONE 2024) — полный перевод
 
-[Оригинал статьи (PDF)](../wilkins_2024_shortened_cbarq_validation.pdf) · [Саммари в wiki](../../../wiki/sources/plos-one-2024-short-cbarq-validation.md)
+[Оригинал статьи (PDF)](../unknown/Wilkins_2024_CBARQ_shortened_cbarq_validation.pdf) · [Саммари в wiki](../../../wiki/sources/plos-one-2024-short-cbarq-validation.md)
 
 <!-- translation-body-sha256: 773f559693f9340f7c5e79d770f2022627918b5919e53171d502674083d6bb31 -->
 

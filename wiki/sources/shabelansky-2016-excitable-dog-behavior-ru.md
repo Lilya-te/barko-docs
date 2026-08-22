@@ -2,7 +2,7 @@
 type: source
 tags: [dog-behavior, excitability, owner-report, behavior-problems, shelter-dogs, translation-available]
 sources: []
-raw_path: статьи/foreign/shabelansky_2016_excitable_dog_behavior.pdf
+raw_path: статьи/foreign/usa/Shabelansky_2016_SURVEY_excitable_dog_behavior.pdf
 updated: 2026-07-29
 status: ingested
 doi: 10.3390/ani6030022
@@ -10,7 +10,7 @@ doi: 10.3390/ani6030022
 
 # Характеристики возбудимого поведения собак по сообщениям владельцев в исследовании с самоотбором участников
 
-[Оригинал статьи (PDF)](../../статьи/foreign/shabelansky_2016_excitable_dog_behavior.pdf)
+[Оригинал статьи (PDF)](../../статьи/foreign/usa/Shabelansky_2016_SURVEY_excitable_dog_behavior.pdf)
 
 **DOI:** [10.3390/ani6030022](https://doi.org/10.3390/ani6030022)
 

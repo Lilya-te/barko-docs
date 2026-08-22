@@ -2,7 +2,7 @@
 type: source
 tags: [shelter-dogs, adoption, post-adoption, problem-behavior, longitudinal-study, translation-available]
 sources: []
-raw_path: статьи/foreign/gates_2018_post_adoption_problem_behaviours.pdf
+raw_path: статьи/foreign/unknown/Gates_2018_SURVEY_post_adoption_problem_behaviours.pdf
 updated: 2026-08-12
 status: ingested
 doi: 10.3390/ani8060093
@@ -10,7 +10,7 @@ doi: 10.3390/ani8060093
 
 # Проблемное поведение после пристройства у подростковых и взрослых собак из приюта Новой Зеландии
 
-**Оригинал:** [Gates et al. (2018), Post-Adoption Problem Behaviours…](../../статьи/foreign/gates_2018_post_adoption_problem_behaviours.pdf)  
+**Оригинал:** [Gates et al. (2018), Post-Adoption Problem Behaviours…](../../статьи/foreign/unknown/Gates_2018_SURVEY_post_adoption_problem_behaviours.pdf)  
 **DOI:** [10.3390/ani8060093](https://doi.org/10.3390/ani8060093)
 
 ## Саммари

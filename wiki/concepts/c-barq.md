@@ -2,7 +2,7 @@
 type: concept
 tags: [c-barq, behavior, questionnaire]
 sources: [data-ideas-notes, ml-ideas-notes, duffy-2014-shelter-relinquishment-cbarq, plos-one-2024-short-cbarq-validation, gilchrist-2025-shelter-cbarq]
-updated: 2026-08-09
+updated: 2026-08-18
 status: stable
 ---
 
@@ -47,7 +47,7 @@ Stranger-directed aggression/fear, owner-directed aggression, dog-directed aggre
 
 ## Релевантность для Barko
 
-- MVP-анкета **владельца:** кандидат **C-BARQ(S)** (42 пункта).
+- MVP-анкета **владельца:** кандидат **C-BARQ(S)** (42 пункта). Состав вопросов и вариантов: [pilot-questionnaire](pilot-questionnaire.md).
 - MVP-анкета **приюта / research-ops:** кандидат **Shelter C-BARQ** (24 пункта).
 - Признаки K3: см. [k3-feature-candidates](k3-feature-candidates.md).
 - Данные: [cbarq-open-data-landscape](../datasets/cbarq-open-data-landscape.md).

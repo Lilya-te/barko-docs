@@ -1,6 +1,6 @@
 ---
 type: translation
-source_pdf: ../bohland_2023_shelter_behavior_after_adoption.pdf
+source_pdf: ../unknown/Bohland_2023_CBARQ_shelter_behavior_after_adoption.pdf
 source_summary: ../../../wiki/sources/bohland-2023-shelter-dog-behavior-ru.md
 language: ru
 updated: 2026-07-29
@@ -9,7 +9,7 @@ status: complete
 
 # Поведение собак из приютов после пристройства: отслеживание изменений поведения в первые шесть месяцев после пристройства с помощью C-BARQ — полный перевод
 
-[Оригинал статьи (PDF)](../bohland_2023_shelter_behavior_after_adoption.pdf) · [Саммари в wiki](../../../wiki/sources/bohland-2023-shelter-dog-behavior-ru.md)
+[Оригинал статьи (PDF)](../unknown/Bohland_2023_CBARQ_shelter_behavior_after_adoption.pdf) · [Саммари в wiki](../../../wiki/sources/bohland-2023-shelter-dog-behavior-ru.md)
 
 <!-- translation-body-sha256: 7ec86287dcbc2513b01d3225410e951ab5298821ca97703e9737702683399c24 -->
 

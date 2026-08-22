@@ -2,7 +2,7 @@
 type: source
 tags: [c-barq, shelter-dogs, adoption, behavior, longitudinal-study, translation-available]
 sources: []
-raw_path: статьи/foreign/bohland_2023_shelter_behavior_after_adoption.pdf
+raw_path: статьи/foreign/unknown/Bohland_2023_CBARQ_shelter_behavior_after_adoption.pdf
 updated: 2026-08-12
 status: ingested
 doi: 10.1371/journal.pone.0289356
@@ -10,7 +10,7 @@ doi: 10.1371/journal.pone.0289356
 
 # Поведение собак из приютов после пристройства: отслеживание изменений поведения в первые шесть месяцев после пристройства с помощью C-BARQ
 
-**Исходный PDF:** [Shelter dog behavior after adoption…](../../статьи/foreign/bohland_2023_shelter_behavior_after_adoption.pdf)
+**Исходный PDF:** [Shelter dog behavior after adoption…](../../статьи/foreign/unknown/Bohland_2023_CBARQ_shelter_behavior_after_adoption.pdf)
 **DOI:** https://doi.org/10.1371/journal.pone.0289356
 
 ## Саммари

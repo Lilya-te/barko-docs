@@ -1,6 +1,6 @@
 ---
 type: translation
-source_pdf: ../gates_2018_post_adoption_problem_behaviours.pdf
+source_pdf: ../unknown/Gates_2018_SURVEY_post_adoption_problem_behaviours.pdf
 source_summary: ../../../wiki/sources/gates-2018-post-adoption-problem-behaviours.md
 language: ru
 updated: 2026-08-12
@@ -9,7 +9,7 @@ status: complete
 
 # Проблемное поведение после пристройства у подростковых и взрослых собак, переданных новым владельцам через приют для животных в Новой Зеландии — полный перевод
 
-[Оригинал статьи (PDF)](../gates_2018_post_adoption_problem_behaviours.pdf) · [Саммари в wiki](../../../wiki/sources/gates-2018-post-adoption-problem-behaviours.md)
+[Оригинал статьи (PDF)](../unknown/Gates_2018_SURVEY_post_adoption_problem_behaviours.pdf) · [Саммари в wiki](../../../wiki/sources/gates-2018-post-adoption-problem-behaviours.md)
 
 ## Полный перевод
 

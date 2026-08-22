@@ -4,6 +4,126 @@
 
 ---
 
+## [2026-08-22] ingest | Перепись полных переводов 11 personality/testing статей
+
+Переписаны **полные русские переводы** и соответствующие **wiki‑саммари** для блока 11 статей по personality/behavioural testing: Haverbeke 2008, Kubinyi 2009, Ley 2008, Ley 2009 (refinement/validation), Ley 2009 (MCPQ‑R reliability), O’Heare 2009 (LIEBI), Range 2009, Svartberg 2003/2005 (DMA), Diederich 2006 (review), Vas 2008 (approaching stranger). Причина — предыдущие версии были частично конспективны и местами неточны; теперь тексты приведены к стандарту «полного перевода» (связная русская проза по всем разделам, таблицы/рисунки описаны словами с ключевыми числами).
+
+## [2026-08-20] ingest | 11 новых foreign-статей (personality / testing / welfare)
+
+**Переименование + папки стран:** `australia`, `austria`, `belgium`, `canada`, `hungary`, `sweden` (формат `Автор_ГОД_МЕТОД_описание`).
+
+**Создано (саммари + перевод):** Haverbeke 2008, Kubinyi 2009, Ley 2008 MCPQ, Ley 2009 MCPQ refinement, Ley 2009 MCPQ-R reliability, O'Heare 2009 LIEBI, Range 2009, Svartberg 2003/2005 DMA, Diederich 2006 review, Vas 2008.
+
+**Ключевые выводы:**
+- MCPQ → MCPQ-R: 5 измерений personality; надёжность ICC ≈ 0.75–0.93.
+- DMA: traits стабильны; construct validity для playfulness/sociability/curiosity vs everyday; aggressiveness в тесте слабо связан с everyday aggression.
+- Kubinyi: age/neuter/training/acquisition age — главные демографические предикторы traits (не causal).
+- LIEBI: иерархия инвазивности для behavior intervention.
+- Behavioural testing: нет стандартной методологии (Diederich review).
+
+**Обновлено:** `index.md`
+
+---
+
+## [2026-08-20] ingest | Svartberg DMA, Diederich review, Vas stranger test
+
+**Источники:**
+- `статьи/foreign/sweden/Svartberg_2005_DMA_boldness_everyday_life.pdf` — Svartberg 2005, DMA vs CBARQ everyday (DOI 10.1016/j.applanim.2004.08.030)
+- `статьи/foreign/belgium/Diederich_2006_REVIEW_behavioural_testing_methodology.pdf` — Diederich & Giffroy 2006, behavioural testing review (DOI 10.1016/j.applanim.2005.11.018)
+- `статьи/foreign/hungary/Vas_2008_EXPERIMENT_threatening_cues_consistency.pdf` — Vas et al. 2008, threatening cues consistency (DOI 10.1016/j.applanim.2007.09.002)
+
+**Создано:**
+- `sources/svartberg-2005-dma-boldness-everyday.md`, `sources/diederich-2006-behavioural-testing-review.md`, `sources/vas-2008-threatening-cues-consistency.md`
+- Переводы: `translations/svartberg_2005_dma_boldness_everyday_life_ru.md`, `diederich_2006_review_behavioural_testing_methodology_ru.md`, `vas_2008_experiment_threatening_cues_consistency_ru.md`
+
+**Обновлено:**
+- `index.md`
+
+**Ключевые выводы:**
+- DMA: три валидных компонента boldness (playfulness, sociability, curiosity/fearlessness); aggressiveness не валидирован против CBARQ.
+- Diederich review: нет consensus по stimuli, scoring, age — нужен reference manual.
+- Vas 2008: consistency при ~1 year retest и между experimenters; owners не предсказывают реакцию.
+
+---
+
+## [2026-08-20] ingest | Четыре foreign-статьи: MCPQ-R, LIEBI, ostensive cues, DMA
+
+**Источники:**
+- `статьи/foreign/australia/Ley_2009_MCPQR_interrater_test_retest.pdf` — Ley et al. 2009, MCPQ-R reliability (DOI 10.1016/j.applanim.2009.02.027)
+- `статьи/foreign/canada/OHeare_2009_LIEBI_least_intrusive_behavior_intervention.pdf` — O'Heare 2009, LIEBI algorithm
+- `статьи/foreign/austria/Range_2009_EXPERIMENT_ostensive_cues_social_learning.pdf` — Range et al. 2009, ostensive cues (DOI 10.1016/j.applanim.2009.05.012)
+- `статьи/foreign/sweden/Svartberg_2003_DMA_consistency_personality_traits.pdf` — Svartberg et al. 2005, DMA consistency (DOI 10.1016/j.anbehav.2004.04.011)
+
+**Создано:**
+- `sources/ley-2009-mcpqr-reliability.md`, `sources/oheare-2009-liebi-algorithm.md`, `sources/range-2009-ostensive-cues-social-learning.md`, `sources/svartberg-2003-dma-consistency.md`
+- Переводы: `ley_2009_mcpqr_interrater_test_retest_ru.md`, `oheare_2009_liebi_least_intrusive_behavior_intervention_ru.md`, `range_2009_experiment_ostensive_cues_social_learning_ru.md`, `svartberg_2003_dma_consistency_personality_traits_ru.md`
+
+**Обновлено:**
+- `index.md`
+
+**Ключевые выводы:**
+- MCPQ-R: ICC inter-rater 0.75–0.86, test–retest 0.79–0.93; Neuroticism/Training Focus — наименьшее согласие сожителей.
+- LIEBI: 6-level hierarchy; aversive только после due diligence; effectiveness is not enough.
+- Ostensive cues: continuous third-party attention-calling **снижает** manipulative social learning vs тихая demo.
+- DMA: rank-order stable все traits; Aggressiveness/Curiosity-Fearlessness novelty-sensitive на первом тесте.
+
+---
+
+## [2026-08-20] ingest | Три новые foreign-статьи
+
+**Источники:**
+- `статьи/foreign/brazil/Savalli_2019_PANAS_dog_panas_brazil.pdf` — Savalli et al. 2019, PANAS Brazil (DOI 10.1038/s41598-019-54645-6)
+- `статьи/foreign/uk/Fadel_2016_DIAS_dog_impulsivity_working_show_lines.pdf` — Fadel et al. 2016, DIAS work/show lines (DOI 10.1038/srep22162)
+- `статьи/foreign/germany/Hoth_Zimak_2026_BEHAVIOR-SCALES_rescued_dogs_abroad_germany.pdf` — Hoth-Zimak et al. 2026, rescued dogs Germany (DOI 10.1038/s41598-026-62598-w)
+
+**Переименование:**
+- Удалены дубликаты PANAS (3 PDF → 1 canonical + supplement `.doc`)
+- `41598_2019_Article_54645.pdf` → `savalli_2019_dog_panas_brazil.pdf`
+- `s41598-026-62598-w.pdf` → `hoth_zimak_2026_rescued_dogs_abroad_germany.pdf`
+- `srep22162.pdf` → `fadel_2016_dog_impulsivity_working_show_lines.pdf`
+
+**Создано:**
+- `sources/savalli-2019-dog-panas-brazil.md`, `sources/fadel-2016-dog-impulsivity-working-show.md`, `sources/hoth-zimak-2026-rescued-dogs-abroad-germany.md`
+- Переводы: `translations/savalli_2019_dog_panas_brazil_ru.md`, `fadel_2016_dog_impulsivity_working_show_lines_ru.md`, `hoth_zimak_2026_rescued_dogs_abroad_germany_ru.md`
+
+**Обновлено:**
+- `index.md`
+
+**Ключевые выводы:**
+- PANAS (16 items, Brazil): negative activation ↑ у female owners, neutered, single-dog, mixed-breed.
+- DIAS: line (work/show) важнее breed для impulsivity; show lines Collie/Lab сходны.
+- Imported dogs DE: personality score 2.1→2.4 за 6 мес.; partner dog protective; dog training confounded.
+
+---
+
+## [2026-08-18] query | Текст для экспертной валидации анкеты
+
+**Обновлено:**
+- `concepts/pilot-questionnaire.md` — сопроводительный текст для специалистов: C-BARQ фиксирован; ревью блоков 1 и 3 (адаптация, рекомендации владельцу).
+
+---
+
+## [2026-08-18] ingest | Пилотная анкета: вопросы и варианты ответа
+
+**Источники:**
+- [Яндекс Форма](https://forms.yandex.ru/u/6a7f4c8b4936398f0aeaa1d2) — общие поля (образование, приют, возраст).
+- `QUESTS/c-barq_rus_Bru.pdf` — русские шкалы 0–4 + X для C-BARQ(S).
+- `QUESTS/CBARQ_short-final_copy.pdf` — состав 42 пунктов.
+
+**Создано:**
+- `concepts/pilot-questionnaire.md` — таблица вопросов: обязательность, тип, варианты; легенда шкал A/B/C/D; блок после C-BARQ (амуниция, кинолог, динамика проблем).
+
+**Обновлено:**
+- `index.md`
+
+**Ключевые выводы:**
+- Варианты G4/G7/G9 взяты из живой формы; шкалы 42 пунктов совпадают с Bru.
+- Нумерация Q8/Q9 в русской форме не совпадает с английским C-BARQ(S) — при ingest маппить по тексту.
+- Вопросы E1–E6 в форме ещё нет; для обязательного «что усугубилось» нужен пункт «Ничего не усугубилось».
+- 152-ФЗ: город/образование/email — ПДн; в текущих 8 страницах формы нет отдельного согласия.
+
+---
+
 ## [2026-08-14] ingest | 152-ФЗ — выжимка для Barko
 
 **Источник:**
@@ -342,11 +462,11 @@
 ## [2026-07-29] ingest | Саммари и переводы зарубежных статей
 
 **Проверенные источники:**
-- `статьи/foreign/bohland_2023_shelter_behavior_after_adoption.pdf` — саммари и полный перевод уже присутствовали.
-- `статьи/foreign/gilchrist_2025_cbarq_for_shelter_dogs.pdf` — к существующему саммари добавлен полный перевод.
-- `статьи/foreign/wilkins_2024_shortened_cbarq_validation.pdf` — к существующему саммари добавлен полный перевод.
-- `статьи/foreign/powell_2022_returning_a_shelter_dog.pdf` — созданы саммари и полный перевод.
-- `статьи/foreign/shabelansky_2016_excitable_dog_behavior.pdf` — созданы саммари и полный перевод.
+- `статьи/foreign/unknown/Bohland_2023_CBARQ_shelter_behavior_after_adoption.pdf` — саммари и полный перевод уже присутствовали.
+- `статьи/foreign/usa/Gilchrist_2025_CBARQ_cbarq_for_shelter_dogs.pdf` — к существующему саммари добавлен полный перевод.
+- `статьи/foreign/unknown/Wilkins_2024_CBARQ_shortened_cbarq_validation.pdf` — к существующему саммари добавлен полный перевод.
+- `статьи/foreign/usa/Powell_2022_CBARQ_returning_a_shelter_dog.pdf` — созданы саммари и полный перевод.
+- `статьи/foreign/usa/Shabelansky_2016_SURVEY_excitable_dog_behavior.pdf` — созданы саммари и полный перевод.
 
 **Созданные страницы:**
 - `sources/powell-2022-shelter-dog-returns-ru.md`
@@ -381,7 +501,7 @@
 ## [2026-07-29] ingest | Powell et al. 2021 — восприятие поведения при передаче собаки
 
 **Источник:**
-- `статьи/foreign/powell_2021_deception_or_knowledge.pdf`
+- `статьи/foreign/usa/Powell_2021_SURVEY_deception_or_knowledge.pdf`
 - DOI: `10.3389/fvets.2021.734973`
 
 **Создано:**
@@ -398,7 +518,7 @@
 ## [2026-08-09] ingest | Duffy et al. 2014 — C-BARQ(S) при передаче собаки
 
 **Источник:**
-- `статьи/foreign/duffy_2014_behavioral_assessment_relinquished_dogs.pdf`
+- `статьи/foreign/usa/Duffy_2014_CBARQ_behavioral_assessment_relinquished_dogs.pdf`
 - DOI: `10.1016/j.prevetmed.2014.10.003`
 
 **Создано:**
@@ -453,7 +573,7 @@
 ## [2026-08-12] ingest | Gates et al. 2018 — проблемное поведение после пристройства
 
 **Источник:**
-- `статьи/foreign/gates_2018_post_adoption_problem_behaviours.pdf`
+- `статьи/foreign/unknown/Gates_2018_SURVEY_post_adoption_problem_behaviours.pdf`
 - прежнее имя: `animals-08-00093.pdf`
 - DOI: `10.3390/ani8060093`
 
@@ -482,7 +602,7 @@
 ## [2026-08-12] ingest | Vitulová et al. 2018 — поведение собак после пристройства
 
 **Источник:**
-- `статьи/foreign/vitulova_2018_adopted_shelter_dog_behaviour.pdf`
+- `статьи/foreign/czech-republic/Vitulova_2018_SURVEY_adopted_shelter_dog_behaviour.pdf`
 - прежнее имя: `Behaviour_of_dogs_adopted_from_an_animal_shelter.pdf`
 - DOI: `10.2754/avb201887020155`
 

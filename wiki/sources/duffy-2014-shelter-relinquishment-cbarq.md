@@ -2,7 +2,7 @@
 type: source
 tags: [c-barq, shelter-dogs, relinquishment, behavioral-assessment, aggression, adoption-outcomes, translation-available, k3, k5]
 sources: []
-raw_path: статьи/foreign/duffy_2014_behavioral_assessment_relinquished_dogs.pdf
+raw_path: статьи/foreign/usa/Duffy_2014_CBARQ_behavioral_assessment_relinquished_dogs.pdf
 updated: 2026-08-09
 status: ingested
 doi: 10.1016/j.prevetmed.2014.10.003
@@ -12,7 +12,7 @@ doi: 10.1016/j.prevetmed.2014.10.003
 
 **Источник:** Duffy D. L., Kruger K. A., Serpell J. A. (2014). *Evaluation of a behavioral assessment tool for dogs relinquished to shelters*. Preventive Veterinary Medicine, 117, 601–609.
 
-[Оригинал статьи (PDF)](../../статьи/foreign/duffy_2014_behavioral_assessment_relinquished_dogs.pdf)
+[Оригинал статьи (PDF)](../../статьи/foreign/usa/Duffy_2014_CBARQ_behavioral_assessment_relinquished_dogs.pdf)
 
 **DOI:** [10.1016/j.prevetmed.2014.10.003](https://doi.org/10.1016/j.prevetmed.2014.10.003)
 

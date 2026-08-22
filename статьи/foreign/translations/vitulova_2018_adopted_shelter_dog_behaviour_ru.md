@@ -1,6 +1,6 @@
 ---
 type: translation
-source_pdf: ../vitulova_2018_adopted_shelter_dog_behaviour.pdf
+source_pdf: ../czech-republic/Vitulova_2018_SURVEY_adopted_shelter_dog_behaviour.pdf
 source_summary: ../../../wiki/sources/vitulova-2018-adopted-shelter-dog-behaviour.md
 language: ru
 updated: 2026-08-12
@@ -9,7 +9,7 @@ status: complete
 
 # Поведение собак, пристроенных из приюта для животных — полный перевод
 
-[Оригинал статьи (PDF)](../vitulova_2018_adopted_shelter_dog_behaviour.pdf) · [Саммари в wiki](../../../wiki/sources/vitulova-2018-adopted-shelter-dog-behaviour.md)
+[Оригинал статьи (PDF)](../czech-republic/Vitulova_2018_SURVEY_adopted_shelter_dog_behaviour.pdf) · [Саммари в wiki](../../../wiki/sources/vitulova-2018-adopted-shelter-dog-behaviour.md)
 
 ## Полный перевод
 

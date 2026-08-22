@@ -1,6 +1,6 @@
 ---
 type: translation
-source_pdf: ../duffy_2014_behavioral_assessment_relinquished_dogs.pdf
+source_pdf: ../usa/Duffy_2014_CBARQ_behavioral_assessment_relinquished_dogs.pdf
 source_summary: ../../../wiki/sources/duffy-2014-shelter-relinquishment-cbarq.md
 language: ru
 updated: 2026-08-09
@@ -9,7 +9,7 @@ status: complete
 
 # Оценка инструмента поведенческого оценивания собак, переданных в приюты
 
-[Оригинал статьи (PDF)](../duffy_2014_behavioral_assessment_relinquished_dogs.pdf) · [Саммари](../../../wiki/sources/duffy-2014-shelter-relinquishment-cbarq.md)
+[Оригинал статьи (PDF)](../usa/Duffy_2014_CBARQ_behavioral_assessment_relinquished_dogs.pdf) · [Саммари](../../../wiki/sources/duffy-2014-shelter-relinquishment-cbarq.md)
 
 ## Полный перевод
 

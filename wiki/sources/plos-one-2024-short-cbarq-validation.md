@@ -2,7 +2,7 @@
 type: source
 tags: [c-barq, source, plos-one, short-cbarq, translation-available]
 sources: []
-raw_path: статьи/foreign/wilkins_2024_shortened_cbarq_validation.pdf
+raw_path: статьи/foreign/unknown/Wilkins_2024_CBARQ_shortened_cbarq_validation.pdf
 updated: 2026-08-12
 status: ingested
 doi: 10.1371/journal.pone.0299973
@@ -10,7 +10,7 @@ doi: 10.1371/journal.pone.0299973
 
 # Source: Validation of shortened C-BARQ (PLOS ONE 2024)
 
-**Исходный файл:** [`статьи/foreign/wilkins_2024_shortened_cbarq_validation.pdf`](../../статьи/foreign/wilkins_2024_shortened_cbarq_validation.pdf)
+**Исходный файл:** [`статьи/foreign/unknown/Wilkins_2024_CBARQ_shortened_cbarq_validation.pdf`](../../статьи/foreign/unknown/Wilkins_2024_CBARQ_shortened_cbarq_validation.pdf)
 
 Wilkins V. et al. (2024). PLOS ONE 19(4): e0299973. Dog Aging Project cohort.
 
