@@ -1,6 +1,6 @@
 # Barko Wiki — Index
 
-Каталог страниц knowledge base. Обновлён: 2026-08-20 (ingest 11 personality/testing articles + MCPQ/DMA/LIEBI).
+Каталог страниц knowledge base. Обновлён: 2026-09-08 (ingest consent_v1 pilot form).
 
 ## Overview
 
@@ -31,6 +31,7 @@
 | [owner-frustration](concepts/owner-frustration.md) | Разочарованность владельца (~14%) |
 | [research-data-app](concepts/research-data-app.md) | Внутреннее приложение сбора данных: монолит, compose, схема Postgres |
 | [personal-data-152-fz](concepts/personal-data-152-fz.md) | Чеклист 152-ФЗ для контуров Barko с ПДн |
+| [consent-v1-pilot-form](concepts/consent-v1-pilot-form.md) | Шаблон согласия `consent_v1` и политики для пилотной Яндекс.Формы |
 
 ## Datasets
 

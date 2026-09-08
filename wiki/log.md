@@ -4,6 +4,11 @@
 
 ---
 
+## [2026-09-08] ingest | Согласие consent_v1 для пилотной Яндекс.Формы
+
+- Создана [consent-v1-pilot-form](concepts/consent-v1-pilot-form.md): текст согласия, оформление в Яндекс.Форме, мини-шаблон политики, чеклист.
+- Обновлены ссылки: [personal-data-152-fz](concepts/personal-data-152-fz.md), [pilot-questionnaire](concepts/pilot-questionnaire.md), [index](index.md).
+
 ## [2026-08-22] ingest | Перепись полных переводов 11 personality/testing статей
 
 Переписаны **полные русские переводы** и соответствующие **wiki‑саммари** для блока 11 статей по personality/behavioural testing: Haverbeke 2008, Kubinyi 2009, Ley 2008, Ley 2009 (refinement/validation), Ley 2009 (MCPQ‑R reliability), O’Heare 2009 (LIEBI), Range 2009, Svartberg 2003/2005 (DMA), Diederich 2006 (review), Vas 2008 (approaching stranger). Причина — предыдущие версии были частично конспективны и местами неточны; теперь тексты приведены к стандарту «полного перевода» (связная русская проза по всем разделам, таблицы/рисунки описаны словами с ключевыми числами).
