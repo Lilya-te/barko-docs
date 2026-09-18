@@ -89,7 +89,7 @@ Gilchrist, R. J., Gardner, M. J., Manapat, P. D., Gunter, L. M., Feuerbacher, E.
 - Нет criterion validity с внешними мерами / пост-адопционным поведением.
 - Данные по запросу, не open CSV.
 
-### Релевантность для Barko
+### Релевантность для Hvostun
 
 - **Приютный контур** ([research-data-app](../concepts/research-data-app.md)): компактная 24-item анкета для staff/волонтёров вместо полной C-BARQ / C-BARQ(S).
 - **K3:** Fear, Human/Dog Aggression, Excitability согласуются с [k3-feature-candidates](../concepts/k3-feature-candidates.md); **Arousal** — новый кандидат-конструкт для shelter-контекста.

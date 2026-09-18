@@ -1,14 +1,16 @@
 ---
 type: overview
-tags: [barko, mvp, ml]
+tags: [hvostun, mvp, ml]
 sources: [ml-ideas-notes, data-ideas-notes, helpdog-notebook-notes, app-ideas-notes]
-updated: 2026-07-28
+updated: 2026-09-09
 status: draft
 ---
 
-# Barko — Overview
+# Hvostun — Overview
 
-**Barko** — продукт для поддержки адаптации собак. ML-слой даёт персонализированный прогноз трудностей, а не общие советы.
+**Hvostun** (ранее Barko) — продукт для поддержки адаптации собак. ML-слой даёт персонализированный прогноз трудностей, а не общие советы.
+
+Репозиторий knowledge base пока называется `barko-docs`; код приложения — `MIPT/startup/hvostun`.
 
 ## ML-компоненты
 
@@ -21,7 +23,7 @@ status: draft
 ## Зачем ML
 
 - Статические правила плохо масштабируются на разные профили собак.
-- УТП Barko: «прогноз именно для вашей собаки».
+- УТП Hvostun: «прогноз именно для вашей собаки».
 - K3 даёт вероятность риска; K5 даёт grounded-советы из экспертной базы.
 
 ## Социально-экономический эффект
@@ -37,13 +39,14 @@ status: draft
 
 ## Research-ops приложение
 
-Внутренний контур сбора данных (волонтёр / админ; эксперт позже) — [research-data-app](concepts/research-data-app.md): modular monolith, один docker-compose, PostgreSQL, cookiecutter-django. Схема БД — [app-ideas-notes](sources/app-ideas-notes.md).
+Внутренний контур сбора данных (волонтёр / админ; эксперт позже) — [research-data-app](concepts/research-data-app.md): modular monolith на официальном Full Stack FastAPI Template (FastAPI + React + SQLModel + PostgreSQL), один Docker Compose. Схема БД — [app-ideas-notes](sources/app-ideas-notes.md).
 
 ## Текущие решения (из первого ingest)
 
 - **K3 baseline:** `RandomForest` + интерпретация через `LogisticRegression`; цель `ROC-AUC >= 0.75`.
 - **K5:** готовая LLM через API, фокус на RAG, safety rules, human-reviewed knowledge base.
 - **K6:** не в MVP.
+- **Roadmap сбора:** мост K5→анкета K3 и сравнение каналов (Яндекс.Форма vs Амелько) — [k5-k3-answer-bridge](concepts/k5-k3-answer-bridge.md).
 
 ## Связанные артефакты в репозитории
 

@@ -48,7 +48,7 @@ Ley, J. M., McGreevy, P., & Bennett, P. C. (2009). Inter-rater and test–retest
 - Не измерялась личность владельцев — возможное влияние на оценки Neuroticism.
 - Test–retest редок в animal personality literature; 6-месячный лаг.
 
-### Релевантность для Barko
+### Релевантность для Hvostun
 
 - **K3:** MCPQ-R — альтернативный owner-report personality instrument; надёжность поддерживает использование стабильных trait-измерений для matching/риска, но **нет прямого overlap с C-BARQ(S)** — нужна harmonization при комбинировании.
 - **K5:** аргумент, что owner-matching должен учитывать не только профиль собаки, но и профиль/уверенность владельца (особенно для fear/neuroticism).

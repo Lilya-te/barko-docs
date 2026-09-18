@@ -2,13 +2,13 @@
 type: component
 tags: [k3, ml, mvp, adaptation]
 sources: [ml-ideas-notes, helpdog-notebook-notes, plos-one-2024-short-cbarq-validation, fomina-2024-problem-behavior-review, fomina-2025-ai-pilot-study, gritsenko-2023-owner-frustration, gates-2018-post-adoption-problem-behaviours, vitulova-2018-adopted-shelter-dog-behaviour]
-updated: 2026-08-12
+updated: 2026-09-09
 status: draft
 ---
 
 # K3 — Прогноз адаптационных трудностей
 
-Основная ML-задача MVP Barko.
+Основная ML-задача MVP Hvostun.
 
 ## Постановка
 
@@ -17,6 +17,8 @@ status: draft
 - приоритетные зоны внимания.
 
 K5 может передавать в анкету сведения, явно сообщённые пользователем, а K3-профиль — быть контекстом ответа K5. До реализации нужны согласие пользователя, provenance полей и валидация качества извлечения: текст чата нельзя автоматически считать надёжным C-BARQ-ответом.
+
+**Roadmap:** модуль извлечения ответов из K5 + сравнение каналов сбора (Яндекс.Форма vs Амелько) — см. [k5-k3-answer-bridge](../concepts/k5-k3-answer-bridge.md).
 
 ## Класс моделей
 
@@ -86,3 +88,4 @@ K5 может передавать в анкету сведения, явно с
 - [ ] Запустить baseline K3 (ROC-AUC) на C-BARQ — таблица в [benchmarks-and-metrics](../ml/benchmarks-and-metrics.md) пустая.
 - [ ] Связать HelpDog-собак с C-BARQ-признаками.
 - [ ] Оценить, помогают ли поведенческие кластеры как вспомогательные профили; они не являются label риска — см. [cbarq-clustering](../ml/cbarq-clustering.md).
+- [ ] Roadmap: extractor K5→анкета и channel study (форма vs Амелько) — [k5-k3-answer-bridge](../concepts/k5-k3-answer-bridge.md).

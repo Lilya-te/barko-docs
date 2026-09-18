@@ -1,8 +1,8 @@
 ---
 type: concept
-tags: [app, research-ops, django, postgres, mvp, monolith, schema]
+tags: [app, research-ops, fastapi, react, sqlmodel, postgres, mvp, monolith, schema]
 sources: [app-ideas-notes]
-updated: 2026-08-14
+updated: 2026-09-09
 status: draft
 ---
 
@@ -19,70 +19,87 @@ status: draft
 
 ## Архитектура MVP
 
-**Modular monolith:** один продуктовый репозиторий, один процесс Django, один `docker compose up`. Микросервисы не делаем. Границы — Django apps и пакет `ml/`.
+**Modular monolith:** один продуктовый репозиторий, один backend FastAPI, один frontend React, один `docker compose up`. Микросервисы не делаем. Границы — доменные Python-модули, frontend routes и пакет `app.ml`.
 
-Knowledge wiki (`barko-docs`) остаётся отдельно от кода приложения.
+Knowledge wiki (`barko-docs`) остаётся отдельно от кода приложения (`MIPT/startup/hvostun`).
+
+Основа: официальный [Full Stack FastAPI Template](https://github.com/fastapi/full-stack-fastapi-template). Он даёт auth и user/admin dashboard, но не универсальный Django-подобный CRUD для предметных моделей. Для внутренней CRUD-админки — integration spike [FastAdmin](https://github.com/vsdudakov/fastadmin); fallback — минимальные React CRUD-страницы.
 
 ```mermaid
 flowchart TB
   subgraph repo [One_repository]
+    frontend[React_source_and_build]
     subgraph compose [docker_compose]
-      web[web_Django]
+      backend[backend_FastAPI]
       db[(postgres)]
+      redis[(redis)]
       jupyter[jupyter_optional]
     end
-    apps[Django_apps_web_api_admin]
+    domains[domain_modules_api_admin]
     mlpkg[ml_package_importable]
     data[data_parquet_volume]
   end
-  web --> db
+  frontend --> backend
+  backend --> db
+  backend --> redis
   jupyter --> db
-  web --> mlpkg
+  backend --> mlpkg
   jupyter --> mlpkg
   mlpkg --> data
-  web --> data
+  backend --> data
 ```
 
 | Контейнер в compose | Роль |
 |---------------------|------|
-| `db` | PostgreSQL — единственная БД |
-| `web` | Django: UI + Admin + Ninja API + management-команды |
+| `db` | PostgreSQL — единственная OLTP-БД |
+| `backend` | FastAPI + SQLModel + Alembic + auth/API |
+| frontend build | React/TypeScript + Tailwind/shadcn; не отдельный production-контейнер, обслуживается backend |
+| `redis` | admin sessions/cache; Celery broker позже |
 | `jupyter` (опционально) | Ноутбуки поверх того же `ml/` и той же БД |
 | `worker` (позже) | Celery из того же образа |
 
-**Правило:** новая фича = Django app или `ml.*`, не новый HTTP-сервис.
+**Правило:** новая фича = доменный модуль или `app.ml.*`, не новый HTTP-сервис.
 
 ### Структура репозитория (ориентир)
 
 ```text
-barko/
-  docker-compose.yml
-  config/
-  apps/
-    users/
-    shelters/
-    dogs/
-    questionnaires/
-  ml/
-  notebooks/
+MIPT/startup/hvostun/
+  compose.yml
+  backend/
+    app/
+      api/routes/
+      domains/
+        shelters/
+        dogs/
+        questionnaires/
+        consents/
+      admin/
+      ml/
+    alembic/
+    notebooks/
+    pyproject.toml
+  frontend/
+    src/
   data/
-  manage.py
 ```
 
 ## Стек
 
 | Слой | Выбор |
 |------|--------|
-| Bootstrap | [cookiecutter-django](https://github.com/cookiecutter/cookiecutter-django) |
+| Bootstrap проекта | [full-stack-fastapi-template](https://github.com/fastapi/full-stack-fastapi-template) |
 | DB | PostgreSQL |
-| Backend | Django 6 |
-| Auth | django-allauth + **Groups** (`volunteer` / `admin`; `expert` позже) |
-| API | Django Ninja (+ OpenAPI) |
-| Questionnaire UI | Django templates + HTMX |
-| Admin | Django Admin (± Unfold) |
-| Deploy | Один docker-compose: `web` + `db` (+ `jupyter`) |
+| ORM / migrations | SQLModel/SQLAlchemy + Alembic |
+| Backend | FastAPI + Pydantic |
+| Auth | JWT/auth из шаблона; `is_superuser` + app memberships/roles |
+| API | FastAPI + OpenAPI + generated frontend client |
+| UI | React + TypeScript + Tailwind CSS + shadcn/ui |
+| Admin | User dashboard из шаблона; FastAdmin spike для domain CRUD |
+| Deploy | Один Compose: `backend` + `db` + `redis` (+ optional `jupyter`) |
 
-**Не брать на MVP:** микросервисы, Mongo/ClickHouse/lake, отдельные репозитории web/ml, custom таблицы `roles`/`user_roles`, тяжёлые SaaS-стартеры.
+`fastapi-users` не добавляем: auth уже реализован в официальном шаблоне, а библиотека находится в maintenance mode. CRUDAdmin не является основной зависимостью, пока его авторы помечают проект как experimental.
+
+**Не брать на MVP:** микросервисы, Mongo/ClickHouse/lake, отдельные репозитории frontend/backend/ml, второй auth framework, PyTorch до tabular baseline.
 
 ## Ops vs training
 
@@ -115,7 +132,7 @@ erDiagram
 |--------|-------------|---------|
 | `shelters` | id, name, description, address, contact_info, timestamps | Без `owner_id` |
 | `shelter_memberships` | user_id, shelter_id, member_role (`employee` \| `volunteer` \| `director`), timestamps | Object-scope «свой приют» |
-| `users` | id, name, email, phone, contact, timestamps | App-роли — **Django Groups**, не колонка `group` как единственный ACL |
+| `users` | id, name, email, phone, contact, `is_superuser`, timestamps | Системный superuser из шаблона; object-scope — через memberships и API permissions |
 
 ### Собаки и placement (лейблы K3)
 
@@ -142,26 +159,26 @@ erDiagram
 | `questionnaire_sessions` | user_id, dog_id, questionnaire_id, status (`draft` \| `finished` \| `canceled`), **wave** (0/7/14/30, nullable), client_metadata, timestamps | Longitudinal — [mvp-verifiable-metrics](../ml/mvp-verifiable-metrics.md) |
 | `answer_events` | id, session_id, question_id, value_num, value_text, value_date, **author_id**, created_at | Append-only; текущий ответ = последний event по `(session_id, question_id)` |
 
-`domain_scores` на MVP считать в `ml.export`, не обязательно хранить в OLTP. Отдельный `audit_log` — позже; история ответов + Django Admin log достаточны для v0.
+`domain_scores` на MVP считать в `app.ml.export`, не обязательно хранить в OLTP. Для административных изменений нужен audit: либо FastAdmin hooks, либо отдельные audit events.
 
-Не смешивать open-import с живыми собаками без `provenance` (`barko_ops` \| `padova` \| `wolfram` \| …).
+Не смешивать open-import с живыми собаками без `provenance` (`hvostun_ops` \| `padova` \| `wolfram` \| …).
 
 ## Роли (MVP)
 
 | Роль | Может | Реализация |
 |------|--------|------------|
-| Волонтёр | CRUD собак своего приюта (через membership); анкета частями; динамика ответов | Group `volunteer` + `shelter_memberships` |
-| Админ | Пользователи, memberships, приюты, каталог анкет | Group `admin` / staff |
+| Волонтёр | CRUD собак своего приюта (через membership); анкета частями; динамика ответов | `shelter_memberships` + FastAPI permission dependencies |
+| Админ | Пользователи, memberships, приюты, каталог анкет | `is_superuser` / app-role + internal admin |
 | Эксперт | Read + заметки | **Отложено** |
 
 ## Порядок работ (v0)
 
-1. Cookiecutter-django + `ml/` + compose (`web` + `db`).
-2. Groups + Admin; login/signup; `consents`.
-3. Миграции по схеме выше; seed C-BARQ(S) 42 пункта.
-4. CRUD shelters/dogs/placement в Admin.
-5. HTMX-анкета волонтёра (draft/finish, история `answer_events`).
-6. `ml.export` → Parquet; `ml.ingest` для open subsets.
+1. Официальный Full Stack FastAPI Template + Redis + `app.ml/`.
+2. Существующий auth + memberships/permissions + `consents`.
+3. SQLModel-модели и Alembic-миграции; seed C-BARQ(S) 42 пункта.
+4. FastAdmin integration spike; затем CRUD shelters/dogs/placement.
+5. React-анкета (draft/finish, история `answer_events`).
+6. `app.ml.export` → Parquet; `app.ml.ingest` для open subsets.
 
 **Критерий v0:** `docker compose up`; волонтёр завёл собаку, заполнил анкету в 2 захода с правкой ответа; админ выдал доступ; есть выгрузка для K3.
 
@@ -172,14 +189,16 @@ erDiagram
 - PII только в ops; в training — hash dog_id + ответы.
 - Лицензия C-BARQ — research UI/export без публичного dump item-текстов.
 - Напоминания о статусе пристройства (бот) — позже, не блокирует схему.
-- Один lockfile зависимостей для web и jupyter.
+- Один Python lockfile (`uv.lock`) для backend/ML/Jupyter.
+- Adminer, Jupyter и Redis не публикуются в production.
 
 ## Отложено
 
 - Экспертный контур и `expert_notes`
-- Микросервисы; ClickHouse/Mongo; SPA; merge open+own в UI
+- Микросервисы; ClickHouse/Mongo; merge open+own в UI
 - K5 / owner UX (модули в том же монолите позже)
-- Отдельный `audit_log`
+- Celery worker до появления реальной фоновой задачи
+- **Мост K5→анкета + сравнение каналов** (Яндекс.Форма vs Амелько; поле `channel` на sessions) — может быть отдельный сервис сбора: [k5-k3-answer-bridge](k5-k3-answer-bridge.md)
 
 ## Связанные страницы
 
@@ -192,3 +211,4 @@ erDiagram
 - [mvp-verifiable-metrics](../ml/mvp-verifiable-metrics.md)
 - [helpdog-forum-adoptions](../datasets/helpdog-forum-adoptions.md)
 - [adoption-return](adoption-return.md)
+- [k5-k3-answer-bridge](k5-k3-answer-bridge.md) — roadmap каналов сбора и extract из K5

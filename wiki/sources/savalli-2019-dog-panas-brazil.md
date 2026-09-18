@@ -77,7 +77,7 @@ Positive и negative activation **ортогональны**, не против�
 - «Mixed-breed» = неопределённое происхождение, не designer cross.
 - 21% без прогулок — специфика subsample.
 
-### Релевантность для Barko
+### Релевантность для Hvostun
 
 - PANAS — **альтернативный temperament-конструкт** (не C-BARQ); потенциальный признак K3 для тревожности/возбудимости, но **нет item-level маппинга** к C-BARQ(S).
 - Демография владельца (пол, опыт) и состав дома — кандидаты на **контекстные признаки** K3; перекликается с [owner-dog-attachment](../concepts/owner-dog-attachment.md).

@@ -2,21 +2,22 @@
 type: concept
 tags: [legal, personal-data, 152-fz, consent, mvp]
 sources: [fz-152-personal-data]
-updated: 2026-08-14
+updated: 2026-09-09
 status: draft
 ---
 
-# Персональные данные и 152-ФЗ в Barko
+# Персональные данные и 152-ФЗ в Hvostun
 
 Практический чеклист для частей проекта, где есть ПДн владельцев/волонтёров. Источник норм: [fz-152-personal-data](../sources/fz-152-personal-data.md) (`152 ФЗ.md`).
 
-## Где в Barko есть ПДн
+## Где в Hvostun есть ПДн
 
 | Место | Примеры ПДн |
 |-------|-------------|
 | Сбор анкет (Яндекс Форма, позже бот/приложение) | email, телефон, согласие, метаданные ответа |
 | Research-ops Postgres | `users`, `consents`, связка владелец↔собака |
 | K5 / чат (позже) | сообщения пользователя, контакты |
+| Извлечение ответов анкеты из чата / Амелько (roadmap) | реплики, подтверждённые ответы, связка с собакой — см. [k5-k3-answer-bridge](k5-k3-answer-bridge.md) |
 | Экспорт для ML | не должен содержать прямые идентификаторы |
 
 Данные о собаке без привязки к человеку — не ПДн; с контактом владельца — обработка ПДн.
@@ -40,4 +41,5 @@ status: draft
 - [fz-152-personal-data](../sources/fz-152-personal-data.md)
 - [consent-v1-pilot-form](consent-v1-pilot-form.md)
 - [research-data-app](research-data-app.md) — таблица `consents`
+- [k5-k3-answer-bridge](k5-k3-answer-bridge.md) — extract из чата и каналы сбора
 - [overview](../overview.md)

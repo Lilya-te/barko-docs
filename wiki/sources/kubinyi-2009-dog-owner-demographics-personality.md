@@ -53,7 +53,7 @@ Owner variables (gender, education, household size и др.) — **minor but det
 - Boldness — самая слабая по внутренней согласованности субшкала (α=0.65); авторам прямо указывают на желательность расширения набора пунктов.
 - Исключены щенки <1 года (26.8% исходной базы) → ограничена интерпретация о раннем развитии/социализации; при этом возраст приобретения (до 12 недель) всё равно оказался значимым предиктором для всех четырёх traits.
 
-### Релевантность для Barko
+### Релевантность для Hvostun
 
 - **K3:** age, neutering, age at acquisition, training exposure — кандидаты **owner/dog covariates** при harmonization с C-BARQ; осторожность с causal claims (confounding, reverse causality для training).
 - **K5:** evidence base для объяснений «почему молодая кастрированная собака кажется менее calm»; онлайн-questionnaires at scale — методологический преcedent для pilot/research ops (с учётом 152-ФЗ для РФ).

@@ -49,7 +49,7 @@ Ley, J., Bennett, P., & Coleman, G. (2008). Personality dimensions that emerge i
 - «Openness to experience» не выделился отдельно.
 - Validation/reliability на follow-up (Ley 2009).
 
-### Релевантность для Barko
+### Релевантность для Hvostun
 
 - **K3:** MCPQ dimensions map loosely на C-BARQ constructs (excitability ↔ extraversion; trainability ↔ training focus; fear ↔ neuroticism) — потенциал **cross-instrument harmonization**, не готовые features без mapping study.
 - **K5:** reference для personality lexicon, shelter matching, «energy vs trainability vs amicability» в owner education; precursor MCPQ-R (26 items).

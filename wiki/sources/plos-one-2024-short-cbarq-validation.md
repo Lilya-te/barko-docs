@@ -46,9 +46,9 @@ Wilkins V. et al. (2024). PLOS ONE 19(4): e0299973. Dog Aging Project cohort.
 | Excitability | 0.57 |
 | Owner-directed aggression | 0.52 |
 
-### Выводы для Barko
+### Выводы для Hvostun
 
-- **C-BARQ(S) валиден** как замена полной версии для скрининга — релевантно для MVP-анкеты Barko.
+- **C-BARQ(S) валиден** как замена полной версии для скрининга — релевантно для MVP-анкеты Hvostun.
 - **Separation-related behavior** — подтверждённый домен для short/full mapping; кандидат признака K3.
 - Supplementary S1 (официальное имя `pone.0299973.s001.csv`, локально
   `wilkins_2024_shortened_cbarq_validation_supplement_s1.csv`) — open dataset,

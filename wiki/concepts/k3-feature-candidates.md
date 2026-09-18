@@ -46,7 +46,7 @@ status: draft
 | Фактор | Источник | Роль |
 |--------|----------|------|
 | Тип привязанности владелец–собака | [fomina-2024](sources/fomina-2024-problem-behavior-review.md) | Контекст, возможно не в MVP |
-| Ранняя социализация | fomina-2024 | Анкета Barko / будущие features |
+| Ранняя социализация | fomina-2024 | Анкета Hvostun / будущие features |
 | Нейротизм владельца | fomina-2024 | K5 / рекомендации, не K3 baseline |
 | Время после пристройства | [Vitulová 2018](../sources/vitulova-2018-adopted-shelter-dog-behaviour.md) | Обязательный контекст: страх 61% → 20%, общительность 56% → 93% за 6 месяцев |
 | Документированная история жестокого обращения | [Vitulová 2018](../sources/vitulova-2018-adopted-shelter-dog-behaviour.md) | Контекстный risk factor; не использовать детерминированно |

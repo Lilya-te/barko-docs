@@ -1,12 +1,12 @@
-# Barko Wiki — Index
+# Hvostun Wiki — Index
 
-Каталог страниц knowledge base. Обновлён: 2026-09-08 (ingest consent_v1 pilot form).
+Каталог страниц knowledge base. Обновлён: 2026-09-09 (FastAPI full-stack architecture).
 
 ## Overview
 
 | Страница | Описание |
 |----------|----------|
-| [overview](overview.md) | Barko: продукт, ML-компоненты, текущий статус исследований |
+| [overview](overview.md) | Hvostun: продукт, ML-компоненты, текущий статус исследований |
 | [socio-economic-impact](socio-economic-impact.md) | Прогнозируемые социально-экономические эффекты |
 
 ## Components (K3 / K5 / K6)
@@ -29,9 +29,10 @@
 | [problem-behavior-taxonomy](concepts/problem-behavior-taxonomy.md) | Таксономия проблемного поведения |
 | [owner-dog-attachment](concepts/owner-dog-attachment.md) | Тип привязанности владелец–собака |
 | [owner-frustration](concepts/owner-frustration.md) | Разочарованность владельца (~14%) |
-| [research-data-app](concepts/research-data-app.md) | Внутреннее приложение сбора данных: монолит, compose, схема Postgres |
-| [personal-data-152-fz](concepts/personal-data-152-fz.md) | Чеклист 152-ФЗ для контуров Barko с ПДн |
+| [research-data-app](concepts/research-data-app.md) | Внутреннее приложение: FastAPI + React modular monolith, Compose, схема Postgres |
+| [personal-data-152-fz](concepts/personal-data-152-fz.md) | Чеклист 152-ФЗ для контуров Hvostun с ПДн |
 | [consent-v1-pilot-form](concepts/consent-v1-pilot-form.md) | Шаблон согласия `consent_v1` и политики для пилотной Яндекс.Формы |
+| [k5-k3-answer-bridge](concepts/k5-k3-answer-bridge.md) | Roadmap: извлечение ответов анкеты из K5 + сравнение Яндекс.Форма vs Амелько |
 
 ## Datasets
 
@@ -64,7 +65,7 @@
 
 | Страница | Исходный файл | Описание |
 |----------|---------------|----------|
-| [fz-152-personal-data](sources/fz-152-personal-data.md) | `152 ФЗ.md` | Саммари 152-ФЗ: только нормы, полезные Barko (согласие, локализация, ops/ML) |
+| [fz-152-personal-data](sources/fz-152-personal-data.md) | `152 ФЗ.md` | Саммари 152-ФЗ: только нормы, полезные Hvostun (согласие, локализация, ops/ML) |
 | [ml-ideas-notes](sources/ml-ideas-notes.md) | `_ml_ideas.md` | Подбор модели для ML-решений BARKO |
 | [app-ideas-notes](sources/app-ideas-notes.md) | `_app_ideas/_database_architecture.md` | Схема БД и scope research-ops |
 | [data-ideas-notes](sources/data-ideas-notes.md) | `analytics/research/datatsets/_data_ideas.md` | Исследование открытых C-BARQ датасетов |

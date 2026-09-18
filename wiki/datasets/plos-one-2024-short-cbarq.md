@@ -29,7 +29,7 @@ Supplementary data к статье о валидации сокращённой 
 - Реальные ответы C-BARQ (435 пар владелец–собака, DAP)
 - Сопоставление **полной** (100 пунктов) и **сокращённой** C-BARQ(S) (42 пункта)
 - Pearson r >0.60 для 12 из 14 доменов — см. [plos-one-2024-short-cbarq-validation](../sources/plos-one-2024-short-cbarq-validation.md)
-- Релевантно для MVP-анкеты Barko на базе **C-BARQ(S)**
+- Релевантно для MVP-анкеты Hvostun на базе **C-BARQ(S)**
 
 ## Релевантность для K3
 

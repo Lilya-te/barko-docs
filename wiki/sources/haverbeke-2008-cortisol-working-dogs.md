@@ -63,7 +63,7 @@ Haverbeke, A., Diederich, C., Depiereux, E., & Giffroy, J. M. (2008). Cortisol a
 - Одна популяция MWD (Belgium); эффекты пола/породы/duty time не тестировали (в статье явно указано).
 - Cortisol измеряли только в plasma; стресс от забора крови пытались минимизировать, отбирая пробу в пределах 3 минут.
 
-### Релевантность для Barko
+### Релевантность для Hvostun
 
 - **K3:** coping/HPA reactivity — потенциальный construct для risk stratification рабочих/kennelled собак, но не прямой overlap с C-BARQ; нужны owner-reported proxies (fear/novelty) или ops-данные.
 - **K5:** welfare framing — stereotypies как «behavioral scar», не единственный индикатор; повторный challenge + cortisol recovery как модель adaptation vs chronic stress; полезно для контента про kennel stress и military/shelter contexts.

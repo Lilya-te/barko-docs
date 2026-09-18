@@ -61,7 +61,7 @@ Ley, J. M., Bennett, P. C., & Coleman, G. J. (2009). A refinement and validation
 - Breed stereotypes частично подтверждены, но η² малы.
 - Motivation dimension сужен vs MCPQ 2008.
 
-### Релевантность для Barko
+### Релевантность для Hvostun
 
 - **K3:** субшкалы MCPQ‑R — внешний personality benchmark; возрастные эффекты на Extraversion/Training Focus — потенциальные covariates для longitudinal/adoption моделей; ассоциации physical size ↔ Neuroticism/Amicability можно рассматривать как очень осторожный prior, но не как substitute C‑BARQ.
 - **K5:** validated 26‑пунктовый инструмент для объяснения owner‑facing профиля personality; возможна привязка к matching‑логике (energy, trainability, sociability, anxiety).

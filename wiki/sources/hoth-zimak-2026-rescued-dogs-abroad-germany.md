@@ -85,7 +85,7 @@ Hoth-Zimak, L., Kickstein, J., Klima, A., Mackensen, H., Müller, E., Louton, H.
 - Не C-BARQ; шкала custom 0–3.
 - Selection bias (мотивированные владельцы импорта).
 
-### Релевантность для Barko
+### Релевантность для Hvostun
 
 - Сильная поддержка **нормальной адаптационной кривой** для K5: ранний страх ≠ провал; пик улучшения — **первые 6 недель**.
 - Для K3: **partner dog** как protective factor; осторожность с интерпретацией «dog school» (reverse causality).

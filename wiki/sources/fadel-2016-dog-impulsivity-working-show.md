@@ -59,12 +59,12 @@ Fadel, F. R., Driscoll, P., Pilot, M., Wright, H., Zulch, H., & Mills, D. S. (20
 - Show breeding с фокусом на экстерьер «схлопывает» поведенческие различия между породами.
 - Стереотипизация пород для законодательства и matching — **неадекватна**; нужен индивидуальный профиль.
 
-### Ограничность DIAS для Barko
+### Ограничность DIAS для Hvostun
 
 - DIAS ≠ C-BARQ; нет прямого item overlap с C-BARQ(S).
 - Owner-reported; причина кастрации не контролировалась (confound).
 
-### Релевантность для Barko
+### Релевантность для Hvostun
 
 - Аргument против **breed-only** matching в K3/K5; если использовать породу — нужна **линия/назначение** (working/pet/show) или поведенческий профиль.
 - Impulsivity / arousal — см. пересечение с C-BARQ(S) excitability; потенциальный external validation construct, не готовый feature без harmonization.

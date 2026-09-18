@@ -3,7 +3,7 @@ type: source
 tags: [app, research-ops, postgres, c-barq, schema]
 sources: []
 raw_path: _app_ideas/_database_architecture.md
-updated: 2026-07-28
+updated: 2026-09-09
 status: ingested
 ---
 
@@ -28,16 +28,17 @@ status: ingested
 2. MVP-роли: **волонтёр** (собака + анкета частями/динамика) и **админ** (права, пользователи). **Эксперт** — позже.
 3. Цель — наполнение БД до/параллельно с обучением моделей.
 
-## Архитектурные уточнения при ingest
+## Архитектурные уточнения
 
 Зафиксированы на [research-data-app](../concepts/research-data-app.md):
 
-- app-роли (`volunteer` / `admin`) — **Django Groups**, не отдельные таблицы `roles` / `user_roles`;
+- первоначальное решение Django заменено официальным Full Stack FastAPI Template; auth берём из шаблона;
+- `is_superuser` используется для системного администратора, object-scope ролей — через `shelter_memberships` и FastAPI permission dependencies;
 - в `answer_events` нужны `author_id` и запрет UPDATE/DELETE;
 - в `questions` — `domain` (+ стабильный `item_id` / `global_number` как ключ C-BARQ);
 - в сессиях — `wave` (0/7/14/30) для longitudinal;
 - на `dogs` — `provenance` / `source`; `adopted_at` не заменяет `placement_events`;
-- отдельный `audit_log` на MVP можно отложить (история ответов + Admin log).
+- административные изменения должны попадать в audit events (через FastAdmin hooks либо отдельный механизм).
 
 ## Интегрировано в вики
 

@@ -2,7 +2,7 @@
 type: component
 tags: [k5, llm, rag, mvp, safety]
 sources: [ml-ideas-notes, fomina-2024-problem-behavior-review, gritsenko-2023-owner-frustration, gates-2018-post-adoption-problem-behaviours, vitulova-2018-adopted-shelter-dog-behaviour]
-updated: 2026-08-12
+updated: 2026-09-09
 status: draft
 ---
 
@@ -64,6 +64,11 @@ status: draft
 |------|---------|
 | MVP | Существующая LLM API + RAG |
 | Следующий этап | Улучшение RAG-пайплайна, промптов, safety-правил, экспертной базы |
+| Roadmap | Извлечение ответов анкеты K3 из диалога (с confirm) + исследование канала vs Яндекс.Форма / Амелько — [k5-k3-answer-bridge](../concepts/k5-k3-answer-bridge.md) |
+
+## Связь с анкетой K3 (roadmap)
+
+K5 не подменяет форму: предлагает черновик пунктов C-BARQ(S) только по явно сказанному, с provenance и подтверждением пользователя. Параллельно планируется сравнение диалогового сбора (**Амелько**) с прямым self-report в Яндекс.Форме.
 
 ## Метрики
 
