@@ -11,6 +11,6 @@
     "df_domains_kmeans": "artifacts/csv/clusters/df_domains_kmeans.csv",
     "df_domains_gmm": "artifacts/csv/clusters/df_domains_gmm.csv",
     "cluster_comparison": "artifacts/json/cluster_comparison.json",
-    "original_data": "raw/padova-cbarq/Dataset_22022022_alt.csv"
+    "original_data": "datasets/foreign/bohland_2023_shelter_behavior_after_adoption_supplement_s4.csv"
   }
 }
