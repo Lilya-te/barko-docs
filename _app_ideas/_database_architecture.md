@@ -35,7 +35,7 @@ erDiagram
     uuid assigned_volunteer FK
     uuid owner_id FK
     date birthday
-    date adopted_at
+    date status_at
     text breed
     bool mixed
     uuid created_by_id FK
@@ -65,7 +65,7 @@ erDiagram
     text version
   }
 
-  questionnairies {
+  surveys {
     uuid id PK
     text name
     text slug
@@ -74,31 +74,44 @@ erDiagram
     timestamptz updated_at
   }
 
+  survey_versions {
+    uuid id PK
+    uuid survey_id FK
+    int version_num
+    text description
+    timestamptz created_at
+  }
+
   scales {
     uuid id PK
     text type
-    int min_value
-    int max_value
+    jsonb config
     timestamptz created_at
     timestamptz updated_at
   }
 
   questions {
     uuid id PK
-    uuid questionnairie_id FK
-    int global_number
-    int order_number
+    uuid global_id
     text text
     uuid scale_id FK
     timestamptz created_at
     timestamptz updated_at
   }
 
-  questionnaire_sessions {
-    uuid id PK
+  surveys_questions {
+    uuid survey_version_id PK, FK
+    uuid question_id PK, FK
+    int order_num
     uuid user_id FK
+    timestamptz created_at
+  }
+
+  survey_sessions {
+    uuid id PK
+    uuid owner_id FK
     uuid dog_id FK
-    uuid questionnairie_id FK
+    uuid survey_version_id FK
     text status
     jsonb client_metadata
     timestamptz created_at
@@ -107,11 +120,10 @@ erDiagram
 
   answer_events {
     uuid id PK
-    uuid session_id FK
+    uuid surveys_session_id FK
+    uuid survey_version_id FK
     uuid question_id FK
-    numeric value_num
-    text value_text
-    date value_date
+    jsonb value
     timestamptz created_at
   }
 
@@ -122,12 +134,15 @@ erDiagram
   dogs ||--o{ dog_chips : "has"
   dogs ||--o{ placement_events : "timeline"
   users ||--o{ consents : "accepts"
-  questionnairies ||--o{ questions : "contains"
+  surveys ||--o{ survey_versions : "versions"
+  survey_versions ||--o{ surveys_questions : "contains"
+  questions ||--o{ surveys_questions : "included"
   scales ||--o{ questions : "uses"
-  users ||--o{ questionnaire_sessions : "fills"
-  dogs ||--o{ questionnaire_sessions : "about"
-  questionnairies ||--o{ questionnaire_sessions : "instance_of"
-  questionnaire_sessions ||--o{ answer_events : "stores"
+  users ||--o{ survey_sessions : "fills"
+  dogs ||--o{ survey_sessions : "about"
+  survey_versions ||--o{ survey_sessions : "instance_of"
+  survey_sessions ||--o{ answer_events : "stores"
+  survey_versions ||--o{ answer_events : "validates"
   questions ||--o{ answer_events : "answers"
 ```
 
@@ -147,13 +162,13 @@ id
 name
 sex
 neutered
-status (shelter / home / overexposure / unknown)
+status (shelter / home / back_shelter / overexposure / unknown)
 description
 shelter_id
 assigned_volunteer
 owner_id
 birthday
-adopted_at
+status_at
 breed
 mixed
 created_by_id
@@ -170,7 +185,7 @@ created_at
 ### placement_events
 id
 dog_id
-code (shelter_started / home_started / overexposure_started / unknown)
+code (shelter_started / home_started / back_shelter / overexposure_started)
 created_at
 
 ### users
@@ -189,7 +204,7 @@ type
 accepted_at
 version
 
-### questionnairies
+### surveys
 например cbarq_s_42, cbarq_long_100 (см. c-barq)
 id
 name
@@ -198,30 +213,41 @@ description
 created_at
 updated_at
 
+### survey_versions — immutable
+id
+survey_id
+version_num
+description
+created_at
+
 ### questions
 id
-questionnairie_id
-global_number
-order_number
+global_id
 text
 scale_id
 created_at
 updated_at
 
+### surveys_questions — immutable composition
+survey_version_id
+question_id
+order_num
+user_id
+created_at
+
 ### scales
 шкалы - целое число от 0 до 100 или от 0 до 4 или 0-10. Текст. Дата
 id
 type
-min_value
-max_value
+config (json: min_value, max_value, legend)
 created_at
 updated_at
 
-### questionnaire_sessions — по собаке и анкете: draft  submitted
+### survey_sessions — по собаке и точной версии анкеты
 id
-user_id
+owner_id
 dog_id
-questionnairie_id
+survey_version_id
 status (draft/finished/canceled)
 client_metadata (данные о сессии с устройства)
 created_at
@@ -229,12 +255,16 @@ updated_at
 
 ### answer_events — append-only; текущий ответ = последний event
 id
-session_id
+surveys_session_id
+survey_version_id
 question_id
-value_num
-value_text
-value_date
+value (json: {"value": ...})
 created_at
+
+Все внешние ключи используют `ON DELETE RESTRICT`. ORM запрещает изменение и
+удаление survey_versions, questions, scales, recommendations и answer_events.
+Два составных FK answer_events гарантируют, что session и question относятся
+к одному survey_version.
 
 
 

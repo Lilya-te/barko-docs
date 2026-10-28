@@ -4,6 +4,43 @@
 
 ---
 
+## [2026-10-04] ingest | Пункты 8 и 9 пилотной анкеты совпадают с C-BARQ(S)
+
+- В форме пункты 8 и 9 поменяны местами относительно перевода Гербека.
+- 8 — незнакомая собака на поводке, 9 — незнакомцы мимо дома. Номера субшкал больше не сдвигаются.
+- Обновлены [pilot-questionnaire](concepts/pilot-questionnaire.md) и [c-barq-short-42-scoring](concepts/c-barq-short-42-scoring.md).
+
+## [2026-10-04] ingest | Скоринг Mini C-BARQ, 42 пункта
+
+- 14 субшкал считаются как среднее пунктов 0–4. Пункты 27 и 28 («сидеть», «жди») с обратным баллом.
+- Девять прочих пунктов (32–38, 41, 42) не усредняются.
+- Номера формул — английский C-BARQ(S). В пилотной анкете пункты 8 и 9 поменяны местами.
+- Новая страница [c-barq-short-42-scoring](concepts/c-barq-short-42-scoring.md). Ссылки из [c-barq](concepts/c-barq.md) и [pilot-questionnaire](concepts/pilot-questionnaire.md).
+
+## [2026-09-27] ingest | dogs.status_at
+
+- В схеме `dogs.adopted_at` заменён на `status_at` (дата текущего статуса).
+- Поле по-прежнему не заменяет `placement_events`.
+- Обновлены [`_database_architecture.md`](../_app_ideas/_database_architecture.md),
+  [research-data-app](concepts/research-data-app.md),
+  [app-ideas-notes](sources/app-ideas-notes.md).
+
+## [2026-09-25] ingest | Версии анкет и immutable-каталоги
+
+- `surveys` отделены от immutable `survey_versions`; session хранит точную version.
+- Состав и порядок перенесены в `surveys_questions.survey_version_id`.
+- `answer_events` получили version-aware composite FK и JSONB `{"value": ...}`.
+- Все FK используют `ON DELETE RESTRICT`; ORM защищает каталоги от UPDATE/DELETE.
+- Обновлены [research-data-app](concepts/research-data-app.md),
+  `_app_ideas/_database_architecture.md` и [index](index.md).
+
+## [2026-09-23] query | HTML-админка отдельно от web
+
+- Продуктовая админка: FastAPI + Jinja2 + Bootstrap в `backend/app/admin`; cookie-сессия.
+- `backend/app/api` (`/api/v1`) и каталог `frontend/` — для будущего `web/` (React + Tailwind/shadcn).
+- FastAdmin spike снят. Adminer (`db-ui`) остаётся локальным инструментом БД.
+- Обновлены [research-data-app](concepts/research-data-app.md), [overview](overview.md), [index](index.md), [app-ideas-notes](sources/app-ideas-notes.md), `K3_RiskScore/plan/k3_plan.md`.
+
 ## [2026-09-09] query | FastAPI full-stack template для Hvostun
 
 - Вместо Django/cookiecutter принят официальный [Full Stack FastAPI Template](https://github.com/fastapi/full-stack-fastapi-template): FastAPI, SQLModel/Alembic, PostgreSQL, React/TypeScript, Tailwind/shadcn, JWT-auth и Docker Compose.

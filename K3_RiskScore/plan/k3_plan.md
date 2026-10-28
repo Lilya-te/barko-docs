@@ -10,29 +10,29 @@
 
 - FastAPI, Pydantic, SQLModel/SQLAlchemy, Alembic;
 - PostgreSQL;
-- React + TypeScript + Vite;
-- Tailwind CSS + shadcn/ui;
-- готовые JWT-auth, регистрация/вход, восстановление пароля, профиль и роль superuser;
-- Docker Compose, Traefik, Mailpit, Pytest, Playwright.
+- HTML-админка: Jinja2 + Bootstrap в `backend/app/admin`;
+- React + TypeScript + Vite + Tailwind/shadcn — только будущий `web/` (`frontend/` как заготовка);
+- JWT-auth из шаблона: cookie для админки, Bearer для `/api/v1`;
+- Docker Compose, Traefik, Mailpit, Pytest.
 
 Дополнительно:
 
-- Redis — сессии внутренней админки, кэш и позднее Celery;
-- FastAdmin — кандидат для CRUD-админки предметных сущностей;
+- Redis — кэш и позднее Celery (не обязателен для HTML-админки);
+- Adminer (`db-ui`) — локальный просмотр БД;
 - Jupyter, NumPy, pandas, scikit-learn, pyarrow, matplotlib;
 - PyTorch — только после tabular baseline, не в первоначальный образ.
 
 ### Что важно не перепутать
 
-Официальный шаблон содержит пользовательский кабинет и управление пользователями, но **не универсальную CRUD-админку уровня Django Admin**. Для shelters/dogs/questionnaires нужен FastAdmin либо отдельные React CRUD-страницы.
+Официальный шаблон содержит пользовательский кабинет на React, но **это не продуктовая админка Hvostun**. Списки собак/анкет/сессий — свои Jinja-страницы. FastAdmin не подключаем.
 
-`fastapi-users` не подключаем: auth уже есть в шаблоне, а сама библиотека находится в maintenance mode. CRUDAdmin пока помечен авторами как experimental; его можно оценить позднее, но не делать критической зависимостью MVP.
+`fastapi-users` не подключаем: auth уже есть в шаблоне, а сама библиотека находится в maintenance mode.
 
-Переход на официальный шаблон означает, что прежние Django, Bootstrap и HTMX исключаются из основного решения. UI делаем на React + Tailwind/shadcn.
+React + Tailwind/shadcn — для owner/анкеты в `web/`, не для внутреннего admin-контура. Bootstrap в админке допустим.
 
 ## Архитектура
 
-**Modular monolith:** один репозиторий `~/MIPT/startup/hvostun`, один backend FastAPI, один frontend React и один `docker compose`.
+**Modular monolith:** один репозиторий `~/MIPT/startup/hvostun-core`, один backend FastAPI, HTML-админка внутри backend, позже `web/` React, один `docker compose`.
 
 ```text
 ~/MIPT/startup/hvostun/
@@ -45,7 +45,7 @@
 │   │   │   ├── dogs/
 │   │   │   ├── questionnaires/
 │   │   │   └── consents/
-│   │   ├── admin/
+│   │   ├── admin/             # Jinja HTML, не Vite-сборка
 │   │   ├── ml/
 │   │   │   ├── ingest/
 │   │   │   ├── export/
@@ -56,12 +56,7 @@
 │   ├── notebooks/
 │   ├── tests/
 │   └── pyproject.toml
-├── frontend/
-│   ├── src/
-│   │   ├── routes/
-│   │   ├── components/
-│   │   └── client/
-│   └── package.json
+├── frontend/                  # заготовка React для web/
 ├── data/
 │   ├── raw/
 │   └── processed/
@@ -71,13 +66,13 @@
 └── README.md
 ```
 
-Новые функции добавляются как доменные модули backend/frontend, а не отдельные HTTP-микросервисы.
+Новые функции добавляются как доменные модули backend (и позже `web/`), а не отдельные HTTP-микросервисы.
 
 ## Compose-сервисы
 
 | Сервис | Назначение |
 |---|---|
-| `backend` | FastAPI и собранный frontend |
+| `backend` | FastAPI: HTML-админка + JSON `/api/v1` |
 | `db` | PostgreSQL |
 | `redis` | admin sessions/cache, позднее Celery broker |
 | `proxy` | Traefik |
@@ -312,7 +307,7 @@ git commit -m "chore: bootstrap Hvostun from full-stack FastAPI template"
 Критерий готовности этапа 0:
 
 - [ ] работает login и superuser;
-- [ ] backend, frontend и PostgreSQL поднимаются Compose;
+- [ ] backend (HTML-админка + `/api/v1`), PostgreSQL и Adminer поднимаются Compose;
 - [ ] `/docs` открывается;
 - [ ] тесты шаблона проходят;
 - [ ] Redis отвечает healthcheck;
@@ -351,26 +346,13 @@ uv run alembic upgrade head
 
 ## Этап 3. Внутренняя админка
 
-Сначала сделать короткий integration spike FastAdmin + SQLModel:
-
-1. подключить `fastadmin[fastapi,sqlalchemy]`;
-2. использовать существующую таблицу User и только superuser-auth;
-3. смонтировать под `/internal/admin`, не под публичный API;
-4. зарегистрировать shelters/dogs/questionnaires;
-5. проверить relationships, permissions, CSRF/session security и audit.
-
-```bash
-cd ~/MIPT/startup/hvostun/backend
-uv add "fastadmin[fastapi,sqlalchemy]"
-```
-
-Если spike не проходит критерии безопасности/совместимости, не менять ORM: сделать минимальные React CRUD-страницы поверх API и сгенерированного клиента.
+HTML-админка в `backend/app/admin`: FastAPI + Jinja2 + Bootstrap, cookie-сессия, списки собак/анкет/сессий. FastAdmin не подключаем. JSON `/api/v1` не использовать для этих страниц.
 
 Adminer — инструмент разработчика, не продуктовая админка; в production не публиковать.
 
 ## Этап 4. Анкета
 
-- React + shadcn UI: сохранение draft, продолжение, finish.
+- React + shadcn UI в `web/`: сохранение draft, продолжение, finish.
 - Backend валидирует диапазоны шкал и права на собаку.
 - Все исправления создают новые `answer_events`.
 - Показывать прогресс и источник (`channel`), не вычислять K3 до минимально достаточного набора.

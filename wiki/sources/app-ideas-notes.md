@@ -3,7 +3,7 @@ type: source
 tags: [app, research-ops, postgres, c-barq, schema]
 sources: []
 raw_path: _app_ideas/_database_architecture.md
-updated: 2026-09-09
+updated: 2026-09-27
 status: ingested
 ---
 
@@ -37,8 +37,8 @@ status: ingested
 - в `answer_events` нужны `author_id` и запрет UPDATE/DELETE;
 - в `questions` — `domain` (+ стабильный `item_id` / `global_number` как ключ C-BARQ);
 - в сессиях — `wave` (0/7/14/30) для longitudinal;
-- на `dogs` — `provenance` / `source`; `adopted_at` не заменяет `placement_events`;
-- административные изменения должны попадать в audit events (через FastAdmin hooks либо отдельный механизм).
+- на `dogs` — `provenance` / `source`; `status_at` не заменяет `placement_events`;
+- административные изменения должны попадать в audit events (отдельный механизм, не FastAdmin hooks).
 
 ## Интегрировано в вики
 

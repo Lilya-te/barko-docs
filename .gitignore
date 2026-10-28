@@ -8,5 +8,9 @@ ds_managment/Терещенкова_Лилия_Барко_Расчеты.xlsx
 ds_managment/.DS_Store
 .DS_Store
 *.numbers
+*.csv
+*.parquet
+*.xlsx
+*.json
 .DS_Store
 .DS_Store

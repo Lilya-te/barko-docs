@@ -2,7 +2,7 @@
 type: overview
 tags: [hvostun, mvp, ml]
 sources: [ml-ideas-notes, data-ideas-notes, helpdog-notebook-notes, app-ideas-notes]
-updated: 2026-09-09
+updated: 2026-09-23
 status: draft
 ---
 
@@ -39,7 +39,7 @@ status: draft
 
 ## Research-ops приложение
 
-Внутренний контур сбора данных (волонтёр / админ; эксперт позже) — [research-data-app](concepts/research-data-app.md): modular monolith на официальном Full Stack FastAPI Template (FastAPI + React + SQLModel + PostgreSQL), один Docker Compose. Схема БД — [app-ideas-notes](sources/app-ideas-notes.md).
+Внутренний контур сбора данных (волонтёр / админ; эксперт позже) — [research-data-app](concepts/research-data-app.md): modular monolith (FastAPI + SQLModel + PostgreSQL), HTML-админка Jinja/Bootstrap, React — для будущего `web/`, один Docker Compose. Схема БД — [app-ideas-notes](sources/app-ideas-notes.md).
 
 ## Текущие решения (из первого ingest)
 

@@ -45,6 +45,8 @@ Fear, **Arousal** (конструкт без прямого аналога в lo
 
 Stranger-directed aggression/fear, owner-directed aggression, dog-directed aggression/fear, dog rivalry, **separation-related behavior**, attachment/attention-seeking, trainability, chasing, excitability, touch sensitivity, energy level.
 
+Формулы среднего по пунктам C-BARQ(S) и обратный балл для «сидеть» / «жди»: [c-barq-short-42-scoring](c-barq-short-42-scoring.md).
+
 ## Релевантность для Hvostun
 
 - MVP-анкета **владельца:** кандидат **C-BARQ(S)** (42 пункта). Состав вопросов и вариантов: [pilot-questionnaire](pilot-questionnaire.md).

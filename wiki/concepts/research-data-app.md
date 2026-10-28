@@ -1,8 +1,8 @@
 ---
 type: concept
-tags: [app, research-ops, fastapi, react, sqlmodel, postgres, mvp, monolith, schema]
+tags: [app, research-ops, fastapi, jinja, bootstrap, react, sqlmodel, postgres, mvp, monolith, schema]
 sources: [app-ideas-notes]
-updated: 2026-09-09
+updated: 2026-09-27
 status: draft
 ---
 
@@ -19,28 +19,32 @@ status: draft
 
 ## Архитектура MVP
 
-**Modular monolith:** один продуктовый репозиторий, один backend FastAPI, один frontend React, один `docker compose up`. Микросервисы не делаем. Границы — доменные Python-модули, frontend routes и пакет `app.ml`.
+**Modular monolith:** один продуктовый репозиторий, один backend FastAPI, один `docker compose up`. Микросервисы не делаем. Границы — доменные Python-модули, пакет `app.admin` (HTML) и пакет `app.ml`. React — только будущий пользовательский `web/`.
 
-Knowledge wiki (`barko-docs`) остаётся отдельно от кода приложения (`MIPT/startup/hvostun`).
+Knowledge wiki (`barko-docs`) остаётся отдельно от кода приложения (`MIPT/startup/hvostun-core`).
 
-Основа: официальный [Full Stack FastAPI Template](https://github.com/fastapi/full-stack-fastapi-template). Он даёт auth и user/admin dashboard, но не универсальный Django-подобный CRUD для предметных моделей. Для внутренней CRUD-админки — integration spike [FastAdmin](https://github.com/vsdudakov/fastadmin); fallback — минимальные React CRUD-страницы.
+Основа: официальный [Full Stack FastAPI Template](https://github.com/fastapi/full-stack-fastapi-template) для backend/auth. Продуктовая админка — **не** dashboard шаблона и **не** FastAdmin: FastAPI + Jinja2 + Bootstrap в `backend/app/admin`. JSON `/api/v1` в `backend/app/api` зарезервирован для `web/`.
 
 ```mermaid
 flowchart TB
   subgraph repo [One_repository]
-    frontend[React_source_and_build]
+    adminHtml[admin_Jinja_Bootstrap]
+    frontend[frontend_later_web]
     subgraph compose [docker_compose]
       backend[backend_FastAPI]
       db[(postgres)]
+      dbui[db_ui_Adminer]
       redis[(redis)]
       jupyter[jupyter_optional]
     end
-    domains[domain_modules_api_admin]
+    domains[domain_modules_api]
     mlpkg[ml_package_importable]
     data[data_parquet_volume]
   end
-  frontend --> backend
+  adminHtml --> backend
+  frontend -.-> backend
   backend --> db
+  dbui --> db
   backend --> redis
   jupyter --> db
   backend --> mlpkg
@@ -52,9 +56,9 @@ flowchart TB
 | Контейнер в compose | Роль |
 |---------------------|------|
 | `db` | PostgreSQL — единственная OLTP-БД |
-| `backend` | FastAPI + SQLModel + Alembic + auth/API |
-| frontend build | React/TypeScript + Tailwind/shadcn; не отдельный production-контейнер, обслуживается backend |
-| `redis` | admin sessions/cache; Celery broker позже |
+| `backend` | FastAPI + SQLModel + Alembic: HTML-админка + JSON `/api/v1` |
+| `db-ui` | Adminer — локальный просмотр БД, не продуктовая админка |
+| `redis` | кэш / Celery broker позже |
 | `jupyter` (опционально) | Ноутбуки поверх того же `ml/` и той же БД |
 | `worker` (позже) | Celery из того же образа |
 
@@ -63,23 +67,18 @@ flowchart TB
 ### Структура репозитория (ориентир)
 
 ```text
-MIPT/startup/hvostun/
+MIPT/startup/hvostun-core/
   compose.yml
   backend/
     app/
-      api/routes/
+      api/routes/        # JSON /api/v1 для будущего web/
+      admin/             # Jinja + Bootstrap, HTML-роуты
       domains/
-        shelters/
-        dogs/
-        questionnaires/
-        consents/
-      admin/
       ml/
     alembic/
     notebooks/
     pyproject.toml
-  frontend/
-    src/
+  frontend/              # заготовка React для web/ (ещё не подключена)
   data/
 ```
 
@@ -91,13 +90,14 @@ MIPT/startup/hvostun/
 | DB | PostgreSQL |
 | ORM / migrations | SQLModel/SQLAlchemy + Alembic |
 | Backend | FastAPI + Pydantic |
-| Auth | JWT/auth из шаблона; `is_superuser` + app memberships/roles |
-| API | FastAPI + OpenAPI + generated frontend client |
-| UI | React + TypeScript + Tailwind CSS + shadcn/ui |
-| Admin | User dashboard из шаблона; FastAdmin spike для domain CRUD |
-| Deploy | Один Compose: `backend` + `db` + `redis` (+ optional `jupyter`) |
+| Auth | JWT из шаблона; админка — httpOnly cookie; API — Bearer. `is_superuser` + позже memberships |
+| API | FastAPI + OpenAPI в `backend/app/api`; generated client — когда появится `web/` |
+| Admin UI | Jinja2 + Bootstrap в `backend/app/admin` |
+| Web UI | React + TypeScript + Vite + Tailwind/shadcn; исходник `frontend/`, каталог `web/` позже |
+| DB UI | Adminer (`db-ui`), только local |
+| Deploy | Один Compose: `backend` + `db` + `db-ui` (+ later `redis` / `jupyter`) |
 
-`fastapi-users` не добавляем: auth уже реализован в официальном шаблоне, а библиотека находится в maintenance mode. CRUDAdmin не является основной зависимостью, пока его авторы помечают проект как experimental.
+`fastapi-users` не добавляем: auth уже реализован в официальном шаблоне, а библиотека находится в maintenance mode. FastAdmin и CRUDAdmin не берём: админка — свои HTML-страницы.
 
 **Не брать на MVP:** микросервисы, Mongo/ClickHouse/lake, отдельные репозитории frontend/backend/ml, второй auth framework, PyTorch до tabular baseline.
 
@@ -118,11 +118,14 @@ erDiagram
   users ||--o{ dogs : assigned_volunteer
   dogs ||--o{ placement_events : has
   users ||--o{ consents : accepts
-  questionnaires ||--o{ questions : contains
+  questionnaires ||--o{ survey_versions : versions
+  survey_versions ||--o{ surveys_questions : contains
+  questions ||--o{ surveys_questions : included
   scales ||--o{ questions : typed_by
   dogs ||--o{ questionnaire_sessions : filled_for
-  questionnaires ||--o{ questionnaire_sessions : of
+  survey_versions ||--o{ questionnaire_sessions : exact_version
   questionnaire_sessions ||--o{ answer_events : records
+  survey_versions ||--o{ answer_events : validates
   questions ||--o{ answer_events : answers
 ```
 
@@ -138,7 +141,7 @@ erDiagram
 
 | Таблица | Поля (суть) | Заметки |
 |--------|-------------|---------|
-| `dogs` | name, sex, neutered, status, description, shelter_id, assigned_volunteer_id, owner_id (adopter, nullable), birthday, breed, mixed, created_by_id, **provenance**, timestamps | `status`: `shelter` / `home` / `back_shelter` / `overexposure`; `adopted_at` — опциональный кэш, не замена events |
+| `dogs` | name, sex, neutered, status, description, shelter_id, assigned_volunteer_id, owner_id (adopter, nullable), birthday, `status_at`, breed, mixed, created_by_id, **provenance**, timestamps | `status`: `shelter` / `home` / `back_shelter` / `overexposure`; `status_at` — дата текущего статуса, не замена `placement_events` |
 | `placement_events` | dog_id, code (`shelter_started` / `home_started` / `back_shelter` / `overexposure_started`), created_at | Как HelpDog: [helpdog-forum-adoptions](../datasets/helpdog-forum-adoptions.md); несколько циклов на собаку |
 
 ### Согласия (152-ФЗ)
@@ -153,13 +156,24 @@ erDiagram
 
 | Таблица | Поля (суть) | Заметки |
 |--------|-------------|---------|
-| `questionnaires` | id, name, **slug** (`cbarq_s_42`, `cbarq_long_100`, позже shelter-cbarq), description, timestamps | См. [c-barq](c-barq.md); при необходимости добавить `version` |
-| `scales` | type, min_value, max_value | int-диапазон, text, date |
-| `questions` | questionnaire_id, **global_number** (item_id C-BARQ), order_number, **domain**, text, scale_id | `global_number` стабилен между локализациями; `order_number` — порядок в UI |
-| `questionnaire_sessions` | user_id, dog_id, questionnaire_id, status (`draft` \| `finished` \| `canceled`), **wave** (0/7/14/30, nullable), client_metadata, timestamps | Longitudinal — [mvp-verifiable-metrics](../ml/mvp-verifiable-metrics.md) |
-| `answer_events` | id, session_id, question_id, value_num, value_text, value_date, **author_id**, created_at | Append-only; текущий ответ = последний event по `(session_id, question_id)` |
+| `surveys` | id, name, **slug** (`cbarq_s_42`, `cbarq_long_100`, позже shelter-cbarq), description, timestamps | Редактируемая карточка анкеты |
+| `survey_versions` | id, survey_id, version_num, description, created_at | Immutable-версия; unique `(survey_id, version_num)` |
+| `scales` | type, config JSON (`min_value`, `max_value`, `legend`) | `integer` / `text` / `date`; immutable; ключи legend — строки |
+| `questions` | id, global_id, text, scale_id, timestamps | Immutable; `global_id` стабилен между версиями |
+| `surveys_questions` | survey_version_id, question_id, order_num, user_id, created_at | Состав и порядок конкретной версии; после первой session нельзя добавлять строки |
+| `survey_sessions` | owner_id, dog_id, survey_version_id, status (`draft` \| `finished` \| `canceled`), client_metadata, timestamps | Session всегда указывает на точную версию |
+| `answer_events` | surveys_session_id, survey_version_id, question_id, value JSONB, created_at | Append-only; composite FK гарантируют принадлежность вопроса версии |
 
-`domain_scores` на MVP считать в `app.ml.export`, не обязательно хранить в OLTP. Для административных изменений нужен audit: либо FastAdmin hooks, либо отдельные audit events.
+`Scale.config` и `AnswerEvent.value` валидируются ORM. Канон ответа:
+`{"value": ...}`. Integer проверяется по `min_value` / `max_value` и
+`legend`, text — строка, date — ISO date.
+
+Каталоги `survey_versions`, `questions`, `scales`, `recommendations` и
+`answer_events` immutable на ORM-уровне. Все FK используют `ON DELETE
+RESTRICT`; зависимости удаляются только явно. Raw SQL/Adminer и bulk DML
+обходят ORM guard и не используются для изменения каталогов.
+
+`domain_scores` на MVP считать в `app.ml.export`, не обязательно хранить в OLTP. Для административных изменений нужен audit (отдельные audit events, не FastAdmin hooks).
 
 Не смешивать open-import с живыми собаками без `provenance` (`hvostun_ops` \| `padova` \| `wolfram` \| …).
 
@@ -176,8 +190,8 @@ erDiagram
 1. Официальный Full Stack FastAPI Template + Redis + `app.ml/`.
 2. Существующий auth + memberships/permissions + `consents`.
 3. SQLModel-модели и Alembic-миграции; seed C-BARQ(S) 42 пункта.
-4. FastAdmin integration spike; затем CRUD shelters/dogs/placement.
-5. React-анкета (draft/finish, история `answer_events`).
+4. HTML-админка (`backend/app/admin`): списки собак/анкет/сессий; Adminer для сырой БД.
+5. React-анкета в `web/` (draft/finish, история `answer_events`); JSON API уже в `backend/app/api`.
 6. `app.ml.export` → Parquet; `app.ml.ingest` для open subsets.
 
 **Критерий v0:** `docker compose up`; волонтёр завёл собаку, заполнил анкету в 2 захода с правкой ответа; админ выдал доступ; есть выгрузка для K3.

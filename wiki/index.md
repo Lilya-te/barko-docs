@@ -1,6 +1,6 @@
 # Hvostun Wiki — Index
 
-Каталог страниц knowledge base. Обновлён: 2026-09-09 (FastAPI full-stack architecture).
+Каталог страниц knowledge base. Обновлён: 2026-10-04 (скоринг C-BARQ(S)).
 
 ## Overview
 
@@ -22,6 +22,7 @@
 | Страница | Описание |
 |----------|----------|
 | [c-barq](concepts/c-barq.md) | Опросник C-BARQ: что это, шкалы, ограничения доступа |
+| [c-barq-short-42-scoring](concepts/c-barq-short-42-scoring.md) | Mini C-BARQ: 14 субшкал, среднее пунктов, обратный балл 27–28 |
 | [pilot-questionnaire](concepts/pilot-questionnaire.md) | Пилотная анкета владельца: общие вопросы + 42 пункта C-BARQ(S) + варианты ответа |
 | [data-harmonization](concepts/data-harmonization.md) | Объединение фрагментарных C-BARQ подмножеств для baseline |
 | [adoption-return](concepts/adoption-return.md) | Возврат в приют как кандидат на таргет K3 |
@@ -29,7 +30,7 @@
 | [problem-behavior-taxonomy](concepts/problem-behavior-taxonomy.md) | Таксономия проблемного поведения |
 | [owner-dog-attachment](concepts/owner-dog-attachment.md) | Тип привязанности владелец–собака |
 | [owner-frustration](concepts/owner-frustration.md) | Разочарованность владельца (~14%) |
-| [research-data-app](concepts/research-data-app.md) | Внутреннее приложение: FastAPI + React modular monolith, Compose, схема Postgres |
+| [research-data-app](concepts/research-data-app.md) | Внутреннее приложение: Jinja-админка, versioned surveys, immutable-каталоги, Postgres |
 | [personal-data-152-fz](concepts/personal-data-152-fz.md) | Чеклист 152-ФЗ для контуров Hvostun с ПДн |
 | [consent-v1-pilot-form](concepts/consent-v1-pilot-form.md) | Шаблон согласия `consent_v1` и политики для пилотной Яндекс.Формы |
 | [k5-k3-answer-bridge](concepts/k5-k3-answer-bridge.md) | Roadmap: извлечение ответов анкеты из K5 + сравнение Яндекс.Форма vs Амелько |
