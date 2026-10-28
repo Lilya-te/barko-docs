@@ -1,6 +1,6 @@
 # Hvostun Wiki — Index
 
-Каталог страниц knowledge base. Обновлён: 2026-10-04 (скоринг C-BARQ(S)).
+Каталог страниц knowledge base. Обновлён: 2026-10-28 (единый C-BARQ mini).
 
 ## Overview
 
@@ -48,6 +48,7 @@
 | [manydogs-md1](datasets/manydogs-md1.md) | ManyDogs 1 — 705 строк, частичный C-BARQ |
 | [plos-one-2024-short-cbarq](datasets/plos-one-2024-short-cbarq.md) | PLOS ONE 2024 — ~435 собак, short/full C-BARQ |
 | [bohland-2023-shelter-adoption-cbarq](datasets/bohland-2023-shelter-adoption-cbarq.md) | Bohland 2023 — 505 строк, 99 собак, четыре post-adoption волны |
+| [cbarq-mini-sessions-unified](datasets/cbarq-mini-sessions-unified.md) | Bohland + Serpell: 956 анкет mini-42 и 14 доменов |
 | [bryson-2026-doodle-crossbreed-behaviour](datasets/bryson-2026-doodle-crossbreed-behaviour.md) | Bryson 2026 — ~9 456 item-level C-BARQ записей |
 | [helpdog-forum-adoptions](datasets/helpdog-forum-adoptions.md) | HelpDog — 90 собак, история пристройств и возвратов |
 

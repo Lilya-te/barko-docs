@@ -4,6 +4,13 @@
 
 ---
 
+## [2026-10-28] ingest | Единый C-BARQ mini (Bohland + Serpell)
+
+- Анкеты сведены в `cbarq_mini_sessions.csv`: 956 заполнений, `q01`–`q42`, `adopted_date`, `days_at_home`.
+- Домены: порог «меньше половины пунктов» и обратный балл 27/28 только на субшкале. После дублей по 14 шкалам — 953 строки (`domain_dedup`).
+- Full → 42 с `is_mapped`; S3 Bohland и лишние Sheet1 не входят. Волна «10 days» помечена `d7`.
+- Новая страница [cbarq-mini-sessions-unified](datasets/cbarq-mini-sessions-unified.md). Обновлены [data-harmonization](concepts/data-harmonization.md), [c-barq-short-42-scoring](concepts/c-barq-short-42-scoring.md), [bohland-2023-shelter-adoption-cbarq](datasets/bohland-2023-shelter-adoption-cbarq.md).
+
 ## [2026-10-04] ingest | Пункты 8 и 9 пилотной анкеты совпадают с C-BARQ(S)
 
 - В форме пункты 8 и 9 поменяны местами относительно перевода Гербека.

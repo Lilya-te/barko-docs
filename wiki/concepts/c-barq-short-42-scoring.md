@@ -2,7 +2,7 @@
 type: concept
 tags: [c-barq, questionnaire, scoring]
 sources: [c-barq, pilot-questionnaire]
-updated: 2026-10-04
+updated: 2026-10-28
 status: draft
 ---
 
@@ -27,6 +27,8 @@ status: draft
 Исключение — только пункты **27 и 28** (сразу выполняет «сидеть» и «жди»). Для них порядок обратный: Never = 4, Seldom = 3, Sometimes = 2, Usually = 1, Always = 0. Пункт 29 («легко отвлекается») не обращается.
 
 Инструкция не говорит, что делать с «Не наблюдалось или неприменимо». В формулах делитель фиксированный.
+
+В сборке [cbarq-mini-sessions-unified](../datasets/cbarq-mini-sessions-unified.md) принято другое рабочее правило: среднее по непустым пунктам, а если заполнено меньше половины пунктов субшкалы — значение пустое. Это не часть инструкции Serpell.
 
 ## 14 субшкал
 
