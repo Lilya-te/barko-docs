@@ -1,6 +1,6 @@
 # Hvostun Wiki — Index
 
-Каталог страниц knowledge base. Обновлён: 2026-10-28 (единый C-BARQ mini).
+Каталог страниц knowledge base. Обновлён: 2026-11-15 (ingest NIR_3).
 
 ## Overview
 
@@ -57,9 +57,10 @@
 | Страница | Описание |
 |----------|----------|
 | [model-selection](ml/model-selection.md) | Сравнение кандидатов моделей и критерии выбора |
-| [benchmarks-and-metrics](ml/benchmarks-and-metrics.md) | Бенчмарки и метрики для K3 и K5 |
+| [benchmarks-and-metrics](ml/benchmarks-and-metrics.md) | Бенчмарки и метрики для K3 risk, рекомендаций НИР-3 и K5 |
 | [mvp-verifiable-metrics](ml/mvp-verifiable-metrics.md) | Измеримые метрики MVP вместо возврата как основной рабочей гипотезы |
-| [experiment-plan](ml/experiment-plan.md) | План baseline-эксперимента и критерии готовности для Паспорта |
+| [experiment-plan](ml/experiment-plan.md) | План экспериментов: risk baseline + гипотезы НИР-3 |
+| [nir3-hypothesis-evaluation-pipeline](ml/nir3-hypothesis-evaluation-pipeline.md) | Пайплайн проверки H₁: rule→ML→эксперт, NLP, TOST, RAG |
 | [helpdog-adoption-eda](ml/helpdog-adoption-eda.md) | EDA возвратов в приют (57% среди пристроенных) |
 | [cbarq-clustering](ml/cbarq-clustering.md) | Exploratory KMeans/GMM-кластеризация Padova; ограничения интерпретации |
 
@@ -67,6 +68,9 @@
 
 | Страница | Исходный файл | Описание |
 |----------|---------------|----------|
+| [nir3-hypotheses](sources/nir3-hypotheses.md) | `NIR_3/…/Б2_гипотезы.md` | Шесть личных H₁ НИР-3 (macro-F1, TOST, RAG) |
+| [nir3-ml-evaluation-pipeline](sources/nir3-ml-evaluation-pipeline.md) | `NIR_3/…/Б3_…пайплайн оценки.md` | Методика проверки гипотез и ML-пайплайн |
+| [nir3-literature-delta](sources/nir3-literature-delta.md) | `NIR_3/…/Б1_….md` | Дельта пилота РФ + обзор опоры на C-BARQ |
 | [fz-152-personal-data](sources/fz-152-personal-data.md) | `152 ФЗ.md` | Саммари 152-ФЗ: только нормы, полезные Hvostun (согласие, локализация, ops/ML) |
 | [ml-ideas-notes](sources/ml-ideas-notes.md) | `_ml_ideas.md` | Подбор модели для ML-решений BARKO |
 | [app-ideas-notes](sources/app-ideas-notes.md) | `_app_ideas/_database_architecture.md` | Схема БД и scope research-ops |

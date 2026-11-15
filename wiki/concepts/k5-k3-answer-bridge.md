@@ -1,14 +1,16 @@
 ---
 type: concept
-tags: [k3, k5, questionnaire, research-ops, provenance, roadmap, 152-fz]
-sources: [ml-ideas-notes, research-data-app, pilot-questionnaire, personal-data-152-fz]
-updated: 2026-09-09
+tags: [k3, k5, questionnaire, research-ops, provenance, roadmap, 152-fz, nir3, nlp]
+sources: [ml-ideas-notes, research-data-app, pilot-questionnaire, personal-data-152-fz, nir3-hypotheses, nir3-ml-evaluation-pipeline]
+updated: 2026-11-15
 status: draft
 ---
 
 # Мост K5 → анкета K3 и сравнение каналов сбора
 
 **Roadmap** (не MVP): отдельный модуль, который из диалога K5 извлекает ответы на пункты анкеты K3 / C-BARQ(S), пишет их в sessions с явным provenance, и параллельно позволяет сравнить качество/сходство ответов с прямым заполнением (Яндекс.Форма) и с диалоговым каналом **Амелько**.
+
+**НИР-3:** гипотеза **H₁-channel** — NLP-заполнение пунктов через embeddings + cosine similarity с формулировками шкалы; эквивалентность self-report проверяется TOST по доменам. Методика: [nir3-hypothesis-evaluation-pipeline](../ml/nir3-hypothesis-evaluation-pipeline.md).
 
 Связано: [k3-risk-prediction](../components/k3-risk-prediction.md), [k5-ai-chat](../components/k5-ai-chat.md), [pilot-questionnaire](pilot-questionnaire.md), [research-data-app](research-data-app.md), [personal-data-152-fz](personal-data-152-fz.md).
 
@@ -74,9 +76,18 @@ flowchart LR
 - Выход: список `{question_id, value, confidence, evidence_span}` + UI confirm.
 - Идемпотентность: повторный extract не дублирует events без новой confirm-сессии.
 
+### Векторный индекс пунктов (H₁-channel, НИР-3)
+
+1. Документы индекса: формулировки пунктов C-BARQ(Mini) и уровней шкалы 0–4; metadata: `item_id`, шкала.
+2. Один зафиксированный encoder на весь эксперимент; retrieval — cosine similarity.
+3. Top-hit → предложенный балл; запись только после `user_confirmed`.
+4. Доменные скоры — тем же правилом, что self-report ([c-barq-short-42-scoring](c-barq-short-42-scoring.md)).
+5. Оценка: парный NLP vs `yandex_form` того же владельца; TOST по ключевым доменам (H₁-channel).
+6. **Не смешивать** с векторным индексом wiki для K5-RAG (H₁-human-eval).
+
 ## Модуль B — сравнение каналов (стат. значимость)
 
-**Гипотеза исследования:** ответы `amelko` (и при наличии `k5_extract`) не смещены относительно `yandex_form` по ключевым пунктам / domain scores настолько, чтобы ломать K3.
+**Гипотеза исследования:** ответы `amelko` (и при наличии `k5_extract` / NLP) не смещены относительно `yandex_form` по ключевым пунктам / domain scores настолько, чтобы ломать K3. В НИР-3 формализовано как **H₁-channel** (TOST, заранее заданный δ).
 
 ### Дизайн (черновик)
 

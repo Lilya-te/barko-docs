@@ -1,8 +1,8 @@
 ---
 type: overview
-tags: [hvostun, mvp, ml]
-sources: [ml-ideas-notes, data-ideas-notes, helpdog-notebook-notes, app-ideas-notes]
-updated: 2026-09-23
+tags: [hvostun, mvp, ml, nir3]
+sources: [ml-ideas-notes, data-ideas-notes, helpdog-notebook-notes, app-ideas-notes, nir3-hypotheses, nir3-ml-evaluation-pipeline]
+updated: 2026-11-15
 status: draft
 ---
 
@@ -43,10 +43,19 @@ status: draft
 
 ## Текущие решения (из первого ingest)
 
-- **K3 baseline:** `RandomForest` + интерпретация через `LogisticRegression`; цель `ROC-AUC >= 0.75`.
+- **K3 baseline (risk):** `RandomForest` + интерпретация через `LogisticRegression`; цель `ROC-AUC >= 0.75`.
 - **K5:** готовая LLM через API, фокус на RAG, safety rules, human-reviewed knowledge base.
 - **K6:** не в MVP.
 - **Roadmap сбора:** мост K5→анкета K3 и сравнение каналов (Яндекс.Форма vs Амелько) — [k5-k3-answer-bridge](concepts/k5-k3-answer-bridge.md).
+
+## НИР-3 (личные гипотезы)
+
+Измеримый контур семестра — **анкета → top-5 рекомендаций** (macro-F1, эксперт accept/safe), плюс TOST РФ↔референс, NLP-заполнение из текста и pairwise K5-RAG:
+
+- Гипотезы: [nir3-hypotheses](sources/nir3-hypotheses.md)
+- Пайплайн оценки: [nir3-hypothesis-evaluation-pipeline](ml/nir3-hypothesis-evaluation-pipeline.md)
+
+Инновационная дельта пилота (из Б1): первое лонгитюдное исследование адаптации на российских владельцах + статистическое сравнение с данными США (H₁-transfer).
 
 ## Связанные артефакты в репозитории
 
@@ -56,3 +65,4 @@ status: draft
 - `analytics/research/datatsets/foreign_datasets_list.md` — каталог собранных датасетов (ingested → [collected-datasets-catalog](datasets/collected-datasets-catalog.md))
 - `analytics/helpdog_forum/helpdog.ipynb` — EDA пристройств HelpDog (ingested → [helpdog-adoption-eda](ml/helpdog-adoption-eda.md); ~57% возвратов)
 - `статьи/*.pdf` — 4 статьи ingested → [sources/](sources/plos-one-2024-short-cbarq-validation.md), [k3-feature-candidates](concepts/k3-feature-candidates.md)
+- `NIR_3/personal_files/Б2_гипотезы.md`, `Б3_…пайплайн оценки.md` — ingested → [nir3-hypotheses](sources/nir3-hypotheses.md), [nir3-ml-evaluation-pipeline](sources/nir3-ml-evaluation-pipeline.md)

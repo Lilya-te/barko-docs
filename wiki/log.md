@@ -4,6 +4,15 @@
 
 ---
 
+## [2026-11-15] ingest | NIR_3: гипотезы и пайплайн оценки
+
+- Ingest `NIR_3/personal_files`: Б1 (дельта), Б2 (гипотезы), Б3 (методика ML).
+- Новые sources: [nir3-hypotheses](sources/nir3-hypotheses.md), [nir3-ml-evaluation-pipeline](sources/nir3-ml-evaluation-pipeline.md), [nir3-literature-delta](sources/nir3-literature-delta.md).
+- Новый ML: [nir3-hypothesis-evaluation-pipeline](ml/nir3-hypothesis-evaluation-pipeline.md).
+- Обновлены [experiment-plan](ml/experiment-plan.md), [benchmarks-and-metrics](ml/benchmarks-and-metrics.md) (контур рекомендаций + macro-F1/TOST), [k5-k3-answer-bridge](concepts/k5-k3-answer-bridge.md) (векторный индекс пунктов, H₁-channel), [overview](overview.md).
+- **Противоречия зафиксированы:** (1) исторический K3 = ROC-AUC risk vs НИР-3 = top-5 рекомендации; (2) Б2 дерево vs Б3 LR/RF; (3) split train/val на Bohland+Serpell без этикеток каталога G — открытый вопрос.
+- Не перенесено как wiki-страницы: `dairy.md`, `Описание хода работ…` (нарратив спринта), полная таблица статей Б1 (уже в `wiki/sources/`).
+
 ## [2026-10-28] ingest | Единый C-BARQ mini (Bohland + Serpell)
 
 - Анкеты сведены в `cbarq_mini_sessions.csv`: 956 заполнений, `q01`–`q42`, `adopted_date`, `days_at_home`.
