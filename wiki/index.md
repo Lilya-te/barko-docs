@@ -1,6 +1,6 @@
 # Hvostun Wiki — Index
 
-Каталог страниц knowledge base. Обновлён: 2026-11-15 (ingest NIR_3).
+Каталог страниц knowledge base. Обновлён: 2026-11-16 (reingest NIR_3 / Б1 методика).
 
 ## Overview
 

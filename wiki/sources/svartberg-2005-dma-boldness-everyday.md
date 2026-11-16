@@ -34,7 +34,7 @@ Svartberg, K. (2005). *A comparison of behaviour in test and in everyday life: e
 
 - Факторы C‑BARQ считались как средние по репрезентативным пунктам (по правилам C‑BARQ).
 - 17 добавленных пунктов игры/социальности — факторный анализ → 3 новых фактора: **stranger‑directed interest**, **human‑directed play interest**, **dog‑directed interest** (вместе объясняют 46,9% дисперсии).
-- Корреляции: Spearman; множественные сравнения — Бонферрони (в оригинале \(k = 84\) и \(k = 90\) для разных блоков анализов).
+- Корреляции: Spearman; множественные сравнения — Бонферрони (в оригинале $k = 84$ и $k = 90$ для разных блоков анализов).
 
 ## Главные результаты
 
@@ -42,9 +42,9 @@ Svartberg, K. (2005). *A comparison of behaviour in test and in everyday life: e
 
 После поправки на множественные сравнения показана сходящаяся валидность (концептуально ожидаемые связи) для:
 
-- **playfulness** ↔ **human‑directed play interest** (в таблице 3 корреляция около \(r_S \approx 0{,}36\));
-- **curiosity/fearlessness** ↔ **non‑social fear** (обратная связь; в таблице 3 \(r_S \approx -0{,}26\));
-- **sociability** ↔ **stranger‑directed interest** (в таблице 3 \(r_S \approx 0{,}36\)) и ↔ **stranger‑directed fear** (обратная связь; эффект устойчив в интерпретации);
+- **playfulness** ↔ **human‑directed play interest** (в таблице 3 корреляция около $r_S \approx 0.36$);
+- **curiosity/fearlessness** ↔ **non‑social fear** (обратная связь; в таблице 3 $r_S \approx -0.26$);
+- **sociability** ↔ **stranger‑directed interest** (в таблице 3 $r_S \approx 0.36$) и ↔ **stranger‑directed fear** (обратная связь; эффект устойчив в интерпретации);
 - **distance‑playfulness** ↔ факторы, связанные с интересом/страхом к незнакомцам и игровой активностью (в оригинале подтверждена конвергентная валидность, но автор подчёркивает, что это «смешанная» мера).
 
 ### 2) Что «не сработало» как ожидалось

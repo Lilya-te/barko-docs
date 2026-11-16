@@ -2,7 +2,7 @@
 type: concept
 tags: [k3, k5, questionnaire, research-ops, provenance, roadmap, 152-fz, nir3, nlp]
 sources: [ml-ideas-notes, research-data-app, pilot-questionnaire, personal-data-152-fz, nir3-hypotheses, nir3-ml-evaluation-pipeline]
-updated: 2026-11-15
+updated: 2026-11-16
 status: draft
 ---
 
@@ -84,6 +84,10 @@ flowchart LR
 4. Доменные скоры — тем же правилом, что self-report ([c-barq-short-42-scoring](c-barq-short-42-scoring.md)).
 5. Оценка: парный NLP vs `yandex_form` того же владельца; TOST по ключевым доменам (H₁-channel).
 6. **Не смешивать** с векторным индексом wiki для K5-RAG (H₁-human-eval).
+
+### Диалог и latency (из Б1)
+
+После реплики: extract → незаполненные / low-confidence слоты → 1–3 уточнения. Без LLM обычно &lt;1 с на ход; с LLM ~2–6 с (+ASR для голоса). Формулировку уточнения лучше брать из **канонического** текста пункта C-BARQ, не генерировать LLM-ом. Режимы: one-shot extract / полудиалог / полный slot-filling до порога заполненности. Источник: [nir3-literature-delta](../sources/nir3-literature-delta.md).
 
 ## Модуль B — сравнение каналов (стат. значимость)
 

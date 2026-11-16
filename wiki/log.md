@@ -4,6 +4,16 @@
 
 ---
 
+## [2026-11-16] ingest | NIR_3 Б1: данные, метрики, LR/DT, NLP-диалог
+
+- Reingest расширенного Б1: приоритет литературы, сводка инструментов → выбор C-BARQ, числа данных (unified 956 = 619 Serpell + 337 Bohland; ландшафт ~36k до дедупа).
+- Обновлён [nir3-literature-delta](sources/nir3-literature-delta.md).
+- Метрики: random $\mathbb{E}[F1]=k/N=0.125$, example-F1 primary → [benchmarks-and-metrics](ml/benchmarks-and-metrics.md).
+- Rule matrix $14\times 40=560$ / sparse ~40–80; LR vs DT для H₁-plan → [model-selection](ml/model-selection.md), [nir3-hypothesis-evaluation-pipeline](ml/nir3-hypothesis-evaluation-pipeline.md).
+- NLP: embeddings → диалог slot-filling, latency → [k5-k3-answer-bridge](concepts/k5-k3-answer-bridge.md).
+- Lint math: формулы в wiki/NIR_3 на `$`/`$$` (правило `.cursor/rules/markdown-math-github.mdc`); `статьи/translations` не трогались (raw).
+- **Противоречие чисел Bohland:** сырой S4 в wiki 505/99 vs unified 337/104 — зафиксировано в literature-delta.
+
 ## [2026-11-15] ingest | NIR_3: гипотезы и пайплайн оценки
 
 - Ingest `NIR_3/personal_files`: Б1 (дельта), Б2 (гипотезы), Б3 (методика ML).

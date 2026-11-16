@@ -33,7 +33,7 @@ Kubinyi, E., Turcsán, B., & Miklósi, Á. (2009). Dog and owner demographic cha
 
 **Факторы:** calmness (5 items, α=0.85), trainability (5, 0.71), dog sociability (4, 0.75), boldness (3, 0.65).
 
-Дополнительно: средний возраст собак в «взрослой» выборке \(4.2 \pm 3.1\) года; 56.1% — ♂; 43.1% — neutered (39% ♂ и 48% ♀).
+Дополнительно: средний возраст собак в «взрослой» выборке $4.2 \pm 3.1$ года; 56.1% — ♂; 43.1% — neutered (39% ♂ и 48% ♀).
 
 ### Ключевые результаты (regression trees)
 

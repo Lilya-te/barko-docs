@@ -2,7 +2,7 @@
 type: ml
 tags: [nir3, pipeline, hypotheses, recommendations, nlp, rag, evaluation]
 sources: [nir3-hypotheses, nir3-ml-evaluation-pipeline]
-updated: 2026-11-15
+updated: 2026-11-16
 status: draft
 ---
 
@@ -27,10 +27,10 @@ status: draft
 ## Этапы
 
 1. **Сбор:** лонгитюд РФ (неделя / месяц / 3 мес.) → экспертная разметка рекомендаций → ingest/harmonize mini-42; без смешивания ПДн пилота с training без обезличивания.
-2. **H₁-baseline:** rule-based «домен + порог T → каталог»; \|P\|=5; macro-F1 ≥ 0,6 vs random 0,125. Черновик mapping — автор + научный консультант.
-3. **H₁-plan:** мультилейбл / top-5; кандидаты LogisticRegression, RandomForest (в формулировке Б2 — дерево решений); тот же val; macro-F1_ML > macro-F1_rule.
+2. **H₁-baseline:** rule-based «домен + порог T → каталог»; $\lvert P\rvert=5$; macro-F1 ≥ 0,6 vs random $\mathbb{E}[F1]=k/N=0.125$. Полная матрица порогов $14\times 40=560$ (sparse ~40–80). Черновик mapping — автор + научный консультант.
+3. **H₁-plan:** мультилейбл / top-5; кандидаты LogisticRegression и DecisionTree (Б2), плюс RandomForest при достаточном n; тот же val; macro-F1_ML > macro-F1_rule. См. [model-selection](model-selection.md).
 4. **H₁-quality:** принять / править / отклонить + «безопасна»; accept ≥ 95%, safe ≥ 99%.
-5. **H₁-channel:** векторный индекс формулировок пунктов/ответов → cosine retrieval из текста → confirm → TOST доменов vs self-report.
+5. **H₁-channel:** embeddings+cosine (первый кандидат) → опц. NLI/LLM schema → slot-filling диалог по дырам; confirm → TOST доменов vs self-report. См. [k5-k3-answer-bridge](../concepts/k5-k3-answer-bridge.md).
 6. **H₁-transfer:** TOST доменов РФ vs Bohland/short, заранее заданный δ, α = 0,05.
 7. **H₁-human-eval:** слепой pairwise K5-RAG vs no-RAG; preference ≥ 70% и значимо > 50%.
 

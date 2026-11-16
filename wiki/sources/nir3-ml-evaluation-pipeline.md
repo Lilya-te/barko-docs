@@ -3,7 +3,7 @@ type: source
 tags: [nir3, pipeline, evaluation, ml, c-barq, nlp, rag]
 sources: []
 raw_path: NIR_3/personal_files/Б3_Разработать пошаговую методику проверки гипотезы и (для ML) пайплайн оценки.md
-updated: 2026-11-15
+updated: 2026-11-16
 status: ingested
 ---
 

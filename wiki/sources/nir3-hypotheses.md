@@ -3,7 +3,7 @@ type: source
 tags: [nir3, hypotheses, k3, k5, c-barq, recommendations]
 sources: []
 raw_path: NIR_3/personal_files/Б2_гипотезы.md
-updated: 2026-11-15
+updated: 2026-11-16
 status: ingested
 ---
 
@@ -19,20 +19,20 @@ status: ingested
 
 | ID | Суть | H₀ / порог |
 |----|------|------------|
-| **H₁-baseline** | Rule-based «домен + порог T → каталог» | macro-F1 < 0,6 (random F1 = 0,125 при \|P\|=\|G\|=5, N=40) |
+| **H₁-baseline** | Rule-based «домен + порог T → каталог» | macro-F1 < 0,6 (random F1 = 0,125 при card(P)=card(G)=5, N=40) |
 | **H₁-plan** | ML (в Б2: дерево решений) vs rule-based на том же val | macro-F1_ML ≤ macro-F1_baseline |
 | **H₁-quality** | Кинолог: принять / править / отклонить + «безопасна» | accept < 95% или safe < 99% |
-| **H₁-transfer** | Домены C-BARQ(S) пилота РФ ≈ референс (Bohland / short) | TOST: хотя бы один домен \|\Δ\| ≥ δ |
+| **H₁-transfer** | Домены C-BARQ(S) пилота РФ ≈ референс (Bohland / short) | TOST: хотя бы один домен ∣Δ∣ ≥ δ |
 | **H₁-channel** | NLP-заполнение пунктов из текста чата ≈ self-report | TOST по доменам, α = 0,05 |
 | **H₁-human-eval** | Pairwise A/B: K5-RAG vs ответ без RAG | preference ≤ 50% или < 70% |
 
 ### Метрика рекомендаций (H₁-baseline / H₁-plan)
 
-На анкету \(i\): \(TP_i = |P_i \cap G_i|\), \(\mathrm{F1}_i = TP_i/5\); **macro-F1** — среднее по val. При \|P\|=\|G\|=5 это доля верных из пяти.
+На анкету $i$: $TP_i = \lvert P_i \cap G_i \rvert$, $\mathrm{F1}_i = TP_i/5$; **macro-F1** — среднее по val. При card(P)=card(G)=5 это доля верных из пяти.
 
 ### Метрика качества эксперта (H₁-quality)
 
-\(P_{\text{accept}} = N_{\text{принять}} / N_{\text{всего рекомендаций}}\); «править» и «отклонить» не считаются accept.
+$P_{\text{accept}} = N_{\text{принять}} / N_{\text{всего рекомендаций}}$; «править» и «отклонить» не считаются accept.
 
 ### TOST (H₁-transfer, H₁-channel)
 

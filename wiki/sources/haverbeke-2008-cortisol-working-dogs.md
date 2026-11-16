@@ -41,20 +41,20 @@ Haverbeke, A., Diederich, C., Depiereux, E., & Giffroy, J. M. (2008). Cortisol a
 ### Ключевые результаты
 
 **Physiology:**
-- После challenge 1 plasma cortisol значимо ↑ относительно baseline: **39.27 ± 4.91 → 64.23 ± 6.19 nmol/L** (\(F(7,204)=3.30\), **p < 0.05**).
+- После challenge 1 plasma cortisol значимо ↑ относительно baseline: **39.27 ± 4.91 → 64.23 ± 6.19 nmol/L** ($F(7,204)=3.30$, **p < 0.05**).
 - После challenge 2 подъём cortisol был **незначим**: **43.16 ± 7.51 → 52.39 ± 3.99 nmol/L**.
-- Уровни cortisol на Days 22 и 29 были ниже, чем на Day 8B (\(F(7,204)=5.13\), **p < 0.001**) — авторы интерпретируют это как восстановление HPA между challenges.
+- Уровни cortisol на Days 22 и 29 были ниже, чем на Day 8B ($F(7,204)=5.13$, **p < 0.001**) — авторы интерпретируют это как восстановление HPA между challenges.
 
 **Behavior (vs control period):**
 - **Контрольный период (Days 1, 3, 15, 22):** pacing **31.82 ± 2.04%** времени (highly repetitive pacing 28.58%); panting **33.74 ± 3.36%**; stand **37.03 ± 2.05%**; high posture **47.71 ± 3.38%**.
 - **Visual stimulus (mobile car):** pacing снижался (challenge 1: **7.47 ± 2.88%**; challenge 2: **14.13 ± 4.78%**) и одновременно возрастал high active (challenge 1: **50.47 ± 6.01%**; challenge 2: **53.99 ± 6.66%**). Manipulation of environment в среднем был ниже, чем в контрольный период.
 - **Half low posture** повышался только при первом visual stimulus: challenge 1 (mobile car) **22.21 ± 6.63%** против контроля **0.96 ± 0.45%**; при втором challenge эффект не воспроизводился (challenge 2 mobile car: **7.58 ± 3.64%**).
-- Во время challenges отмечали меньше tail wagging (по ANOVA: \(F(9,259)=6.30\), p < 0.001). Не было признаков роста yawning, oral behaviors (в т.ч. non‑directed licking), paw lifting, urinating, defecating.
+- Во время challenges отмечали меньше tail wagging (по ANOVA: $F(9,259)=6.30$, p < 0.001). Не было признаков роста yawning, oral behaviors (в т.ч. non‑directed licking), paw lifting, urinating, defecating.
 - Во время auditory stimulus не было роста активности; авторы обсуждают возможную habituation к шумам из‑за патрульной работы.
 
 **Age / housing:**
-- **Возраст:** 1‑летние собаки больше времени проводили в pacing (\(F(4,264)=9.21\), p < 0.001) и panting (\(F(4,264)=11.00\), p < 0.001), чем старшие.
-- **Условия содержания:** во время challenges собаки, живущие у дома handler'а, были менее активны (\(F(1,158)=11.62\), p < 0.001) и чаще демонстрировали half low posture (\(F(1,158)=14.97\), p < 0.001), чем собаки MK. Независимо от challenges «домашние» собаки меньше pacing (\(F(1,107)=8.04\), p < 0.01), больше barking (\(F(1,107)=25.50\), p < 0.001) и чаще сидели (\(F(1,107)=5.36\), p < 0.05). При challenges (в отличие от контроля) housing не влиял на manipulation of environment (контраст с контролем: \(F(1,62)=9.25\), p < 0.01).
+- **Возраст:** 1‑летние собаки больше времени проводили в pacing ($F(4,264)=9.21$, p < 0.001) и panting ($F(4,264)=11.00$, p < 0.001), чем старшие.
+- **Условия содержания:** во время challenges собаки, живущие у дома handler'а, были менее активны ($F(1,158)=11.62$, p < 0.001) и чаще демонстрировали half low posture ($F(1,158)=14.97$, p < 0.001), чем собаки MK. Независимо от challenges «домашние» собаки меньше pacing ($F(1,107)=8.04$, p < 0.01), больше barking ($F(1,107)=25.50$, p < 0.001) и чаще сидели ($F(1,107)=5.36$, p < 0.05). При challenges (в отличие от контроля) housing не влиял на manipulation of environment (контраст с контролем: $F(1,62)=9.25$, p < 0.01).
 
 ### Ограничения
 

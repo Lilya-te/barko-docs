@@ -1,8 +1,8 @@
 ---
 type: ml
 tags: [metrics, benchmarks, k3, k5, nir3, recommendations]
-sources: [ml-ideas-notes, helpdog-notebook-notes, nir3-hypotheses, nir3-ml-evaluation-pipeline]
-updated: 2026-11-15
+sources: [ml-ideas-notes, helpdog-notebook-notes, nir3-hypotheses, nir3-ml-evaluation-pipeline, nir3-literature-delta]
+updated: 2026-11-16
 status: stable
 ---
 
@@ -14,13 +14,21 @@ status: stable
 
 | Гипотеза | Метрика | Порог / эталон |
 |----------|---------|----------------|
-| H₁-baseline | macro-F1 top-5 vs эксперт G | ≥ 0,6; random ≈ 0,125 (N=40, \|P\|=\|G\|=5) |
+| H₁-baseline | macro-F1 top-5 vs эксперт G | ≥ 0,6; random ≈ 0,125 (N=40, card(P)=card(G)=5) |
 | H₁-plan | macro-F1_ML vs macro-F1_rule | ML строго лучше rule на том же val |
-| H₁-quality | \(P_{\text{accept}}\), доля «безопасна» | ≥ 95% / ≥ 99% |
+| H₁-quality | $P_{\text{accept}}$, доля «безопасна» | ≥ 95% / ≥ 99% |
 | H₁-transfer / H₁-channel | TOST по доменным скорам | заранее заданный δ, α = 0,05 |
 | H₁-human-eval | доля предпочтений K5-RAG | ≥ 70% и значимо > 50% |
 
-Формула на анкету \(i\): \(TP_i = |P_i \cap G_i|\), \(\mathrm{F1}_i = TP_i/5\); macro-F1 — среднее по выборке оценки.
+Формула на анкету $i$: $TP_i = \lvert P_i \cap G_i \rvert$, $\mathrm{F1}_i = TP_i/5$; macro-F1 — среднее по выборке оценки.
+
+**Random baseline** (равномерный выбор $k$ из $N$ без возвращения, card(G)=k):
+
+$$
+\mathbb{E}[TP] = k \cdot \frac{k}{N},\qquad \mathbb{E}[F1] = \frac{k}{N}.
+$$
+
+При $N=40$, $k=5$: $\mathbb{E}[F1]=0.125$. Порог H₁ «≥ 3 из 5» ↔ $F1 \ge 0.6$. Primary metric — **example-F1** (среднее по анкетам); не путать со sklearn label-macro-F1. Hamming / subset accuracy не использовать как sole metric при sparse top-5. Источник вывода: Б1 → [nir3-literature-delta](../sources/nir3-literature-delta.md).
 
 ### Шаблон таблицы (рекомендации)
 
