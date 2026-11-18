@@ -47,14 +47,14 @@ status: draft
 
 1. Формулировки H₁ / H₀ и формулы метрик ([nir3-hypotheses](../sources/nir3-hypotheses.md))
 2. Описание датасета, канала, версии анкеты, split
-3. Таблица: random → rule-based → ML (macro-F1 на одном val)
-4. Expert accept/safe; при наличии — TOST и RAG pairwise
-5. Вывод: что идёт в продукт (rule vs ML), что отложено
+3. Таблица: random → rule-based → DT / LR OvR (macro-F1 на одном val; Δ ≥ 0.10)
+4. Expert accept/safe (H₀: accept < 60% или safe < 97%); при наличии — TOST и RAG pairwise
+5. Вывод: что идёт в продукт (rule vs max(Δ) ML), что отложено
 
 ## Пайплайн (целевая архитектура)
 
 ```
-ingest → clean/harmonize → feature_map → baseline(rule) → train(ML) → evaluate → expert gate
+ingest → clean/harmonize → feature_map → baseline(rule) → train(DT|LR OvR) → evaluate(val) → expert gate (test)
 text → embed → vector (пункты) → NLP scores → TOST vs self-report
 wiki → vector RAG → pairwise human-eval
 ```

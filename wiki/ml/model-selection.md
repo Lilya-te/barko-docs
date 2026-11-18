@@ -2,7 +2,7 @@
 type: ml
 tags: [k3, models, baseline, nir3, recommendations]
 sources: [ml-ideas-notes, nir3-literature-delta, nir3-hypotheses]
-updated: 2026-11-16
+updated: 2026-11-18
 status: stable
 ---
 
@@ -10,16 +10,16 @@ status: stable
 
 Сравнение кандидатов моделей и обоснование выбора для Hvostun.
 
-## Рекомендации плана (НИР-3, H₁-plan)
+## Рекомендации плана (НИР-3: H₁-plan-DT / H₁-plan-LR)
 
-Контекст: multilabel / top-5 из каталога $N \approx 40$ по доменам C-BARQ(Mini). Сравнение на **том же val**, что rule-based; метрика — example-F1. Источник: Б1 → [nir3-literature-delta](../sources/nir3-literature-delta.md).
+Контекст: multilabel / top-5 из каталога N = 40 по доменам C-BARQ(Mini). Сравнение на **том же val**, что rule-based; метрика — example-F1; δ = 0.10. Канон: Б2/Б3 → [nir3-hypothesis-evaluation-pipeline](nir3-hypothesis-evaluation-pipeline.md).
 
-| Критерий | LogisticRegression | DecisionTree |
-|----------|--------------------|--------------|
-| За | Стабильна на малых n; коэффициенты читаемы; калибруемые scores → top-5; близка к порогам rule-based | Нелинейности и взаимодействия доменов; правила в листьях; соответствует формулировке H₁-plan (Б2) |
-| Против | Нет взаимодействий без feature engineering; one-vs-rest × 40 лейблов шумит при малом n | Overfit; нестабильность; грубые вероятности без pruning |
-| Роль | **Первая ML-линия** после rule-based | Проверка нелинейных правил (`max_depth` ограничен) |
-| Дальше | Если оба ≤ rule → в продукт rule; если лучше → H₁-quality; при росте n — RandomForest | |
+| Критерий | LogisticRegression (OvR) — H₁-plan-LR | DecisionTree — H₁-plan-DT |
+|----------|--------------------------------------|---------------------------|
+| За | Стабильна на малых n; коэффициенты читаемы; калибруемые scores → top-5; близка к порогам rule-based | Нелинейности и взаимодействия доменов; правила в листьях |
+| Против | Нет взаимодействий без feature engineering; OvR × 40 лейблов шумит при малом n | Overfit; нестабильность; грубые вероятности без pruning |
+| Роль | Отдельная H₁; top-5 по вероятностям OvR | Отдельная H₁; top-5 по скорам листьев |
+| Дальше | Если оба Δ < 0.10 → rule; иначе H₁-quality для max(Δ); при росте n — RandomForest (не отдельная H₁) | |
 
 **Rule-based параметры:** полная матрица доменов×рекомендаций $14 \times 40 = 560$ порогов; реалистичный sparse mapping ~40–80 рёбер (см. [nir3-hypothesis-evaluation-pipeline](nir3-hypothesis-evaluation-pipeline.md)).
 

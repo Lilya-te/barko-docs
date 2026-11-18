@@ -4,6 +4,13 @@
 
 ---
 
+## [2026-11-18] ingest | NIR-3: H₁-plan-DT/LR, quality 60/97, sync-правило
+
+- Reingest Б2/Б3: H₁-plan разделён на **H₁-plan-DT** и **H₁-plan-LR** (OvR), δ = 0.10; H₁-quality H₀: accept < 60% или safe < 97% (цель ~60–70% / ~97–98%).
+- Обновлены [nir3-hypotheses](sources/nir3-hypotheses.md), [nir3-ml-evaluation-pipeline](sources/nir3-ml-evaluation-pipeline.md), [nir3-hypothesis-evaluation-pipeline](ml/nir3-hypothesis-evaluation-pipeline.md), [benchmarks-and-metrics](ml/benchmarks-and-metrics.md), [model-selection](ml/model-selection.md).
+- Новое правило синхронизации Б2↔Б3↔wiki: `.cursor/rules/nir3-hypotheses-pipeline-sync.mdc`; пункт в `AGENTS.md`.
+- Снято противоречие «Б2 только дерево / Б3 LR+RF»: RF остаётся опцией при росте n, не отдельной H₁.
+
 ## [2026-11-16] ingest | NIR_3 Б1: данные, метрики, LR/DT, NLP-диалог
 
 - Reingest расширенного Б1: приоритет литературы, сводка инструментов → выбор C-BARQ, числа данных (unified 956 = 619 Serpell + 337 Bohland; ландшафт ~36k до дедупа).

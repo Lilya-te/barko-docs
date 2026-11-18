@@ -2,7 +2,7 @@
 type: ml
 tags: [metrics, benchmarks, k3, k5, nir3, recommendations]
 sources: [ml-ideas-notes, helpdog-notebook-notes, nir3-hypotheses, nir3-ml-evaluation-pipeline, nir3-literature-delta]
-updated: 2026-11-16
+updated: 2026-11-18
 status: stable
 ---
 
@@ -10,14 +10,15 @@ status: stable
 
 ## Рекомендации плана (НИР-3) — основной измеримый контур семестра
 
-Постановка: [nir3-hypothesis-evaluation-pipeline](nir3-hypothesis-evaluation-pipeline.md).
+Постановка: [nir3-hypothesis-evaluation-pipeline](nir3-hypothesis-evaluation-pipeline.md). Канон порогов — Б2/Б3 (синхронизация обязательна).
 
 | Гипотеза | Метрика | Порог / эталон |
 |----------|---------|----------------|
-| H₁-baseline | macro-F1 top-5 vs эксперт G | ≥ 0,6; random ≈ 0,125 (N=40, card(P)=card(G)=5) |
-| H₁-plan | macro-F1_ML vs macro-F1_rule | ML строго лучше rule на том же val |
-| H₁-quality | $P_{\text{accept}}$, доля «безопасна» | ≥ 95% / ≥ 99% |
-| H₁-transfer / H₁-channel | TOST по доменным скорам | заранее заданный δ, α = 0,05 |
+| H₁-baseline | macro-F1 top-5 vs эксперт G | ≥ 0.6; random = 0.125 (N=40, card(P)=card(G)=5) |
+| H₁-plan-DT | Δ_DT = macro-F1_DT − macro-F1_rule | Δ_DT ≥ 0.10 (~+0.5 из 5) на том же val |
+| H₁-plan-LR | Δ_LR = macro-F1_LR − macro-F1_rule (OvR) | Δ_LR ≥ 0.10; в quality — max(Δ) |
+| H₁-quality | P_accept, доля «безопасна» | цель ~60–70% / ~97–98%; H₀: accept < 60% или safe < 97% |
+| H₁-transfer / H₁-channel | TOST по доменным скорам | заранее заданный δ, α = 0.05 |
 | H₁-human-eval | доля предпочтений K5-RAG | ≥ 70% и значимо > 50% |
 
 Формула на анкету $i$: $TP_i = \lvert P_i \cap G_i \rvert$, $\mathrm{F1}_i = TP_i/5$; macro-F1 — среднее по выборке оценки.
@@ -36,9 +37,9 @@ $$
 |-------|---------------:|----------:|--------:|-------------|
 | Random top-5 | 0,125 | — | — | нижняя граница |
 | Rule-based (домен+T) | | | — | H₁-baseline |
-| LogisticRegression | | | | кандидат H₁-plan |
-| DecisionTree | | | | формулировка Б2 |
-| RandomForest | | | | кандидат H₁-plan |
+| LogisticRegression OvR | | | | H₁-plan-LR |
+| DecisionTree | | | | H₁-plan-DT |
+| RandomForest | | | | опция при росте n (не отдельная H₁) |
 
 Таблица **не заполнена** фактическими прогонами.
 

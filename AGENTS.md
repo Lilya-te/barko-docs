@@ -98,6 +98,10 @@ status: draft | stable | superseded
 
 Правило дублируется в `.cursor/rules/personal-data-152-fz.mdc` (`alwaysApply`).
 
+### NIR-3: гипотезы ↔ пайплайн
+
+Канон: `NIR_3/personal_files/Б2_гипотезы.md` (H₁) и `NIR_3/personal_files/Б3_…пайплайн…md` (методика). При правке порогов, ID гипотез, моделей или метрик — **обновлять оба файла** и связанные `wiki/sources/nir3-*.md`, `wiki/ml/nir3-hypothesis-evaluation-pipeline.md` (+ benchmarks/model-selection при необходимости), запись в `wiki/log.md`. Правило: `.cursor/rules/nir3-hypotheses-pipeline-sync.mdc`.
+
 ## Границы домена
 
 - **В scope:** Hvostun MVP, C-BARQ, датасеты, ML baseline, K5 RAG, гуманная кинология.

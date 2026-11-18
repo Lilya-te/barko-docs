@@ -3,7 +3,7 @@ type: source
 tags: [nir3, pipeline, evaluation, ml, c-barq, nlp, rag]
 sources: []
 raw_path: NIR_3/personal_files/Б3_Разработать пошаговую методику проверки гипотезы и (для ML) пайплайн оценки.md
-updated: 2026-11-16
+updated: 2026-11-18
 status: ingested
 ---
 
@@ -13,14 +13,16 @@ status: ingested
 
 Гипотезы: [nir3-hypotheses](nir3-hypotheses.md). Curated-синтез: [nir3-hypothesis-evaluation-pipeline](../ml/nir3-hypothesis-evaluation-pipeline.md).
 
+**Синхронизация:** Б3 должен совпадать с Б2 по ID/порогам; правило `.cursor/rules/nir3-hypotheses-pipeline-sync.mdc`.
+
 ## Ключевые выводы
 
-1. **Объект:** анкета владельца, волна 7–14 дней (C-BARQ Mini / C-BARQ(S)) + профиль собаки; таргет — top-5 из каталога (~40), эталон G — эксперт.
+1. **Объект:** анкета владельца, волна 7–14 дней (C-BARQ Mini / C-BARQ(S)) + профиль собаки; таргет — top-5 из каталога (N = 40), эталон G — эксперт.
 2. **Split (как в Б3):** train/val на референсе (Bohland + Serpell unified); **test** — российские респонденты.
 3. **Сбор:** пилот РФ (Яндекс.Формы, 3 волны) + экспертный контур разметки + harmonized mini-42; канал `channel`, версия анкеты, согласие в ops.
-4. **Порядок экспериментов:** H₁-baseline (rule-based) → H₁-plan (ML) → H₁-quality (эксперт); параллельно H₁-channel (векторный индекс пунктов); H₁-transfer после РФ-скоров; H₁-human-eval после wiki-RAG.
+4. **Порядок экспериментов:** H₁-baseline → H₁-plan-DT и H₁-plan-LR (один val, δ = 0.10) → H₁-quality для победителя (accept H₀ < 60%, safe H₀ < 97%); параллельно H₁-channel; H₁-transfer после РФ-скоров; H₁-human-eval после wiki-RAG.
 5. **NLP-канал:** embeddings формулировок пунктов/ответов → cosine retrieval из текста чата → confirm пользователем → доменные скоры → TOST vs self-report.
-6. **K5:** слепой pairwise RAG vs no-RAG; preference ≥ 70% и > 50% при α = 0,05.
+6. **K5:** слепой pairwise RAG vs no-RAG; preference ≥ 70% и > 50% при α = 0.05.
 
 ## Критерии готовности данных
 
