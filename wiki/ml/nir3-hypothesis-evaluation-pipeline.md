@@ -2,7 +2,7 @@
 type: ml
 tags: [nir3, pipeline, hypotheses, recommendations, nlp, rag, evaluation]
 sources: [nir3-hypotheses, nir3-ml-evaluation-pipeline]
-updated: 2026-11-18
+updated: 2026-11-19
 status: draft
 ---
 
@@ -33,7 +33,13 @@ status: draft
 3. **H₁-plan-DT:** DecisionTree, top-5; тот же val; `Δ_DT = macro-F1_DT − macro-F1_baseline ≥ 0.10`.
 4. **H₁-plan-LR:** LogisticRegression **one-vs-rest** (N=40 бинарных), top-5 по вероятностям; тот же val; `Δ_LR ≥ 0.10`. В H₁-quality идёт кандидат с большим Δ (если оба < 0.10 — rule-based). См. [model-selection](model-selection.md).
 5. **H₁-quality:** принять / править / отклонить + «безопасна»; целевой коридор accept ~60–70%, safe ~97–98%; H₀: accept < 60% или safe < 97% (ориентир test ≈ 20×5 = 100 оценок).
-6. **H₁-channel:** embeddings+cosine → confirm → TOST доменов vs self-report. См. [k5-k3-answer-bridge](../concepts/k5-k3-answer-bridge.md).
+6. **H₁-channel:** embeddings+cosine → confirm → парный TOST доменов vs self-report того же владельца. См. [k5-k3-answer-bridge](../concepts/k5-k3-answer-bridge.md).
+   - **Дизайн:** контрбалансировка порядка (форма/чат), слепота NLP к ответам формы, скоры raw и `user_confirmed` (sensitivity), подвыборка test-retest формы.
+   - **Критерий:** по каждому ключевому домену $\mathrm{CI}_{90\%}(\bar{D}_d) \subset (-\delta, +\delta)$ (intersection–union, без поправки на множественность).
+   - **δ (до сбора):** test-retest «форма vs форма» → иначе 0.3–0.5 · SD домена по референсу → иначе 0.3–0.5 балла шкалы 0–4 с обоснованием кинолога; проверка, что сдвиг на δ почти не меняет top-5 rule-based.
+   - **n пар:** $n \approx 8.6\,(\sigma_D/\delta)^2$ — ≈35 / 54 / 96 при δ/σ_D = 0.5 / 0.4 / 0.3; при n ≈ 20 эквивалентность практически не доказуема.
+   - **Вторично:** ICC(2,1) absolute ≥ 0.75, Bland–Altman (bias внутри ±δ), quadratic weighted κ по пунктам ≥ 0.6, coverage ≥ 80% пунктов домена.
+   - **152-ФЗ:** отдельное согласие на переписку/голос, сырой текст в РФ-контуре, в аналитику — псевдонимизированные скоры + `channel`; encoder локальный / РФ-хостинг.
 7. **H₁-transfer:** TOST доменов РФ vs Bohland/short, заранее заданный δ, α = 0.05.
 8. **H₁-human-eval:** слепой pairwise K5-RAG vs no-RAG; preference ≥ 70% и значимо > 50%.
 
@@ -56,7 +62,7 @@ wiki → vector RAG → answers → pairwise human-eval
 | ML top-5 DT | H₁-plan-DT | Δ_DT ≥ 0.10 vs rule | rule-based; CI желателен |
 | ML top-5 LR OvR | H₁-plan-LR | Δ_LR ≥ 0.10 vs rule | rule-based; max(Δ) → quality |
 | Эксперт | H₁-quality | accept ≥ ~60–70%, safe ≥ ~97–98%; H₀: < 60% / < 97% | принять/править/отклонить |
-| NLP↔форма | H₁-channel | TOST, δ | self-report того же владельца |
+| NLP↔форма | H₁-channel | парный TOST по каждому домену, δ из test-retest; ICC ≥ 0.75 вторично | self-report того же владельца |
 | РФ↔референс | H₁-transfer | TOST, δ | Bohland / short C-BARQ |
 | K5-RAG | H₁-human-eval | preference ≥ 70% | ответ без RAG |
 

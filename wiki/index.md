@@ -1,6 +1,6 @@
 # Hvostun Wiki — Index
 
-Каталог страниц knowledge base. Обновлён: 2026-11-16 (reingest NIR_3 / Б1 методика).
+Каталог страниц knowledge base. Обновлён: 2026-11-19 (synthesis: эффект приложения, мощность RCT).
 
 ## Overview
 
@@ -62,6 +62,7 @@
 | [experiment-plan](ml/experiment-plan.md) | План экспериментов: risk baseline + гипотезы НИР-3 |
 | [nir3-hypothesis-evaluation-pipeline](ml/nir3-hypothesis-evaluation-pipeline.md) | Пайплайн проверки H₁: rule→ML→эксперт, NLP, TOST, RAG |
 | [helpdog-adoption-eda](ml/helpdog-adoption-eda.md) | EDA возвратов в приют (57% среди пристроенных) |
+| [app-effect-rct-power](ml/app-effect-rct-power.md) | Синтез: эффект приложения 40 vs 40, пороги значимости и MDE по доменам C-BARQ (7→30 день) |
 | [cbarq-clustering](ml/cbarq-clustering.md) | Exploratory KMeans/GMM-кластеризация Padova; ограничения интерпретации |
 
 ## Sources

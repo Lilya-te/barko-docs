@@ -3,7 +3,7 @@ type: source
 tags: [nir3, hypotheses, k3, k5, c-barq, recommendations]
 sources: []
 raw_path: NIR_3/personal_files/Б2_гипотезы.md
-updated: 2026-11-18
+updated: 2026-11-19
 status: ingested
 ---
 
@@ -50,6 +50,8 @@ $$
 ### TOST (H₁-transfer, H₁-channel)
 
 Эквивалентность не доказывается тестом на *различие* с p > 0.05; нужны оба односторонних TOST и заранее заданный δ.
+
+**H₁-channel (уточнено 2026-11-19):** парный TOST по **каждому** ключевому домену (intersection–union), эквивалентно $\mathrm{CI}_{90\%}(\Delta_d) \subset (-\delta, +\delta)$. δ фиксируется до сбора: приоритет — test-retest формы, иначе 0.3–0.5 · SD домена. Размер выборки $n \approx 8.6\,(\sigma_D/\delta)^2$ (≈35 пар при δ = 0.5σ_D). Вторично: ICC(2,1) ≥ 0.75, Bland–Altman, weighted κ по пунктам, coverage ≥ 80%. Подробно — Б3 §5.3, [nir3-hypothesis-evaluation-pipeline](../ml/nir3-hypothesis-evaluation-pipeline.md).
 
 ## Интегрировано в вики
 
