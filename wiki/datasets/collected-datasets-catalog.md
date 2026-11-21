@@ -8,7 +8,7 @@ status: stable
 
 # Collected Datasets Catalog
 
-Сводка **собранных** датасетов для baseline K3. Источник: `analytics/research/datatsets/foreign_datasets_list.md`.
+Сводка **собранных** датасетов для baseline K3. Источник: `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/02_данные/research_padova/datasets/foreign_datasets_list.md`.
 
 ## Быстрый статус
 

@@ -10,7 +10,7 @@ status: draft
 
 Методика оценки ML-контуров Hvostun по личным гипотезам семестра. Источники: [nir3-hypotheses](../sources/nir3-hypotheses.md), [nir3-ml-evaluation-pipeline](../sources/nir3-ml-evaluation-pipeline.md).
 
-**Синхронизация:** канон — `NIR_3/personal_files/Б2_гипотезы.md` + `Б3_…пайплайн…md`; при правках порогов/H₁ обновлять оба и эту страницу (правило `.cursor/rules/nir3-hypotheses-pipeline-sync.mdc`).
+**Синхронизация:** канон — `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б2_личные_исследовательские_гипотезы.md` + `Б3_…пайплайн…md`; при правках порогов/H₁ обновлять оба и эту страницу (правило `.cursor/rules/nir3-hypotheses-pipeline-sync.mdc`).
 
 Связано: [experiment-plan](experiment-plan.md), [benchmarks-and-metrics](benchmarks-and-metrics.md), [model-selection](model-selection.md), [k5-k3-answer-bridge](../concepts/k5-k3-answer-bridge.md), [cbarq-mini-sessions-unified](../datasets/cbarq-mini-sessions-unified.md).
 

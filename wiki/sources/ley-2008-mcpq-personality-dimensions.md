@@ -2,7 +2,7 @@
 type: source
 tags: [personality, mcpq, psychometric, companion-dogs, source, translation-available]
 sources: []
-raw_path: статьи/foreign/australia/Ley_2008_MCPQ_personality_dimensions_companion_canines.pdf
+raw_path: I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/australia/Ley_2008_MCPQ_personality_dimensions_companion_canines.pdf
 updated: 2026-08-22
 status: ingested
 doi: 10.1016/j.applanim.2007.04.016
@@ -10,7 +10,7 @@ doi: 10.1016/j.applanim.2007.04.016
 
 # Source: Разработка MCPQ — пять измерений personality companion dogs (Ley et al. 2008)
 
-**Оригинал:** [`статьи/foreign/australia/Ley_2008_MCPQ_personality_dimensions_companion_canines.pdf`](../../статьи/foreign/australia/Ley_2008_MCPQ_personality_dimensions_companion_canines.pdf)
+**Оригинал:** [`I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/australia/Ley_2008_MCPQ_personality_dimensions_companion_canines.pdf`](<../../I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/australia/Ley_2008_MCPQ_personality_dimensions_companion_canines.pdf>)
 
 Ley, J., Bennett, P., & Coleman, G. (2008). Personality dimensions that emerge in companion canines. *Applied Animal Behaviour Science, 110*(3–4), 305–317. https://doi.org/10.1016/j.applanim.2007.04.016
 
@@ -56,4 +56,4 @@ Ley, J., Bennett, P., & Coleman, G. (2008). Personality dimensions that emerge i
 
 ## Полный перевод
 
-[Открыть полный русский перевод](../../статьи/foreign/translations/ley_2008_mcpq_personality_dimensions_companion_canines_ru.md).
+[Открыть полный русский перевод](<../../I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/translations/ley_2008_mcpq_personality_dimensions_companion_canines_ru.md>).

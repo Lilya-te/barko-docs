@@ -2,7 +2,7 @@
 type: dataset
 tags: [c-barq, shelter-dogs, adoption, longitudinal, collected, k3]
 sources: [bohland-2023-shelter-dog-behavior-ru]
-raw_file: analytics/research/datatsets/foreign/bohland_2023_shelter_behavior_after_adoption_supplement_s4.csv
+raw_file: I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/02_данные/research_padova/datasets/foreign/bohland_2023_shelter_behavior_after_adoption_supplement_s4.csv
 updated: 2026-08-12
 status: stable
 cbarq_coverage: short

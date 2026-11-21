@@ -94,7 +94,7 @@ $$
 
 ### HelpDog EDA (продуктовые данные)
 
-Из `analytics/helpdog_forum/helpdog.ipynb` — exploratory analysis, **не ML benchmark**:
+Из `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/02_данные/helpdog_forum/helpdog.ipynb` — exploratory analysis, **не ML benchmark**:
 
 | Метрика | Значение |
 |---------|----------|

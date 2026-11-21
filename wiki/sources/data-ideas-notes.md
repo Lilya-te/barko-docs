@@ -2,14 +2,14 @@
 type: source
 tags: [c-barq, datasets, source]
 sources: []
-raw_path: analytics/research/datatsets/_data_ideas.md
+raw_path: I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/02_данные/research_padova/datasets/_data_ideas.md
 updated: 2026-07-28
 status: ingested
 ---
 
 # Source: Открытые датасеты по C-BARQ
 
-**Исходный файл:** [`analytics/research/datatsets/_data_ideas.md`](../../analytics/research/datatsets/_data_ideas.md)
+**Исходный файл:** [`I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/02_данные/research_padova/datasets/_data_ideas.md`](<../../I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/03_выводы.md>)
 
 ## Ключевые выводы
 
@@ -34,4 +34,4 @@ status: ingested
 ## Связанные ingest
 
 - [foreign-datasets-list-notes](foreign-datasets-list-notes.md) — детальные страницы по каждому собранному датасету (ingested)
-- PDF из `статьи/` — саммари и связь с признаками K3 (следующий ingest)
+- PDF из `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/` — саммари и связь с признаками K3 (следующий ingest)

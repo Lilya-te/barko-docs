@@ -8,7 +8,7 @@ status: stable
 
 # HelpDog Adoption EDA
 
-Результаты exploratory analysis из `analytics/helpdog_forum/helpdog.ipynb`.
+Результаты exploratory analysis из `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/02_данные/helpdog_forum/helpdog.ipynb`.
 
 ## Цель анализа
 
@@ -59,5 +59,5 @@ status: stable
 
 ## Артефакты
 
-- Ноутбук: `analytics/helpdog_forum/helpdog.ipynb`
-- Слайд: `analytics/helpdog_return_summary_slide.png` (если есть)
+- Ноутбук: `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/02_данные/helpdog_forum/helpdog.ipynb`
+- Слайд: раньше `analytics/helpdog_return_summary_slide.png` — после переноса папки файл не найден; при появлении положить рядом с `…/02_данные/helpdog_forum/`

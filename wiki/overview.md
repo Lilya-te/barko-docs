@@ -59,10 +59,10 @@ status: draft
 
 ## Связанные артефакты в репозитории
 
-- `_ml_ideas.md` — исходная заметка по ML (ingested → [ml-ideas-notes](sources/ml-ideas-notes.md))
-- `_app_ideas/_database_architecture.md` — схема БД research-ops (ingested → [app-ideas-notes](sources/app-ideas-notes.md))
-- `analytics/research/datatsets/_data_ideas.md` — исходная заметка по датасетам (ingested → [data-ideas-notes](sources/data-ideas-notes.md))
-- `analytics/research/datatsets/foreign_datasets_list.md` — каталог собранных датасетов (ingested → [collected-datasets-catalog](datasets/collected-datasets-catalog.md))
-- `analytics/helpdog_forum/helpdog.ipynb` — EDA пристройств HelpDog (ingested → [helpdog-adoption-eda](ml/helpdog-adoption-eda.md); ~57% возвратов)
-- `статьи/*.pdf` — 4 статьи ingested → [sources/](sources/plos-one-2024-short-cbarq-validation.md), [k3-feature-candidates](concepts/k3-feature-candidates.md)
-- `NIR_3/personal_files/Б2_гипотезы.md`, `Б3_…пайплайн оценки.md` — ingested → [nir3-hypotheses](sources/nir3-hypotheses.md), [nir3-ml-evaluation-pipeline](sources/nir3-ml-evaluation-pipeline.md)
+- `_ml_ideas.md` — удалён; канон → [ml-ideas-notes](sources/ml-ideas-notes.md)
+- `_app_ideas/` — удалён; канон → [app-ideas-notes](sources/app-ideas-notes.md), [research-data-app](concepts/research-data-app.md)
+- `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/02_данные/research_padova/datasets/_data_ideas.md` — исходная заметка по датасетам (ingested → [data-ideas-notes](sources/data-ideas-notes.md))
+- `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/02_данные/research_padova/datasets/foreign_datasets_list.md` — каталог собранных датасетов (ingested → [collected-datasets-catalog](datasets/collected-datasets-catalog.md))
+- `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/02_данные/helpdog_forum/helpdog.ipynb` — EDA пристройств HelpDog (ingested → [helpdog-adoption-eda](ml/helpdog-adoption-eda.md); ~57% возвратов)
+- `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/*.pdf` — 4 статьи ingested → [sources/](sources/plos-one-2024-short-cbarq-validation.md), [k3-feature-candidates](concepts/k3-feature-candidates.md)
+- `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б2_личные_исследовательские_гипотезы.md`, `Б3_методика_проверки_гипотезы_пайплайн_оценки.md` — ingested → [nir3-hypotheses](sources/nir3-hypotheses.md), [nir3-ml-evaluation-pipeline](sources/nir3-ml-evaluation-pipeline.md)

@@ -2,7 +2,7 @@
 type: source
 tags: [cortisol, welfare, working-dogs, physiology, source, translation-available]
 sources: []
-raw_path: статьи/foreign/belgium/Haverbeke_2008_CORTISOL_working_dogs_environmental_challenges.pdf
+raw_path: I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/belgium/Haverbeke_2008_CORTISOL_working_dogs_environmental_challenges.pdf
 updated: 2026-08-22
 status: ingested
 doi: 10.1016/j.physbeh.2007.07.014
@@ -10,7 +10,7 @@ doi: 10.1016/j.physbeh.2007.07.014
 
 # Source: Cortisol и поведение военных рабочих собак при environmental challenges (Haverbeke et al. 2008)
 
-**Оригинал:** [`статьи/foreign/belgium/Haverbeke_2008_CORTISOL_working_dogs_environmental_challenges.pdf`](../../статьи/foreign/belgium/Haverbeke_2008_CORTISOL_working_dogs_environmental_challenges.pdf)
+**Оригинал:** [`I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/belgium/Haverbeke_2008_CORTISOL_working_dogs_environmental_challenges.pdf`](<../../I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/belgium/Haverbeke_2008_CORTISOL_working_dogs_environmental_challenges.pdf>)
 
 Haverbeke, A., Diederich, C., Depiereux, E., & Giffroy, J. M. (2008). Cortisol and behavioral responses of working dogs to environmental challenges. *Physiology & Behavior, 93*(1–2), 59–67. https://doi.org/10.1016/j.physbeh.2007.07.014
 
@@ -70,4 +70,4 @@ Haverbeke, A., Diederich, C., Depiereux, E., & Giffroy, J. M. (2008). Cortisol a
 
 ## Полный перевод
 
-[Открыть полный русский перевод](../../статьи/foreign/translations/haverbeke_2008_cortisol_working_dogs_environmental_challenges_ru.md).
+[Открыть полный русский перевод](<../../I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/translations/haverbeke_2008_cortisol_working_dogs_environmental_challenges_ru.md>).

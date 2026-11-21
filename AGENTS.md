@@ -24,13 +24,17 @@ alwaysApply: true
 
 ## Три слоя
 
+Корень индивидуальных артефактов НИР-3 (алиас ниже — **`NIR3_ART`**):
+
+`I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/`
+
 | Слой | Путь | Правило |
 |------|------|---------|
-| Raw sources | `raw/`, `статьи/`, `datatsets/` | Только чтение. Не редактировать PDF, CSV, ноутбуки. |
+| Raw sources | `NIR3_ART/Б1_…/00_примеры_анкет/` (бывш. `QUESTS/`), `…/01_статьи/`, `…/02_данные/` (бывш. `статьи/`, `analytics/`), `152 ФЗ.md` | Только чтение. Не редактировать PDF, CSV, ноутбуки. |
 | Wiki | `wiki/` | Агент создаёт и обновляет markdown-страницы. |
 | Schema | `AGENTS.md` | Этот файл — конвенции и workflow. |
 
-Исходные заметки (`_ml_ideas.md`, `datatsets/_data_ideas.md`) остаются на месте; вики ссылается на них как на источники.
+Канон Б1/Б2/Б3: `NIR3_ART/Б1_теоретический_анализ_источников/03_выводы.md`, `NIR3_ART/Б2_личные_исследовательские_гипотезы.md`, `NIR3_ART/Б3_методика_проверки_гипотезы_пайплайн_оценки.md`. Заметки `_ml_ideas.md` и `_app_ideas/` **удалены**; канон — `wiki/sources/ml-ideas-notes.md`, `wiki/sources/app-ideas-notes.md`.
 
 ## Язык и стиль
 
@@ -100,13 +104,13 @@ status: draft | stable | superseded
 
 ### NIR-3: гипотезы ↔ пайплайн
 
-Канон: `NIR_3/personal_files/Б2_гипотезы.md` (H₁) и `NIR_3/personal_files/Б3_…пайплайн…md` (методика). При правке порогов, ID гипотез, моделей или метрик — **обновлять оба файла** и связанные `wiki/sources/nir3-*.md`, `wiki/ml/nir3-hypothesis-evaluation-pipeline.md` (+ benchmarks/model-selection при необходимости), запись в `wiki/log.md`. Правило: `.cursor/rules/nir3-hypotheses-pipeline-sync.mdc`.
+Канон: `NIR3_ART/Б2_личные_исследовательские_гипотезы.md` (H₁) и `NIR3_ART/Б3_методика_проверки_гипотезы_пайплайн_оценки.md` (методика). При правке порогов, ID гипотез, моделей или метрик — **обновлять оба файла** и связанные `wiki/sources/nir3-*.md`, `wiki/ml/nir3-hypothesis-evaluation-pipeline.md` (+ benchmarks/model-selection при необходимости), запись в `wiki/log.md`. Правило: `.cursor/rules/nir3-hypotheses-pipeline-sync.mdc`.
 
 ## Границы домена
 
 - **В scope:** Hvostun MVP, C-BARQ, датасеты, ML baseline, K5 RAG, гуманная кинология.
 - **Вне scope (по умолчанию):** `ds_managment/` — учебные материалы; не смешивать с продуктовой вики без явного запроса.
-- **analytics/:** артефакты экспериментов; выводы из ноутбуков переносить в `wiki/ml/`, файлы .ipynb изменять по запросу после построения плана действий
+- **Данные / ноутбуки:** `NIR3_ART/Б1_…/02_данные/` (research_bohland_powell, research_padova, helpdog_forum, diagrams); выводы переносить в `wiki/ml/`, `.ipynb` менять по запросу после плана
 
 ## Связь с продуктом
 

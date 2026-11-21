@@ -2,14 +2,14 @@
 type: source
 tags: [datasets, c-barq, source]
 sources: []
-raw_path: analytics/research/datatsets/foreign_datasets_list.md
+raw_path: I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/02_данные/research_padova/datasets/foreign_datasets_list.md
 updated: 2026-08-12
 status: ingested
 ---
 
 # Source: Foreign Datasets List
 
-**Исходный файл:** [`analytics/research/datatsets/foreign_datasets_list.md`](../../analytics/research/datatsets/foreign_datasets_list.md)
+**Исходный файл:** [`I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/02_данные/research_padova/datasets/foreign_datasets_list.md`](<../../I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/03_выводы.md>)
 
 ## Ключевые выводы
 
@@ -46,4 +46,4 @@ status: ingested
 - [ ] Дедупликация Wolfram vs Figshare
 - [ ] Полная схема столбцов `wilkins_2024_shortened_cbarq_validation_supplement_s1.csv`
 - [ ] Проверка codebook и лицензии Bryson 2026
-- [x] Расположение файлов зафиксировано: `analytics/research/datatsets/`
+- [x] Расположение файлов зафиксировано: `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/02_данные/research_padova/datasets/`

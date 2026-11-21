@@ -2,7 +2,7 @@
 type: source
 tags: [personality, demographics, questionnaire, online-survey, source, translation-available]
 sources: []
-raw_path: статьи/foreign/hungary/Kubinyi_2009_SURVEY_dog_owner_demographics_personality.pdf
+raw_path: I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/hungary/Kubinyi_2009_SURVEY_dog_owner_demographics_personality.pdf
 updated: 2026-08-22
 status: ingested
 doi: 10.1016/j.beproc.2009.04.004
@@ -10,7 +10,7 @@ doi: 10.1016/j.beproc.2009.04.004
 
 # Source: Демография владельца/собаки и personality traits (Kubinyi et al. 2009)
 
-**Оригинал:** [`статьи/foreign/hungary/Kubinyi_2009_SURVEY_dog_owner_demographics_personality.pdf`](../../статьи/foreign/hungary/Kubinyi_2009_SURVEY_dog_owner_demographics_personality.pdf)
+**Оригинал:** [`I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/hungary/Kubinyi_2009_SURVEY_dog_owner_demographics_personality.pdf`](<../../I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/hungary/Kubinyi_2009_SURVEY_dog_owner_demographics_personality.pdf>)
 
 Kubinyi, E., Turcsán, B., & Miklósi, Á. (2009). Dog and owner demographic characteristics and dog personality trait associations. *Behavioural Processes, 81*(3), 392–401. https://doi.org/10.1016/j.beproc.2009.04.004
 
@@ -60,4 +60,4 @@ Owner variables (gender, education, household size и др.) — **minor but det
 
 ## Полный перевод
 
-[Открыть полный русский перевод](../../статьи/foreign/translations/kubinyi_2009_survey_dog_owner_demographics_personality_ru.md).
+[Открыть полный русский перевод](<../../I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/translations/kubinyi_2009_survey_dog_owner_demographics_personality_ru.md>).

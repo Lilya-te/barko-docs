@@ -2,7 +2,7 @@
 type: dataset
 tags: [c-barq, doodle, crossbreed, collected, k3, item-level]
 sources: []
-raw_file: analytics/research/datatsets/foreign/bryson_2026_doodle_crossbreed_behaviour_responses.xlsx
+raw_file: I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/02_данные/research_padova/datasets/foreign/bryson_2026_doodle_crossbreed_behaviour_responses.xlsx
 updated: 2026-08-12
 status: draft
 cbarq_coverage: full

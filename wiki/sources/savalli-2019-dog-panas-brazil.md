@@ -2,7 +2,7 @@
 type: source
 tags: [panas, temperament, psychometric, cross-cultural, source, translation-available]
 sources: []
-raw_path: статьи/foreign/brazil/Savalli_2019_PANAS_dog_panas_brazil.pdf
+raw_path: I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/brazil/Savalli_2019_PANAS_dog_panas_brazil.pdf
 updated: 2026-08-20
 status: ingested
 doi: 10.1038/s41598-019-54645-6
@@ -10,7 +10,7 @@ doi: 10.1038/s41598-019-54645-6
 
 # Source: PANAS для собак — валидация в Бразилии (Savalli et al. 2019)
 
-**Оригинал:** [`статьи/foreign/brazil/Savalli_2019_PANAS_dog_panas_brazil.pdf`](../../статьи/foreign/brazil/Savalli_2019_PANAS_dog_panas_brazil.pdf)
+**Оригинал:** [`I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/brazil/Savalli_2019_PANAS_dog_panas_brazil.pdf`](<../../I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/brazil/Savalli_2019_PANAS_dog_panas_brazil.pdf>)
 
 Savalli, C., Albuquerque, N., Vasconcellos, A. S., Ramos, D., de Mello, F. T., & Mills, D. S. (2019). Assessment of emotional predisposition in dogs using PANAS (Positive and Negative Activation Scale) and associated relationships in a sample of dogs from Brazil. *Scientific Reports, 9*, 18386. https://doi.org/10.1038/s41598-019-54645-6. CC BY 4.0.
 
@@ -85,4 +85,4 @@ Positive и negative activation **ортогональны**, не против�
 
 ## Полный перевод
 
-[Открыть полный русский перевод](../../статьи/foreign/translations/savalli_2019_dog_panas_brazil_ru.md). Перевод вынесен из wiki, чтобы curated-слой оставался компактным.
+[Открыть полный русский перевод](<../../I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/translations/savalli_2019_dog_panas_brazil_ru.md>). Перевод вынесен из wiki, чтобы curated-слой оставался компактным.

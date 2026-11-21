@@ -2,7 +2,7 @@
 type: source
 tags: [personality, aggression, stranger-test, test-retest, reliability, experimenter-consistency, consistency, source, translation-available]
 sources: []
-raw_path: статьи/foreign/hungary/Vas_2008_EXPERIMENT_threatening_cues_consistency.pdf
+raw_path: I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/hungary/Vas_2008_EXPERIMENT_threatening_cues_consistency.pdf
 updated: 2026-08-22
 status: ingested
 doi: 10.1016/j.applanim.2007.09.002
@@ -10,7 +10,7 @@ doi: 10.1016/j.applanim.2007.09.002
 
 # Source: Консистентность реакций собак на дружелюбные и угрожающие сигналы незнакомца (Vas et al., 2008)
 
-**Оригинал:** [`статьи/foreign/hungary/Vas_2008_EXPERIMENT_threatening_cues_consistency.pdf`](../../статьи/foreign/hungary/Vas_2008_EXPERIMENT_threatening_cues_consistency.pdf)
+**Оригинал:** [`I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/hungary/Vas_2008_EXPERIMENT_threatening_cues_consistency.pdf`](<../../I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/hungary/Vas_2008_EXPERIMENT_threatening_cues_consistency.pdf>)
 
 Vas, J., Topál, J., Győri, B., & Miklósi, Á. (2008). Consistency of dogs' reactions to threatening cues of an unfamiliar person. *Applied Animal Behaviour Science, 112*, 355–370. DOI: 10.1016/j.applanim.2007.09.002.
 
@@ -90,4 +90,4 @@ Vas, J., Topál, J., Győri, B., & Miklósi, Á. (2008). Consistency of dogs' re
 
 ## Полный перевод
 
-[Открыть полный русский перевод](../../статьи/foreign/translations/vas_2008_experiment_threatening_cues_consistency_ru.md).
+[Открыть полный русский перевод](<../../I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/translations/vas_2008_experiment_threatening_cues_consistency_ru.md>).

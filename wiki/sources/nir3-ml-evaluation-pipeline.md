@@ -2,14 +2,14 @@
 type: source
 tags: [nir3, pipeline, evaluation, ml, c-barq, nlp, rag]
 sources: []
-raw_path: NIR_3/personal_files/Б3_Разработать пошаговую методику проверки гипотезы и (для ML) пайплайн оценки.md
+raw_path: I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б3_методика_проверки_гипотезы_пайплайн_оценки.md
 updated: 2026-11-19
 status: ingested
 ---
 
 # Source: Методика проверки гипотез и ML-пайплайн оценки (НИР-3)
 
-**Исходный файл:** [`NIR_3/personal_files/Б3_….md`](../../NIR_3/personal_files/Б3_Разработать%20пошаговую%20методику%20проверки%20гипотезы%20и%20(для%20ML)%20пайплайн%20оценки.md)
+**Исходный файл:** [`Б3_методика_проверки_гипотезы_пайплайн_оценки.md`](<../../I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б3_методика_проверки_гипотезы_пайплайн_оценки.md>)
 
 Гипотезы: [nir3-hypotheses](nir3-hypotheses.md). Curated-синтез: [nir3-hypothesis-evaluation-pipeline](../ml/nir3-hypothesis-evaluation-pipeline.md).
 

@@ -2,7 +2,7 @@
 type: source
 tags: [personality, mcpq, mcpq-r, validation, sem, source, translation-available]
 sources: [ley-2008-mcpq-personality-dimensions]
-raw_path: статьи/foreign/australia/Ley_2009_MCPQ_refinement_validation.pdf
+raw_path: I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/australia/Ley_2009_MCPQ_refinement_validation.pdf
 updated: 2026-08-22
 status: ingested
 doi: 10.1016/j.applanim.2008.09.009
@@ -10,7 +10,7 @@ doi: 10.1016/j.applanim.2008.09.009
 
 # Source: Уточнение и validation MCPQ → MCPQ-R (Ley et al. 2009)
 
-**Оригинал:** [`статьи/foreign/australia/Ley_2009_MCPQ_refinement_validation.pdf`](../../статьи/foreign/australia/Ley_2009_MCPQ_refinement_validation.pdf)
+**Оригинал:** [`I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/australia/Ley_2009_MCPQ_refinement_validation.pdf`](<../../I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/australia/Ley_2009_MCPQ_refinement_validation.pdf>)
 
 Ley, J. M., Bennett, P. C., & Coleman, G. J. (2009). A refinement and validation of the Monash Canine Personality Questionnaire (MCPQ). *Applied Animal Behaviour Science, 116*(2), 220–227. https://doi.org/10.1016/j.applanim.2008.09.009
 
@@ -68,4 +68,4 @@ Ley, J. M., Bennett, P. C., & Coleman, G. J. (2009). A refinement and validation
 
 ## Полный перевод
 
-[Открыть полный русский перевод](../../статьи/foreign/translations/ley_2009_mcpq_refinement_validation_ru.md).
+[Открыть полный русский перевод](<../../I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/translations/ley_2009_mcpq_refinement_validation_ru.md>).

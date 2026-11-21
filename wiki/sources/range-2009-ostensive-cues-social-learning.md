@@ -2,7 +2,7 @@
 type: source
 tags: [social-learning, ostensive-cues, attention, arousal, training-level, manipulation-task, clever-dog-lab, source, translation-available]
 sources: []
-raw_path: статьи/foreign/austria/Range_2009_EXPERIMENT_ostensive_cues_social_learning.pdf
+raw_path: I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/austria/Range_2009_EXPERIMENT_ostensive_cues_social_learning.pdf
 updated: 2026-08-22
 status: complete
 doi: 10.1016/j.applanim.2009.05.012
@@ -10,7 +10,7 @@ doi: 10.1016/j.applanim.2009.05.012
 
 # Range et al. 2009 — Остенсивные сигналы и социальное научение собак в манипулятивной задаче
 
-**Оригинал (PDF):** [`статьи/foreign/austria/Range_2009_EXPERIMENT_ostensive_cues_social_learning.pdf`](../../статьи/foreign/austria/Range_2009_EXPERIMENT_ostensive_cues_social_learning.pdf)
+**Оригинал (PDF):** [`I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/austria/Range_2009_EXPERIMENT_ostensive_cues_social_learning.pdf`](<../../I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/austria/Range_2009_EXPERIMENT_ostensive_cues_social_learning.pdf>)
 
 Range, F., Heucke, S. L., Gruber, C., Konz, A., Huber, L., & Virányi, Z. (2009). *The effect of ostensive cues on dogs’ performance in a manipulative social learning task.* Applied Animal Behaviour Science, 120, 170–178. https://doi.org/10.1016/j.applanim.2009.05.012
 
@@ -81,5 +81,5 @@ Range, F., Heucke, S. L., Gruber, C., Konz, A., Huber, L., & Virányi, Z. (2009)
 
 ## Полный перевод
 
-[Открыть полный русский перевод](../../статьи/foreign/translations/range_2009_experiment_ostensive_cues_social_learning_ru.md).
+[Открыть полный русский перевод](<../../I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/translations/range_2009_experiment_ostensive_cues_social_learning_ru.md>).
 

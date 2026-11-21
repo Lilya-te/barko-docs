@@ -3,16 +3,13 @@ type: source
 tags: [app, research-ops, postgres, c-barq, schema]
 sources: []
 raw_path: _app_ideas/_database_architecture.md
-updated: 2026-09-27
-status: ingested
+updated: 2026-11-21
+status: stable
 ---
 
 # Source: Архитектура БД research-ops приложения
 
-**Исходный файл:** [`_app_ideas/_database_architecture.md`](../../_app_ideas/_database_architecture.md)
-
-Связанные черновики UX (пока пустые): `_app_ideas/_volonteer_ux.md`, `_app_ideas/_expert_ux.md`, `_app_ideas/_admin_ux.md`.  
-Продуктовый scope (роли, цель наполнения БД) ранее был в `_app_ideas/_main_ideas.md` (файл удалён; выводы сохранены ниже и на [research-data-app](../concepts/research-data-app.md)).
+**Исходный файл:** `_app_ideas/` (включая `_database_architecture.md`, UX-черновики, `_main_ideas.md`) — **удалён** намеренно (2026-11-21). Канон схемы и scope — эта страница и [research-data-app](../concepts/research-data-app.md).
 
 ## Ключевые выводы из схемы
 

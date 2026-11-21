@@ -2,7 +2,7 @@
 type: source
 tags: [adoption, import, post-adoption, fear, longitudinal, source, translation-available]
 sources: []
-raw_path: статьи/foreign/germany/Hoth_Zimak_2026_BEHAVIOR-SCALES_rescued_dogs_abroad_germany.pdf
+raw_path: I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/germany/Hoth_Zimak_2026_BEHAVIOR-SCALES_rescued_dogs_abroad_germany.pdf
 updated: 2026-08-20
 status: ingested
 doi: 10.1038/s41598-026-62598-w
@@ -10,7 +10,7 @@ doi: 10.1038/s41598-026-62598-w
 
 # Source: Адаптация импортированных собак в Германии (Hoth-Zimak et al. 2026)
 
-**Оригинал:** [`статьи/foreign/germany/Hoth_Zimak_2026_BEHAVIOR-SCALES_rescued_dogs_abroad_germany.pdf`](../../статьи/foreign/germany/Hoth_Zimak_2026_BEHAVIOR-SCALES_rescued_dogs_abroad_germany.pdf)
+**Оригинал:** [`I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/germany/Hoth_Zimak_2026_BEHAVIOR-SCALES_rescued_dogs_abroad_germany.pdf`](<../../I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/germany/Hoth_Zimak_2026_BEHAVIOR-SCALES_rescued_dogs_abroad_germany.pdf>)
 
 Hoth-Zimak, L., Kickstein, J., Klima, A., Mackensen, H., Müller, E., Louton, H., & Döring, D. (2026). Behavioural adaptation of 158 rescued dogs from abroad during the first six months after adoption in Germany. *Scientific Reports, 16*, 23613. https://doi.org/10.1038/s41598-026-62598-w.
 
@@ -94,4 +94,4 @@ Hoth-Zimak, L., Kickstein, J., Klima, A., Mackensen, H., Müller, E., Louton, H.
 
 ## Полный перевод
 
-[Открыть полный русский перевод](../../статьи/foreign/translations/hoth_zimak_2026_rescued_dogs_abroad_germany_ru.md).
+[Открыть полный русский перевод](<../../I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/translations/hoth_zimak_2026_rescued_dogs_abroad_germany_ru.md>).

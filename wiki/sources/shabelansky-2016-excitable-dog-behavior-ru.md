@@ -2,7 +2,7 @@
 type: source
 tags: [dog-behavior, excitability, owner-report, behavior-problems, shelter-dogs, translation-available]
 sources: []
-raw_path: статьи/foreign/usa/Shabelansky_2016_SURVEY_excitable_dog_behavior.pdf
+raw_path: I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/usa/Shabelansky_2016_SURVEY_excitable_dog_behavior.pdf
 updated: 2026-07-29
 status: ingested
 doi: 10.3390/ani6030022
@@ -10,7 +10,7 @@ doi: 10.3390/ani6030022
 
 # Характеристики возбудимого поведения собак по сообщениям владельцев в исследовании с самоотбором участников
 
-[Оригинал статьи (PDF)](../../статьи/foreign/usa/Shabelansky_2016_SURVEY_excitable_dog_behavior.pdf)
+[Оригинал статьи (PDF)](<../../I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/usa/Shabelansky_2016_SURVEY_excitable_dog_behavior.pdf>)
 
 **DOI:** [10.3390/ani6030022](https://doi.org/10.3390/ani6030022)
 
@@ -43,4 +43,4 @@ doi: 10.3390/ani6030022
 
 ## Полный перевод
 
-[Открыть полный русский перевод](../../статьи/foreign/translations/shabelansky_2016_excitable_dog_behavior_ru.md). Перевод вынесен из wiki, чтобы curated-слой оставался компактным.
+[Открыть полный русский перевод](<../../I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/translations/shabelansky_2016_excitable_dog_behavior_ru.md>). Перевод вынесен из wiki, чтобы curated-слой оставался компактным.

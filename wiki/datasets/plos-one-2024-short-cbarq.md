@@ -2,7 +2,7 @@
 type: dataset
 tags: [c-barq, collected, k3, plos-one, raw-responses]
 sources: [foreign-datasets-list-notes, data-ideas-notes, plos-one-2024-short-cbarq-validation]
-raw_file: analytics/research/datatsets/foreign/wilkins_2024_shortened_cbarq_validation_supplement_s1.csv
+raw_file: I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/02_данные/research_padova/datasets/foreign/wilkins_2024_shortened_cbarq_validation_supplement_s1.csv
 updated: 2026-08-12
 status: stable
 cbarq_coverage: full

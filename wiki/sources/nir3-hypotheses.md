@@ -2,14 +2,14 @@
 type: source
 tags: [nir3, hypotheses, k3, k5, c-barq, recommendations]
 sources: []
-raw_path: NIR_3/personal_files/Б2_гипотезы.md
+raw_path: I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б2_личные_исследовательские_гипотезы.md
 updated: 2026-11-19
 status: ingested
 ---
 
 # Source: Личные исследовательские гипотезы НИР-3
 
-**Исходный файл:** [`NIR_3/personal_files/Б2_гипотезы.md`](../../NIR_3/personal_files/Б2_гипотезы.md)
+**Исходный файл:** [`I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б2_личные_исследовательские_гипотезы.md`](<../../I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б2_личные_исследовательские_гипотезы.md>)
 
 Связанная методика проверки: [nir3-ml-evaluation-pipeline](nir3-ml-evaluation-pipeline.md), синтез [nir3-hypothesis-evaluation-pipeline](../ml/nir3-hypothesis-evaluation-pipeline.md).
 

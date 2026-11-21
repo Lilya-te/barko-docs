@@ -2,7 +2,7 @@
 type: source
 tags: [c-barq, shelter-dogs, relinquishment, owner-perception, behavior-screening, k3, k5, translation-available]
 sources: []
-raw_path: статьи/foreign/usa/Powell_2021_SURVEY_deception_or_knowledge.pdf
+raw_path: I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/usa/Powell_2021_SURVEY_deception_or_knowledge.pdf
 updated: 2026-07-29
 status: ingested
 doi: 10.3389/fvets.2021.734973
@@ -10,7 +10,7 @@ doi: 10.3389/fvets.2021.734973
 
 # Владельцы, отдающие собак в приют, недооценивают их поведенческие проблемы: обман или недостаток знаний?
 
-[PDF](../../статьи/foreign/usa/Powell_2021_SURVEY_deception_or_knowledge.pdf) · DOI: [10.3389/fvets.2021.734973](https://doi.org/10.3389/fvets.2021.734973)
+[PDF](<../../I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/usa/Powell_2021_SURVEY_deception_or_knowledge.pdf>) · DOI: [10.3389/fvets.2021.734973](https://doi.org/10.3389/fvets.2021.734973)
 
 ## Саммари
 
@@ -45,4 +45,4 @@ Case-control исследование на данных трёх приютов 
 
 ## Полный перевод
 
-[Полный перевод статьи](../../статьи/foreign/translations/powell_2021_deception_or_knowledge_ru.md)
+[Полный перевод статьи](<../../I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/translations/powell_2021_deception_or_knowledge_ru.md>)

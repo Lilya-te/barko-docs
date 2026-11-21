@@ -2,7 +2,7 @@
 type: source
 tags: [behavioural-testing, methodology, standardization, temperament, personality, review, source, translation-available]
 sources: []
-raw_path: статьи/foreign/belgium/Diederich_2006_REVIEW_behavioural_testing_methodology.pdf
+raw_path: I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/belgium/Diederich_2006_REVIEW_behavioural_testing_methodology.pdf
 updated: 2026-08-22
 status: ingested
 doi: 10.1016/j.applanim.2005.11.018
@@ -10,7 +10,7 @@ doi: 10.1016/j.applanim.2005.11.018
 
 # Source: Поведенческое тестирование собак — обзор методологии и проблемы стандартизации (Diederich & Giffroy, 2006)
 
-**Оригинал:** [`статьи/foreign/belgium/Diederich_2006_REVIEW_behavioural_testing_methodology.pdf`](../../статьи/foreign/belgium/Diederich_2006_REVIEW_behavioural_testing_methodology.pdf)
+**Оригинал:** [`I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/belgium/Diederich_2006_REVIEW_behavioural_testing_methodology.pdf`](<../../I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/belgium/Diederich_2006_REVIEW_behavioural_testing_methodology.pdf>)
 
 Diederich, C., & Giffroy, J.-M. (2006). Behavioural testing in dogs: A review of methodology in search for standardisation. *Applied Animal Behaviour Science, 97*, 51–72. DOI: 10.1016/j.applanim.2005.11.018.
 
@@ -74,4 +74,4 @@ Diederich, C., & Giffroy, J.-M. (2006). Behavioural testing in dogs: A review of
 
 ## Полный перевод
 
-[Открыть полный русский перевод](../../статьи/foreign/translations/diederich_2006_review_behavioural_testing_methodology_ru.md).
+[Открыть полный русский перевод](<../../I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/translations/diederich_2006_review_behavioural_testing_methodology_ru.md>).

@@ -2,14 +2,14 @@
 type: source
 tags: [liebi, l ima, ethics, behavior-analysis, aversive, intrusiveness, decision-making, k5, source, translation-available]
 sources: []
-raw_path: статьи/foreign/canada/OHeare_2009_LIEBI_least_intrusive_behavior_intervention.pdf
+raw_path: I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/canada/OHeare_2009_LIEBI_least_intrusive_behavior_intervention.pdf
 updated: 2026-08-22
 status: complete
 ---
 
 # O’Heare 2009 — LIEBI: алгоритм наименее инвазивного эффективного вмешательства
 
-**Оригинал (PDF):** [`статьи/foreign/canada/OHeare_2009_LIEBI_least_intrusive_behavior_intervention.pdf`](../../статьи/foreign/canada/OHeare_2009_LIEBI_least_intrusive_behavior_intervention.pdf)
+**Оригинал (PDF):** [`I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/canada/OHeare_2009_LIEBI_least_intrusive_behavior_intervention.pdf`](<../../I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/canada/OHeare_2009_LIEBI_least_intrusive_behavior_intervention.pdf>)
 
 O’Heare, J. (2009). *The least intrusive effective behavior intervention (LIEBI) algorithm and levels of intrusiveness table: A proposed best-practices model.* Journal of Applied Companion Animal Behavior, 3(1), 7–25.
 
@@ -108,5 +108,5 @@ O’Heare, J. (2009). *The least intrusive effective behavior intervention (LIEB
 
 ## Полный перевод
 
-[Открыть полный русский перевод](../../статьи/foreign/translations/oheare_2009_liebi_least_intrusive_behavior_intervention_ru.md).
+[Открыть полный русский перевод](<../../I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/translations/oheare_2009_liebi_least_intrusive_behavior_intervention_ru.md>).
 

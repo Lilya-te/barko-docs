@@ -2,7 +2,7 @@
 type: source
 tags: [mcpq-r, personality, reliability, owner-report, psychometric, source, translation-available]
 sources: []
-raw_path: статьи/foreign/australia/Ley_2009_MCPQR_interrater_test_retest.pdf
+raw_path: I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/australia/Ley_2009_MCPQR_interrater_test_retest.pdf
 updated: 2026-08-22
 status: ingested
 doi: 10.1016/j.applanim.2009.02.027
@@ -10,7 +10,7 @@ doi: 10.1016/j.applanim.2009.02.027
 
 # Source: Надёжность MCPQ-R — inter-rater и test–retest (Ley et al. 2009)
 
-**Оригинал:** [`статьи/foreign/australia/Ley_2009_MCPQR_interrater_test_retest.pdf`](../../статьи/foreign/australia/Ley_2009_MCPQR_interrater_test_retest.pdf)
+**Оригинал:** [`I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/australia/Ley_2009_MCPQR_interrater_test_retest.pdf`](<../../I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/australia/Ley_2009_MCPQR_interrater_test_retest.pdf>)
 
 Ley, J. M., McGreevy, P., & Bennett, P. C. (2009). Inter-rater and test–retest reliability of the Monash Canine Personality Questionnaire-Revised (MCPQ-R). *Applied Animal Behaviour Science, 119*(1–2), 85–90. https://doi.org/10.1016/j.applanim.2009.02.027
 
@@ -56,4 +56,4 @@ Ley, J. M., McGreevy, P., & Bennett, P. C. (2009). Inter-rater and test–retest
 
 ## Полный перевод
 
-[Открыть полный русский перевод](../../статьи/foreign/translations/ley_2009_mcpqr_interrater_test_retest_ru.md).
+[Открыть полный русский перевод](<../../I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/translations/ley_2009_mcpqr_interrater_test_retest_ru.md>).

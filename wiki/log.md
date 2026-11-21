@@ -24,7 +24,7 @@
 - Метрики: random $\mathbb{E}[F1]=k/N=0.125$, example-F1 primary → [benchmarks-and-metrics](ml/benchmarks-and-metrics.md).
 - Rule matrix $14\times 40=560$ / sparse ~40–80; LR vs DT для H₁-plan → [model-selection](ml/model-selection.md), [nir3-hypothesis-evaluation-pipeline](ml/nir3-hypothesis-evaluation-pipeline.md).
 - NLP: embeddings → диалог slot-filling, latency → [k5-k3-answer-bridge](concepts/k5-k3-answer-bridge.md).
-- Lint math: формулы в wiki/NIR_3 на `$`/`$$` (правило `.cursor/rules/markdown-math-github.mdc`); `статьи/translations` не трогались (raw).
+- Lint math: формулы в wiki/NIR_3 на `$`/`$$` (правило `.cursor/rules/markdown-math-github.mdc`); `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/translations` не трогались (raw).
 - **Противоречие чисел Bohland:** сырой S4 в wiki 505/99 vs unified 337/104 — зафиксировано в literature-delta.
 
 ## [2026-11-15] ingest | NIR_3: гипотезы и пайплайн оценки
@@ -60,7 +60,7 @@
 
 - В схеме `dogs.adopted_at` заменён на `status_at` (дата текущего статуса).
 - Поле по-прежнему не заменяет `placement_events`.
-- Обновлены [`_database_architecture.md`](../_app_ideas/_database_architecture.md),
+- Обновлены `_app_ideas/_database_architecture.md` (файл позже удалён при переносе),
   [research-data-app](concepts/research-data-app.md),
   [app-ideas-notes](sources/app-ideas-notes.md).
 
@@ -128,9 +128,9 @@
 ## [2026-08-20] ingest | Svartberg DMA, Diederich review, Vas stranger test
 
 **Источники:**
-- `статьи/foreign/sweden/Svartberg_2005_DMA_boldness_everyday_life.pdf` — Svartberg 2005, DMA vs CBARQ everyday (DOI 10.1016/j.applanim.2004.08.030)
-- `статьи/foreign/belgium/Diederich_2006_REVIEW_behavioural_testing_methodology.pdf` — Diederich & Giffroy 2006, behavioural testing review (DOI 10.1016/j.applanim.2005.11.018)
-- `статьи/foreign/hungary/Vas_2008_EXPERIMENT_threatening_cues_consistency.pdf` — Vas et al. 2008, threatening cues consistency (DOI 10.1016/j.applanim.2007.09.002)
+- `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/sweden/Svartberg_2005_DMA_boldness_everyday_life.pdf` — Svartberg 2005, DMA vs CBARQ everyday (DOI 10.1016/j.applanim.2004.08.030)
+- `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/belgium/Diederich_2006_REVIEW_behavioural_testing_methodology.pdf` — Diederich & Giffroy 2006, behavioural testing review (DOI 10.1016/j.applanim.2005.11.018)
+- `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/hungary/Vas_2008_EXPERIMENT_threatening_cues_consistency.pdf` — Vas et al. 2008, threatening cues consistency (DOI 10.1016/j.applanim.2007.09.002)
 
 **Создано:**
 - `sources/svartberg-2005-dma-boldness-everyday.md`, `sources/diederich-2006-behavioural-testing-review.md`, `sources/vas-2008-threatening-cues-consistency.md`
@@ -149,10 +149,10 @@
 ## [2026-08-20] ingest | Четыре foreign-статьи: MCPQ-R, LIEBI, ostensive cues, DMA
 
 **Источники:**
-- `статьи/foreign/australia/Ley_2009_MCPQR_interrater_test_retest.pdf` — Ley et al. 2009, MCPQ-R reliability (DOI 10.1016/j.applanim.2009.02.027)
-- `статьи/foreign/canada/OHeare_2009_LIEBI_least_intrusive_behavior_intervention.pdf` — O'Heare 2009, LIEBI algorithm
-- `статьи/foreign/austria/Range_2009_EXPERIMENT_ostensive_cues_social_learning.pdf` — Range et al. 2009, ostensive cues (DOI 10.1016/j.applanim.2009.05.012)
-- `статьи/foreign/sweden/Svartberg_2003_DMA_consistency_personality_traits.pdf` — Svartberg et al. 2005, DMA consistency (DOI 10.1016/j.anbehav.2004.04.011)
+- `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/australia/Ley_2009_MCPQR_interrater_test_retest.pdf` — Ley et al. 2009, MCPQ-R reliability (DOI 10.1016/j.applanim.2009.02.027)
+- `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/canada/OHeare_2009_LIEBI_least_intrusive_behavior_intervention.pdf` — O'Heare 2009, LIEBI algorithm
+- `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/austria/Range_2009_EXPERIMENT_ostensive_cues_social_learning.pdf` — Range et al. 2009, ostensive cues (DOI 10.1016/j.applanim.2009.05.012)
+- `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/sweden/Svartberg_2003_DMA_consistency_personality_traits.pdf` — Svartberg et al. 2005, DMA consistency (DOI 10.1016/j.anbehav.2004.04.011)
 
 **Создано:**
 - `sources/ley-2009-mcpqr-reliability.md`, `sources/oheare-2009-liebi-algorithm.md`, `sources/range-2009-ostensive-cues-social-learning.md`, `sources/svartberg-2003-dma-consistency.md`
@@ -172,9 +172,9 @@
 ## [2026-08-20] ingest | Три новые foreign-статьи
 
 **Источники:**
-- `статьи/foreign/brazil/Savalli_2019_PANAS_dog_panas_brazil.pdf` — Savalli et al. 2019, PANAS Brazil (DOI 10.1038/s41598-019-54645-6)
-- `статьи/foreign/uk/Fadel_2016_DIAS_dog_impulsivity_working_show_lines.pdf` — Fadel et al. 2016, DIAS work/show lines (DOI 10.1038/srep22162)
-- `статьи/foreign/germany/Hoth_Zimak_2026_BEHAVIOR-SCALES_rescued_dogs_abroad_germany.pdf` — Hoth-Zimak et al. 2026, rescued dogs Germany (DOI 10.1038/s41598-026-62598-w)
+- `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/brazil/Savalli_2019_PANAS_dog_panas_brazil.pdf` — Savalli et al. 2019, PANAS Brazil (DOI 10.1038/s41598-019-54645-6)
+- `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/uk/Fadel_2016_DIAS_dog_impulsivity_working_show_lines.pdf` — Fadel et al. 2016, DIAS work/show lines (DOI 10.1038/srep22162)
+- `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/germany/Hoth_Zimak_2026_BEHAVIOR-SCALES_rescued_dogs_abroad_germany.pdf` — Hoth-Zimak et al. 2026, rescued dogs Germany (DOI 10.1038/s41598-026-62598-w)
 
 **Переименование:**
 - Удалены дубликаты PANAS (3 PDF → 1 canonical + supplement `.doc`)
@@ -207,8 +207,8 @@
 
 **Источники:**
 - [Яндекс Форма](https://forms.yandex.ru/u/6a7f4c8b4936398f0aeaa1d2) — общие поля (образование, приют, возраст).
-- `QUESTS/c-barq_rus_Bru.pdf` — русские шкалы 0–4 + X для C-BARQ(S).
-- `QUESTS/CBARQ_short-final_copy.pdf` — состав 42 пунктов.
+- `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/00_примеры_анкет/c-barq_rus_Bru.pdf` — русские шкалы 0–4 + X для C-BARQ(S).
+- `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/00_примеры_анкет/CBARQ_short-final_copy.pdf` — состав 42 пунктов.
 
 **Создано:**
 - `concepts/pilot-questionnaire.md` — таблица вопросов: обязательность, тип, варианты; легенда шкал A/B/C/D; блок после C-BARQ (амуниция, кинолог, динамика проблем).
@@ -249,8 +249,8 @@
 ## [2026-07-28] ingest | Реорганизация путей к источникам
 
 **Источники:**
-- `analytics/research/datatsets/` — новое расположение заметок и collected C-BARQ datasets.
-- `analytics/helpdog_forum/` — новое расположение ноутбука и CSV HelpDog.
+- `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/02_данные/research_padova/datasets/` — новое расположение заметок и collected C-BARQ datasets.
+- `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/02_данные/helpdog_forum/` — новое расположение ноутбука и CSV HelpDog.
 - `analytics/research/raw/padova-cbarq/` — новое расположение подготовленных CSV Padova.
 
 **Обновлены:**
@@ -259,7 +259,7 @@
 - `ml/helpdog-adoption-eda.md`, `ml/benchmarks-and-metrics.md`, `overview.md`, `index.md` — ссылки на реорганизованные артефакты.
 
 **Ключевые выводы:**
-- Канонический каталог collected C-BARQ raw: `analytics/research/datatsets/foreign/`.
+- Канонический каталог collected C-BARQ raw: `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/02_данные/research_padova/datasets/foreign/`.
 - Исторические записи журнала сохраняют пути, актуальные на момент соответствующего ingest.
 
 ---
@@ -267,7 +267,7 @@
 ## [2026-07-28] ingest | Bohland et al. (2023): поведение собак после пристройства
 
 **Источник:**
-- `статьи/Shelter dog behavior after adoption_ Using the C-BARQ to track dog behavior changes through the first six months after adoption _ PLOS One.pdf` — проспективное исследование 99 собак из пяти приютов Огайо, DOI `10.1371/journal.pone.0289356`.
+- `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/Shelter dog behavior after adoption_ Using the C-BARQ to track dog behavior changes through the first six months after adoption _ PLOS One.pdf` — проспективное исследование 99 собак из пяти приютов Огайо, DOI `10.1371/journal.pone.0289356`.
 
 **Созданная страница:**
 - `sources/bohland-2023-shelter-dog-behavior-ru.md` — содержательное саммари и полный русский перевод основной статьи, всех 11 таблиц, рисунка, метаданных, дополнительных материалов, вкладов авторов и 78 источников.
@@ -310,7 +310,7 @@
 ## [2026-07-24] ingest | Shelter C-BARQ (Gilchrist et al. 2025)
 
 **Источники:**
-- `статьи/4 Gilchrist_et_al_ABC_12(1).pdf` — валидация адаптированного C-BARQ для собак в приюте.
+- `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/4 Gilchrist_et_al_ABC_12(1).pdf` — валидация адаптированного C-BARQ для собак в приюте.
 
 **Созданные страницы:**
 - `sources/gilchrist-2025-shelter-cbarq.md`
@@ -363,9 +363,9 @@
 
 **Источники:**
 - `_ml_ideas.md` — уточнена роль K3 как основного ML-артефакта и связь контекста K3 ↔ K5.
-- `analytics/research/notebooks/11_kmeans_cluster.ipynb` — KMeans на 775 очищенных Padova-анкетах и 13 доменных шкалах.
-- `analytics/research/notebooks/12_gmm_cluster.ipynb` — GMM на том же срезе.
-- `analytics/research/notebooks/21_clusters_compare.ipynb` — план сравнения моделей, без рассчитанных результатов.
+- `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/02_данные/research_padova/notebooks/11_kmeans_cluster.ipynb` — KMeans на 775 очищенных Padova-анкетах и 13 доменных шкалах.
+- `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/02_данные/research_padova/notebooks/12_gmm_cluster.ipynb` — GMM на том же срезе.
+- `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/02_данные/research_padova/notebooks/21_clusters_compare.ipynb` — план сравнения моделей, без рассчитанных результатов.
 
 **Созданные страницы:**
 - `sources/cbarq-clustering-notebooks.md`
@@ -415,13 +415,13 @@
 
 ---
 
-## [2026-06-09] ingest | статьи/ (4 PDF)
+## [2026-06-09] ingest | I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/ (4 PDF)
 
 **Источники:**
-- `статьи/journal.pone.0299973.pdf` — PLOS ONE, валидация C-BARQ(S)
-- `статьи/4+RPJ+21(4)+РУ+Фомина.pdf` — обзор проблемного поведения (132 статьи)
-- `статьи/11+РПЖ+22(4)+Фомина.pdf` — пилот CBARQ + AI (n=35)
-- `статьи/Gritsenko.pdf` — разочарованность владельцев (n=5820)
+- `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/journal.pone.0299973.pdf` — PLOS ONE, валидация C-BARQ(S)
+- `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/4+RPJ+21(4)+РУ+Фомина.pdf` — обзор проблемного поведения (132 статьи)
+- `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/11+РПЖ+22(4)+Фомина.pdf` — пилот CBARQ + AI (n=35)
+- `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/Gritsenko.pdf` — разочарованность владельцев (n=5820)
 
 **Созданные страницы:**
 - `sources/plos-one-2024-short-cbarq-validation.md`
@@ -551,22 +551,22 @@
 ## [2026-07-29] ingest | Реорганизация каталога статей
 
 **Изменения:**
-- 3 российские научные статьи перемещены в `статьи/russian/`.
-- 5 зарубежных научных статей перемещены в `статьи/foreign/`.
+- 3 российские научные статьи перемещены в `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/russian/`.
+- 5 зарубежных научных статей перемещены в `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/`.
 - PDF переименованы по схеме `главный_автор_год_краткий_заголовок.pdf`.
 - Актуальные `raw_path` и markdown-ссылки обновлены в `wiki/sources/` и `wiki/index.md`.
-- Практическое руководство VCA оставлено в корне `статьи/`; служебный экспорт `search results.txt` не перемещался.
+- Практическое руководство VCA оставлено в корне `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/`; служебный экспорт `search results.txt` не перемещался.
 
 ---
 
 ## [2026-07-29] ingest | Саммари и переводы зарубежных статей
 
 **Проверенные источники:**
-- `статьи/foreign/unknown/Bohland_2023_CBARQ_shelter_behavior_after_adoption.pdf` — саммари и полный перевод уже присутствовали.
-- `статьи/foreign/usa/Gilchrist_2025_CBARQ_cbarq_for_shelter_dogs.pdf` — к существующему саммари добавлен полный перевод.
-- `статьи/foreign/unknown/Wilkins_2024_CBARQ_shortened_cbarq_validation.pdf` — к существующему саммари добавлен полный перевод.
-- `статьи/foreign/usa/Powell_2022_CBARQ_returning_a_shelter_dog.pdf` — созданы саммари и полный перевод.
-- `статьи/foreign/usa/Shabelansky_2016_SURVEY_excitable_dog_behavior.pdf` — созданы саммари и полный перевод.
+- `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/unknown/Bohland_2023_CBARQ_shelter_behavior_after_adoption.pdf` — саммари и полный перевод уже присутствовали.
+- `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/usa/Gilchrist_2025_CBARQ_cbarq_for_shelter_dogs.pdf` — к существующему саммари добавлен полный перевод.
+- `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/unknown/Wilkins_2024_CBARQ_shortened_cbarq_validation.pdf` — к существующему саммари добавлен полный перевод.
+- `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/usa/Powell_2022_CBARQ_returning_a_shelter_dog.pdf` — созданы саммари и полный перевод.
+- `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/usa/Shabelansky_2016_SURVEY_excitable_dog_behavior.pdf` — созданы саммари и полный перевод.
 
 **Созданные страницы:**
 - `sources/powell-2022-shelter-dog-returns-ru.md`
@@ -587,7 +587,7 @@
 ## [2026-07-29] ingest | Вынос полных переводов из wiki
 
 **Изменения:**
-- Полные переводы пяти зарубежных статей вынесены в `статьи/foreign/translations/`.
+- Полные переводы пяти зарубежных статей вынесены в `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/translations/`.
 - В `wiki/sources/` оставлены компактные саммари, ссылки на оригинальные PDF и полные переводы.
 - Тег `full-translation` на source-страницах заменён на `translation-available`.
 - `wiki/index.md` обновлён прямыми ссылками на переводы.
@@ -601,12 +601,12 @@
 ## [2026-07-29] ingest | Powell et al. 2021 — восприятие поведения при передаче собаки
 
 **Источник:**
-- `статьи/foreign/usa/Powell_2021_SURVEY_deception_or_knowledge.pdf`
+- `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/usa/Powell_2021_SURVEY_deception_or_knowledge.pdf`
 - DOI: `10.3389/fvets.2021.734973`
 
 **Создано:**
 - `sources/powell-2021-deception-or-knowledge.md` — компактное саммари.
-- `статьи/foreign/translations/powell_2021_deception_or_knowledge_ru.md` — полный русский перевод.
+- `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/translations/powell_2021_deception_or_knowledge_ru.md` — полный русский перевод.
 
 **Ключевые выводы:**
 - 69,3% отдающих владельцев при прямом вопросе не признавали проблем поведения, хотя mini C-BARQ показывал менее благоприятный профиль большинства шкал.
@@ -618,12 +618,12 @@
 ## [2026-08-09] ingest | Duffy et al. 2014 — C-BARQ(S) при передаче собаки
 
 **Источник:**
-- `статьи/foreign/usa/Duffy_2014_CBARQ_behavioral_assessment_relinquished_dogs.pdf`
+- `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/usa/Duffy_2014_CBARQ_behavioral_assessment_relinquished_dogs.pdf`
 - DOI: `10.1016/j.prevetmed.2014.10.003`
 
 **Создано:**
 - `sources/duffy-2014-shelter-relinquishment-cbarq.md` — компактное саммари.
-- `статьи/foreign/translations/duffy_2014_behavioral_assessment_relinquished_dogs_ru.md` — полный русский перевод.
+- `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/translations/duffy_2014_behavioral_assessment_relinquished_dogs_ru.md` — полный русский перевод.
 
 **Обновлено:**
 - `concepts/c-barq.md`
@@ -673,13 +673,13 @@
 ## [2026-08-12] ingest | Gates et al. 2018 — проблемное поведение после пристройства
 
 **Источник:**
-- `статьи/foreign/unknown/Gates_2018_SURVEY_post_adoption_problem_behaviours.pdf`
+- `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/unknown/Gates_2018_SURVEY_post_adoption_problem_behaviours.pdf`
 - прежнее имя: `animals-08-00093.pdf`
 - DOI: `10.3390/ani8060093`
 
 **Создано:**
 - `sources/gates-2018-post-adoption-problem-behaviours.md` — компактное саммари.
-- `статьи/foreign/translations/gates_2018_post_adoption_problem_behaviours_ru.md`
+- `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/translations/gates_2018_post_adoption_problem_behaviours_ru.md`
   — полный русский перевод основного текста, пяти таблиц и списка литературы.
 
 **Обновлено:**
@@ -702,13 +702,13 @@
 ## [2026-08-12] ingest | Vitulová et al. 2018 — поведение собак после пристройства
 
 **Источник:**
-- `статьи/foreign/czech-republic/Vitulova_2018_SURVEY_adopted_shelter_dog_behaviour.pdf`
+- `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/czech-republic/Vitulova_2018_SURVEY_adopted_shelter_dog_behaviour.pdf`
 - прежнее имя: `Behaviour_of_dogs_adopted_from_an_animal_shelter.pdf`
 - DOI: `10.2754/avb201887020155`
 
 **Создано:**
 - `sources/vitulova-2018-adopted-shelter-dog-behaviour.md` — компактное саммари.
-- `статьи/foreign/translations/vitulova_2018_adopted_shelter_dog_behaviour_ru.md`
+- `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/translations/vitulova_2018_adopted_shelter_dog_behaviour_ru.md`
   — полный русский перевод с тремя таблицами, расшифровкой рисунка и литературой.
 
 **Обновлено:**
@@ -733,10 +733,10 @@
 
 **Создано:**
 - `ml/app-effect-rct-power.md` — дизайн 40 (приложение) vs 40 (контроль), волны 7 → 30 день; формулы difference-in-differences, Welch t-test, ANCOVA, ДИ, порог значимости, MDE, Bonferroni.
-- `analytics/research_bohland_powell/src/rct_power_thresholds.py` — пересчёт порогов для другого `n`, выбывания, числа первичных доменов и волн; `--solve-n` для требуемого размера выборки.
+- `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/02_данные/research_bohland_powell/src/rct_power_thresholds.py` — пересчёт порогов для другого `n`, выбывания, числа первичных доменов и волн; `--solve-n` для требуемого размера выборки.
 
 **Обновлено:**
-- `NIR_3/personal_files/Б1_теоретический_анализ_источников.md` — раздел «Оценка эффекта приложения».
+- `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/03_выводы.md` — раздел «Оценка эффекта приложения».
 - `index.md`
 
 **Ключевые выводы:**
@@ -763,7 +763,7 @@
 ## [2026-11-21] fix | `q29` в serpell_online_full возвращён к ответу респондента
 
 **Изменено:**
-- `analytics/research_bohland_powell/src/unify_cbarq.py` и копия логики в `notebooks/01_eda.ipynb`: в `transform_online_full` после проекции full → mini `q29 = 4 - q29`.
+- `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/02_данные/research_bohland_powell/src/unify_cbarq.py` и копия логики в `notebooks/01_eda.ipynb`: в `transform_online_full` после проекции full → mini `q29 = 4 - q29`.
 - Ноутбук `01_eda.ipynb` перезапущен; пересобраны `cbarq_mini_sessions.csv`, `domain_unified.csv`, `domain_dedup.csv`, `qc_by_source.csv`.
 - `datasets/cbarq-mini-sessions-unified.md`, `concepts/c-barq-short-42-scoring.md`.
 
@@ -780,3 +780,41 @@
 - Весь объём (953 строки) и весь объём по 13 шкалам (912 строк): k = 3 (silhouette 0.110 и 0.114), медоиды те же три анкеты Serpell shelter 2009 (`CO:37248`, `CA:30344`, `MO:449574` / `MO:447556`). Размеры кластеров сдвинулись на 2–42 строки. В `diverse_pool.csv` поменялись номера кластеров 1 и 2.
 - Bohland, 10-й день: `diverse_pool_bohland_d10*.csv` и `clusters_bohland_d10.csv` побайтно совпадают с прежними.
 - `clusters_all.csv` текущим ноутбуком не пишется (экспорт закомментирован); файл от 2026-10-28 устарел и не соответствует текущему `domain_dedup`.
+
+---
+
+## [2026-11-21] ingest | Перенос путей: NIR_3 / статьи / analytics → `I — НИР 3/…`
+
+**Контекст:** пользователь перенёс и переименовал папки. Старые корни `NIR_3/`, `статьи/`, `analytics/` удалены из корня репозитория.
+
+**Новые канонические пути:**
+- Артефакты: `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/`
+- Б1 текст: `…/Б1_теоретический_анализ_источников/03_выводы.md`
+- Б2: `…/Б2_личные_исследовательские_гипотезы.md`
+- Б3: `…/Б3_методика_проверки_гипотезы_пайплайн_оценки.md` (короткое имя)
+- Статьи: `…/Б1_…/01_статьи/`
+- Данные: `…/Б1_…/02_данные/` (`research_bohland_powell`, `research_padova`, `helpdog_forum`, `diagrams`)
+
+**Обновлено:**
+- Почти все `wiki/**/*.md` (ссылки на PDF/переводы/raw_path/ноутбуки), `wiki/index.md`, `AGENTS.md`, `.cursor/rules/nir3-hypotheses-pipeline-sync.mdc`
+- Ссылки «перевод» в index и `wiki/sources/*` восстановлены на `01_статьи/foreign/translations/*_ru.md` (после ошибочного редиректа на `03_выводы.md`)
+
+**Оставшиеся дыры (не ссылки на существующие файлы):**
+- `_ml_ideas.md` и `_app_ideas/` отсутствуют в репозитории → [ml-ideas-notes](sources/ml-ideas-notes.md), [app-ideas-notes](sources/app-ideas-notes.md) помечены как curated без raw
+- Слайд `helpdog_return_summary_slide.png` не найден после переноса
+
+**Аудит ссылок wiki:** ~580 рабочих markdown-ссылок; 2 намеренно битые на `_app_ideas` (страница обновлена текстом без кликабельной ссылки — проверить app-ideas).
+
+**Дополнение:** `QUESTS/` → `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/00_примеры_анкет/` (ссылки в concepts/datasets обновлены).
+
+**Дополнение 2:** `QUESTS/` → `…/Б1_…/00_примеры_анкет/`. Повторный аудит markdown-ссылок в `wiki/`: **0 broken**.
+
+---
+
+## [2026-11-21] lint | `_ml_ideas` / `_app_ideas` удалены намеренно
+
+Подтверждение пользователя: raw-заметки не восстанавливать. Curated-канон:
+- [ml-ideas-notes](sources/ml-ideas-notes.md) (`status: stable`)
+- [app-ideas-notes](sources/app-ideas-notes.md) (`status: stable`) + [research-data-app](concepts/research-data-app.md)
+
+Обновлены `index.md`, `overview.md`, `AGENTS.md`.

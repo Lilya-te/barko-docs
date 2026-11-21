@@ -2,7 +2,7 @@
 type: source
 tags: [dma, boldness, shyness-boldness, c-barq, construct-validity, questionnaire, personality, sweden, source, translation-available]
 sources: []
-raw_path: статьи/foreign/sweden/Svartberg_2005_DMA_boldness_everyday_life.pdf
+raw_path: I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/sweden/Svartberg_2005_DMA_boldness_everyday_life.pdf
 updated: 2026-08-22
 status: complete
 doi: 10.1016/j.applanim.2004.08.030
@@ -10,7 +10,7 @@ doi: 10.1016/j.applanim.2004.08.030
 
 # Svartberg 2005 — валидность DMA через повседневное поведение (C‑BARQ)
 
-**Оригинал (PDF):** [`статьи/foreign/sweden/Svartberg_2005_DMA_boldness_everyday_life.pdf`](../../статьи/foreign/sweden/Svartberg_2005_DMA_boldness_everyday_life.pdf)
+**Оригинал (PDF):** [`I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/sweden/Svartberg_2005_DMA_boldness_everyday_life.pdf`](<../../I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/sweden/Svartberg_2005_DMA_boldness_everyday_life.pdf>)
 
 Svartberg, K. (2005). *A comparison of behaviour in test and in everyday life: evidence of three consistent boldness-related personality traits in dogs.* Applied Animal Behaviour Science, 91, 103–128. https://doi.org/10.1016/j.applanim.2004.08.030
 
@@ -83,5 +83,5 @@ Chase‑proneness и distance‑playfulness, по интерпретации а�
 
 ## Полный перевод
 
-[Открыть полный русский перевод](../../статьи/foreign/translations/svartberg_2005_dma_boldness_everyday_life_ru.md).
+[Открыть полный русский перевод](<../../I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/translations/svartberg_2005_dma_boldness_everyday_life_ru.md>).
 

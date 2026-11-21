@@ -2,7 +2,7 @@
 type: dataset
 tags: [c-barq, harmonization, mini, longitudinal, k3]
 sources: [bohland-2023-shelter-dog-behavior-ru]
-raw_file: analytics/research_bohland_powell/datasets/unified/cbarq_mini_sessions.csv
+raw_file: I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/02_данные/research_bohland_powell/datasets/unified/cbarq_mini_sessions.csv
 updated: 2026-11-21
 status: draft
 cbarq_coverage: short
@@ -12,7 +12,7 @@ format: csv
 
 # Единый C-BARQ mini: анкеты и домены
 
-Сведение Bohland 2023 и вложений Serpell (2009 / post-adoption) к одной схеме. Одна строка — одно заполнение. Сборка описана в ноутбуке `analytics/research_bohland_powell/notebooks/01_eda.ipynb` и в `datasets/unified/README.md`.
+Сведение Bohland 2023 и вложений Serpell (2009 / post-adoption) к одной схеме. Одна строка — одно заполнение. Сборка описана в ноутбуке `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/02_данные/research_bohland_powell/notebooks/01_eda.ipynb` и в `datasets/unified/README.md`.
 
 ## Файлы
 
@@ -22,7 +22,7 @@ format: csv
 | `domain_unified.csv` | 956 | те же строки, 14 субшкал и `misc_*` |
 | `domain_dedup.csv` | 953 | домены после снятия 3 лишних совпадений профиля шкал |
 
-Каталог: `analytics/research_bohland_powell/datasets/unified/`.
+Каталог: `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/02_данные/research_bohland_powell/datasets/unified/`.
 
 ## Схема анкеты
 
@@ -44,7 +44,7 @@ format: csv
 
 Не включён Bohland S3 (агрегаты по породам). Из трёх Sheet1 в джойн берётся только Sheet1 (3).
 
-Full → short: [`QUESTS/c-barq-short-full-mapping.md`](../../QUESTS/c-barq-short-full-mapping.md). Слияния через max: `q08` = full 23 и 24, `q23` = full 58 и 59. В online-файле full-пункты 5–7 уже развёрнуты, поэтому `q29` (full 7) приходит reversed. С 2026-11-21 при сборке он возвращается к ответу респондента ($4 - x$), как и в остальных источниках. До исправления среднее `q29` в `serpell_online_full` было 1.62 при 2.3–2.7 в других источниках, после — 2.38. `q27`/`q28` — это full 2 и 3, их файл не разворачивает; обратный балл для них применяется при расчёте субшкалы.
+Full → short: [`I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/00_примеры_анкет/c-barq-short-full-mapping.md`](<../../I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/00_примеры_анкет/c-barq-short-full-mapping.md>). Слияния через max: `q08` = full 23 и 24, `q23` = full 58 и 59. В online-файле full-пункты 5–7 уже развёрнуты, поэтому `q29` (full 7) приходит reversed. С 2026-11-21 при сборке он возвращается к ответу респондента ($4 - x$), как и в остальных источниках. До исправления среднее `q29` в `serpell_online_full` было 1.62 при 2.3–2.7 в других источниках, после — 2.38. `q27`/`q28` — это full 2 и 3, их файл не разворачивает; обратный балл для них применяется при расчёте субшкалы.
 
 ## Домены
 
@@ -62,7 +62,7 @@ Full → short: [`QUESTS/c-barq-short-full-mapping.md`](../../QUESTS/c-barq-shor
 
 - [c-barq-short-42-scoring](../concepts/c-barq-short-42-scoring.md) оставляет пропуски без правила и пишет про фиксированный делитель. Здесь порог — половина пунктов.
 - [bohland-2023-shelter-adoption-cbarq](bohland-2023-shelter-adoption-cbarq.md) описывает волны как 7 / 30 / 90 / 180 дней. В REDCap S4 первая волна называется «10 days after adoption» и в unified помечена `d7`.
-- Сырой путь на странице Bohland (`analytics/research/datatsets/...`) — прежнее расположение файла. Рабочая копия S4 для этой сборки: `analytics/research_bohland_powell/datasets/journal.pone.0289356/journal.pone.0289356.s004.csv` (разделитель `;`).
+- Сырой путь на странице Bohland (`I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/02_данные/research_padova/datasets/...`) — прежнее расположение файла. Рабочая копия S4 для этой сборки: `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/02_данные/research_bohland_powell/datasets/journal.pone.0289356/journal.pone.0289356.s004.csv` (разделитель `;`).
 
 ## Ссылки
 

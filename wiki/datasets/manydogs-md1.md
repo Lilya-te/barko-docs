@@ -2,7 +2,7 @@
 type: dataset
 tags: [c-barq, collected, k3, manydogs, partial]
 sources: [foreign-datasets-list-notes]
-raw_file: analytics/research/datatsets/foreign/md1_data/manydogs_etal_2024_data.csv
+raw_file: I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/02_данные/research_padova/datasets/foreign/md1_data/manydogs_etal_2024_data.csv
 updated: 2026-08-12
 status: stable
 cbarq_coverage: partial

@@ -2,7 +2,7 @@
 type: dataset
 tags: [c-barq, padova, data-dictionary, column-mapping, k3]
 sources: [padova-cbarq-italian]
-raw_file: analytics/research/raw/padova-cbarq/Dataset_22022022.csv
+raw_file: I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/02_данные/research_padova/raw/padova-cbarq/Dataset_22022022.csv
 updated: 2026-07-28
 status: stable
 ---
@@ -18,8 +18,8 @@ status: stable
 
 Всего **123 колонки**: 16 демографических + 100 вопросов + 7 свободного текста.
 
-Источник данных: `analytics/research/raw/padova-cbarq/Dataset_22022022.csv` (альтернативная
-выгрузка: `analytics/research/raw/padova-cbarq/Dataset_22022022_alt.csv`). Файлы raw не изменяются —
+Источник данных: `…/02_данные/research_padova/raw/padova-cbarq/Dataset_22022022.csv` (альтернативная
+выгрузка: `…/Dataset_22022022_alt.csv`). Файлы raw не изменяются —
 см. [padova-cbarq-italian](padova-cbarq-italian.md).
 
 ## Известные особенности источника

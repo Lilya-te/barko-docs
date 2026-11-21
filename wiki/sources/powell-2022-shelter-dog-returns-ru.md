@@ -2,7 +2,7 @@
 type: source
 tags: [shelter-dogs, returns, adopter-expectations, dog-behavior, c-barq, translation-available]
 sources: []
-raw_path: статьи/foreign/usa/Powell_2022_CBARQ_returning_a_shelter_dog.pdf
+raw_path: I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/usa/Powell_2022_CBARQ_returning_a_shelter_dog.pdf
 updated: 2026-07-29
 status: ingested
 doi: 10.3390/ani12091053
@@ -10,7 +10,7 @@ doi: 10.3390/ani12091053
 
 # Возврат собаки в приют: роль ожиданий владельца и поведения собаки
 
-[Оригинал статьи (PDF)](../../статьи/foreign/usa/Powell_2022_CBARQ_returning_a_shelter_dog.pdf)
+[Оригинал статьи (PDF)](<../../I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/usa/Powell_2022_CBARQ_returning_a_shelter_dog.pdf>)
 
 **DOI:** [10.3390/ani12091053](https://doi.org/10.3390/ani12091053)
 
@@ -45,4 +45,4 @@ doi: 10.3390/ani12091053
 
 ## Полный перевод
 
-[Открыть полный русский перевод](../../статьи/foreign/translations/powell_2022_returning_a_shelter_dog_ru.md). Перевод вынесен из wiki, чтобы curated-слой оставался компактным.
+[Открыть полный русский перевод](<../../I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/translations/powell_2022_returning_a_shelter_dog_ru.md>). Перевод вынесен из wiki, чтобы curated-слой оставался компактным.

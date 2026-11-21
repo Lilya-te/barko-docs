@@ -77,5 +77,5 @@ status: stable
 ## Следующий шаг
 
 - Дедупликация Wolfram ↔ Figshare
-- ~~Ingest PDF из `статьи/`~~ — сделано; см. [k3-feature-candidates](../concepts/k3-feature-candidates.md)
+- ~~Ingest PDF из `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/`~~ — сделано; см. [k3-feature-candidates](../concepts/k3-feature-candidates.md)
 - Заявка на Dog Aging Project

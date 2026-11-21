@@ -2,16 +2,16 @@
 type: source
 tags: [helpdog, eda, source, adoption]
 sources: []
-raw_path: analytics/helpdog_forum/helpdog.ipynb
+raw_path: I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/02_данные/helpdog_forum/helpdog.ipynb
 updated: 2026-07-28
 status: ingested
 ---
 
 # Source: HelpDog Adoption EDA
 
-**Исходный файл:** [`analytics/helpdog_forum/helpdog.ipynb`](../../analytics/helpdog_forum/helpdog.ipynb)
+**Исходный файл:** [`I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/02_данные/helpdog_forum/helpdog.ipynb`](<../../I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/02_данные/helpdog_forum/helpdog.ipynb>)
 
-**Связанные данные:** `analytics/helpdog_forum/dogs.csv`, `analytics/helpdog_forum/adoptions.csv`
+**Связанные данные:** `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/02_данные/helpdog_forum/dogs.csv`, `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/02_данные/helpdog_forum/adoptions.csv`
 
 ## Что делает ноутбук
 

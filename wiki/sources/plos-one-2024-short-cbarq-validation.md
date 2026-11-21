@@ -2,7 +2,7 @@
 type: source
 tags: [c-barq, source, plos-one, short-cbarq, translation-available]
 sources: []
-raw_path: статьи/foreign/unknown/Wilkins_2024_CBARQ_shortened_cbarq_validation.pdf
+raw_path: I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/unknown/Wilkins_2024_CBARQ_shortened_cbarq_validation.pdf
 updated: 2026-08-12
 status: ingested
 doi: 10.1371/journal.pone.0299973
@@ -10,7 +10,7 @@ doi: 10.1371/journal.pone.0299973
 
 # Source: Validation of shortened C-BARQ (PLOS ONE 2024)
 
-**Исходный файл:** [`статьи/foreign/unknown/Wilkins_2024_CBARQ_shortened_cbarq_validation.pdf`](../../статьи/foreign/unknown/Wilkins_2024_CBARQ_shortened_cbarq_validation.pdf)
+**Исходный файл:** [`I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/unknown/Wilkins_2024_CBARQ_shortened_cbarq_validation.pdf`](<../../I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/unknown/Wilkins_2024_CBARQ_shortened_cbarq_validation.pdf>)
 
 Wilkins V. et al. (2024). PLOS ONE 19(4): e0299973. Dog Aging Project cohort.
 
@@ -63,4 +63,4 @@ Wilkins V. et al. (2024). PLOS ONE 19(4): e0299973. Dog Aging Project cohort.
 
 ## Полный перевод
 
-[Открыть полный русский перевод](../../статьи/foreign/translations/wilkins_2024_shortened_cbarq_validation_ru.md). Перевод вынесен из wiki, чтобы curated-слой оставался компактным.
+[Открыть полный русский перевод](<../../I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/translations/wilkins_2024_shortened_cbarq_validation_ru.md>). Перевод вынесен из wiki, чтобы curated-слой оставался компактным.

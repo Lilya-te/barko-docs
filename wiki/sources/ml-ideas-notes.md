@@ -3,13 +3,13 @@ type: source
 tags: [ml, passport, source]
 sources: []
 raw_path: _ml_ideas.md
-updated: 2026-07-18
-status: ingested
+updated: 2026-11-21
+status: stable
 ---
 
 # Source: Подбор модели для ML-решений (BARKO)
 
-**Исходный файл:** [`_ml_ideas.md`](../../_ml_ideas.md)
+**Исходный файл:** `_ml_ideas.md` — **удалён** намеренно (2026-11-21). Канон — эта страница.
 
 ## Ключевые выводы
 

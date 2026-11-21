@@ -3,9 +3,9 @@ type: source
 tags: [c-barq, clustering, padova, kmeans, gmm, source]
 sources: [padova-cbarq-italian]
 raw_paths:
-  - analytics/research/notebooks/11_kmeans_cluster.ipynb
-  - analytics/research/notebooks/12_gmm_cluster.ipynb
-  - analytics/research/notebooks/21_clusters_compare.ipynb
+  - I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/02_данные/research_padova/notebooks/11_kmeans_cluster.ipynb
+  - I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/02_данные/research_padova/notebooks/12_gmm_cluster.ipynb
+  - I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/02_данные/research_padova/notebooks/21_clusters_compare.ipynb
 updated: 2026-07-18
 status: ingested
 ---

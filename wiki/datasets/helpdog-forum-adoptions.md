@@ -2,7 +2,7 @@
 type: dataset
 tags: [helpdog, internal, adoption, k3, product-data]
 sources: [helpdog-notebook-notes]
-raw_files: [analytics/helpdog_forum/dogs.csv, analytics/helpdog_forum/adoptions.csv]
+raw_files: [I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/02_данные/helpdog_forum/dogs.csv, I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/02_данные/helpdog_forum/adoptions.csv]
 updated: 2026-07-28
 status: stable
 cbarq_coverage: none
@@ -19,8 +19,8 @@ format: csv
 
 | Файл | Строк | Описание |
 |------|------:|----------|
-| `analytics/helpdog_forum/dogs.csv` | 90 | Список собак на форуме |
-| `analytics/helpdog_forum/adoptions.csv` | 125 | События пристройства и возврата |
+| `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/02_данные/helpdog_forum/dogs.csv` | 90 | Список собак на форуме |
+| `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/02_данные/helpdog_forum/adoptions.csv` | 125 | События пристройства и возврата |
 
 ## Схема `dogs.csv`
 

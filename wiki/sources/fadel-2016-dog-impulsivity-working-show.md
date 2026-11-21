@@ -2,7 +2,7 @@
 type: source
 tags: [impulsivity, dias, breed-lines, psychometric, source, translation-available]
 sources: []
-raw_path: статьи/foreign/uk/Fadel_2016_DIAS_dog_impulsivity_working_show_lines.pdf
+raw_path: I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/uk/Fadel_2016_DIAS_dog_impulsivity_working_show_lines.pdf
 updated: 2026-08-20
 status: ingested
 doi: 10.1038/srep22162
@@ -10,7 +10,7 @@ doi: 10.1038/srep22162
 
 # Source: Импульсивность — рабочие vs выставочные линии (Fadel et al. 2016)
 
-**Оригинал:** [`статьи/foreign/uk/Fadel_2016_DIAS_dog_impulsivity_working_show_lines.pdf`](../../статьи/foreign/uk/Fadel_2016_DIAS_dog_impulsivity_working_show_lines.pdf)
+**Оригинал:** [`I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/uk/Fadel_2016_DIAS_dog_impulsivity_working_show_lines.pdf`](<../../I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/uk/Fadel_2016_DIAS_dog_impulsivity_working_show_lines.pdf>)
 
 Fadel, F. R., Driscoll, P., Pilot, M., Wright, H., Zulch, H., & Mills, D. S. (2016). Differences in Trait Impulsivity Indicate Diversification of Dog Breeds into Working and Show Lines. *Scientific Reports, 6*, 22162. https://doi.org/10.1038/srep22162. CC BY 4.0.
 
@@ -71,4 +71,4 @@ Fadel, F. R., Driscoll, P., Pilot, M., Wright, H., Zulch, H., & Mills, D. S. (20
 
 ## Полный перевод
 
-[Открыть полный русский перевод](../../статьи/foreign/translations/fadel_2016_dog_impulsivity_working_show_lines_ru.md).
+[Открыть полный русский перевод](<../../I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/translations/fadel_2016_dog_impulsivity_working_show_lines_ru.md>).

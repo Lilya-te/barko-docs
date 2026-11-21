@@ -2,7 +2,7 @@
 type: source
 tags: [dma, personality, boldness, shyness-boldness, test-retest, repeatability, factor-scores, swda, source, translation-available]
 sources: []
-raw_path: статьи/foreign/sweden/Svartberg_2003_DMA_consistency_personality_traits.pdf
+raw_path: I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/sweden/Svartberg_2003_DMA_consistency_personality_traits.pdf
 updated: 2026-08-22
 status: complete
 doi: 10.1016/j.anbehav.2004.04.011
@@ -10,7 +10,7 @@ doi: 10.1016/j.anbehav.2004.04.011
 
 # Svartberg et al. 2005 (рукопись 2003) — согласованность личностных черт собак в DMA
 
-**Оригинал (PDF):** [`статьи/foreign/sweden/Svartberg_2003_DMA_consistency_personality_traits.pdf`](../../статьи/foreign/sweden/Svartberg_2003_DMA_consistency_personality_traits.pdf)
+**Оригинал (PDF):** [`I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/sweden/Svartberg_2003_DMA_consistency_personality_traits.pdf`](<../../I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/sweden/Svartberg_2003_DMA_consistency_personality_traits.pdf>)
 
 Svartberg, K., Tapper, I., Temrin, H., Radesäter, T., & Thorman, S. (2005). *Consistency of personality traits in dogs.* Animal Behaviour, 69, 283–291. https://doi.org/10.1016/j.anbehav.2004.04.011
 
@@ -65,5 +65,5 @@ Svartberg, K., Tapper, I., Temrin, H., Radesäter, T., & Thorman, S. (2005). *Co
 
 ## Полный перевод
 
-[Открыть полный русский перевод](../../статьи/foreign/translations/svartberg_2003_dma_consistency_personality_traits_ru.md).
+[Открыть полный русский перевод](<../../I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/foreign/translations/svartberg_2003_dma_consistency_personality_traits_ru.md>).
 

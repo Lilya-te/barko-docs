@@ -10,7 +10,7 @@ status: draft
 
 Вопрос: 80 владельцев заполняют C-BARQ(Mini) на 7-й и 30-й день; 40 только заполняют анкету (контроль), 40 ещё и пользуются приложением. Начиная с какой разницы средних изменений по домену можно говорить, что приложение влияет на адаптацию?
 
-Дисперсии взяты из реальных пар Bohland 2023: 82 собаки с волнами `d7` и `d30` в `analytics/research_bohland_powell/datasets/unified/domain_dedup.csv`. Пересчёт: `analytics/research_bohland_powell/src/rct_power_thresholds.py`.
+Дисперсии взяты из реальных пар Bohland 2023: 82 собаки с волнами `d7` и `d30` в `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/02_данные/research_bohland_powell/datasets/unified/domain_dedup.csv`. Пересчёт: `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/02_данные/research_bohland_powell/src/rct_power_thresholds.py`.
 
 ## Итог
 
@@ -105,7 +105,7 @@ $$
 ## Скрипт
 
 ```bash
-cd analytics/research_bohland_powell/src
+cd I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/02_данные/research_bohland_powell/src
 python rct_power_thresholds.py                                   # 40+40, Bonferroni по 13 доменам
 python rct_power_thresholds.py --primary 1                       # один первичный домен
 python rct_power_thresholds.py --n 60 --primary 2 --dropout 0.16
@@ -196,4 +196,4 @@ waves d7->d30; analysed n = 40 + 40; alpha = 0.05/2 = 0.0250; power = 0.8
 - [c-barq-short-42-scoring](../concepts/c-barq-short-42-scoring.md)
 - [experiment-plan](experiment-plan.md)
 - [nir3-hypothesis-evaluation-pipeline](nir3-hypothesis-evaluation-pipeline.md)
-- `NIR_3/personal_files/Б1_теоретический_анализ_источников.md` — раздел «Оценка эффекта приложения»
+- `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/03_выводы.md` — раздел «Оценка эффекта приложения»
