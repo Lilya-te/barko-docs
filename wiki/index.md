@@ -1,6 +1,6 @@
 # Hvostun Wiki — Index
 
-Каталог страниц knowledge base. Обновлён: 2026-11-21 (paths after NIR_3 / articles / analytics move).
+Каталог страниц knowledge base. Обновлён: 2026-11-21 (ingest `_draft_dairy.md`).
 
 ## Overview
 
@@ -72,6 +72,7 @@
 | [nir3-hypotheses](sources/nir3-hypotheses.md) | `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б2_личные_исследовательские_гипотезы.md` | Шесть личных H₁ НИР-3 (macro-F1, TOST, RAG) |
 | [nir3-ml-evaluation-pipeline](sources/nir3-ml-evaluation-pipeline.md) | `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б3_методика_проверки_гипотезы_пайплайн_оценки.md` | Методика проверки гипотез и ML-пайплайн |
 | [nir3-literature-delta](sources/nir3-literature-delta.md) | `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/03_выводы.md` | Дельта пилота РФ + обзор опоры на C-BARQ |
+| [nir3-dairy-notes](sources/nir3-dairy-notes.md) | `…/Индивидуальные артефакты за 3 семестр/_draft_dairy.md` | Решения спринтов авг–ноя 2026 (C-BARQ, 152-ФЗ, UPenn, экспертный контур); ход работ — только ссылка |
 | [fz-152-personal-data](sources/fz-152-personal-data.md) | `152 ФЗ.md` | Саммари 152-ФЗ: только нормы, полезные Hvostun (согласие, локализация, ops/ML) |
 | [ml-ideas-notes](sources/ml-ideas-notes.md) | `_ml_ideas.md` (удалён) | Подбор модели для ML-решений BARKO |
 | [app-ideas-notes](sources/app-ideas-notes.md) | `_app_ideas/` (удалён) | Схема БД и scope research-ops |

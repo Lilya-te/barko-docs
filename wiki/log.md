@@ -4,6 +4,13 @@
 
 ---
 
+## [2026-11-21] ingest | `_draft_dairy.md` → решения спринтов
+
+- Новый source: [nir3-dairy-notes](sources/nir3-dairy-notes.md) — компактная таблица решений авг–ноя 2026 (отказ от своей анкеты → C-BARQ; волны 1 нед / 1 мес / 3 мес; UPenn; reverse q27–28; экспертная админка; 152-ФЗ; таргет = рекомендации).
+- `Описание хода работ по проекту.md` не превращён в отдельную wiki-страницу (нарратив; ссылка из dairy-notes).
+- Обновлены [index](index.md), [overview](overview.md), [nir3-literature-delta](sources/nir3-literature-delta.md).
+- **152-ФЗ:** дневник подтверждает согласие/политику до массового сбора, Яндекс.Формы + PostgreSQL в РФ, УЗ-4 — уже отражено в [personal-data-152-fz](concepts/personal-data-152-fz.md); сырые контакты респондентов в wiki не переносились.
+
 ## [2026-11-19] ingest | NIR-3: методика эквивалентности H₁-channel
 
 - Б3 §5.3 расширен: дизайн (контрбалансировка, слепота, raw vs `user_confirmed`, test-retest), парный TOST и $\mathrm{CI}_{90\%} \subset \pm\delta$ по каждому домену (intersection–union), правило выбора δ, размер выборки $n \approx 8.6(\sigma_D/\delta)^2$, вторичные ICC / Bland–Altman / weighted κ / coverage, 152-ФЗ.
@@ -34,7 +41,7 @@
 - Новый ML: [nir3-hypothesis-evaluation-pipeline](ml/nir3-hypothesis-evaluation-pipeline.md).
 - Обновлены [experiment-plan](ml/experiment-plan.md), [benchmarks-and-metrics](ml/benchmarks-and-metrics.md) (контур рекомендаций + macro-F1/TOST), [k5-k3-answer-bridge](concepts/k5-k3-answer-bridge.md) (векторный индекс пунктов, H₁-channel), [overview](overview.md).
 - **Противоречия зафиксированы:** (1) исторический K3 = ROC-AUC risk vs НИР-3 = top-5 рекомендации; (2) Б2 дерево vs Б3 LR/RF; (3) split train/val на Bohland+Serpell без этикеток каталога G — открытый вопрос.
-- Не перенесено как wiki-страницы: `dairy.md`, `Описание хода работ…` (нарратив спринта), полная таблица статей Б1 (уже в `wiki/sources/`).
+- На тот момент не перенесено как wiki-страницы: `dairy.md`, `Описание хода работ…` (нарратив); полная таблица статей Б1 уже в `wiki/sources/`. Позже решения дневника → [nir3-dairy-notes](sources/nir3-dairy-notes.md) (2026-11-21).
 
 ## [2026-10-28] ingest | Единый C-BARQ mini (Bohland + Serpell)
 

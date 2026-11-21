@@ -1,8 +1,8 @@
 ---
 type: overview
 tags: [hvostun, mvp, ml, nir3]
-sources: [ml-ideas-notes, data-ideas-notes, helpdog-notebook-notes, app-ideas-notes, nir3-hypotheses, nir3-ml-evaluation-pipeline]
-updated: 2026-11-15
+sources: [ml-ideas-notes, data-ideas-notes, helpdog-notebook-notes, app-ideas-notes, nir3-hypotheses, nir3-ml-evaluation-pipeline, nir3-literature-delta, nir3-dairy-notes]
+updated: 2026-11-21
 status: draft
 ---
 
@@ -57,6 +57,8 @@ status: draft
 
 Инновационная дельта пилота (из Б1): первое лонгитюдное исследование адаптации на российских владельцах + статистическое сравнение с данными США (H₁-transfer).
 
+Хронология решений семестра (C-BARQ вместо своей анкеты, волны 1 нед / 1 мес / 3 мес, UPenn, reverse q27–28, экспертная разметка, 152-ФЗ): [nir3-dairy-notes](sources/nir3-dairy-notes.md).
+
 ## Связанные артефакты в репозитории
 
 - `_ml_ideas.md` — удалён; канон → [ml-ideas-notes](sources/ml-ideas-notes.md)
@@ -66,3 +68,4 @@ status: draft
 - `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/02_данные/helpdog_forum/helpdog.ipynb` — EDA пристройств HelpDog (ingested → [helpdog-adoption-eda](ml/helpdog-adoption-eda.md); ~57% возвратов)
 - `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/01_статьи/*.pdf` — 4 статьи ingested → [sources/](sources/plos-one-2024-short-cbarq-validation.md), [k3-feature-candidates](concepts/k3-feature-candidates.md)
 - `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б2_личные_исследовательские_гипотезы.md`, `Б3_методика_проверки_гипотезы_пайплайн_оценки.md` — ingested → [nir3-hypotheses](sources/nir3-hypotheses.md), [nir3-ml-evaluation-pipeline](sources/nir3-ml-evaluation-pipeline.md)
+- `_draft_dairy.md` — ingested → [nir3-dairy-notes](sources/nir3-dairy-notes.md); `Описание хода работ по проекту.md` — нарратив, не дублируется в wiki
