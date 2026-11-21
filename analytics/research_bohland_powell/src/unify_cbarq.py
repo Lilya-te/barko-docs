@@ -191,7 +191,7 @@ POST_STEM_RE = re.compile(
 MAPPED_NOTE = "full→mini; q08=max(full 23,24); q23=max(full 58,59)"
 ONLINE_NOTE = (
     MAPPED_NOTE
-    + "; source file already reverses full items 5–7; q29=full 7 is stored reversed"
+    + "; source file already reverses full items 5–7; q29=full 7 un-reversed to raw answer"
 )
 BOHLAND_NOTE = "weight assumed lb→kg; age years→months; 10-day wave labeled d7"
 
@@ -552,6 +552,9 @@ def transform_online_full() -> pd.DataFrame:
             }
         )
         record.update(project_full_scores(full_scores_from_row(raw)))
+        # q-columns store raw answers; reverse scoring is applied only when computing subscales
+        if record["q29"] is not None:
+            record["q29"] = 4 - record["q29"]
         rows.append(record)
     return finalize(rows)
 

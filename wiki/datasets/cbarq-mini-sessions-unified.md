@@ -3,7 +3,7 @@ type: dataset
 tags: [c-barq, harmonization, mini, longitudinal, k3]
 sources: [bohland-2023-shelter-dog-behavior-ru]
 raw_file: analytics/research_bohland_powell/datasets/unified/cbarq_mini_sessions.csv
-updated: 2026-10-28
+updated: 2026-11-21
 status: draft
 cbarq_coverage: short
 rows: 956
@@ -44,7 +44,7 @@ format: csv
 
 Не включён Bohland S3 (агрегаты по породам). Из трёх Sheet1 в джойн берётся только Sheet1 (3).
 
-Full → short: [`QUESTS/c-barq-short-full-mapping.md`](../../QUESTS/c-barq-short-full-mapping.md). Слияния через max: `q08` = full 23 и 24, `q23` = full 58 и 59. В online-файле full-пункты 5–7 уже развёрнуты, поэтому `q29` (full 7) приходит reversed; `q27`/`q28` — это full 2 и 3, их файл не разворачивает.
+Full → short: [`QUESTS/c-barq-short-full-mapping.md`](../../QUESTS/c-barq-short-full-mapping.md). Слияния через max: `q08` = full 23 и 24, `q23` = full 58 и 59. В online-файле full-пункты 5–7 уже развёрнуты, поэтому `q29` (full 7) приходит reversed. С 2026-11-21 при сборке он возвращается к ответу респондента ($4 - x$), как и в остальных источниках. До исправления среднее `q29` в `serpell_online_full` было 1.62 при 2.3–2.7 в других источниках, после — 2.38. `q27`/`q28` — это full 2 и 3, их файл не разворачивает; обратный балл для них применяется при расчёте субшкалы.
 
 ## Домены
 
