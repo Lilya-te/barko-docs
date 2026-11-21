@@ -1,0 +1,91 @@
+---
+type: component
+tags: [k3, ml, mvp, adaptation]
+sources: [ml-ideas-notes, helpdog-notebook-notes, plos-one-2024-short-cbarq-validation, fomina-2024-problem-behavior-review, fomina-2025-ai-pilot-study, gritsenko-2023-owner-frustration, gates-2018-post-adoption-problem-behaviours, vitulova-2018-adopted-shelter-dog-behaviour]
+updated: 2026-09-09
+status: draft
+---
+
+# K3 — Прогноз адаптационных трудностей
+
+Основная ML-задача MVP Hvostun.
+
+## Постановка
+
+По профилю собаки и ответам анкеты оценить:
+- риск сложной адаптации;
+- приоритетные зоны внимания.
+
+K5 может передавать в анкету сведения, явно сообщённые пользователем, а K3-профиль — быть контекстом ответа K5. До реализации нужны согласие пользователя, provenance полей и валидация качества извлечения: текст чата нельзя автоматически считать надёжным C-BARQ-ответом.
+
+**Roadmap:** модуль извлечения ответов из K5 + сравнение каналов сбора (Яндекс.Форма vs Амелько) — см. [k5-k3-answer-bridge](../concepts/k5-k3-answer-bridge.md).
+
+## Класс моделей
+
+**Classical ML** (tabular) — классификация риска.
+
+См. [model-selection](../ml/model-selection.md) для сравнения кандидатов.
+
+## Данные
+
+### Признаки (features)
+
+- Профиль собаки + ответы анкеты (C-BARQ и производные).
+- C-BARQ источники: собранные датасеты перечислены в
+  [collected-datasets-catalog](../datasets/collected-datasets-catalog.md).
+
+### Таргет (label) — кандидат
+
+Из EDA HelpDog: **возврат в приют после пристройства** — см. [adoption-return](../concepts/adoption-return.md), [helpdog-adoption-eda](../ml/helpdog-adoption-eda.md).
+
+| Источник label | Объём | Статус |
+|----------------|------:|--------|
+| HelpDog (`back_shelter_at`) | 46 пристроенных, 26 возвратов | Кандидат, `draft` |
+| C-BARQ proxy (поведенческие риски) | TBD | Для train baseline |
+| Устойчивые проблемы + обеспокоенность владельца | TBD | Дополнительный outcome; обоснование у [Gates 2018](../sources/gates-2018-post-adoption-problem-behaviours.md) |
+
+### Ограничения
+
+- Полного open C-BARQ нет → [data-harmonization](../concepts/data-harmonization.md).
+- HelpDog: 90 собак, нет C-BARQ — только валидация гипотез о таргете.
+
+## Baseline (текущее решение)
+
+| Роль | Модель |
+|------|--------|
+| Основной кандидат MVP | `RandomForest` |
+| Интерпретация для пользователя/эксперта | `LogisticRegression` |
+| Sanity check | `DummyClassifier` |
+| Расширенный baseline (при достаточных данных) | `XGBoost` / `LightGBM` |
+
+## Критерии выбора модели
+
+1. Качество (`ROC-AUC`, `PR-AUC`, `Recall` high-risk)
+2. Интерпретируемость
+3. Устойчивость на малых/фрагментированных данных
+4. Скорость внедрения в MVP
+5. Потенциал улучшения до собственной модели
+
+## MVP vs следующий этап
+
+| Этап | Решение |
+|------|---------|
+| MVP | Существующая baseline-модель (tabular ML) |
+| Следующий этап | Собственная улучшенная модель после накопления продуктовых данных |
+
+## Метрики и бенчмарки
+
+См. [benchmarks-and-metrics](../ml/benchmarks-and-metrics.md).
+
+Целевой ориентир: **ROC-AUC >= 0.75** на отложенной выборке.
+
+## Открытые вопросы
+
+- [ ] Утвердить формулу таргета: `returned_to_shelter` vs альтернативы — см. [adoption-return](../concepts/adoption-return.md).
+- [x] Приоритетные шкалы зафиксированы в [k3-feature-candidates](../concepts/k3-feature-candidates.md); требует EDA на C-BARQ.
+- [ ] Выбор MVP-анкеты: C-BARQ(S) vs полная версия.
+- [ ] Дедупликация Wolfram ↔ Figshare перед объединением train-set.
+- [ ] Запустить baseline K3 (ROC-AUC) на C-BARQ — таблица в [benchmarks-and-metrics](../ml/benchmarks-and-metrics.md) пустая.
+- [ ] Связать HelpDog-собак с C-BARQ-признаками.
+- [ ] Оценить, помогают ли поведенческие кластеры как вспомогательные профили; они не являются label риска — см. [cbarq-clustering](../ml/cbarq-clustering.md).
+- [ ] Roadmap: extractor K5→анкета и channel study (форма vs Амелько) — [k5-k3-answer-bridge](../concepts/k5-k3-answer-bridge.md).

@@ -1,0 +1,782 @@
+# Wiki Log
+
+Хронологический журнал операций над вики Hvostun.
+
+---
+
+## [2026-11-19] ingest | NIR-3: методика эквивалентности H₁-channel
+
+- Б3 §5.3 расширен: дизайн (контрбалансировка, слепота, raw vs `user_confirmed`, test-retest), парный TOST и $\mathrm{CI}_{90\%} \subset \pm\delta$ по каждому домену (intersection–union), правило выбора δ, размер выборки $n \approx 8.6(\sigma_D/\delta)^2$, вторичные ICC / Bland–Altman / weighted κ / coverage, 152-ФЗ.
+- Б2 H₁-channel: добавлены CI₉₀-формулировка и правило δ со ссылкой на Б3 §5.3; H₀ без изменений.
+- Обновлены [nir3-hypotheses](sources/nir3-hypotheses.md), [nir3-hypothesis-evaluation-pipeline](ml/nir3-hypothesis-evaluation-pipeline.md).
+
+## [2026-11-18] ingest | NIR-3: H₁-plan-DT/LR, quality 60/97, sync-правило
+
+- Reingest Б2/Б3: H₁-plan разделён на **H₁-plan-DT** и **H₁-plan-LR** (OvR), δ = 0.10; H₁-quality H₀: accept < 60% или safe < 97% (цель ~60–70% / ~97–98%).
+- Обновлены [nir3-hypotheses](sources/nir3-hypotheses.md), [nir3-ml-evaluation-pipeline](sources/nir3-ml-evaluation-pipeline.md), [nir3-hypothesis-evaluation-pipeline](ml/nir3-hypothesis-evaluation-pipeline.md), [benchmarks-and-metrics](ml/benchmarks-and-metrics.md), [model-selection](ml/model-selection.md).
+- Новое правило синхронизации Б2↔Б3↔wiki: `.cursor/rules/nir3-hypotheses-pipeline-sync.mdc`; пункт в `AGENTS.md`.
+- Снято противоречие «Б2 только дерево / Б3 LR+RF»: RF остаётся опцией при росте n, не отдельной H₁.
+
+## [2026-11-16] ingest | NIR_3 Б1: данные, метрики, LR/DT, NLP-диалог
+
+- Reingest расширенного Б1: приоритет литературы, сводка инструментов → выбор C-BARQ, числа данных (unified 956 = 619 Serpell + 337 Bohland; ландшафт ~36k до дедупа).
+- Обновлён [nir3-literature-delta](sources/nir3-literature-delta.md).
+- Метрики: random $\mathbb{E}[F1]=k/N=0.125$, example-F1 primary → [benchmarks-and-metrics](ml/benchmarks-and-metrics.md).
+- Rule matrix $14\times 40=560$ / sparse ~40–80; LR vs DT для H₁-plan → [model-selection](ml/model-selection.md), [nir3-hypothesis-evaluation-pipeline](ml/nir3-hypothesis-evaluation-pipeline.md).
+- NLP: embeddings → диалог slot-filling, latency → [k5-k3-answer-bridge](concepts/k5-k3-answer-bridge.md).
+- Lint math: формулы в wiki/NIR_3 на `$`/`$$` (правило `.cursor/rules/markdown-math-github.mdc`); `статьи/translations` не трогались (raw).
+- **Противоречие чисел Bohland:** сырой S4 в wiki 505/99 vs unified 337/104 — зафиксировано в literature-delta.
+
+## [2026-11-15] ingest | NIR_3: гипотезы и пайплайн оценки
+
+- Ingest `NIR_3/personal_files`: Б1 (дельта), Б2 (гипотезы), Б3 (методика ML).
+- Новые sources: [nir3-hypotheses](sources/nir3-hypotheses.md), [nir3-ml-evaluation-pipeline](sources/nir3-ml-evaluation-pipeline.md), [nir3-literature-delta](sources/nir3-literature-delta.md).
+- Новый ML: [nir3-hypothesis-evaluation-pipeline](ml/nir3-hypothesis-evaluation-pipeline.md).
+- Обновлены [experiment-plan](ml/experiment-plan.md), [benchmarks-and-metrics](ml/benchmarks-and-metrics.md) (контур рекомендаций + macro-F1/TOST), [k5-k3-answer-bridge](concepts/k5-k3-answer-bridge.md) (векторный индекс пунктов, H₁-channel), [overview](overview.md).
+- **Противоречия зафиксированы:** (1) исторический K3 = ROC-AUC risk vs НИР-3 = top-5 рекомендации; (2) Б2 дерево vs Б3 LR/RF; (3) split train/val на Bohland+Serpell без этикеток каталога G — открытый вопрос.
+- Не перенесено как wiki-страницы: `dairy.md`, `Описание хода работ…` (нарратив спринта), полная таблица статей Б1 (уже в `wiki/sources/`).
+
+## [2026-10-28] ingest | Единый C-BARQ mini (Bohland + Serpell)
+
+- Анкеты сведены в `cbarq_mini_sessions.csv`: 956 заполнений, `q01`–`q42`, `adopted_date`, `days_at_home`.
+- Домены: порог «меньше половины пунктов» и обратный балл 27/28 только на субшкале. После дублей по 14 шкалам — 953 строки (`domain_dedup`).
+- Full → 42 с `is_mapped`; S3 Bohland и лишние Sheet1 не входят. Волна «10 days» помечена `d7`.
+- Новая страница [cbarq-mini-sessions-unified](datasets/cbarq-mini-sessions-unified.md). Обновлены [data-harmonization](concepts/data-harmonization.md), [c-barq-short-42-scoring](concepts/c-barq-short-42-scoring.md), [bohland-2023-shelter-adoption-cbarq](datasets/bohland-2023-shelter-adoption-cbarq.md).
+
+## [2026-10-04] ingest | Пункты 8 и 9 пилотной анкеты совпадают с C-BARQ(S)
+
+- В форме пункты 8 и 9 поменяны местами относительно перевода Гербека.
+- 8 — незнакомая собака на поводке, 9 — незнакомцы мимо дома. Номера субшкал больше не сдвигаются.
+- Обновлены [pilot-questionnaire](concepts/pilot-questionnaire.md) и [c-barq-short-42-scoring](concepts/c-barq-short-42-scoring.md).
+
+## [2026-10-04] ingest | Скоринг Mini C-BARQ, 42 пункта
+
+- 14 субшкал считаются как среднее пунктов 0–4. Пункты 27 и 28 («сидеть», «жди») с обратным баллом.
+- Девять прочих пунктов (32–38, 41, 42) не усредняются.
+- Номера формул — английский C-BARQ(S). В пилотной анкете пункты 8 и 9 поменяны местами.
+- Новая страница [c-barq-short-42-scoring](concepts/c-barq-short-42-scoring.md). Ссылки из [c-barq](concepts/c-barq.md) и [pilot-questionnaire](concepts/pilot-questionnaire.md).
+
+## [2026-09-27] ingest | dogs.status_at
+
+- В схеме `dogs.adopted_at` заменён на `status_at` (дата текущего статуса).
+- Поле по-прежнему не заменяет `placement_events`.
+- Обновлены [`_database_architecture.md`](../_app_ideas/_database_architecture.md),
+  [research-data-app](concepts/research-data-app.md),
+  [app-ideas-notes](sources/app-ideas-notes.md).
+
+## [2026-09-25] ingest | Версии анкет и immutable-каталоги
+
+- `surveys` отделены от immutable `survey_versions`; session хранит точную version.
+- Состав и порядок перенесены в `surveys_questions.survey_version_id`.
+- `answer_events` получили version-aware composite FK и JSONB `{"value": ...}`.
+- Все FK используют `ON DELETE RESTRICT`; ORM защищает каталоги от UPDATE/DELETE.
+- Обновлены [research-data-app](concepts/research-data-app.md),
+  `_app_ideas/_database_architecture.md` и [index](index.md).
+
+## [2026-09-23] query | HTML-админка отдельно от web
+
+- Продуктовая админка: FastAPI + Jinja2 + Bootstrap в `backend/app/admin`; cookie-сессия.
+- `backend/app/api` (`/api/v1`) и каталог `frontend/` — для будущего `web/` (React + Tailwind/shadcn).
+- FastAdmin spike снят. Adminer (`db-ui`) остаётся локальным инструментом БД.
+- Обновлены [research-data-app](concepts/research-data-app.md), [overview](overview.md), [index](index.md), [app-ideas-notes](sources/app-ideas-notes.md), `K3_RiskScore/plan/k3_plan.md`.
+
+## [2026-09-09] query | FastAPI full-stack template для Hvostun
+
+- Вместо Django/cookiecutter принят официальный [Full Stack FastAPI Template](https://github.com/fastapi/full-stack-fastapi-template): FastAPI, SQLModel/Alembic, PostgreSQL, React/TypeScript, Tailwind/shadcn, JWT-auth и Docker Compose.
+- Уточнено ограничение: dashboard шаблона не заменяет универсальный Django Admin. Для domain CRUD запланирован FastAdmin integration spike; fallback — минимальные React CRUD-страницы.
+- `fastapi-users` не добавляется: auth уже есть в шаблоне, библиотека в maintenance mode. CRUDAdmin пока experimental.
+- Обновлены [research-data-app](concepts/research-data-app.md), [app-ideas-notes](sources/app-ideas-notes.md), [overview](overview.md), [index](index.md) и `K3_RiskScore/plan/k3_plan.md`.
+- Для ПДн: self-hosted РФ-контур; production secrets вне git; FastAPI Cloud/зарубежные SaaS не использовать без отдельной правовой оценки.
+
+## [2026-09-09] lint | Rename: Barko → Hvostun
+
+- Продукт переименован в **Hvostun**; код-репозиторий `hvostun/`; provenance `hvostun_ops`.
+- Docs-репозиторий пока `barko-docs` (имя каталога/remote не меняли).
+- Обновлены AGENTS.md, wiki (overview, index, concepts, sources, ml, …), `k3_plan.md`, cursor rule 152-ФЗ.
+
+## [2026-09-09] query | Roadmap: мост K5→анкета K3 и каналы сбора
+
+- Создана [k5-k3-answer-bridge](concepts/k5-k3-answer-bridge.md): модуль извлечения ответов из K5 (с confirm/provenance); параллельное сравнение каналов `yandex_form` vs `amelko`; возможен отдельный деплой сборщика; чеклист 152-ФЗ.
+- Обновлены: [k3-risk-prediction](components/k3-risk-prediction.md), [k5-ai-chat](components/k5-ai-chat.md), [research-data-app](concepts/research-data-app.md), [personal-data-152-fz](concepts/personal-data-152-fz.md), [overview](overview.md), [index](index.md).
+
+## [2026-09-08] ingest | Согласие consent_v1 для пилотной Яндекс.Формы
+
+- Создана [consent-v1-pilot-form](concepts/consent-v1-pilot-form.md): текст согласия, оформление в Яндекс.Форме, мини-шаблон политики, чеклист.
+- Обновлены ссылки: [personal-data-152-fz](concepts/personal-data-152-fz.md), [pilot-questionnaire](concepts/pilot-questionnaire.md), [index](index.md).
+
+## [2026-08-22] ingest | Перепись полных переводов 11 personality/testing статей
+
+Переписаны **полные русские переводы** и соответствующие **wiki‑саммари** для блока 11 статей по personality/behavioural testing: Haverbeke 2008, Kubinyi 2009, Ley 2008, Ley 2009 (refinement/validation), Ley 2009 (MCPQ‑R reliability), O’Heare 2009 (LIEBI), Range 2009, Svartberg 2003/2005 (DMA), Diederich 2006 (review), Vas 2008 (approaching stranger). Причина — предыдущие версии были частично конспективны и местами неточны; теперь тексты приведены к стандарту «полного перевода» (связная русская проза по всем разделам, таблицы/рисунки описаны словами с ключевыми числами).
+
+## [2026-08-20] ingest | 11 новых foreign-статей (personality / testing / welfare)
+
+**Переименование + папки стран:** `australia`, `austria`, `belgium`, `canada`, `hungary`, `sweden` (формат `Автор_ГОД_МЕТОД_описание`).
+
+**Создано (саммари + перевод):** Haverbeke 2008, Kubinyi 2009, Ley 2008 MCPQ, Ley 2009 MCPQ refinement, Ley 2009 MCPQ-R reliability, O'Heare 2009 LIEBI, Range 2009, Svartberg 2003/2005 DMA, Diederich 2006 review, Vas 2008.
+
+**Ключевые выводы:**
+- MCPQ → MCPQ-R: 5 измерений personality; надёжность ICC ≈ 0.75–0.93.
+- DMA: traits стабильны; construct validity для playfulness/sociability/curiosity vs everyday; aggressiveness в тесте слабо связан с everyday aggression.
+- Kubinyi: age/neuter/training/acquisition age — главные демографические предикторы traits (не causal).
+- LIEBI: иерархия инвазивности для behavior intervention.
+- Behavioural testing: нет стандартной методологии (Diederich review).
+
+**Обновлено:** `index.md`
+
+---
+
+## [2026-08-20] ingest | Svartberg DMA, Diederich review, Vas stranger test
+
+**Источники:**
+- `статьи/foreign/sweden/Svartberg_2005_DMA_boldness_everyday_life.pdf` — Svartberg 2005, DMA vs CBARQ everyday (DOI 10.1016/j.applanim.2004.08.030)
+- `статьи/foreign/belgium/Diederich_2006_REVIEW_behavioural_testing_methodology.pdf` — Diederich & Giffroy 2006, behavioural testing review (DOI 10.1016/j.applanim.2005.11.018)
+- `статьи/foreign/hungary/Vas_2008_EXPERIMENT_threatening_cues_consistency.pdf` — Vas et al. 2008, threatening cues consistency (DOI 10.1016/j.applanim.2007.09.002)
+
+**Создано:**
+- `sources/svartberg-2005-dma-boldness-everyday.md`, `sources/diederich-2006-behavioural-testing-review.md`, `sources/vas-2008-threatening-cues-consistency.md`
+- Переводы: `translations/svartberg_2005_dma_boldness_everyday_life_ru.md`, `diederich_2006_review_behavioural_testing_methodology_ru.md`, `vas_2008_experiment_threatening_cues_consistency_ru.md`
+
+**Обновлено:**
+- `index.md`
+
+**Ключевые выводы:**
+- DMA: три валидных компонента boldness (playfulness, sociability, curiosity/fearlessness); aggressiveness не валидирован против CBARQ.
+- Diederich review: нет consensus по stimuli, scoring, age — нужен reference manual.
+- Vas 2008: consistency при ~1 year retest и между experimenters; owners не предсказывают реакцию.
+
+---
+
+## [2026-08-20] ingest | Четыре foreign-статьи: MCPQ-R, LIEBI, ostensive cues, DMA
+
+**Источники:**
+- `статьи/foreign/australia/Ley_2009_MCPQR_interrater_test_retest.pdf` — Ley et al. 2009, MCPQ-R reliability (DOI 10.1016/j.applanim.2009.02.027)
+- `статьи/foreign/canada/OHeare_2009_LIEBI_least_intrusive_behavior_intervention.pdf` — O'Heare 2009, LIEBI algorithm
+- `статьи/foreign/austria/Range_2009_EXPERIMENT_ostensive_cues_social_learning.pdf` — Range et al. 2009, ostensive cues (DOI 10.1016/j.applanim.2009.05.012)
+- `статьи/foreign/sweden/Svartberg_2003_DMA_consistency_personality_traits.pdf` — Svartberg et al. 2005, DMA consistency (DOI 10.1016/j.anbehav.2004.04.011)
+
+**Создано:**
+- `sources/ley-2009-mcpqr-reliability.md`, `sources/oheare-2009-liebi-algorithm.md`, `sources/range-2009-ostensive-cues-social-learning.md`, `sources/svartberg-2003-dma-consistency.md`
+- Переводы: `ley_2009_mcpqr_interrater_test_retest_ru.md`, `oheare_2009_liebi_least_intrusive_behavior_intervention_ru.md`, `range_2009_experiment_ostensive_cues_social_learning_ru.md`, `svartberg_2003_dma_consistency_personality_traits_ru.md`
+
+**Обновлено:**
+- `index.md`
+
+**Ключевые выводы:**
+- MCPQ-R: ICC inter-rater 0.75–0.86, test–retest 0.79–0.93; Neuroticism/Training Focus — наименьшее согласие сожителей.
+- LIEBI: 6-level hierarchy; aversive только после due diligence; effectiveness is not enough.
+- Ostensive cues: continuous third-party attention-calling **снижает** manipulative social learning vs тихая demo.
+- DMA: rank-order stable все traits; Aggressiveness/Curiosity-Fearlessness novelty-sensitive на первом тесте.
+
+---
+
+## [2026-08-20] ingest | Три новые foreign-статьи
+
+**Источники:**
+- `статьи/foreign/brazil/Savalli_2019_PANAS_dog_panas_brazil.pdf` — Savalli et al. 2019, PANAS Brazil (DOI 10.1038/s41598-019-54645-6)
+- `статьи/foreign/uk/Fadel_2016_DIAS_dog_impulsivity_working_show_lines.pdf` — Fadel et al. 2016, DIAS work/show lines (DOI 10.1038/srep22162)
+- `статьи/foreign/germany/Hoth_Zimak_2026_BEHAVIOR-SCALES_rescued_dogs_abroad_germany.pdf` — Hoth-Zimak et al. 2026, rescued dogs Germany (DOI 10.1038/s41598-026-62598-w)
+
+**Переименование:**
+- Удалены дубликаты PANAS (3 PDF → 1 canonical + supplement `.doc`)
+- `41598_2019_Article_54645.pdf` → `savalli_2019_dog_panas_brazil.pdf`
+- `s41598-026-62598-w.pdf` → `hoth_zimak_2026_rescued_dogs_abroad_germany.pdf`
+- `srep22162.pdf` → `fadel_2016_dog_impulsivity_working_show_lines.pdf`
+
+**Создано:**
+- `sources/savalli-2019-dog-panas-brazil.md`, `sources/fadel-2016-dog-impulsivity-working-show.md`, `sources/hoth-zimak-2026-rescued-dogs-abroad-germany.md`
+- Переводы: `translations/savalli_2019_dog_panas_brazil_ru.md`, `fadel_2016_dog_impulsivity_working_show_lines_ru.md`, `hoth_zimak_2026_rescued_dogs_abroad_germany_ru.md`
+
+**Обновлено:**
+- `index.md`
+
+**Ключевые выводы:**
+- PANAS (16 items, Brazil): negative activation ↑ у female owners, neutered, single-dog, mixed-breed.
+- DIAS: line (work/show) важнее breed для impulsivity; show lines Collie/Lab сходны.
+- Imported dogs DE: personality score 2.1→2.4 за 6 мес.; partner dog protective; dog training confounded.
+
+---
+
+## [2026-08-18] query | Текст для экспертной валидации анкеты
+
+**Обновлено:**
+- `concepts/pilot-questionnaire.md` — сопроводительный текст для специалистов: C-BARQ фиксирован; ревью блоков 1 и 3 (адаптация, рекомендации владельцу).
+
+---
+
+## [2026-08-18] ingest | Пилотная анкета: вопросы и варианты ответа
+
+**Источники:**
+- [Яндекс Форма](https://forms.yandex.ru/u/6a7f4c8b4936398f0aeaa1d2) — общие поля (образование, приют, возраст).
+- `QUESTS/c-barq_rus_Bru.pdf` — русские шкалы 0–4 + X для C-BARQ(S).
+- `QUESTS/CBARQ_short-final_copy.pdf` — состав 42 пунктов.
+
+**Создано:**
+- `concepts/pilot-questionnaire.md` — таблица вопросов: обязательность, тип, варианты; легенда шкал A/B/C/D; блок после C-BARQ (амуниция, кинолог, динамика проблем).
+
+**Обновлено:**
+- `index.md`
+
+**Ключевые выводы:**
+- Варианты G4/G7/G9 взяты из живой формы; шкалы 42 пунктов совпадают с Bru.
+- Нумерация Q8/Q9 в русской форме не совпадает с английским C-BARQ(S) — при ingest маппить по тексту.
+- Вопросы E1–E6 в форме ещё нет; для обязательного «что усугубилось» нужен пункт «Ничего не усугубилось».
+- 152-ФЗ: город/образование/email — ПДн; в текущих 8 страницах формы нет отдельного согласия.
+
+---
+
+## [2026-08-14] ingest | 152-ФЗ — выжимка для Hvostun
+
+**Источник:**
+- `152 ФЗ.md` — Федеральный закон «О персональных данных» (текст с правками до 2025–2026).
+
+**Создано:**
+- `sources/fz-152-personal-data.md` — саммари норм, релевантных сбору анкет, research-ops и ML.
+- `concepts/personal-data-152-fz.md` — практический чеклист для контуров с ПДн.
+- `.cursor/rules/personal-data-152-fz.mdc` — alwaysApply-правило проверки при работах с ПДн.
+- Дополнение в `AGENTS.md` (операция «Персональные данные»).
+
+**Обновлено:**
+- `concepts/research-data-app.md` — ссылки на 152-ФЗ / чеклист у блока `consents`.
+- `index.md`
+
+**Ключевые выводы:**
+- Пилот анкет: согласие + версия текста; Яндекс Формы / РФ-хранение предпочтительнее Google Forms (ст. 18 ч. 5).
+- Ops с ПДн и training export разделять; для research/ML — обезличивание.
+- Перед публичным сбором: политика ПДн, уведомление оператора (ст. 22), готовность к инцидентам 24ч/72ч.
+
+---
+
+## [2026-07-28] ingest | Реорганизация путей к источникам
+
+**Источники:**
+- `analytics/research/datatsets/` — новое расположение заметок и collected C-BARQ datasets.
+- `analytics/helpdog_forum/` — новое расположение ноутбука и CSV HelpDog.
+- `analytics/research/raw/padova-cbarq/` — новое расположение подготовленных CSV Padova.
+
+**Обновлены:**
+- `sources/data-ideas-notes.md`, `sources/foreign-datasets-list-notes.md`, `sources/helpdog-notebook-notes.md` — `raw_path` и ссылки на исходники.
+- `datasets/` — полные пути в `raw_file` / `raw_files`, каталог collected datasets и словарь Padova.
+- `ml/helpdog-adoption-eda.md`, `ml/benchmarks-and-metrics.md`, `overview.md`, `index.md` — ссылки на реорганизованные артефакты.
+
+**Ключевые выводы:**
+- Канонический каталог collected C-BARQ raw: `analytics/research/datatsets/foreign/`.
+- Исторические записи журнала сохраняют пути, актуальные на момент соответствующего ingest.
+
+---
+
+## [2026-07-28] ingest | Bohland et al. (2023): поведение собак после пристройства
+
+**Источник:**
+- `статьи/Shelter dog behavior after adoption_ Using the C-BARQ to track dog behavior changes through the first six months after adoption _ PLOS One.pdf` — проспективное исследование 99 собак из пяти приютов Огайо, DOI `10.1371/journal.pone.0289356`.
+
+**Созданная страница:**
+- `sources/bohland-2023-shelter-dog-behavior-ru.md` — содержательное саммари и полный русский перевод основной статьи, всех 11 таблиц, рисунка, метаданных, дополнительных материалов, вкладов авторов и 78 источников.
+
+**Обновлены:**
+- `index.md`
+
+**Ключевые выводы:**
+- C-BARQ измеряли на 7-й, 30-й, 90-й и 180-й день; все четыре волны прошли 62 из 99 владельцев.
+- За 180 дней выросли агрессия к незнакомцам, возбудимость, чувствительность к прикосновениям, трудности обучения и преследование; снизились проблемы разлуки и привязанность/поиск внимания.
+- Психотропные препараты в приюте предсказывали агрессию к незнакомцам и чувствительность к прикосновениям дома.
+- На 180-й день 93,7% владельцев оценили поведение как отличное или хорошее, несмотря на выявленную динамику.
+- Для Hvostun нужны повторные измерения: профиль первой недели нельзя считать устойчивым; результаты наблюдательные и собраны во время COVID-19.
+
+---
+
+## [2026-07-28] ingest | Схема БД research-ops (`_database_architecture`)
+
+**Источники:**
+- `_app_ideas/_database_architecture.md` — таблицы shelters, memberships, dogs, placement_events, consents, questionnaires, answer_events.
+- Архитектурный разбор схемы (Groups вместо custom roles; author_id; wave; provenance; domain).
+
+**Обновлены:**
+- `sources/app-ideas-notes.md` — raw_path → `_database_architecture.md` (`_main_ideas.md` удалён)
+- `concepts/research-data-app.md` — каноническая ER-схема и поля таблиц
+- `index.md`
+
+**Ключевые выводы:**
+- Placement — отдельная `placement_events`, не одно поле `adopted_at`.
+- Доступ к приюту — `shelter_memberships`; app-роли — Django Groups.
+- Анкеты: slug + global_number/domain + typed scales; answer_events append-only с value_num/text/date.
+- MVP без эксперта и без отдельного audit_log; consents обязательны (152-ФЗ).
+
+**Открытые вопросы:**
+- Нужен ли `wave` на первой поставке или хватит повторных sessions без метки дня.
+- Добавлять ли Shelter C-BARQ как отдельный questionnaire slug сразу.
+
+---
+
+## [2026-07-24] ingest | Shelter C-BARQ (Gilchrist et al. 2025)
+
+**Источники:**
+- `статьи/4 Gilchrist_et_al_ABC_12(1).pdf` — валидация адаптированного C-BARQ для собак в приюте.
+
+**Созданные страницы:**
+- `sources/gilchrist-2025-shelter-cbarq.md`
+
+**Обновлены:**
+- `concepts/c-barq.md` — добавлена версия Shelter C-BARQ (24 / 5 факторов)
+- `concepts/k3-feature-candidates.md` — приоритеты Fear / Aggression / Arousal / Excitability
+- `concepts/adoption-return.md` — связь крайних уровней черт с риском возврата
+- `index.md`
+
+**Ключевые выводы:**
+- Shelter C-BARQ: 24 пункта, 5 факторов (Fear, Arousal, Human Excitability, Dog Aggression, Human Aggression); N=445, 11 приютов; α≈0.78.
+- Не то же самое, что C-BARQ(S): другая популяция (staff в приюте vs владелец) и сценарии.
+- Фактор **Arousal** без прямого аналога в long C-BARQ; авторы связывают с overstimulation / cortisol в приюте.
+- Fear ↔ Human Aggression r=0.71 — сильная коморбидность.
+
+**Открытые вопросы:**
+- Нужна ли Shelter C-BARQ в схеме анкет research-data-app наряду с C-BARQ(S) для владельца.
+- Данные по запросу у авторов — open dataset нет.
+
+---
+
+## [2026-07-24] ingest | Идеи внутреннего research-ops приложения
+
+**Источники:**
+- `_app_ideas/_main_ideas.md` — интерфейс ввода данных для исследования; роли волонтёр/эксперт/админ; PostgreSQL; открытый вопрос по хранилищу training-данных.
+
+**Созданные страницы:**
+- `sources/app-ideas-notes.md`
+- `concepts/research-data-app.md`
+
+**Обновлены:**
+- `index.md`
+- `overview.md`
+
+**Ключевые выводы:**
+- Цель контура — наполнение БД (не owner UX / K5).
+- MVP = modular monolith: один репозиторий, один `docker compose` (`web` + `postgres` + опционально `jupyter`), пакет `ml/` без микросервисов.
+- Стек: cookiecutter-django, allauth, Groups, Django Ninja, HTMX, Admin.
+- Ops и training — логические слои в одном Postgres + файлы `data/`; ClickHouse/Mongo на MVP не нужны.
+- Анкеты: `questionnaires` + append-only `answer_events` (частичное заполнение и динамика).
+
+**Открытые вопросы:**
+- Object-level доступ «свой приют» (Groups vs django-guardian) — уточнить при первой пилотной организации.
+- Нужен ли сервис `jupyter` в compose с первого дня или достаточно локальных ноутбуков.
+
+---
+
+## [2026-07-18] ingest | ML-заметки и C-BARQ clustering
+
+**Источники:**
+- `_ml_ideas.md` — уточнена роль K3 как основного ML-артефакта и связь контекста K3 ↔ K5.
+- `analytics/research/notebooks/11_kmeans_cluster.ipynb` — KMeans на 775 очищенных Padova-анкетах и 13 доменных шкалах.
+- `analytics/research/notebooks/12_gmm_cluster.ipynb` — GMM на том же срезе.
+- `analytics/research/notebooks/21_clusters_compare.ipynb` — план сравнения моделей, без рассчитанных результатов.
+
+**Созданные страницы:**
+- `sources/cbarq-clustering-notebooks.md`
+- `ml/cbarq-clustering.md`
+
+**Обновлены:**
+- `sources/ml-ideas-notes.md`
+- `components/k3-risk-prediction.md`
+- `concepts/data-harmonization.md`
+- `index.md`
+
+**Ключевые выводы:**
+- Padova успешно сведён в рабочий срез из 775 собак и 13 доменных шкал; это частично продвигает harmonization, но mapping и обработку пропусков ещё нужно зафиксировать воспроизводимо.
+- KMeans выбирает 2 кластера по silhouette (`0.190`): это слабое разделение, пригодное только для exploratory-профилей.
+- GMM выбирает 6 компонентов по BIC (`15 463.26`), однако silhouette `−0.02` не подтверждает устойчиво отделённые классы.
+- Кластеры не являются K3-target и не заменяют supervised baseline.
+
+**Открытые вопросы:**
+- Рассчитать совпадение KMeans/GMM при `k=2` и `k=6` (`ARI`, `NMI`, contingency table).
+- Проверить устойчивость кластеров и только затем их связь с внешним target K3.
+- Спроектировать K3 ↔ K5 data flow с согласием пользователя и provenance признаков.
+
+---
+
+## [2026-07-08] ingest | Словарь колонок Padova C-BARQ (IT→EN)
+
+**Созданная страница:**
+- `datasets/padova-cbarq-column-dictionary.md`
+
+**Ключевые выводы:**
+- Составлен перевод названий 123 колонок датасета Padova (`analytics/research/Dataset_22022022.csv`) с итальянского на английский.
+- Поля анкеты `@nn.text` переименованы в `question_nnn` (100 пунктов), свободный текст вынесен в `other_*`, демография — в `snake_case`.
+- Зафиксированы дефекты источника: дубликат префикса `@74` (squirrels → `question_076`) и пропуск официального C-BARQ item 51 → смещение нумерации после `question_050`.
+- Файлы в `analytics/` не изменялись; в вики добавлен готовый Python-сниппет для переименования колонок.
+
+---
+
+## [2026-07-03] query | Измеримые метрики MVP
+
+**Созданная страница:**
+- `ml/mvp-verifiable-metrics.md`
+
+**Ключевые выводы:**
+- Возврат собаки в приют лучше оставить как долгосрочную north-star / social impact metric, а не как основную рабочую гипотезу MVP.
+- Для пилота измеримы более близкие outcome: тревожность владельца, time to panic, доля закрытых вопросов, динамика проблемного поведения, уверенность владельца и качество K5.
+- Рабочая причинная цепочка: `Hvostun -> меньше тревожности и панических ситуаций -> больше уверенности и выполненных рекомендаций -> ниже риск эскалации до возврата`.
+
+---
+
+## [2026-06-09] ingest | статьи/ (4 PDF)
+
+**Источники:**
+- `статьи/journal.pone.0299973.pdf` — PLOS ONE, валидация C-BARQ(S)
+- `статьи/4+RPJ+21(4)+РУ+Фомина.pdf` — обзор проблемного поведения (132 статьи)
+- `статьи/11+РПЖ+22(4)+Фомина.pdf` — пилот CBARQ + AI (n=35)
+- `статьи/Gritsenko.pdf` — разочарованность владельцев (n=5820)
+
+**Созданные страницы:**
+- `sources/plos-one-2024-short-cbarq-validation.md`
+- `sources/fomina-2024-problem-behavior-review.md`
+- `sources/fomina-2025-ai-pilot-study.md`
+- `sources/gritsenko-2023-owner-frustration.md`
+- `concepts/k3-feature-candidates.md`
+- `concepts/problem-behavior-taxonomy.md`
+- `concepts/owner-dog-attachment.md`
+- `concepts/owner-frustration.md`
+
+**Обновлены:**
+- `concepts/c-barq.md`, `datasets/plos-one-2024-short-cbarq.md`
+- `components/k3-risk-prediction.md`, `components/k5-ai-chat.md`
+- `index.md`
+
+**Ключевые выводы:**
+- MVP-анкета: кандидат **C-BARQ(S)** (42 пункта, валидирован).
+- K3 features: separation-related, fear, aggression — высокий приоритет.
+- Таргеты: возврат в приют (HelpDog) + разочарованность владельца (14%).
+- K5 KB: обзор Фоминой, привязанность, таксономия поведения.
+
+**Открытые вопросы:**
+- EDA `pone.0299973.s001.csv` (схема столбцов).
+- Лицензии на RAG по русскоязычным статьям.
+
+---
+
+## [2026-06-09] ingest | analytics/helpdog.ipynb
+
+**Источник:**
+- `analytics/helpdog.ipynb` + `dogs.csv`, `adoptions.csv`
+
+**Созданные страницы:**
+- `datasets/helpdog-forum-adoptions.md`
+- `ml/helpdog-adoption-eda.md`
+- `concepts/adoption-return.md`
+- `sources/helpdog-notebook-notes.md`
+
+**Обновлены:**
+- `components/k3-risk-prediction.md`
+- `ml/benchmarks-and-metrics.md`
+- `ml/experiment-plan.md`
+- `overview.md`
+- `index.md`
+
+**Ключевые выводы:**
+- EDA, не ML benchmark: модели не обучались, ROC-AUC не считался.
+- 90 собак, 46 пристроены, 26 вернулись — **~57% возвратов**.
+- Кандидат на таргет K3: `returned_to_shelter` после пристройства.
+- HelpDog-данные без C-BARQ — слишком малы для самостоятельного baseline.
+
+**Открытые вопросы:**
+- Финальное утверждение формулы таргета K3.
+- Связка HelpDog с C-BARQ features.
+- Запуск baseline K3 на C-BARQ датасетах.
+
+---
+
+## [2026-06-09] ingest | foreign_datasets_list.md
+
+**Источник:**
+- `datatsets/foreign_datasets_list.md` — каталог собранных C-BARQ датасетов
+
+**Созданные страницы:**
+- `datasets/collected-datasets-catalog.md`
+- `datasets/2017-wolfram.md`
+- `datasets/figshare-cbarq-dat.md`
+- `datasets/padova-cbarq-italian.md`
+- `datasets/manydogs-md1.md`
+- `datasets/plos-one-2024-short-cbarq.md`
+- `sources/foreign-datasets-list-notes.md`
+
+**Обновлены:**
+- `datasets/cbarq-open-data-landscape.md`
+- `concepts/data-harmonization.md`
+- `components/k3-risk-prediction.md`
+- `index.md`
+
+**Ключевые выводы:**
+- Собрано 5 датасетов: 4 полных C-BARQ + 1 частичный (ManyDogs).
+- Wolfram (12 060) и Figshare (12 061) — подозрение на пересечение; нужна дедупликация.
+- Padova и PLOS — item-level, требуют агрегации в доменные шкалы.
+- Dog Aging Project — кандидат, ещё не собран.
+
+**Открытые вопросы:**
+- Дедупликация Wolfram ↔ Figshare.
+- Полная схема столбцов `pone.0299973.s001.csv`.
+- Фактическое расположение файлов датасетов в репозитории.
+
+---
+
+## [2026-06-09] ingest | _ml_ideas.md + _data_ideas.md
+
+**Источники:**
+- `_ml_ideas.md` — подбор модели для ML-решений (BARKO)
+- `datatsets/_data_ideas.md` — ландшафт открытых C-BARQ датасетов
+
+**Созданные страницы:**
+- `overview.md`
+- `components/k3-risk-prediction.md`
+- `components/k5-ai-chat.md`
+- `components/k6-plan-correction.md`
+- `concepts/c-barq.md`
+- `concepts/data-harmonization.md`
+- `datasets/cbarq-open-data-landscape.md`
+- `ml/model-selection.md`
+- `ml/benchmarks-and-metrics.md`
+- `ml/experiment-plan.md`
+- `sources/ml-ideas-notes.md`
+- `sources/data-ideas-notes.md`
+
+**Ключевые выводы:**
+- MVP K3: tabular ML, baseline-кандидат `RandomForest` + интерпретация через `LogisticRegression`.
+- MVP K5: готовая LLM API + RAG, без обучения собственной LLM.
+- K6: roadmap, не в MVP.
+- Полного открытого C-BARQ датасета нет; baseline на объединении фрагментарных подмножеств с harmonization.
+- Целевой ориентир K3: `ROC-AUC >= 0.75`.
+
+**Открытые вопросы:**
+- Формула таргета для K3 ещё не зафиксирована в вики.
+- ~~Детальные страницы по каждому собранному датасету~~ — сделано в ingest `foreign_datasets_list.md`.
+- ~~Результаты `analytics/helpdog.ipynb`~~ — ingested (EDA + кандидат таргета; ML benchmark ещё не запущен).
+
+---
+
+## [2026-07-29] ingest | Реорганизация каталога статей
+
+**Изменения:**
+- 3 российские научные статьи перемещены в `статьи/russian/`.
+- 5 зарубежных научных статей перемещены в `статьи/foreign/`.
+- PDF переименованы по схеме `главный_автор_год_краткий_заголовок.pdf`.
+- Актуальные `raw_path` и markdown-ссылки обновлены в `wiki/sources/` и `wiki/index.md`.
+- Практическое руководство VCA оставлено в корне `статьи/`; служебный экспорт `search results.txt` не перемещался.
+
+---
+
+## [2026-07-29] ingest | Саммари и переводы зарубежных статей
+
+**Проверенные источники:**
+- `статьи/foreign/unknown/Bohland_2023_CBARQ_shelter_behavior_after_adoption.pdf` — саммари и полный перевод уже присутствовали.
+- `статьи/foreign/usa/Gilchrist_2025_CBARQ_cbarq_for_shelter_dogs.pdf` — к существующему саммари добавлен полный перевод.
+- `статьи/foreign/unknown/Wilkins_2024_CBARQ_shortened_cbarq_validation.pdf` — к существующему саммари добавлен полный перевод.
+- `статьи/foreign/usa/Powell_2022_CBARQ_returning_a_shelter_dog.pdf` — созданы саммари и полный перевод.
+- `статьи/foreign/usa/Shabelansky_2016_SURVEY_excitable_dog_behavior.pdf` — созданы саммари и полный перевод.
+
+**Созданные страницы:**
+- `sources/powell-2022-shelter-dog-returns-ru.md`
+- `sources/shabelansky-2016-excitable-dog-behavior-ru.md`
+
+**Обновлённые страницы:**
+- `sources/gilchrist-2025-shelter-cbarq.md`
+- `sources/plos-one-2024-short-cbarq-validation.md`
+- `index.md`
+
+**Ключевые выводы:**
+- Ожидания усыновителя и раннее несоответствие ожиданий — отдельный блок признаков риска возврата для K3.
+- Возбудимость следует описывать через наблюдаемые сценарии и поведение, отделяя её от агрессии.
+- Для K5 особенно важна поддержка владельца в первые дни и недели адаптации.
+
+---
+
+## [2026-07-29] ingest | Вынос полных переводов из wiki
+
+**Изменения:**
+- Полные переводы пяти зарубежных статей вынесены в `статьи/foreign/translations/`.
+- В `wiki/sources/` оставлены компактные саммари, ссылки на оригинальные PDF и полные переводы.
+- Тег `full-translation` на source-страницах заменён на `translation-available`.
+- `wiki/index.md` обновлён прямыми ссылками на переводы.
+
+**Причина:**
+- `wiki/` остаётся curated-слоем для query и K5 RAG без загрузки полного текста статей в основной контекст.
+- Полные переводы сохраняются как производные материалы рядом с зарубежными PDF и доступны по явным ссылкам.
+
+---
+
+## [2026-07-29] ingest | Powell et al. 2021 — восприятие поведения при передаче собаки
+
+**Источник:**
+- `статьи/foreign/usa/Powell_2021_SURVEY_deception_or_knowledge.pdf`
+- DOI: `10.3389/fvets.2021.734973`
+
+**Создано:**
+- `sources/powell-2021-deception-or-knowledge.md` — компактное саммари.
+- `статьи/foreign/translations/powell_2021_deception_or_knowledge_ru.md` — полный русский перевод.
+
+**Ключевые выводы:**
+- 69,3% отдающих владельцев при прямом вопросе не признавали проблем поведения, хотя mini C-BARQ показывал менее благоприятный профиль большинства шкал.
+- Конфиденциальность ответов не объясняла расхождение, что не поддерживает гипотезу намеренного обмана.
+- Для K3 и K5 конкретные контекстные вопросы надёжнее общего вопроса о наличии «проблемного поведения».
+
+---
+
+## [2026-08-09] ingest | Duffy et al. 2014 — C-BARQ(S) при передаче собаки
+
+**Источник:**
+- `статьи/foreign/usa/Duffy_2014_CBARQ_behavioral_assessment_relinquished_dogs.pdf`
+- DOI: `10.1016/j.prevetmed.2014.10.003`
+
+**Создано:**
+- `sources/duffy-2014-shelter-relinquishment-cbarq.md` — компактное саммари.
+- `статьи/foreign/translations/duffy_2014_behavioral_assessment_relinquished_dogs_ru.md` — полный русский перевод.
+
+**Обновлено:**
+- `concepts/c-barq.md`
+- `concepts/k3-feature-candidates.md`
+- `index.md`
+
+**Ключевые выводы:**
+- 42-пунктовый C-BARQ(S) согласовывался со staff assessment агрессии и различал outcomes adoption/euthanasia.
+- После множественной поправки наиболее устойчивым признаком была stranger-directed aggression.
+- Большинство intake-оценок слабо переносилось на post-adoption контекст; профиль следует обновлять повторными измерениями.
+
+---
+
+## [2026-08-12] ingest | Переименование и каталогизация зарубежных датасетов
+
+**Переименовано:**
+- `2017_wolfram.csv` → `ghirlanda_2013_cbarq_survey_domain_scales_wolfram.csv`.
+- `CBARQ.dat` → `ghirlanda_2013_cbarq_survey_domain_scales_figshare.dat`.
+- `Dataset_CBARQ.xlsx` → `broseghini_2023_cbarq_italian_validation_responses.xlsx`.
+- `journal.pone.0289356.s004.csv` → `bohland_2023_shelter_behavior_after_adoption_supplement_s4.csv`.
+- `pone.0299973.s001.csv` → `wilkins_2024_shortened_cbarq_validation_supplement_s1.csv`.
+- `260206 Shared open access - Doodle - Behaviour data_.xlsx` →
+  `bryson_2026_doodle_crossbreed_behaviour_responses.xlsx`.
+- Служебная заметка `Untitled` получила описательное имя и актуальную ссылку.
+
+**Без переименования:**
+- `md1_data/manydogs_etal_2024_data.csv` и codebook уже названы по публикации;
+  upstream-имена сохранены для воспроизводимости вложенного репозитория.
+
+**Создано:**
+- `datasets/bohland-2023-shelter-adoption-cbarq.md`.
+- `datasets/bryson-2026-doodle-crossbreed-behaviour.md`.
+
+**Обновлено:**
+- Пути в dataset/source pages, сводном каталоге, data harmonization и `index.md`.
+- Notebook `03_shelter_dogs_cbarq_data.ipynb` переведён на новое имя Bohland S4.
+
+**Ключевые уточнения:**
+- Wolfram и Figshare — два представления одного Ghirlanda 2013 data deposit,
+  а не самостоятельные статьи; суффиксы сохраняют происхождение выгрузки.
+- Bohland S4 содержит 505 строк export, но только 99 собак и повторные волны.
+- Bryson 2026 добавлен как крупный item-level источник; до ML-использования
+  нужны проверка codebook и лицензии.
+
+---
+
+## [2026-08-12] ingest | Gates et al. 2018 — проблемное поведение после пристройства
+
+**Источник:**
+- `статьи/foreign/unknown/Gates_2018_SURVEY_post_adoption_problem_behaviours.pdf`
+- прежнее имя: `animals-08-00093.pdf`
+- DOI: `10.3390/ani8060093`
+
+**Создано:**
+- `sources/gates-2018-post-adoption-problem-behaviours.md` — компактное саммари.
+- `статьи/foreign/translations/gates_2018_post_adoption_problem_behaviours_ru.md`
+  — полный русский перевод основного текста, пяти таблиц и списка литературы.
+
+**Обновлено:**
+- `concepts/adoption-return.md`
+- `components/k3-risk-prediction.md`
+- `components/k5-ai-chat.md`
+- `index.md`
+
+**Ключевые выводы:**
+- У 70% из 57 собак отмечалось хотя бы одно проблемное поведение, но 87%
+  владельцев были не обеспокоены или обеспокоены лишь немного.
+- Агрессия была связана с более высокой обеспокоенностью владельцев (`p = 0,012`).
+- Возврат в исходный приют — неполный label: альтернативное перепристройство и
+  исходы среди неответивших могут не фиксироваться.
+- Цифровая поддержка после пристройства соответствует рекомендациям авторов
+  и может снижать ресурсную стоимость сопровождения.
+
+---
+
+## [2026-08-12] ingest | Vitulová et al. 2018 — поведение собак после пристройства
+
+**Источник:**
+- `статьи/foreign/czech-republic/Vitulova_2018_SURVEY_adopted_shelter_dog_behaviour.pdf`
+- прежнее имя: `Behaviour_of_dogs_adopted_from_an_animal_shelter.pdf`
+- DOI: `10.2754/avb201887020155`
+
+**Создано:**
+- `sources/vitulova-2018-adopted-shelter-dog-behaviour.md` — компактное саммари.
+- `статьи/foreign/translations/vitulova_2018_adopted_shelter_dog_behaviour_ru.md`
+  — полный русский перевод с тремя таблицами, расшифровкой рисунка и литературой.
+
+**Обновлено:**
+- `concepts/k3-feature-candidates.md`
+- `concepts/adoption-return.md`
+- `components/k3-risk-prediction.md`
+- `components/k5-ai-chat.md`
+- `index.md`
+
+**Ключевые выводы:**
+- В первую неделю поведенческие проблемы отмечались у 71,9% из 192 собак.
+- Через шесть месяцев пугливость снизилась с 61% до 20%, а общительность
+  выросла с 56% до 93%; агрессивность значимо не изменилась.
+- Документированная история жестокого обращения была связана с более частым
+  проблемным поведением, но исследование наблюдательное и owner-reported.
+- Для Hvostun нужны повторные измерения: ранний страх не следует считать устойчивым
+  профилем, тогда как агрессия требует ранней safety-маршрутизации.
+
+---
+
+## [2026-11-19] synthesis | Эффект приложения: пороги значимости и MDE по доменам C-BARQ
+
+**Создано:**
+- `ml/app-effect-rct-power.md` — дизайн 40 (приложение) vs 40 (контроль), волны 7 → 30 день; формулы difference-in-differences, Welch t-test, ANCOVA, ДИ, порог значимости, MDE, Bonferroni.
+- `analytics/research_bohland_powell/src/rct_power_thresholds.py` — пересчёт порогов для другого `n`, выбывания, числа первичных доменов и волн; `--solve-n` для требуемого размера выборки.
+
+**Обновлено:**
+- `NIR_3/personal_files/Б1_теоретический_анализ_источников.md` — раздел «Оценка эффекта приложения».
+- `index.md`
+
+**Ключевые выводы:**
+- Дисперсии из 82 пар Bohland (`d7`/`d30`). Порог значимости 0.25–0.38 балла, MDE (80%) 0.35–0.55, с Bonferroni по 13 доменам 0.5–0.7.
+- Естественное изменение за месяц 0.05–0.3 балла: 40 на 40 подходит только для сильного эффекта на 1–2 первичных доменах.
+
+**Противоречие:** в unified-данных трудности обучения 7 → 30 снижаются (−0.30), в статье Bohland растут (+0.19). Вероятно, разная обработка обратных `q27`/`q28`; требует проверки.
+
+---
+
+## [2026-11-21] lint | Обратный балл пунктов 27–28 и Training difficulty у Bohland
+
+**Обновлено:**
+- `concepts/c-barq-short-42-scoring.md` — как обратный балл реализован в коде ($4 - x$ при расчёте субшкалы); вывод про публикацию Bohland.
+- `sources/bohland-2023-shelter-dog-behavior-ru.md` — оговорка про скоринг Training difficulty.
+- `ml/app-effect-rct-power.md` — противоречие от 2026-11-19 закрыто.
+
+**Вывод:** средние Training difficulty у Bohland (рис. 1F) до сотых совпадают с $(q_{27}+q_{28}+q_{29})/3$ без разворота. С разворотом по инструкции Serpell трудности обучения снижаются: 2.34 → 2.14 → 2.00 → 1.84 (7 / 30 / 90 / 180 день). Unified-сборка считает правильно; для сравнения брать её, а не таблицу 8 статьи.
+
+**Открытый вопрос:** в `serpell_online_full` (21 строка) `q29` приходит уже развёрнутым из файла-источника, а ноутбук его обратно не разворачивает. Training difficulty для этих строк, вероятно, искажена. На Bohland и пороги RCT не влияет.
+
+---
+
+## [2026-11-21] fix | `q29` в serpell_online_full возвращён к ответу респондента
+
+**Изменено:**
+- `analytics/research_bohland_powell/src/unify_cbarq.py` и копия логики в `notebooks/01_eda.ipynb`: в `transform_online_full` после проекции full → mini `q29 = 4 - q29`.
+- Ноутбук `01_eda.ipynb` перезапущен; пересобраны `cbarq_mini_sessions.csv`, `domain_unified.csv`, `domain_dedup.csv`, `qc_by_source.csv`.
+- `datasets/cbarq-mini-sessions-unified.md`, `concepts/c-barq-short-42-scoring.md`.
+
+**Эффект:** среднее `q29` в `serpell_online_full` 1.62 → 2.38. Изменилась только субшкала Training difficulty в 11 из 21 строки этого источника (в остальных `q29 = 2`), среднее по источнику 1.41 → 1.67. Bohland и пороги RCT (`ml/app-effect-rct-power.md`) не изменились.
+
+**Не перезапущено:** `02_1_kmeans.ipynb`, срез «весь объём» (`clusters_all.csv`, `diverse_pool*.csv`) использует эти строки. Срез «Bohland, 10-й день» не затронут.
+
+---
+
+## [2026-11-21] rerun | `02_1_kmeans.ipynb` после исправления `q29`
+
+Ноутбук перезапущен на пересобранном `domain_dedup.csv`; ошибок нет.
+
+- Весь объём (953 строки) и весь объём по 13 шкалам (912 строк): k = 3 (silhouette 0.110 и 0.114), медоиды те же три анкеты Serpell shelter 2009 (`CO:37248`, `CA:30344`, `MO:449574` / `MO:447556`). Размеры кластеров сдвинулись на 2–42 строки. В `diverse_pool.csv` поменялись номера кластеров 1 и 2.
+- Bohland, 10-й день: `diverse_pool_bohland_d10*.csv` и `clusters_bohland_d10.csv` побайтно совпадают с прежними.
+- `clusters_all.csv` текущим ноутбуком не пишется (экспорт закомментирован); файл от 2026-10-28 устарел и не соответствует текущему `domain_dedup`.

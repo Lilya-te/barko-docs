@@ -1,0 +1,122 @@
+---
+title: "ML-архитектура BARKO: персональный план + LLM/RAG чат"
+---
+flowchart LR
+    subgraph clients["Клиентские сервисы"]
+        direction TB
+        mobile["Мобильное приложение"]
+        web["Веб-приложение"]
+    end
+
+    subgraph app_servers["Серверы приложений"]
+        direction TB
+        web_server["Сервер веб-приложения"]
+        redis["Redis<br/>• кэш плана<br/>• сессии<br/>• push-очередь"]
+        api["Backend API"]
+    end
+
+    subgraph ml_risk["Оценка риска / K3"]
+        direction TB
+        risk_features["Feature store K3<br/>• C-BARQ признаки<br/>• feature schema"]
+        risk_score["RiskScore<br/>• LogisticRegression baseline<br/>• risk score<br/>• 1 / 7 / 30 / 90 дней"]
+        risk_params["Параметры K3<br/>• model.pkl<br/>• calibration"]
+        risk_features --> risk_score
+        risk_params -.->|inference| risk_score
+    end
+
+    subgraph ml_chat["Чат-бот / K5"]
+        direction TB
+        chat_features["Feature store K5<br/>• контекст питомца<br/>• RAG chunks / embeddings"]
+        llm_rag["LLM + RAG<br/>• MongoDB knowledge base<br/>• safety guardrails"]
+        chat_params["Параметры K5<br/>• prompts<br/>• retrieval config"]
+        chat_features --> llm_rag
+        chat_params -.->|inference| llm_rag
+    end
+
+    subgraph storage_ops["Хранилище и операции"]
+        direction TB
+        db[("PostgreSQL<br/>• профили питомцев<br/>• анкеты / прогресс<br/>• история чата")]
+        data["C-BARQ subsets<br/>• custdev<br/>• динамика ответов"]
+        incidents["Data drift, prompt incidents"]
+    end
+
+    subgraph monitoring["Мониторинг"]
+        direction TB
+        prometheus["Prometheus<br/>• ROC-AUC / PR-AUC<br/>• Recall@k / CSAT<br/>• latency / safety"]
+        grafana["Grafana<br/>• ML / LLM дашборды<br/>• SLO и алерты"]
+        prometheus -->|query| grafana
+    end
+
+    subgraph source["Исходный код"]
+        direction TB
+        github["GitHub<br/>• mobile / web / API<br/>• K3 / K5 сервисы<br/>• infra, CI/CD"]
+    end
+
+    mobile -->|"анкета / чат"| redis
+    redis <-->|"кэш / сессии"| api
+    redis -->|"план / push"| mobile
+    web -->|админка| web_server
+    web_server -->|API| api
+    api -->|профиль| risk_score
+    risk_score -->|"план + прогресс"| db
+    api -->|"обновление кэша"| redis
+    api -->|"вопрос + контекст"| llm_rag
+    llm_rag -->|ответ| api
+    llm_rag -->|история| db
+    db -.->|контекст| api
+
+    db -.->|"обучение / дообучение<br/>данные питомца"| risk_score
+    data -.->|"обучение / дообучение<br/>C-BARQ"| risk_score
+    db -.->|"обучение / дообучение<br/>данные питомца"| llm_rag
+    data -.->|"обучение / дообучение<br/>C-BARQ"| llm_rag
+
+    data -.->|train / export| risk_params
+    data -.->|fine-tune / index| chat_params
+
+    risk_score -->|"ML logs"| prometheus
+    llm_rag -->|"LLM/RAG logs"| prometheus
+    api -->|API metrics| prometheus
+    grafana -->|alerts| incidents
+    web -->|дашборды| grafana
+    incidents -.->|issues / fix backlog| github
+    github -.->|CI/CD deploy| api
+    github -.->|CI/CD deploy| web_server
+    github -.->|CI/CD deploy| risk_score
+    github -.->|CI/CD deploy| llm_rag
+    github -.->|release pipeline| mobile
+
+    classDef clientMobile fill:#DBEAFE,stroke:#60A5FA,color:#0F172A,stroke-width:2px
+    classDef clientWeb fill:#E0F2FE,stroke:#38BDF8,color:#0F172A,stroke-width:2px
+    classDef serverWeb fill:#DCFCE7,stroke:#22C55E,color:#0F172A,stroke-width:2px
+    classDef cacheRedis fill:#FEE2E2,stroke:#DC382D,color:#0F172A,stroke-width:2px
+    classDef serverApi fill:#DCFCE7,stroke:#4ADE80,color:#0F172A,stroke-width:2px
+    classDef mlPlan fill:#FEF3C7,stroke:#F59E0B,color:#0F172A,stroke-width:2px
+    classDef mlChat fill:#FCE7F3,stroke:#EC4899,color:#0F172A,stroke-width:2px
+    classDef storageDb fill:#F1F5F9,stroke:#64748B,color:#0F172A,stroke-width:2px
+    classDef storageData fill:#F8FAFC,stroke:#94A3B8,color:#0F172A,stroke-width:2px
+    classDef opsPrometheus fill:#E0E7FF,stroke:#6366F1,color:#0F172A,stroke-width:2px
+    classDef opsGrafana fill:#FFF7ED,stroke:#F46800,color:#0F172A,stroke-width:2px
+    classDef opsGithub fill:#F6F8FA,stroke:#24292F,color:#0F172A,stroke-width:2px
+    classDef opsIncidents fill:#FEE2E2,stroke:#EF4444,color:#0F172A,stroke-width:2px
+
+    class mobile clientMobile
+    class web clientWeb
+    class web_server serverWeb
+    class api serverApi
+    class redis cacheRedis
+    class risk_features,risk_score,risk_params mlPlan
+    class chat_features,llm_rag,chat_params mlChat
+    class db storageDb
+    class data storageData
+    class prometheus opsPrometheus
+    class grafana opsGrafana
+    class github opsGithub
+    class incidents opsIncidents
+
+    style clients fill:transparent,stroke:transparent
+    style app_servers fill:transparent,stroke:transparent
+    style ml_risk fill:#FFFBEB,stroke:#F59E0B,stroke-width:2px
+    style ml_chat fill:#FDF2F8,stroke:#EC4899,stroke-width:2px
+    style storage_ops fill:transparent,stroke:transparent
+    style monitoring fill:#FFF7ED,stroke:#F46800,stroke-width:2px
+    style source fill:#F6F8FA,stroke:#24292F,stroke-width:2px
