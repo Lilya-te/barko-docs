@@ -167,6 +167,19 @@ python rct_power_thresholds.py --baseline d7 --follow d90        # другие 
 5. Минимально важное клиническое изменение (MCID) для C-BARQ не установлено. Статистическая значимость ≠ практическая.
 6. За 30 дней эффект может не проявиться: у Bohland сдвиги по разлуке и привязанности значимы только к 180-му дню.
 
+Для выборки 48 и dropout 16% по доменам nonsocial_fear touch_sensitivity
+```
+python rct_power_thresholds.py --domains nonsocial_fear touch_sensitivity --n 48 --primary 2 --dropout 0.16 
+```
+
+```
+waves d7->d30; analysed n = 40 + 40; alpha = 0.05/2 = 0.0250; power = 0.8
+```
+| domain |n_pairs | mean_change | sd_change | r | change_crit | change_mde | ancova_crit | ancova_mde
+|---|---|---|---|---|---|---|---|---|
+| nonsocial_fear | 80 | 0.13 | 0.68 | 0.58 | 0.35 | 0.48 | 0.30 | 0.42 |
+| touch_sensitivity | 66 | 0.10 | 0.97 | 0.38 | 0.49 | 0.67 | 0.41 | 0.57 |
+
 ## Противоречия и оговорки
 
 - Трудности обучения: в unified-данных за месяц снижаются (−0.30), в статье Bohland растут (+0.19, табл. 8). Проверено: опубликованные средние совпадают с подсчётом без обратного балла для `q27`/`q28`, а наша сборка разворачивает их по инструкции Serpell. Корректное направление — снижение трудностей (см. [c-barq-short-42-scoring](../concepts/c-barq-short-42-scoring.md)). Пороги в таблице посчитаны с обратным баллом.
