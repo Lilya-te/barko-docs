@@ -2,7 +2,7 @@
 type: ml
 tags: [nir3, pipeline, hypotheses, recommendations, nlp, rag, evaluation]
 sources: [nir3-hypotheses, nir3-ml-evaluation-pipeline]
-updated: 2026-11-19
+updated: 2026-11-22
 status: draft
 ---
 
@@ -42,6 +42,11 @@ status: draft
    - **152-ФЗ:** отдельное согласие на переписку/голос, сырой текст в РФ-контуре, в аналитику — псевдонимизированные скоры + `channel`; encoder локальный / РФ-хостинг.
 7. **H₁-transfer:** TOST доменов РФ vs Bohland/short, заранее заданный δ, α = 0.05.
 8. **H₁-human-eval:** слепой pairwise K5-RAG vs no-RAG; preference ≥ 70% и значимо > 50%.
+9. **H₁-effect (Б3 §8):** RCT 40 + 40 (приложение vs только анкета), C-BARQ(S) 7 → 30 день, ANCOVA по первичным доменам (разлука, страх незнакомцев), Holm–Bonferroni.
+   - **Минимальный сдвиг $\varepsilon_d$ ≠ MDE:** $\varepsilon_d$ — что практически важно (до сбора), MDE — что дизайн способен увидеть; требование $\mathrm{MDE}_d \le \varepsilon_d$, иначе увеличить $n$ (`--solve-n`).
+   - **Оценка $\varepsilon_d$:** якорный вопрос на 30-й день («немного лучше» минус «без изменений», по контролю) → иначе Delphi кинологов $m_d/k_d$; сверка с $0.5 \cdot SD_d$, MDC (test-retest), естественной динамикой 0.05–0.3.
+   - **Успех:** $\mathrm{CI}_{95}$ без 0 и $\lvert\hat{\delta}_d\rvert \ge \varepsilon_d$; строгий вариант — весь CI за $\varepsilon_d$. Незначимо при $\mathrm{MDE}_d > \varepsilon_d$ → «дизайн недостаточен».
+   - Расчёт порогов: [app-effect-rct-power](app-effect-rct-power.md).
 
 ## Контур артефактов
 
@@ -65,8 +70,9 @@ wiki → vector RAG → answers → pairwise human-eval
 | NLP↔форма | H₁-channel | парный TOST по каждому домену, δ из test-retest; ICC ≥ 0.75 вторично | self-report того же владельца |
 | РФ↔референс | H₁-transfer | TOST, δ | Bohland / short C-BARQ |
 | K5-RAG | H₁-human-eval | preference ≥ 70% | ответ без RAG |
+| Приложение↔контроль | H₁-effect | ANCOVA: CI₉₅ без 0 и модуль δ̂ ≥ ε_d; MDE ≤ ε_d | контроль «только анкета» |
 
-**Порядок:** baseline + разметка → plan-DT и plan-LR (один val) → quality для победителя; channel параллельно; transfer после РФ-скоров; human-eval после curated wiki-индекса.
+**Порядок:** baseline + разметка → plan-DT и plan-LR (один val) → quality для победителя; channel параллельно; transfer после РФ-скоров; human-eval после curated wiki-индекса; effect — после фиксации ε_d и расчёта выборки.
 
 ## Связь с прежним K3
 

@@ -2,7 +2,7 @@
 type: synthesis
 tags: [nir3, c-barq, rct, power-analysis, statistics, app-effect]
 sources: [bohland-2023-shelter-dog-behavior-ru, bohland-2023-shelter-adoption-cbarq, cbarq-mini-sessions-unified]
-updated: 2026-11-19
+updated: 2026-11-22
 status: draft
 ---
 
@@ -164,7 +164,7 @@ python rct_power_thresholds.py --baseline d7 --follow d90        # другие 
 2. Базовая волна до начала использования приложения (лучше 1–3-й день, а не 7-й); иначе $\Delta$ недооценит эффект.
 3. Первичные домены и направление эффекта фиксируются заранее (pre-registration).
 4. Ответы даёт сам владелец, и у группы с приложением есть ожидания. Нужен активный контроль (обычные материалы) и аккуратная интерпретация.
-5. Минимально важное клиническое изменение (MCID) для C-BARQ не установлено. Статистическая значимость ≠ практическая.
+5. Минимально важное клиническое изменение (MCID) для C-BARQ не установлено. Статистическая значимость ≠ практическая. Поэтому до сбора фиксируется минимальный сдвиг для успеха $\varepsilon_d$ (SESOI) — он не равен MDE: $\varepsilon_d$ задаёт, что важно, MDE — что дизайн способен увидеть; нужно $\mathrm{MDE}_d \le \varepsilon_d$. Оценка $\varepsilon_d$ (якорный вопрос → Delphi кинологов $m_d/k_d$, сверка с $0.5 \cdot SD_d$ и MDC) и критерий успеха — гипотеза H₁-effect, Б3 §8 ([nir3-hypothesis-evaluation-pipeline](nir3-hypothesis-evaluation-pipeline.md)).
 6. За 30 дней эффект может не проявиться: у Bohland сдвиги по разлуке и привязанности значимы только к 180-му дню.
 
 Для выборки 48 и dropout 16% по доменам nonsocial_fear touch_sensitivity

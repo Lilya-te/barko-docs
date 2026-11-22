@@ -3,7 +3,7 @@ type: source
 tags: [nir3, pipeline, evaluation, ml, c-barq, nlp, rag]
 sources: []
 raw_path: I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б3_методика_проверки_гипотезы_пайплайн_оценки.md
-updated: 2026-11-19
+updated: 2026-11-22
 status: ingested
 ---
 
@@ -23,6 +23,7 @@ status: ingested
 4. **Порядок экспериментов:** H₁-baseline → H₁-plan-DT и H₁-plan-LR (один val, δ = 0.10) → H₁-quality для победителя (accept H₀ < 60%, safe H₀ < 97%); параллельно H₁-channel; H₁-transfer после РФ-скоров; H₁-human-eval после wiki-RAG.
 5. **NLP-канал:** embeddings формулировок пунктов/ответов → cosine retrieval из текста чата → confirm пользователем → доменные скоры → парный TOST vs self-report (§5.3: CI₉₀ ⊂ ±δ по каждому домену; δ из test-retest формы; $n \approx 8.6(\sigma_D/\delta)^2$; вторично ICC ≥ 0.75, Bland–Altman, weighted κ, coverage ≥ 80%; контрбалансировка и слепота).
 6. **K5:** слепой pairwise RAG vs no-RAG; preference ≥ 70% и > 50% при α = 0.05.
+7. **Эффект приложения (§8, H₁-effect):** RCT 40 + 40, ANCOVA 7 → 30 день по первичным доменам; минимальный сдвиг $\varepsilon_d$ (SESOI) фиксируется до сбора (якорь → Delphi $m_d/k_d$; сверка $0.5 \cdot SD_d$, MDC) и не равен MDE; требование $\mathrm{MDE}_d \le \varepsilon_d$; успех — $\mathrm{CI}_{95}$ без 0 и $\lvert\hat{\delta}_d\rvert \ge \varepsilon_d$. Сводная таблица перенесена в §9.
 
 ## Критерии готовности данных
 

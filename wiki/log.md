@@ -825,3 +825,14 @@
 - [app-ideas-notes](sources/app-ideas-notes.md) (`status: stable`) + [research-data-app](concepts/research-data-app.md)
 
 Обновлены `index.md`, `overview.md`, `AGENTS.md`.
+
+---
+
+## [2026-11-22] update | H₁-effect: минимальный сдвиг для успеха (SESOI ≠ MDE)
+
+Новая гипотеза эффекта приложения на адаптацию (RCT 40 + 40, C-BARQ(S) 7 → 30 день, ANCOVA; первичные домены — проблемы разлуки и страх незнакомцев).
+
+- **Б2:** добавлен §7 H₁-effect (H₀: CI₉₅ содержит 0 или модуль δ̂ < ε_d).
+- **Б3:** новый §8 — различие минимального сдвига ε_d и MDE, оценка ε_d (якорный вопрос → Delphi кинологов m_d/k_d; сверка с 0.5·SD, MDC, естественной динамикой), проверка MDE ≤ ε_d, критерий успеха и решение по H₀, 152-ФЗ. Сводная таблица перенесена в §9, добавлена строка H₁-effect. Исправлены относительные ссылки на wiki (глубина `../../../../`), включая старую в §5.3.7.
+- **Wiki:** [nir3-hypotheses](sources/nir3-hypotheses.md), [nir3-ml-evaluation-pipeline](sources/nir3-ml-evaluation-pipeline.md), [nir3-hypothesis-evaluation-pipeline](ml/nir3-hypothesis-evaluation-pipeline.md), [app-effect-rct-power](ml/app-effect-rct-power.md); канон в `.cursor/rules/nir3-hypotheses-pipeline-sync.mdc`.
+- **Открыто:** конкретные значения ε_d не зафиксированы — нужен пилот с якорным вопросом или Delphi кинологов.
