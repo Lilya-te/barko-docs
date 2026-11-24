@@ -1,8 +1,8 @@
 ---
 type: component
-tags: [k5, llm, rag, mvp, safety]
-sources: [ml-ideas-notes, fomina-2024-problem-behavior-review, gritsenko-2023-owner-frustration, gates-2018-post-adoption-problem-behaviours, vitulova-2018-adopted-shelter-dog-behaviour]
-updated: 2026-09-09
+tags: [k5, llm, rag, mvp, safety, fstek]
+sources: [ml-ideas-notes, fomina-2024-problem-behavior-review, gritsenko-2023-owner-frustration, gates-2018-post-adoption-problem-behaviours, vitulova-2018-adopted-shelter-dog-behaviour, fstek-117-info-protection]
+updated: 2026-11-24
 status: draft
 ---
 
@@ -26,6 +26,10 @@ status: draft
 - Prompt-policy
 - Red-flag rules
 - Human-reviewed knowledge base
+
+### Безопасность ИИ (ориентир ФСТЭК № 117)
+
+Приказ № 117 обязателен для ГИС, не для MVP-ООО, но п. 60–61 и §3.18 методички 2026 задают полезный каркас для K5: контроль тематик запросов/ответов, фильтры ввода/вывода, детект недостоверных ответов, запрет отдавать ПДн/ИОД провайдеру модели «на дообучение», защита RAG-корпуса. Практика: [fstek-117-for-hvostun](../concepts/fstek-117-for-hvostun.md).
 
 ### Развитие (без обучения собственной LLM)
 

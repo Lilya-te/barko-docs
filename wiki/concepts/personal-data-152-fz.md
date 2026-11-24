@@ -1,8 +1,8 @@
 ---
 type: concept
-tags: [legal, personal-data, 152-fz, consent, mvp]
-sources: [fz-152-personal-data]
-updated: 2026-09-09
+tags: [legal, personal-data, 152-fz, consent, mvp, fstek]
+sources: [fz-152-personal-data, fstek-117-info-protection]
+updated: 2026-11-24
 status: draft
 ---
 
@@ -35,10 +35,12 @@ status: draft
 9. **Уведомление** уполномоченного органа (ст. 22) — ops-задача до/при старте обработки.
 10. **Инциденты**: готовность уведомить в 24ч / 72ч (ст. 21 ч. 3.1).
 11. **K3/авторешения**: скоры и рекомендации не оформлять как юридически значимое авторешение о человеке без правовой рамки (ст. 16).
+12. **Техзащита ИСПДн:** для коммерческого контура — меры по смыслу ПП № 1119 и приказа ФСТЭК № 21; приказ ФСТЭК № 117 (ГИС/гос-ИС) на MVP не обязателен, но полезен как ориентир для K5 и B2G — см. [fstek-117-for-hvostun](fstek-117-for-hvostun.md).
 
 ## Связанные страницы
 
 - [fz-152-personal-data](../sources/fz-152-personal-data.md)
+- [fstek-117-info-protection](../sources/fstek-117-info-protection.md) / [fstek-117-for-hvostun](fstek-117-for-hvostun.md)
 - [consent-v1-pilot-form](consent-v1-pilot-form.md)
 - [research-data-app](research-data-app.md) — таблица `consents`
 - [k5-k3-answer-bridge](k5-k3-answer-bridge.md) — extract из чата и каналы сбора

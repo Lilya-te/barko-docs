@@ -1,6 +1,6 @@
 # Hvostun Wiki — Index
 
-Каталог страниц knowledge base. Обновлён: 2026-11-21 (ingest `_draft_dairy.md`).
+Каталог страниц knowledge base. Обновлён: 2026-11-24 (ingest ФСТЭК № 117).
 
 ## Overview
 
@@ -32,6 +32,7 @@
 | [owner-frustration](concepts/owner-frustration.md) | Разочарованность владельца (~14%) |
 | [research-data-app](concepts/research-data-app.md) | Внутреннее приложение: Jinja-админка, versioned surveys, immutable-каталоги, Postgres |
 | [personal-data-152-fz](concepts/personal-data-152-fz.md) | Чеклист 152-ФЗ для контуров Hvostun с ПДн |
+| [fstek-117-for-hvostun](concepts/fstek-117-for-hvostun.md) | ФСТЭК № 117: обязательность для MVP vs B2G; чеклист K5/RAG |
 | [consent-v1-pilot-form](concepts/consent-v1-pilot-form.md) | Шаблон согласия `consent_v1` и политики для пилотной Яндекс.Формы |
 | [k5-k3-answer-bridge](concepts/k5-k3-answer-bridge.md) | Roadmap: извлечение ответов анкеты из K5 + сравнение Яндекс.Форма vs Амелько |
 
@@ -74,6 +75,7 @@
 | [nir3-literature-delta](sources/nir3-literature-delta.md) | `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/03_выводы.md` | Дельта пилота РФ + обзор опоры на C-BARQ |
 | [nir3-dairy-notes](sources/nir3-dairy-notes.md) | `…/Индивидуальные артефакты за 3 семестр/_draft_dairy.md` | Решения спринтов авг–ноя 2026 (C-BARQ, 152-ФЗ, UPenn, экспертный контур); ход работ — только ссылка |
 | [fz-152-personal-data](sources/fz-152-personal-data.md) | `152 ФЗ.md` | Саммари 152-ФЗ: только нормы, полезные Hvostun (согласие, локализация, ops/ML) |
+| [fstek-117-info-protection](sources/fstek-117-info-protection.md) | `ФСТЭК_117/` | Приказ ФСТЭК № 117 (2025) + методичка 2026: ГИС, классы К1–К3, меры, блок ИИ/RAG |
 | [ml-ideas-notes](sources/ml-ideas-notes.md) | `_ml_ideas.md` (удалён) | Подбор модели для ML-решений BARKO |
 | [app-ideas-notes](sources/app-ideas-notes.md) | `_app_ideas/` (удалён) | Схема БД и scope research-ops |
 | [data-ideas-notes](sources/data-ideas-notes.md) | `I — НИР 3/03 — Индивидуальные части/Hvostun_Tereshchenkova_Liliia/Индивидуальные артефакты за 3 семестр/Б1_теоретический_анализ_источников/02_данные/research_padova/datasets/_data_ideas.md` | Исследование открытых C-BARQ датасетов |

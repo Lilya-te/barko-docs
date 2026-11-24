@@ -4,6 +4,13 @@
 
 ---
 
+## [2026-11-24] ingest | ФСТЭК № 117 + методичка 2026
+
+- Новый source: [fstek-117-info-protection](sources/fstek-117-info-protection.md) — приказ ФСТЭК от 11.04.2025 № 117 (Требования к ГИС/гос-ИС) и методический документ от 12.04.2026 (мероприятия и меры; блок ИИ/RAG).
+- Новый concept: [fstek-117-for-hvostun](concepts/fstek-117-for-hvostun.md) — обязательность для MVP (нет) vs B2G; чеклист MVP и K5.
+- Обновлены [personal-data-152-fz](concepts/personal-data-152-fz.md) (п. 12 техзащита), [k5-ai-chat](components/k5-ai-chat.md), [index](index.md).
+- **152-ФЗ:** № 117 не заменяет 152-ФЗ/ПП № 1119; для коммерческой ИСПДн ориентир мер — приказ ФСТЭК № 21; сырые PDF в `ФСТЭК_117/` не редактировались.
+
 ## [2026-11-21] ingest | `_draft_dairy.md` → решения спринтов
 
 - Новый source: [nir3-dairy-notes](sources/nir3-dairy-notes.md) — компактная таблица решений авг–ноя 2026 (отказ от своей анкеты → C-BARQ; волны 1 нед / 1 мес / 3 мес; UPenn; reverse q27–28; экспертная админка; 152-ФЗ; таргет = рекомендации).
